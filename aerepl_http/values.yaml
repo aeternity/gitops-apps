@@ -47,7 +47,8 @@ ingress:
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
   hosts:
     - host: "aerepl.dev.aeternity.io"
-      paths: []
+      paths:
+        - path: "/"
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
