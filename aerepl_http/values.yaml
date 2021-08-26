@@ -1,7 +1,8 @@
 # Default values for aerepl_http.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
+namespace: aerepl
+  
 replicaCount: 1
 
 image:
