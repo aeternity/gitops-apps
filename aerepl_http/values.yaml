@@ -1,7 +1,6 @@
 # Default values for aerepl_http.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-namespace: aerepl
   
 replicaCount: 1
 
@@ -47,7 +46,7 @@ ingress:
     kubernetes.io/ingress.class: traefik
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
   hosts:
-    - host: "aerepl.dev.aeternity.io"
+    - host: "aerepl.dev.aepps.com"
       paths:
         - path: "/"
   tls: []
