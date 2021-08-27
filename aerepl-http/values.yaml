@@ -46,7 +46,7 @@ ingress:
     kubernetes.io/ingress.class: traefik
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
   hosts:
-    - host: "aerepl.dev.aepps.com"
+    - host: "repl.dev.aepps.com"
       paths:
         - path: "/"
   tls: []
