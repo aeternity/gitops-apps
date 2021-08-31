@@ -3,7 +3,6 @@
 # Declare variables to be passed into your templates.
 applications:  
   replicaCount: 1
-  AppVersion: "v6.0.0"
 
   image:
     repository: aeternity/aesophia_http
@@ -14,6 +13,22 @@ applications:
   imagePullSecrets: []
   nameOverride: "aesophia"
   fullnameOverride: "aesophia"
+  version: "v6.0.0"
+  
+  probes:
+    liveness:
+      enabled: true
+      config:
+        httpGet:
+          path: /version
+          port: 3080
+        initialDelaySeconds: 60
+    readiness:
+      enabled: true
+      config:
+        httpGet:
+          path: /version
+          port: 3080
 
   serviceAccount:
     # Specifies whether a service account should be created
@@ -22,7 +37,7 @@ applications:
     annotations: {}
     # The name of the service account to use.
     # If not set and create is true, a name is generated using the fullname template
-    name: "aesophia"
+    name: ""
 
   podAnnotations: {}
 
