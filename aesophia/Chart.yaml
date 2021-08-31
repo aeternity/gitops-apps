@@ -3,9 +3,9 @@ name: aesophia
 description: A Helm chart for Kubernetes
 
 dependencies: # A list of the chart requirements (optional)
-  - name: applications
+  - name: app
     version: 0.1.0
-    repository: "file://../applications"
+    repository: "file://../app"
 
 # A chart can be either an 'application' or a 'library' chart.
 #

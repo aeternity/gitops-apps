@@ -1,9 +1,10 @@
 # Default values for aesophia.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-applications:  
+app:  
   replicaCount: 1
-
+  version: "v6.0.0"
+  
   image:
     repository: aeternity/aesophia_http
     pullPolicy: IfNotPresent
@@ -13,8 +14,7 @@ applications:
   imagePullSecrets: []
   nameOverride: "aesophia"
   fullnameOverride: "aesophia"
-  version: "v6.0.0"
-  
+
   probes:
     liveness:
       enabled: true
@@ -29,7 +29,8 @@ applications:
         httpGet:
           path: /version
           port: 3080
-
+  
+  
   serviceAccount:
     # Specifies whether a service account should be created
     create: false
