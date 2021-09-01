@@ -63,7 +63,7 @@ app:
     annotations: 
       kubernetes.io/ingress.class: traefik
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      traefik.ingress.kubernetes.io/router.middlewares: test
+      traefik.ingress.kubernetes.io/router.middlewares: aesophia-test@kubernetescrd
     hosts:
       - host: "compiler.dev.aepps.com"
         paths:
