@@ -59,7 +59,7 @@ app:
   
   middlewareStripPrefix:
     enabled: true
-    prefixPath: v6
+    prefixPath: /v6
 
   ingress:
     enabled: true
