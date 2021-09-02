@@ -56,14 +56,17 @@ app:
   service:
     type: ClusterIP
     port: 3080
-    
+  
+  middlewareStripPrefix:
+    enabled: true
+    prefixPath: v5
 
   ingress:
     enabled: true
     annotations: 
       kubernetes.io/ingress.class: traefik
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      traefik.ingress.kubernetes.io/router.middlewares: aesophia-test@kubernetescrd
+      traefik.ingress.kubernetes.io/router.middlewares: apps-aesophia-v5@kubernetescrd
     hosts:
       - host: "compiler.dev.aepps.com"
         paths:
