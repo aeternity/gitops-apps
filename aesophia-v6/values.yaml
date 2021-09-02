@@ -59,14 +59,14 @@ app:
   
   middlewareStripPrefix:
     enabled: true
-    prefixPath: "v6"
+    prefixPath: v6
 
   ingress:
     enabled: true
     annotations: 
       kubernetes.io/ingress.class: traefik
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      traefik.ingress.kubernetes.io/router.middlewares: apps-aesophia-v5@kubernetescrd
+      traefik.ingress.kubernetes.io/router.middlewares: apps-aesophia-v6@kubernetescrd
     hosts:
       - host: "compiler.dev.aepps.com"
         paths:
