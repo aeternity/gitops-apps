@@ -12,8 +12,8 @@ app:
     tag: "v6.0.0"
 
   imagePullSecrets: []
-  nameOverride: "aesophia"
-  fullnameOverride: "aesophia"
+  nameOverride: "aesophia-v6"
+  fullnameOverride: "aesophia-v6"
 
   probes:
     liveness:
