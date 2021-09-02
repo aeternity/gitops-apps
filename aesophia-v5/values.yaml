@@ -70,7 +70,7 @@ app:
     hosts:
       - host: "compiler.dev.aepps.com"
         paths:
-          - path: "/v5"
+          - path: /v5
     tls: []
     #  - secretName: chart-example-tls
     #    hosts:
