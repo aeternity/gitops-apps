@@ -1,0 +1,10 @@
+{{- if .Values.middlewareStripPrefix.enabled -}}
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: {{ include "app.fullname" . }}
+spec:
+  stripPrefix:
+    prefixes:
+      - {{ .Values.middlewareStripPrefix.prefixPath }}
+{{- end }}
