@@ -5,6 +5,12 @@ app:
   replicaCount: 1
   version: "latest"
   
+  env:
+    "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
+    "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
+    "NODE_URL": "https://testnet.aeternity.io"
+    "FAUCET_ACCOUNT_PRIV_KEY": "arn:aws:ssm:eu-central-1:106102538874:parameter/faucet_accoount_priv_key"
+
   image:
     repository: aeternity/aepp-faucet
     pullPolicy: IfNotPresent
