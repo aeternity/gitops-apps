@@ -11,6 +11,9 @@ app:
     # Overrides the image tag whose default is the chart appVersion.
     tag: "v5.0.0"
 
+  persistence:
+    enabled: false
+    
   imagePullSecrets: []
   nameOverride: "aesophia-v5"
   fullnameOverride: "aesophia-v5"
