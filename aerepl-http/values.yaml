@@ -12,6 +12,9 @@ image:
 
 persistence:
     enabled: false
+    
+secret:
+    enabled: false
 
 imagePullSecrets: []
 nameOverride: ""

@@ -13,6 +13,9 @@ app:
 
   persistence:
     enabled: false
+  
+  secret:
+    enabled: false
     
   imagePullSecrets: []
   nameOverride: "aesophia-v5"

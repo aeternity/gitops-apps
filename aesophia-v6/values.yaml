@@ -10,9 +10,13 @@ app:
     pullPolicy: IfNotPresent
     # Overrides the image tag whose default is the chart appVersion.
     tag: "v6.0.0"
+
   persistence:
     enabled: false
- 
+  
+  secret:
+    enabled: false
+
   imagePullSecrets: []
   nameOverride: "aesophia-v6"
   fullnameOverride: "aesophia-v6"

@@ -13,7 +13,10 @@ app:
 
   persistence:
     enabled: false
-    
+  
+  secret:
+    enabled: false
+
   imagePullSecrets: []
   nameOverride: "aesophia-v4"
   fullnameOverride: "aesophia-v4"
