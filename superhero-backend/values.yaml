@@ -1,0 +1,130 @@
+# Default values for aesophia.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+app:  
+  replicaCount: 1
+  version: "v1.0.0"
+  
+  encValues:
+    POSTGRES_PASSWORD: "AgAZgZTvORbXFYDfMzDlgKjnD7A3lUu44xH+4uxDiJg2/N9I0IHR3kFmH0G52M3cKLjq726N8Ij5eR9H7KBZcOsFh4h+BV/y+kusOdKL0PHnfgL2Pq462Ll9wDREK/JqoaRyDut21mSsotEqzpkwKUopooPHqSL54lFkME36vTTRpXQE3uaJCIr1LxuesXHs0t5sedwcLex4H51GraxVKDKm1X8UBK1HgRvX4AbJYKYTQgGkKROeDX1gdMLBA9Zw9Rg4fEtxNkTcdEj2pQSSFPgbMUvoVDzuhs09Ti170dVBMHVIeg+hViWFpLCYDecyNo2MBjovQAUaNM44jLmud2zXKt9ox4e3KHMPkvUyu5MvPgal9apHyP+hMA46HTezXxAj8L7PZrWmtMwm2+lDOO5Hef2uqefnRQTQp0QA+SLhxfIFEGB3lQRouTtrW/NyJ6/fhypup3o9SLpEqghTDVvDEvnEf3TS3jH2wRUVWaQiF2t/IlUuBIZEx8muHXH5UGH8dubxVHqTrcoLsuXJ/vTi30JXAWJ5sMtuiMOj8C5P+blQvhoF9qCVUfri6W88mfS9tnwrtIzygK6jELGOJ7xfMWqwZ+Av/IAyzIWI61otVwBx5fUluN/RBw/adpYQAi8NvutWCKKuG8NpGf5E4iXOURQXQfu7rtnqcPoMrDDrlTgzfdjFv9cThccyhbryL5u4Zl/GFNvXKgrH7CXJOA8ngbk="
+    AUTHENTICATION_PASSWORD: "AgBso4vMW6Lk6jycbgZxcMK4fGQvbfUzrPo/DtjHjkSvYY9FGQWWO8+zcGsAcp2/JB7Nj8t1bGInjmjAyQCvKsplBPbJnQ/pXxqUSowE/v8IZvStLmuoQYxLumk1LIeqwGZk3DTyQTJsovEoR0ELRwFNa/NHTlTpq08akjtlnYh4O6R6QgOT1305Ci2FueWWlyunU7ByA/pZWVvjmVypvRCCElO2DrdETeIf6Rcc1/HkKzI+HnvZPQX3zwqKpv712IviDNt8pEu09BUfofZ5WjVEGyJFWb9UyJ8ll/HZ5gl0SnVg8TJCDfDNCAgXBrrBcjLOmlKkjoAQMrkdD/BIcgW0RZSIoHrWzYky/81DeGGZaRrNxQwLnwZ+CO99YEFQm4PVNI3ZfgtwekbQKu+aymEzLvYmYefFnbtkrmCDsB+wyw60Pkawyvw0wtbgbitd5h/ykeBVG/bxVhisPOMQH2b8uQCc3jEg2Bjryg8Q38IWk6E31qciGbhYc45M/3wkoIq2qWuUXpWP+eoBWdlgDvkxIVJVbPYQIJvyR558H+2YOU+ypmdXH0qsXnGkm392R/TXWHtF569yFFkxydxC6S1AYoQcdNTXVL76lmpjuNcw15K2X+L/p1syioQZgAIjCHQM5peEZA6dms3YIRyTkuDwjmrH/XSEERA7dNqUpPKY6vx9vSnwzpRHj8Qm1uoU+7ea42xfoSnk5g=="
+    PRIVATE_KEY: "AgB2T3hv76Kt2XYbkUBp88ugoOviex0VKFBodcw8MkISSSrlDg425PX4OieaQWD6wVRxz0q7ffx6EIVFBe2dK9A6aklRV2i7GovIsTIUj5EudwBCghyZAdENQRXFyB2KsiQsFYx2ZrvJfvs0tAOfP11Kw9l4NOfQ7q0IdqfGHjp4fpjWkJQHCvFAz7k6CDD+VWliN+mVQDpTsKmGAwa04ltAQ9sEgWNnGOAGY83nFAZW9khFpCitzkYRS8A0T60F1pgeWVVenLJQ86c7NxG6SzXz7qfkYwetvnSIkVR6EEngBzd3jk7bE9wbGYQWnqyxR37dGJc6Z/9tEgWYUqwkX3Nmw6makWKhQUJTNFQc0rm/4fu9j842m9vvsaDlSUT9M7qSu1GnMr8Vie84NDTrLZJo4suzrRyPggTUX3/bITrAXgPoIYrOvvqPSeeNURnPwwS7XiKR5+/F9PKn6VEzqnnEB95HT0AJTG1QWikGOjkSQ4Y48QQ35FuiIxtXwwDFdpyBJ6XEy6HcPRHaPvpY+BrAqogJVcAnwayiaotk1t1irugc5OzW1yWDWb++deIJsYKlc9tXaxQ2Vp60qb3lQQuKKSTgUa0LiPoXIdHpv8LDvcZ8sQTm3zHjUWR+N9/LSNmziyqBQkpnBtRglTWu8hso7g1FT2c6qcTjQXOuJpQ/4BLdrL70Kl1+tzzTzo8f38ISUTbr8x6Te8mtjBZXI7GlrC58toN7Cxaf0zRA7VYOSYPW8IuGqenxhsJXr0c5x2FQHElBhrEEQ9pptFNqVKoWBxVkKemNtEJkpxeL/oAA7FSEvbtihVJzsvh+0Oj+oH1pA37wLlU3S5cCX5lfP8zf8YCq1yx58YnIxYM0n9MF5A=="
+
+  env:
+    "REDIS_HOST": "10.0.1.16"
+    "REDIS_PORT": "6379"
+    "NODE_URL": "https://mainnet.aeternity.io"
+    "COMPILER_URL": "https://latest.compiler.aepps.com"
+    "CONTRACT_V1_ADDRESS": "ct_2AfnEfCSZCTEkxL5Yoi4Yfq6fF7YapHRaFKDJK3THMXMBspp5z"
+    "CONTRACT_V3_ADDRESS": "ct_2Hyt9ZxzXra5NAzhePkRsDPDWppoatVD7CtHnUoHVbuehwR8Nb"
+    "TOKEN_REGISTRY_ADDRESS": "ct_2n76BQCN3zNEjuEvHFNZtgyWPc5zizy47wNrUT3RHP2MrPKhbq"
+    "ORACLE_CONTRACT_ADDRESS": "ct_7wqP18AHzyoqymwGaqQp8G2UpzBCggYiq7CZdJiB71VUsLpR4"
+    "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
+    "IPFS_URL": "https://ipfs.dev.aepps.com"
+    "PUBLIC_KEY": "ak_yrVCHP97UWfCRGMCaojBjdSKuXD3yyC8NkzkReURd4t3jbCQW"
+    "AUTHENTICATION_USER": "user"
+    "NODE_ENV": "production"
+    "WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
+    "ORACLE_GETTER_ADDRESS": "ct_anbp2U5VUsF6PkrX1ER1hSqj76Krpvqy97c5JBLmubBecCWui"
+    "CONTRACT_V1_GETTER_ADDRESS": "ct_NR7Bd7j5LRdzvKZmrMagMkfxzG8ZPWseKQkdwWootpq4kAJY2"
+    "CONTRACT_V3_GETTER_ADDRESS": "ct_2NdZ6PX9tZHWFhgcoYjthYNFF15qxjDwFSsNXRPeajEWazxkTo"
+    "POSTGRES_USER": "postgres"
+    "POSTGRES_DB": "superhero"
+    "POSTGRES_HOST": "superhero.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
+
+  image:
+    repository: aeternity/superhero-backend
+    pullPolicy: IfNotPresent
+    # Overrides the image tag whose default is the chart appVersion.
+    tag: "latest"
+
+  persistence:
+    enabled: false
+  
+  imagePullSecrets: []
+  nameOverride: "superhero-backend"
+  fullnameOverride: "superhero-backend"
+
+  probes:
+    liveness:
+      enabled: false
+      config:
+        httpGet:
+          path: /health/backend
+          port: 3000
+        initialDelaySeconds: 60
+    readiness:
+      enabled: false
+      config:
+        httpGet:
+          path: /health/backend
+          port: 3000
+  
+  
+  serviceAccount:
+    # Specifies whether a service account should be created
+    create: false
+    # Annotations to add to the service account
+    annotations: {}
+    # The name of the service account to use.
+    # If not set and create is true, a name is generated using the fullname template
+    name: ""
+
+  podAnnotations: {}
+
+  podSecurityContext: {}
+    # fsGroup: 2000
+
+  securityContext: {}
+    # capabilities:
+    #   drop:
+    #   - ALL
+    # readOnlyRootFilesystem: true
+    # runAsNonRoot: true
+    # runAsUser: 1000
+
+  service:
+    type: ClusterIP
+    port: 3000
+  
+  middlewareStripPrefix:
+    enabled: false
+
+  ingress:
+    enabled: true
+    annotations: 
+      kubernetes.io/ingress.class: traefik
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    hosts:
+      - host: "superhero-backend.dev.aepps.com" # has to be changed/disscused
+        paths:
+          - path: "/"
+    tls: []
+    #  - secretName: chart-example-tls
+    #    hosts:
+    #      - chart-example.local
+
+  resources: {}
+    # We usually recommend not to specify default resources and to leave this as a conscious
+    # choice for the user. This also increases chances charts run on environments with little
+    # resources, such as Minikube. If you do want to specify resources, uncomment the following
+    # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+    # limits:
+    #   cpu: 100m
+    #   memory: 128Mi
+    # requests:
+    #   cpu: 100m
+    #   memory: 128Mi
+
+  autoscaling:
+    enabled: false
+    minReplicas: 1
+    maxReplicas: 100
+    targetCPUUtilizationPercentage: 80
+    # targetMemoryUtilizationPercentage: 80
+
+  nodeSelector: {}
+
+  tolerations: []
+
+  affinity: {}
