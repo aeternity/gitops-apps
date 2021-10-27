@@ -4,7 +4,7 @@ kind: Middleware
 metadata:
   name: {{ include "app.fullname" . }}
 spec:
-  stripPrefix:
-    prefixes:
+  stripPrefixRegex:
+    regex:
       - {{ .Values.ingress.stripPrefix }}
 {{- end }}
