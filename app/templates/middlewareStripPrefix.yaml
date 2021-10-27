@@ -1,4 +1,4 @@
-{{- if .Values.middlewareStripPrefix.enabled -}}
+{{- if and .Values.ingress.enabled .Values.ingress.stripPrefix -}}
 apiVersion: traefik.containo.us/v1alpha1
 kind: Middleware
 metadata:
@@ -6,5 +6,5 @@ metadata:
 spec:
   stripPrefix:
     prefixes:
-      - {{ .Values.middlewareStripPrefix.prefixPath }}
+      - {{ .Values.ingress.stripPrefix }}
 {{- end }}

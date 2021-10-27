@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: ""
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
@@ -16,7 +16,7 @@ fullnameOverride: ""
 
 serviceAccount:
   # Specifies whether a service account should be created
-  create: true
+  create: false
   # Annotations to add to the service account
   annotations: {}
   # The name of the service account to use.
@@ -42,12 +42,14 @@ service:
 
 ingress:
   enabled: false
-  annotations: {}
-    # kubernetes.io/ingress.class: nginx
-    # kubernetes.io/tls-acme: "true"
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+  stripPrefix: ""
   hosts:
     - host: chart-example.local
-      paths: []
+      paths:
+        - path: /
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
@@ -77,3 +79,23 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+encValues: {}
+
+persistence:
+  enabled: false
+
+probes:
+  liveness:
+    enabled: true
+    config:
+      httpGet:
+        path: /
+        port: http
+      initialDelaySeconds: 60
+  readiness:
+    enabled: true
+    config:
+      httpGet:
+        path: /
+        port: http

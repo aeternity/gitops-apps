@@ -1,116 +1,15 @@
-# Default values for aesophia.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
 app:
-  
-  secret:
-    enabled: true
-
   encValues:
     FAUCET_ACCOUNT_PRIV_KEY: "AgCfjQiRYGdi4FS/VZljSGhSbEdFxHSm7w6QbjIv9zCR9prGqyodxhBk1sStRu8dTDoxBPAa6PrLwPwzF9VCunBI+MnYurGsZFJWvSrlpAd+sPwaMiVkfPZdumXfSGaLu+ujA4iPmeV0wDDLyKBYuuZVZ+0WnUJIbfAfCSpKYRf6p5g0heqK7UOwe6flnOQlCbKw0cBSSbQptpRABszB4AoPB5dcjCNKaCzR/oTHZPEgerIfPi/ThApDDanLm0tr+z2HKssj/my8YDIlaRvQfiXxeBle6Hl3ld2r7+OUxh8Y+vzgg7R/8piT4wIiysmszNWvhm6NwhGth6F5Myha3oCt8JayKBbIUf4ZHxCR6K1VxqDX/9YupSlHcbW6WuG0icHzVE3azdHkO6GHHT+BBHfe//rkMZPND5Px+fTZLlH0b1uhADGnZd+4TtFaOfCPDP9/7hmKfKZ/tCgKQ0y59BmMYTsQJZn02Cccz+k7g/rL14QAgNVOKD/cti9H97eQEg9uPCsy2GBS8Ens1SWi8ZdZa9PBEQMdfwq/2aD88WetWBCGTYSx/T6JTWGDD1SwmReq6IoQEIkBKb/Q43iAQSLYX48XiVOhKAiPshTB8lBliVZWlb9DmfEeF4jnVHlwMAU1pN/5gCZhsW2ghOvubM7cEPUTD2PAPIPcRcbZbUtVTsKepcILOdvnv3Gswu/by8NHNbLdQZaw+znsbAcliZzQ0MH/JBgS10OtYFBEId+roD2g+5Qz7lUp6RglSC52uxPM5KZzsATg2H74DjAFtpuEzteoJVCy21FYDVJgDEXkYSVUewH8LFhfAv85bW2oUID/7vZHuywxvxnM23Zila9SmObG25DdhYH+Diqw2wwCdA=="
-
-  replicaCount: 1
-  version: "latest"
-  
   env:
     "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
     "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
     "NODE_URL": "https://testnet.aeternity.io"
-
-  image:
-    repository: aeternity/aepp-faucet
-    pullPolicy: IfNotPresent
-    # Overrides the image tag whose default is the chart appVersion.
-    tag: "latest"
-
-  persistence:
-    enabled: false
-
-  imagePullSecrets: []
-  nameOverride: "aepp-faucet"
-  fullnameOverride: "aepp-faucet"
-
-  probes:
-    liveness:
-      enabled: true
-      config:
-        httpGet:
-          path: /
-          port: 5000
-        initialDelaySeconds: 60
-    readiness:
-      enabled: true
-      config:
-        httpGet:
-          path: /
-          port: 5000
-  
-  
-  serviceAccount:
-    # Specifies whether a service account should be created
-    create: false
-    # Annotations to add to the service account
-    annotations: {}
-    # The name of the service account to use.
-    # If not set and create is true, a name is generated using the fullname template
-    name: ""
-
-  podAnnotations: {}
-
-  podSecurityContext: {}
-    # fsGroup: 2000
-
-  securityContext: {}
-    # capabilities:
-    #   drop:
-    #   - ALL
-    # readOnlyRootFilesystem: true
-    # runAsNonRoot: true
-    # runAsUser: 1000
-
   service:
-    type: ClusterIP
     port: 5000
-
-  middlewareStripPrefix:
-    enabled: false
-  
   ingress:
     enabled: true
-    annotations: 
-      kubernetes.io/ingress.class: traefik
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
     hosts:
       - host: "faucet.dev.aepps.com"
         paths:
           - path: "/"
-    tls: []
-    #  - secretName: chart-example-tls
-    #    hosts:
-    #      - chart-example.local
-
-  resources: {}
-    # We usually recommend not to specify default resources and to leave this as a conscious
-    # choice for the user. This also increases chances charts run on environments with little
-    # resources, such as Minikube. If you do want to specify resources, uncomment the following
-    # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
-    # limits:
-    #   cpu: 100m
-    #   memory: 128Mi
-    # requests:
-    #   cpu: 100m
-    #   memory: 128Mi
-
-  autoscaling:
-    enabled: false
-    minReplicas: 1
-    maxReplicas: 100
-    targetCPUUtilizationPercentage: 80
-    # targetMemoryUtilizationPercentage: 80
-
-  nodeSelector: {}
-
-  tolerations: []
-
-  affinity: {}
-
