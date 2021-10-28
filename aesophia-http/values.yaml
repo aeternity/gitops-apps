@@ -1,0 +1,37 @@
+app:  
+  versions:
+    - "v4.3.0"
+    - "v5.0.0"
+    - "v6.1.0"
+
+  image:
+    repository: aeternity/aesophia_http
+  
+  service:
+    type: ClusterIP
+    port: 3080
+
+  probes:
+    liveness:
+      config:
+        httpGet:
+          path: /version
+    readiness:
+      config:
+        httpGet:
+          path: /version
+
+  ingress:
+    enabled: true
+    stripPrefix: "/v[0-9]+"
+    hosts:
+      - host: "compiler.dev.aepps.com"
+        paths:
+          - path: /v4
+            version: "v4.3.0"
+          - path: /v5
+            version: "v5.0.0"
+          - path: /v6
+            version: "v6.1.0"
+          - path: /
+            version: "v6.1.0"
