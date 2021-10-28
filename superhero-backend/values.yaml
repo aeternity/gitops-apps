@@ -1,13 +1,4 @@
-# Default values for aesophia.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
 app:  
-  replicaCount: 1
-  version: "v1.0.0"
-  
-  secret:
-    enabled: true
-
   encValues:
     POSTGRES_PASSWORD: "AgAZgZTvORbXFYDfMzDlgKjnD7A3lUu44xH+4uxDiJg2/N9I0IHR3kFmH0G52M3cKLjq726N8Ij5eR9H7KBZcOsFh4h+BV/y+kusOdKL0PHnfgL2Pq462Ll9wDREK/JqoaRyDut21mSsotEqzpkwKUopooPHqSL54lFkME36vTTRpXQE3uaJCIr1LxuesXHs0t5sedwcLex4H51GraxVKDKm1X8UBK1HgRvX4AbJYKYTQgGkKROeDX1gdMLBA9Zw9Rg4fEtxNkTcdEj2pQSSFPgbMUvoVDzuhs09Ti170dVBMHVIeg+hViWFpLCYDecyNo2MBjovQAUaNM44jLmud2zXKt9ox4e3KHMPkvUyu5MvPgal9apHyP+hMA46HTezXxAj8L7PZrWmtMwm2+lDOO5Hef2uqefnRQTQp0QA+SLhxfIFEGB3lQRouTtrW/NyJ6/fhypup3o9SLpEqghTDVvDEvnEf3TS3jH2wRUVWaQiF2t/IlUuBIZEx8muHXH5UGH8dubxVHqTrcoLsuXJ/vTi30JXAWJ5sMtuiMOj8C5P+blQvhoF9qCVUfri6W88mfS9tnwrtIzygK6jELGOJ7xfMWqwZ+Av/IAyzIWI61otVwBx5fUluN/RBw/adpYQAi8NvutWCKKuG8NpGf5E4iXOURQXQfu7rtnqcPoMrDDrlTgzfdjFv9cThccyhbryL5u4Zl/GFNvXKgrH7CXJOA8ngbk="
     AUTHENTICATION_PASSWORD: "AgAlxQ0rUZ0qmGcvVgZyBijEhCD4TpuIjvfz1mU5N4GJVqapWUmF+m6znw0wGjTrthnnQukQldDpsRk41TErYXwwCGud7/2kPa6crhXcGbK74DSLCHWFpit/TBymGeze7mTHfx4bBeURcEs0GtE/ywKoXbaZB+pT+Vpyhp9LfbSA5bcwdTro8Ib7e6jjHP3X3dRUGOLJHMLZVDuomVzxychjOCYOHpqNRY/1gd6YZClPluxjIYoc84S+7Tp7GYcaxy82XucZOn6NvQVlomH/aM/NV2H5+e7v+HVRqSSHG1n685BkJvHMzWqQ1EkAASp/gNgI2O7O7IWas8MdLhc5qSrHRM7BucQGZCC9tTEx64AxulN1xtTRnxUxyYmNcALVfmbQ/IbqFohCIyrPHmuibDOgQDTIiAIh2vBFPA98/b4WFeaeiPasQcNl9ufO0ih9GHb/w1zWMQg/1Ksfulu/ov/hhVhxtbzSdJTN8wtskTGkK6AvgD/54/Mk94Krjiz8k5PEX1AmMCG4Ok2LoYECbQLHxFHvMtFQ9vIThsSFA77HGWy6/e01wM+iI+rFa8kEhJGxdMcTe4noksBAH/TCNX3gtGUCtRDrxMdKZVwTufW32ONtMRjHOd1NQiHkgo16N7Ekm/u356E225OCFP/5wUJFcwUL8OBQXdVTCo6I6HE7Dlyoa4yOhPLQ7bIX/HpzZK6BMy0+T4xMUQ=="
@@ -36,98 +27,20 @@ app:
     "POSTGRES_HOST": "superhero.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
 
   image:
-    repository: aeternity/superhero-backend
-    pullPolicy: IfNotPresent
-    # Overrides the image tag whose default is the chart appVersion.
     tag: "latest"
-
-  persistence:
-    enabled: false
-  
-  imagePullSecrets: []
-  nameOverride: "superhero-backend"
-  fullnameOverride: "superhero-backend"
 
   probes:
     liveness:
       enabled: false
-      config:
-        httpGet:
-          path: /health/backend
-          port: 3000
-        initialDelaySeconds: 60
     readiness:
       enabled: false
-      config:
-        httpGet:
-          path: /health/backend
-          port: 3000
   
-  
-  serviceAccount:
-    # Specifies whether a service account should be created
-    create: false
-    # Annotations to add to the service account
-    annotations: {}
-    # The name of the service account to use.
-    # If not set and create is true, a name is generated using the fullname template
-    name: ""
-
-  podAnnotations: {}
-
-  podSecurityContext: {}
-    # fsGroup: 2000
-
-  securityContext: {}
-    # capabilities:
-    #   drop:
-    #   - ALL
-    # readOnlyRootFilesystem: true
-    # runAsNonRoot: true
-    # runAsUser: 1000
-
   service:
-    type: ClusterIP
     port: 3000
-  
-  middlewareStripPrefix:
-    enabled: false
 
   ingress:
     enabled: true
-    annotations: 
-      kubernetes.io/ingress.class: traefik
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
     hosts:
       - host: "superhero-backend.dev.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-    tls: []
-    #  - secretName: chart-example-tls
-    #    hosts:
-    #      - chart-example.local
-
-  resources: {}
-    # We usually recommend not to specify default resources and to leave this as a conscious
-    # choice for the user. This also increases chances charts run on environments with little
-    # resources, such as Minikube. If you do want to specify resources, uncomment the following
-    # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
-    # limits:
-    #   cpu: 100m
-    #   memory: 128Mi
-    # requests:
-    #   cpu: 100m
-    #   memory: 128Mi
-
-  autoscaling:
-    enabled: false
-    minReplicas: 1
-    maxReplicas: 100
-    targetCPUUtilizationPercentage: 80
-    # targetMemoryUtilizationPercentage: 80
-
-  nodeSelector: {}
-
-  tolerations: []
-
-  affinity: {}
