@@ -1,13 +1,14 @@
-image:
-  repository: aeternity/aerepl_http
-  tag: "latest"
+app:
+  image:
+    repository: aeternity/aerepl_http
+    tag: "latest"
 
-service:
-  port: 4000
+  service:
+    port: 4000
 
-ingress:
-  enabled: true
-  hosts:
-    - host: "repl.dev.aepps.com"
-      paths:
-        - path: "/"
+  ingress:
+    enabled: true
+    hosts:
+      - host: "repl.dev.aepps.com"
+        paths:
+          - path: "/"
