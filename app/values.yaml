@@ -2,6 +2,11 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+# A list of versions (docker tags) that should be deployed.
+# This is merged with image.tag or Chart .AppVersion.
+# Multiple version can be routed in the ingress section.
+versions: []
+
 replicaCount: 1
 
 image:
@@ -50,6 +55,9 @@ ingress:
     - host: chart-example.local
       paths:
         - path: /
+        # Version key should match with a version in the versions list
+        # - path: /v2
+        #   version: v2.0.0
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:

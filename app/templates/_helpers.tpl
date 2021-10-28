@@ -57,3 +57,29 @@ Create the name of the service account to use
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
 {{- end }}
+
+{{/*
+Escape a string to complain DNS spec
+*/}}
+{{- define "app.escape" -}}
+{{ . | replace "." "" | replace "_" "-" }}
+{{- end }}
+
+{{/*
+Get all configured application versions
+*/}}
+{{- define "app.versions" -}}
+{{ $versions := (append .Values.versions (default .Values.image.tag .Chart.AppVersion)) | compact | uniq }}
+{{ toJson $versions }}
+{{- end }}
+
+{{/*
+Get a resource full name based on versions configuration
+*/}}
+{{- define "app.versionedFullname" -}}
+    {{- if eq (default .Values.image.tag .Chart.AppVersion) .version }}
+        {{- include "app.fullname" . }}
+    {{- else }}
+        {{- include "app.fullname" . }}-{{ include "app.escape" .version }}
+    {{- end }}
+{{- end }}

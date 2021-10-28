@@ -1,15 +1,20 @@
+{{- range $version := include "app.versions" . | fromJsonArray }}
+---
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "app.fullname" . }}
+  name: {{ include "app.versionedFullname" (merge (dict "version" $version) $) }}
   labels:
-    {{- include "app.labels" . | nindent 4 }}
+    {{- include "app.labels" $ | nindent 4 }}
+    app.kubernetes.io/version: {{ $version }}
 spec:
-  type: {{ .Values.service.type }}
+  type: {{ $.Values.service.type }}
   ports:
-    - port: {{ .Values.service.port }}
+    - port: {{ $.Values.service.port }}
       targetPort: http
       protocol: TCP
       name: http
   selector:
-    {{- include "app.selectorLabels" . | nindent 4 }}
+    {{- include "app.selectorLabels" $ | nindent 4 }}
+    app.kubernetes.io/version: {{ $version }}
+{{- end }}

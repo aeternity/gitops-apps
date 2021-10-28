@@ -1,39 +1,43 @@
+{{- range $version := include "app.versions" . | fromJsonArray }}
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "app.fullname" . }}
+  name: {{ include "app.versionedFullname" (merge (dict "version" $version) $) }}
   labels:
-    {{- include "app.labels" . | nindent 4 }}
+    {{- include "app.labels" $ | nindent 4 }}
+    app.kubernetes.io/version: {{ $version }}
 spec:
-  {{- if not .Values.autoscaling.enabled }}
-  replicas: {{ .Values.replicaCount }}
+  {{- if not $.Values.autoscaling.enabled }}
+  replicas: {{ $.Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      {{- include "app.selectorLabels" . | nindent 6 }}
+      {{- include "app.selectorLabels" $ | nindent 6 }}
+      app.kubernetes.io/version: {{ $version }}
   template:
     metadata:
-      {{- with .Values.podAnnotations }}
+      {{- with $.Values.podAnnotations }}
       annotations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "app.selectorLabels" . | nindent 8 }}
+        {{- include "app.selectorLabels" $ | nindent 8 }}
+        app.kubernetes.io/version: {{ $version }}
     spec:
-      {{- with .Values.imagePullSecrets }}
+      {{- with $.Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "app.serviceAccountName" . }}
+      serviceAccountName: {{ include "app.serviceAccountName" $ }}
       securityContext:
-        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+        {{- toYaml $.Values.podSecurityContext | nindent 8 }}
       containers:
-        - name: {{ .Chart.Name }}
+        - name: {{ $.Chart.Name }}
           securityContext:
-            {{- toYaml .Values.securityContext | nindent 12 }}
-          image: "{{ .Values.image.repository | default (print "aeternity/" .Release.Name) }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
+            {{- toYaml $.Values.securityContext | nindent 12 }}
+          image: "{{ $.Values.image.repository | default (print "aeternity/" $.Release.Name) }}:{{ $version }}"
+          imagePullPolicy: {{ $.Values.image.pullPolicy }}
           env:
             {{- range $key, $value := $.Values.env }}
             - name: {{ $key }}
@@ -48,39 +52,39 @@ spec:
             {{- end }}
           ports:
             - name: http
-              containerPort: {{ .Values.service.port }}
+              containerPort: {{ $.Values.service.port }}
               protocol: TCP
-          {{- if .Values.probes.liveness.enabled }}
+          {{- if $.Values.probes.liveness.enabled }}
           livenessProbe:
-            {{- toYaml .Values.probes.liveness.config | nindent 12 }}
+            {{- toYaml $.Values.probes.liveness.config | nindent 12 }}
           {{- end }}
-          {{- if .Values.probes.readiness.enabled }}
+          {{- if $.Values.probes.readiness.enabled }}
           readinessProbe:
-            {{- toYaml .Values.probes.readiness.config | nindent 12 }}
+            {{- toYaml $.Values.probes.readiness.config | nindent 12 }}
           {{- end }}
           resources:
-            {{- toYaml .Values.resources | nindent 12 }}
+            {{- toYaml $.Values.resources | nindent 12 }}
           volumeMounts:
           - name: data
             mountPath: /opt
       volumes:
       - name: data
-      {{- if .Values.persistence.enabled }}
+      {{- if $.Values.persistence.enabled }}
         persistentVolumeClaim:
-          claimName: {{ include "app.fullname" . }}
+          claimName: {{ include "app.versionedFullname" (merge (dict "version" $version) $) }}
       {{- else }}
         emptyDir: {}
       {{- end -}}
-      {{- with .Values.nodeSelector }}
+      {{- with $.Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      {{- with .Values.affinity }}
+      {{- with $.Values.affinity }}
       affinity:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      {{- with .Values.tolerations }}
+      {{- with $.Values.tolerations }}
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-
+{{- end }}
