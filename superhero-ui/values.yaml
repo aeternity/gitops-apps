@@ -14,4 +14,7 @@ app:
       - host: "1167-merge.dev.aepps.com"
         paths:
           path: "/"
-  versions: "feat-gh-actions-docker-build1167-merge"
+      - host: "1167-merge.dev.aepps.com"
+        paths:
+          path: "/"
+  versions: "feat-gh-actions-docker-build1167-merge1167-merge"
