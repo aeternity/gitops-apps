@@ -8,4 +8,7 @@ app:
       - host: "superhero.dev.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-
+      - host: "feature/e2e-tests.dev.aepps.com"
+        paths:
+          path: "/"
+  versions: "feature/e2e-tests"
