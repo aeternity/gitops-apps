@@ -8,7 +8,4 @@ app:
       - host: "superhero.dev.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-      - host: "1168-merge.dev.aepps.com"
-        paths:
-          path: "/"
-  versions: "1168-merge"
+
