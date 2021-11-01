@@ -8,13 +8,3 @@ app:
       - host: "superhero.dev.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-      - host: "feat-gh-actions-docker-build.dev.aepps.com"
-        paths:
-          path: "/"
-      - host: "1167-merge.dev.aepps.com"
-        paths:
-          path: "/"
-      - host: "1167-merge.dev.aepps.com"
-        paths:
-          path: "/"
-  versions: "feat-gh-actions-docker-build1167-merge1167-merge"
