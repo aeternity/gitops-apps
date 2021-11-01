@@ -8,4 +8,8 @@ app:
       - host: "superhero.dev.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-  versions: []
+      - host: "feat/test-gh-events.dev.aepps.com"
+        paths:
+          path: "/"
+  versions:
+    - "feat/test-gh-events"
