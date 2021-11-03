@@ -8,8 +8,4 @@ app:
       - host: "superhero.dev.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-      - host: "pr-1234.dev.aepps.com"
-        paths:
-          path: "/"
-  versions:
-    - "pr-1234"
+  versions: []
