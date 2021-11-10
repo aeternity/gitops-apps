@@ -1,5 +1,5 @@
 app:
-  versions:
+  versions: []
   image:
     repository: "aeternity/superhero-ui-web"
     tag: "latest"
