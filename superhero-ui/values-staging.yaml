@@ -1,5 +1,6 @@
 app:
   versions:
+    - v55
   image:
     repository: "aeternity/superhero-ui-web"
     tag: "latest"
