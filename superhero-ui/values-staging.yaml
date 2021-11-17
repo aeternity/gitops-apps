@@ -8,3 +8,6 @@ app:
       - host: "superhero.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
+      - host: "superhero-mega-test.dev.aepps.com" # has to be changed/disscused
+        paths:
+          - path: "/"
