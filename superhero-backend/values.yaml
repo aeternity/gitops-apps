@@ -24,7 +24,7 @@ app:
     "CONTRACT_V3_GETTER_ADDRESS": "ct_2NdZ6PX9tZHWFhgcoYjthYNFF15qxjDwFSsNXRPeajEWazxkTo"
     "POSTGRES_USER": "postgres"
     "POSTGRES_DB": "superhero"
-    "POSTGRES_HOST": "superhero.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
+    "POSTGRES_HOST": "superherodev.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
 
   image:
     tag: "latest"
