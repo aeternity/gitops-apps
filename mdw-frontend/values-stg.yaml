@@ -6,11 +6,11 @@ app:
   ingress:
     enabled: true
     hosts:
-      - host: "explorer-testnet.dev.aepps.com" # has to be changed/disscused
+      - host: "explorer-testnet.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: /
             version: "testnet"
-      - host: "explorer-mainnet.dev.aepps.com" # has to be changed/disscused
+      - host: "explorer-mainnet.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: /
             version: "mainnet"

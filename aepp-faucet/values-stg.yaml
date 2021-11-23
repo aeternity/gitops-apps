@@ -12,6 +12,6 @@ app:
   ingress:
     enabled: true
     hosts:
-      - host: "faucet.dev.aepps.com"
+      - host: "faucet.stg.aepps.com"
         paths:
           - path: "/"
