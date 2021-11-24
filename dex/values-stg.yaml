@@ -7,4 +7,8 @@ app:
       - host: "dex.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-34-dex.stg.aepps.com"
+        paths:
+          '- path': "/"
+  versions:
+    - "pr-34-dex"
