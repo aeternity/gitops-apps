@@ -1,0 +1,17 @@
+app:
+  image:
+    tag: "latest"
+  ingress:
+    enabled: "true"
+    hosts:
+      - host: "dex.stg.aepps.com" # has to be changed/disscused
+        paths:
+          - path: "/"
+      - host: "pr-34-dex.stg.aepps.com"
+        paths:
+          - path: "/"
+      - host: pr.stg.aepps.com
+        paths:
+          - path: /
+  versions:
+    - "pr-34"

@@ -11,4 +11,4 @@ app:
         paths:
           - path: "/"
   versions:
-    - "pr-34-dex"
+    - "pr-34"
