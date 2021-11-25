@@ -9,6 +9,6 @@ app:
           - path: "/"
       - host: "pr-34-dex.stg.aepps.com"
         paths:
-          '- path': "/"
+          - path: "/"
   versions:
     - "pr-34-dex"
