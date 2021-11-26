@@ -7,4 +7,3 @@ app:
       - host: "dex.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-
