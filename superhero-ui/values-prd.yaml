@@ -5,7 +5,6 @@ app:
   ingress:
     enabled: "true"
     hosts:
-      - host: "superhero.stg.aepps.com" # has to be changed/disscused
+      - host: "superhero.prd.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-
