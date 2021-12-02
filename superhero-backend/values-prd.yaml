@@ -1,0 +1,46 @@
+app:  
+  encValues:
+    POSTGRES_PASSWORD: "AgB2ZcFjRvXLeWR5OiF5DoS7Qq0/FeqdNpu4gcGLofgX+o5cW15CqhqWLZ9v6bvB/qrnU1GihG02rrWcynNsoKB4/Dmj/vZgomEqdwQ2QR/q4iW0mjaxeDgeror9sJ7ySFM5YSHHZoC3Id7Qs3CiO5Ms02dWJXiQLvU8cGH9ZYOBKZ91/iAR4bVU5d6GTHGGdO+/FmnvRsjhgPGzP6qYab8Vyrqoq5WZXcladJkwEMJEvZXd/s6l3bCXe0pIMrn75KlMKZue9sK2KZCNCxJIwqb6zi+RM94FcOCmw3D3em/Ju75ZnbIn0zIHsP5WOI9t6RiHLTCVbwIlKKN4AbD2AIECva1ts32veXN53tz7HJDi/V5uT9uD3x7Ov/ygzzn9AiZtYhKGp1a4Eu82T66+iBDXnWofLHjxIUVg1C42KTOJNsOB60jCAVpOqAn75HPd7HgG+vd0BJE8+zPCTSfZPXPZ4NRvf/rrYk/jpknhsRLcfIEV8IGY4b+JBWO5Vgh6eRay7lOFyPhFqnub1Su7eF/SW8Q+SPldbW4FCOpGAPqLUFLfa8Z5yDaeFQ8DRYo49z2pHms6W8dAAS8P5RupAbPa+PQQik02tnw8G8huu36Y2PIVOgHblKqIf7Wh6exi/qBCnWeAErXEjDD1ZGlpnZDYHmG2EIlxB2f9bo+hRRqjR7JXdiU6a2jfm8T6xXFmxbQiV6XsrgZaxGxS4d0/xCfhZj4="
+    AUTHENTICATION_PASSWORD: ""
+    PRIVATE_KEY: ""
+
+  env:
+    "REDIS_HOST": "172.16.1.111"
+    "REDIS_PORT": "6379"
+    "NODE_URL": "https://mainnet.aeternity.io"
+    "COMPILER_URL": "https://latest.compiler.aepps.com"
+    "CONTRACT_V1_ADDRESS": "ct_2AfnEfCSZCTEkxL5Yoi4Yfq6fF7YapHRaFKDJK3THMXMBspp5z"
+    "CONTRACT_V3_ADDRESS": "ct_2Hyt9ZxzXra5NAzhePkRsDPDWppoatVD7CtHnUoHVbuehwR8Nb"
+    "TOKEN_REGISTRY_ADDRESS": "ct_2n76BQCN3zNEjuEvHFNZtgyWPc5zizy47wNrUT3RHP2MrPKhbq"
+    "ORACLE_CONTRACT_ADDRESS": "ct_7wqP18AHzyoqymwGaqQp8G2UpzBCggYiq7CZdJiB71VUsLpR4"
+    "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
+    "IPFS_URL": "https://ipfs.prd.aepps.com"
+    "PUBLIC_KEY": "ak_yrVCHP97UWfCRGMCaojBjdSKuXD3yyC8NkzkReURd4t3jbCQW"
+    "AUTHENTICATION_USER": "user"
+    "NODE_ENV": "production"
+    "WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
+    "ORACLE_GETTER_ADDRESS": "ct_anbp2U5VUsF6PkrX1ER1hSqj76Krpvqy97c5JBLmubBecCWui"
+    "CONTRACT_V1_GETTER_ADDRESS": "ct_NR7Bd7j5LRdzvKZmrMagMkfxzG8ZPWseKQkdwWootpq4kAJY2"
+    "CONTRACT_V3_GETTER_ADDRESS": "ct_2NdZ6PX9tZHWFhgcoYjthYNFF15qxjDwFSsNXRPeajEWazxkTo"
+    "POSTGRES_USER": "postgres"
+    "POSTGRES_DB": "superhero"
+    "POSTGRES_HOST": "superheroprd.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
+
+  image:
+    tag: "latest"
+
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
+  
+  service:
+    port: 3000
+
+  ingress:
+    enabled: true
+    hosts:
+      - host: "superhero-backend.prd.aepps.com" # has to be changed/disscused
+        paths:
+          - path: "/"
