@@ -9,6 +9,6 @@ app:
   ingress:
     enabled: true
     hosts:
-      - host: "repl.stg.aepps.com"
+      - host: "repl.prd.aepps.com"
         paths:
           - path: "/"
