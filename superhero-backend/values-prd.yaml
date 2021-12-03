@@ -14,7 +14,7 @@ app:
     "TOKEN_REGISTRY_ADDRESS": "ct_2n76BQCN3zNEjuEvHFNZtgyWPc5zizy47wNrUT3RHP2MrPKhbq"
     "ORACLE_CONTRACT_ADDRESS": "ct_7wqP18AHzyoqymwGaqQp8G2UpzBCggYiq7CZdJiB71VUsLpR4"
     "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
-    "IPFS_URL": "https://ipfs.prd.aepps.com"
+    "IPFS_URL": "http://ipfs.prd.aepps.com:4001"
     "PUBLIC_KEY": "ak_zME2cA76GPZ1UVtivvr2SbsHjSAX227mLYZPuTtqUSUPSMCYT"
     "AUTHENTICATION_USER": "user"
     "NODE_ENV": "production"
