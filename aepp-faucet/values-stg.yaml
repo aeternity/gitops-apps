@@ -2,7 +2,7 @@ app:
   image:
     tag: latest
   encValues:
-    FAUCET_ACCOUNT_PRIV_KEY: ""
+    FAUCET_ACCOUNT_PRIV_KEY: "AgA5/gBtbvdc0vw3mqTHQpzkkJSFdxR5xyWgdNMY8u+gsrc1WcDTOENq/FHFZ6JSDy8G6NvwkyTbCH/JfBWr6j3oLOAksYMEnI7IyZymAue8elRMbTT+vrsg8OWMXfayMPqEZ/8Gj8m+5jG7V4MsTtx3E63zphBviMvwKTJU6FFKXGhqGkbG951EXgSNg/YZKeIWf/XtsrZ0fJS4GvStGSJxlGjkZeDWgovopjs6ihELasUaXAecFB85ay2yk29SW6zPZMp7KY0jZ8DDBxmIzzgmfzDvYoePFIb1eWeXQlfpkAS4B49IR71LrwQj1gHyGqIzdTVbeQ2kVyTdyd7CdFwe+zguDygiT21phyoZlh8bOin3iyeDXi0eVWNBGwbfN1FE7zeEL0zTntYvaC2tUMSNp9+Ss0bsd5/YWdBkSvu8IcufTYuRlAXPsYF/6Kth/O6+crig2+2NmqrHA5Pv+XJaFU/tkSaOYf4y9rCtSzccU+9smeSVLac4ExHX5kHL8gw+2HwwobzljhRFh1bAJJGnQ5GheeqCYT8s3mf4ZGiZdUzM9TjboetXsPC9f82yXV8PljcUeMOT8LBqzYGJvzINTtRZMthjtwbtZ/RgKEaQg37AczOSt0Tm7Nk9MgTnPk2nKKG/15Hrd4Ydw/tN+qPIDLnnqhD8AGipUVp/gXoBn+/0wMIiWh04O4Mlw0lp7cRylDwz0krcdewoB1D9m4TNfdZvw4ctbfhNsFhJqXnfj2pUwcd8tT+P+DSAzQ7z5CjlviUdEM13lmAG/R1r/Sns7zPe6CkVtHEpMt+654sXjvoAtPxwzg3FRpzJrmYXgCXq+xbiHaiVJhlm+LbBUYJmDbCetj/bibspDx0Ykns00g=="
   env:
     "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
     "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
