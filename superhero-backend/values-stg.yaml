@@ -5,7 +5,7 @@ app:
     PRIVATE_KEY: "AgAXe+aKvfSuzzqaavkzFfEO5ZIL9ehEL1xs3mqo7w7OE56YqFy8MIMKimV4HXMM4FpXpqFPAp+8yai1uNAIRZ9Isfxo8b77XXuVq2LcI3p6EkavgnjzgsRXjY7PRR9cEagbaUph1sj6014RKcFIg7O5rkvNJS4itWRWs1gzdEwHmCKRQwcCcnB1JRdkPuu1IMaHSO1H8dOEZGPuLjSBtuJzFBWFP6ydDVIgObbwWjsn68Z6ZAXOZxlOsxvytGhAXgdanXz03EacxUSmTtpwxOcJ0Iwe38iXOg611hHvyPfUz9yz4v79eeLyjxrwkVm+99rG1l8gHRbIzUHjUIkhvk3Gk8xLPJ7WA0L7pVuQpzPUhEXey9EnngggIhXBLFn/XVTESXOwLXsnR3BaeYVoWznnXvBjTCurwQErpSQMQ9rnXsMpCSAt+/sfieMpVkkRpMaQ44xuNBhodUfOAPWhA6bE3A4wNFuOciwtaRtxiqvchA67+7RSF1nLoieRmFh2dgUXlMtnBCUwcQR6nT+W9y0ZWm6U7/I6O/dVW5h6jMLsjgeSRDCaNFhAas4mylnckJBKo1bkNWU4Zfo5mDVtSkG7CZDhHN768eQbnwicepWiCRopI3wIAh2Wsi19SIXucORrtXihodmv69WDILDC/uovvxI3+x1XOZ5jZpCEvGtTstRGZQy6k4BCrk9FukMk+xYJOPyGhpSBnMh83wJIjoNgzzrSV5/B3B0NXg7BdKQkj5fhLtN7VbgWcK+QxkjpuGc9c+13jOFFi5pw42iKo2C/mCprXs6xGHLxBLNPIx1m1LgJ5z1VVcG2t0SMntmhDSQKozN0r/NQI+7EvEhGmFjT2Lojqv5szmeJARIwH3RYqw=="
 
   env:
-    "REDIS_HOST": "10.0.1.16"
+    "REDIS_HOST": "192.168.1.111"
     "REDIS_PORT": "6379"
     "NODE_URL": "https://mainnet.aeternity.io"
     "COMPILER_URL": "https://latest.compiler.aepps.com"
