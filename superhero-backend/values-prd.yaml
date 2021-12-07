@@ -6,6 +6,8 @@ app:
 
   env:
     "WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
+    "NODE_URL": "https://mainnet.aeternity.io"
+    "COMPILER_URL": "https://latest.compiler.aepps.com"
     "NODE_ENV": "production"
     "REDIS_HOST": "172.16.1.111"
     "REDIS_PORT": "6379"
