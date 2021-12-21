@@ -31,10 +31,6 @@ app:
         paths:
           - path: "/"
             version: "pr-80"
-      - host: "pr-84-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-84"
       - host: "pr-85-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
@@ -50,6 +46,5 @@ app:
     - "pr-69"
     - "pr-77"
     - "pr-80"
-    - "pr-84"
     - "pr-85"
     - "pr-86"
