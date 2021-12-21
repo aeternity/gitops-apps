@@ -13,5 +13,4 @@ app:
             version: "pr-4"
   versions:
     - "pr-4"
-  gitHash:
-    - 81fa12f
+
