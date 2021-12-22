@@ -6,7 +6,10 @@ metadata:
   name: {{ include "app.versionedFullname" (merge (dict "version" $version) $) }}
   labels:
     {{- include "app.labels" $ | nindent 4 }}
-    app.kubernetes.io/version: {{ $version }}
+    app.kubernetes.io/version: {{ $version }} 
+    {{- with $.Values.image.gitHash }} 
+    app.kubernetes.io/gitHash: "{{- toYaml . }}"
+    {{- end }}
 spec:
   {{- if not $.Values.autoscaling.enabled }}
   replicas: {{ $.Values.replicaCount }}
