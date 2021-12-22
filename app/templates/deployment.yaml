@@ -7,9 +7,6 @@ metadata:
   labels:
     {{- include "app.labels" $ | nindent 4 }}
     app.kubernetes.io/version: {{ $version }} 
-    {{- with $.Values.image.gitHash }} 
-    app.kubernetes.io/gitHash: "{{- toYaml . }}"
-    {{- end }}
 spec:
   {{- if not $.Values.autoscaling.enabled }}
   replicas: {{ $.Values.replicaCount }}
@@ -27,6 +24,9 @@ spec:
       labels:
         {{- include "app.selectorLabels" $ | nindent 8 }}
         app.kubernetes.io/version: {{ $version }}
+        {{- with $.Values.image.gitHash }} 
+        app.kubernetes.io/gitHash: "{{- toYaml . }}"
+        {{- end }}
     spec:
       {{- with $.Values.imagePullSecrets }}
       imagePullSecrets:
