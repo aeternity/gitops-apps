@@ -1,6 +1,7 @@
 app:
   image:
     tag: "latest"
+    pullPolicy: always
     gitHash: "86b9680"
   ingress:
     enabled: "true"
