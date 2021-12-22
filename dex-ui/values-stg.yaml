@@ -23,10 +23,6 @@ app:
         paths:
           - path: "/"
             version: "pr-77"
-      - host: "pr-89-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-89"
       - host: "pr-91-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
@@ -36,5 +32,4 @@ app:
     - "pr-44"
     - "pr-64"
     - "pr-77"
-    - "pr-89"
     - "pr-91"
