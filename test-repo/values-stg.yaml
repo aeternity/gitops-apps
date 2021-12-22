@@ -1,6 +1,7 @@
 app:
   image:
     tag: "latest"
+    gitHash: "86b9680"
   ingress:
     enabled: "true"
     hosts:
@@ -13,4 +14,3 @@ app:
             version: "pr-4"
   versions:
     - "pr-4"
-  gitHash: "86b9680"
