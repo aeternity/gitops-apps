@@ -4,6 +4,6 @@ app:
   ingress:
     enabled: "true"
     hosts:
-      - host: "dex-ui.prd.aepps.com" # has to be changed/disscused
+      - host: "dex.prd.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
