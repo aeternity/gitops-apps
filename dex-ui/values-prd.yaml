@@ -7,3 +7,5 @@ app:
       - host: "dex.prd.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
+  versions:
+    - "latest"
