@@ -1,6 +1,6 @@
 app:
   image:
-    tag: "v1.0.7"
+    tag: "v1.0.10"
   ingress:
     enabled: "true"
     hosts:
