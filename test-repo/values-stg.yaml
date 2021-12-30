@@ -13,5 +13,10 @@ app:
         paths:
           - path: "/"
             version: "pr-4"
+      - host: "pr-30-test-repo.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-30"
   versions:
     - "pr-4"
+    - version: "pr-30"
