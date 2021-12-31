@@ -2,7 +2,6 @@ app:
   image:
     tag: "latest"
     pullPolicy: "Always"
-    gitHash: "86b9680"
   ingress:
     enabled: "true"
     hosts:
@@ -19,4 +18,3 @@ app:
             version: "pr-30"
   versions:
     - "pr-4"
-    - version: "pr-30"
