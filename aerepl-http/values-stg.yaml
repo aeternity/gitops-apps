@@ -12,4 +12,6 @@ app:
       - host: "repl.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+  versions:
+    - version: "latest"
+
