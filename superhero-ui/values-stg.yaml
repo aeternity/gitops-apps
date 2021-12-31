@@ -9,4 +9,4 @@ app:
         paths:
           - path: "/"
   version:
-    - version: "latest"
+    - version: []

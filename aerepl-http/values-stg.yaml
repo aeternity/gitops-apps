@@ -13,5 +13,6 @@ app:
         paths:
           - path: "/"
   versions:
-    - version: "latest"
+    - version: []
+
 

@@ -15,5 +15,4 @@ app:
       - host: "faucet.stg.aepps.com"
         paths:
           - path: "/"
-  versions:
-    - version: "latest"
+  versions: []
