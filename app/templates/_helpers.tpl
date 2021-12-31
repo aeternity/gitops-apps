@@ -66,14 +66,6 @@ Escape a string to complain DNS spec
 {{- end }}
 
 {{/*
-Get all configured application versions
-*/}}
-{{- define "app.versions" -}}
-{{ $versions := (append .Values.versions (default .Values.image.tag .Chart.AppVersion)) | compact | uniq }}
-{{ toJson $versions }}
-{{- end }}
-
-{{/*
 Get a resource full name based on versions configuration
 */}}
 {{- define "app.versionedFullname" -}}

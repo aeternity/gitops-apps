@@ -1,12 +1,14 @@
-{{- range $version := include "app.versions" . | fromJsonArray }}
+{{ $versions := .Values.versions }}
+{{ $allVersions := append $versions (merge (dict "version" (default .Values.image.tag .Chart.AppVersion)) $) }}
+{{- range $key, $val := $allVersions}}
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "app.versionedFullname" (merge (dict "version" $version) $) }}
+  name: {{ include "app.versionedFullname" (merge (dict "version" $val.version) $) }}
   labels:
     {{- include "app.labels" $ | nindent 4 }}
-    app.kubernetes.io/version: {{ $version }}
+    app.kubernetes.io/version: {{ $val.version }}
 spec:
   type: {{ $.Values.service.type }}
   ports:
@@ -16,5 +18,5 @@ spec:
       name: http
   selector:
     {{- include "app.selectorLabels" $ | nindent 4 }}
-    app.kubernetes.io/version: {{ $version }}
+    app.kubernetes.io/version: {{ $val.version }}
 {{- end }}
