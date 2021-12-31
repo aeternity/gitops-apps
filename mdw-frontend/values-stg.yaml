@@ -1,8 +1,4 @@
 app:
-  versions:
-    - testnet
-    - mainnet
-
   ingress:
     enabled: true
     hosts:
@@ -14,3 +10,6 @@ app:
         paths:
           - path: /
             version: "mainnet"
+  versions:
+    - version: testnet
+    - version: mainnet
