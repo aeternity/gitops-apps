@@ -1,8 +1,5 @@
 {{ $versions := .Values.versions }}
-{{- if .Values.image.tag }}
-  {{ $allVersions := append $versions (merge (dict "version" (default .Values.image.tag .Chart.AppVersion )) $) | compact | uniq }}
-{{- else }}
-  {{ $allVersions := $versions }}
+{{ $allVersions := append $versions (merge (dict "version" (default .Values.image.tag .Chart.AppVersion )) $) | compact | uniq }}
 {{- range $key, $val := $allVersions}}
 ---
 apiVersion: v1
@@ -22,5 +19,4 @@ spec:
   selector:
     {{- include "app.selectorLabels" $ | nindent 4 }}
     app.kubernetes.io/version: {{ $val.version }}
-{{- end }}
 {{- end }}
