@@ -11,5 +11,5 @@ app:
           - path: /
             version: "mainnet"
   versions:
-    - version: testnet
-    - version: mainnet
+    - version: "testnet"
+    - version: "mainnet"
