@@ -16,10 +16,6 @@ app:
         paths:
           - path: "/"
             version: "pr-31"
-      - host: "pr-34-test-repo.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-34"
   versions:
     - "pr-4"
     - "pr-31"
