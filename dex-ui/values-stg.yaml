@@ -47,4 +47,4 @@ app:
     - version: "pr-97"
     - version: "pr-96"
     - version: "pr-102"
-    - "pr-107"
+    - version: "pr-107"
