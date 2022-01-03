@@ -12,4 +12,6 @@ app:
         paths:
           - path: "/"
             version: "pr-40"
-  versions: ['{version: pr-40, gitSha: 7266029}', '{version: pr-40, gitSha: a65b5fc}']
+  versions:
+    - {version: pr-39, gitSha: 28e26d8}
+
