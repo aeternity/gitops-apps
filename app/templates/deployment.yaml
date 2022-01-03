@@ -1,6 +1,7 @@
 {{ $versions := .Values.versions }}
 {{ $allVersions := append $versions (merge (dict "version" (default .Values.image.tag .Chart.AppVersion )) $) | compact | uniq }}
 {{- range $key, $val := $allVersions}}
+{{- if $val.version }}
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -92,4 +93,5 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+{{- end }}
 {{- end }}
