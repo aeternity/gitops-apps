@@ -16,7 +16,5 @@ app:
         paths:
           - path: "/"
             version: "pr-42"
-  versions:
-    - version: "pr-41"
-      gitSha: "98dfdd0"
-    - version: "pr-42"
+  versions: [{version: pr-41, gitSha: 98dfdd0}]
+  
