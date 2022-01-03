@@ -12,4 +12,11 @@ app:
         paths:
           - path: "/"
             version: "pr-41"
-  versions: [{version: pr-41, gitSha: 98dfdd0}]
+      - host: "pr-42-test-repo.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-42"
+  versions:
+    - version: "pr-41"
+      gitSha: "98dfdd0"
+    - version: "pr-42"
