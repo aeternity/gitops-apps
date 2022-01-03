@@ -46,8 +46,8 @@ app:
       - host: "superhero-backend.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-  version:
-    - version: []
+  versions:
+
 
 
   

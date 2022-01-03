@@ -8,5 +8,5 @@ app:
       - host: "base.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-  versions: []
+  versions:
 
