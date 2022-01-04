@@ -45,4 +45,4 @@ app:
     - version: "pr-102"
     - version: "pr-107"
     - version: "pr-108"
-    - "pr-109"
+    - version: "pr-109"
