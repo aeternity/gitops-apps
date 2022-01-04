@@ -8,4 +8,5 @@ app:
       - host: "base.dev.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-  versions:
+  versions: []
+  
