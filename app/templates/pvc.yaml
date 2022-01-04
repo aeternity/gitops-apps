@@ -1,13 +1,16 @@
 {{- if .Values.persistence.enabled }}
-{{- range $version := include "app.versions" . | fromJsonArray }}
+{{ $versions := .Values.versions }}
+{{ $allVersions := append $versions (merge (dict "version" (default .Values.image.tag .Chart.AppVersion )) $) | compact | uniq }}
+{{- range $key, $val := $allVersions}}
+{{- if $val.version }}
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: {{ include "app.versionedFullname" (merge (dict "version" $version) $) }}
+  name: {{ include "app.versionedFullname" (merge (dict "version" $val.version) $) }}
   labels:
     {{- include "app.labels" $ | nindent 4 }}
-    app.kubernetes.io/version: {{ $version }}
+    app.kubernetes.io/version: {{ $val.version }}
   annotations:
   {{- if $.Values.persistence.storageClass }}
     volume.beta.kubernetes.io/storage-class: {{ $.Values.persistence.storageClass | quote }}
@@ -20,5 +23,6 @@ spec:
   resources:
     requests:
       storage: {{ $.Values.persistence.size | quote }}
+{{- end }}
 {{- end }}
 {{- end }}

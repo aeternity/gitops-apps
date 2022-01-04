@@ -1,12 +1,18 @@
-{{- range $version := include "app.versions" . | fromJsonArray }}
+{{ $versions := .Values.versions }}
+{{ $allVersions := append $versions (merge (dict "version" (default .Values.image.tag .Chart.AppVersion )) $) | compact | uniq }}
+{{- range $key, $val := $allVersions}}
+{{- if $val.version }}
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "app.versionedFullname" (merge (dict "version" $version) $) }}
+  name: {{ include "app.versionedFullname" (merge (dict "version" $val.version) $) }}
   labels:
     {{- include "app.labels" $ | nindent 4 }}
-    app.kubernetes.io/version: {{ $version }}
+    app.kubernetes.io/version: {{ $val.version }}
+    {{- with $val.gitSha }} 
+    app.kubernetes.io/gitSha: {{ $val.gitSha }}
+    {{- end }}
 spec:
   {{- if not $.Values.autoscaling.enabled }}
   replicas: {{ $.Values.replicaCount }}
@@ -14,9 +20,7 @@ spec:
   selector:
     matchLabels:
       {{- include "app.selectorLabels" $ | nindent 6 }}
-      {{- if ne $version $.Values.image.tag }}
-      app.kubernetes.io/version: {{ $version }}
-      {{- end }}
+      app.kubernetes.io/version: {{ $val.version }}
   template:
     metadata:
       {{- with $.Values.podAnnotations }}
@@ -25,7 +29,10 @@ spec:
       {{- end }}
       labels:
         {{- include "app.selectorLabels" $ | nindent 8 }}
-        app.kubernetes.io/version: {{ $version }}
+        app.kubernetes.io/version: {{ $val.version }}
+        {{- with $val.gitSha }} 
+        app.kubernetes.io/gitSha: {{ $val.gitSha }}
+        {{- end }}
     spec:
       {{- with $.Values.imagePullSecrets }}
       imagePullSecrets:
@@ -38,7 +45,7 @@ spec:
         - name: {{ $.Chart.Name }}
           securityContext:
             {{- toYaml $.Values.securityContext | nindent 12 }}
-          image: "{{ $.Values.image.repository | default (print "aeternity/" $.Release.Name) }}:{{ $version }}"
+          image: "{{ $.Values.image.repository | default (print "aeternity/" $.Release.Name) }}:{{ $val.version }}"
           imagePullPolicy: {{ $.Values.image.pullPolicy }}
           env:
             {{- range $key, $value := $.Values.env }}
@@ -73,7 +80,7 @@ spec:
       - name: data
       {{- if $.Values.persistence.enabled }}
         persistentVolumeClaim:
-          claimName: {{ include "app.versionedFullname" (merge (dict "version" $version) $) }}
+          claimName: {{ include "app.versionedFullname" (merge (dict "version" $val.version) $) }}
       {{- else }}
         emptyDir: {}
       {{- end -}}
@@ -89,4 +96,5 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+{{- end }}
 {{- end }}
