@@ -1,4 +1,5 @@
 {{ $versions := .Values.versions }}
+{{ $imageTag := .Values.image.tag }}
 {{ $allVersions := append $versions (merge (dict "version" (default .Values.image.tag .Chart.AppVersion )) $) | compact | uniq }}
 {{- range $key, $val := $allVersions}}
 {{- if $val.version }}
@@ -20,7 +21,7 @@ spec:
   selector:
     matchLabels:
       {{- include "app.selectorLabels" $ | nindent 6 }}
-      {{- if not .Values.image.tag }} 
+      {{- if not $imageTag }} 
       app.kubernetes.io/version: {{ $val.version }}
       {{- end }}
   template:
