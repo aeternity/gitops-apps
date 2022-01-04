@@ -15,4 +15,5 @@ app:
       - host: "faucet.dev.aepps.com"
         paths:
           - path: "/"
-  versions:
+  versions: []
+
