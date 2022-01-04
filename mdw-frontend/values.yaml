@@ -1,7 +1,7 @@
 app:
   versions:
-    - testnet
-    - mainnet
+    - version: testnet
+    - version: mainnet
 
   ingress:
     enabled: true

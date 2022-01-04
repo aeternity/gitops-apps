@@ -1,8 +1,8 @@
 app:  
   versions:
-    - "v4.3.0"
-    - "v5.0.0"
-    - "v6.1.0"
+    - version: "v4.3.0"
+    - version: "v5.0.0"
+    - version: "v6.1.0"
 
   image:
     repository: aeternity/aesophia_http
