@@ -20,7 +20,7 @@ spec:
   selector:
     matchLabels:
       {{- include "app.selectorLabels" $ | nindent 6 }}
-      {{- with $val.version }} 
+      {{- if not .Values.image.tag }} 
       app.kubernetes.io/version: {{ $val.version }}
       {{- end }}
   template:
