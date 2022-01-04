@@ -20,7 +20,9 @@ spec:
   selector:
     matchLabels:
       {{- include "app.selectorLabels" $ | nindent 6 }}
+      {{- if not .Values.image.tag }} 
       app.kubernetes.io/version: {{ $val.version }}
+      {{- end }}
   template:
     metadata:
       {{- with $.Values.podAnnotations }}
