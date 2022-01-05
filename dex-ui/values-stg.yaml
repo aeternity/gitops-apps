@@ -36,14 +36,5 @@ app:
           - path: "/"
             version: "pr-109"
   versions:
-    - version: "pr-43"
-    - version: "pr-44"
-    - version: "pr-64"
-    - version: "pr-77"
-    - version: "pr-97"
-    - version: "pr-96"
-    - version: "pr-102"
-    - version: "pr-107"
-    - version: "pr-108"
     - {version: pr-109, gitSha: 1eb5ebf}  
-    - {version: pr-110, gitSha: 9b00a21}
+
