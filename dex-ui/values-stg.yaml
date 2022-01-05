@@ -7,34 +7,9 @@ app:
       - host: "dex.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-      - host: "pr-43-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-43"
-      - host: "pr-44-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-44"
-      - host: "pr-64-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-64"
-      - host: "pr-77-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-77"
-      - host: "pr-97-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-97"
-      - host: "pr-96-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-96"
       - host: "pr-109-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-109"
   versions:
     - {version: pr-109, gitSha: 1eb5ebf}  
-
