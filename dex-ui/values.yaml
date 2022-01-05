@@ -1,0 +1,9 @@
+app:
+  image:
+    tag: "latest"
+  ingress:
+    enabled: "true"
+    hosts:
+      - host: "dex.dev.aepps.com" # has to be changed/disscused
+        paths:
+          - path: "/"

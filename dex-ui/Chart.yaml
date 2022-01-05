@@ -1,0 +1,10 @@
+apiVersion: v2
+name: dex-ui
+description: A Helm chart for Kubernetes
+
+version: 0.2.0
+
+dependencies: # A list of the chart requirements (optional)
+  - name: app
+    version: 0.3.0
+    repository: "file://../app"
