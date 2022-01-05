@@ -35,10 +35,6 @@ app:
         paths:
           - path: "/"
             version: "pr-109"
-      - host: "pr-110-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-110"
   versions:
     - version: "pr-43"
     - version: "pr-44"
@@ -51,4 +47,3 @@ app:
     - version: "pr-108"
     - version: "pr-109"
       gitSha: "1eb5ebf"
-    - version: "pr-110"
