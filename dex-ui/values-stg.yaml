@@ -51,4 +51,4 @@ app:
     - version: "pr-108"
     - version: "pr-109"
       gitSha: "1eb5ebf"
-    - "pr-110"
+    - version: "pr-110"
