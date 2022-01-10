@@ -11,5 +11,11 @@ app:
         paths:
           - path: "/"
             version: "pr-109"
+      - host: "pr-112-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-112"
   versions:
-    - {version: pr-109, gitSha: 1eb5ebf}  
+    - version: "pr-109"
+      gitSha: "1eb5ebf"
+    - version: "pr-112"
