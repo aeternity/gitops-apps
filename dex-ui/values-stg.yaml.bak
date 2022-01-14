@@ -7,14 +7,9 @@ app:
       - host: "dex.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-      - host: "pr-109-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-109"
       - host: "pr-112-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-112"
   versions:
-    - {version: pr-112, gitSha: 011c4b2}
-    - '{version: pr-109, gitSha: cfa1c8c}'
+    - '{version: pr-112, gitSha: e72077c}'
