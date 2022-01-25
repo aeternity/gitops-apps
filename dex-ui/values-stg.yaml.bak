@@ -25,4 +25,4 @@ app:
     - version: "pr-121"
       gitSha: "5bba2c1"
     - version: "pr-122"
-    - {version: pr-123, gitSha: 93ff273}
+    - '{version: pr-123, gitSha: 93ff273}'
