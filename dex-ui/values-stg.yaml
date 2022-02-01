@@ -22,5 +22,5 @@ app:
   versions:
     - version: "pr-122"
     - version: "pr-126"
-    - {version: pr-121, gitSha: 0ef484b}
     - {version: pr-123, gitSha: 869cbf7}
+    - {version: pr-121, gitSha: 5b37f8c}
