@@ -25,8 +25,7 @@ app:
             version: "pr-138"
   versions:
     - version: "pr-122"
-    - version: "pr-130"
-      gitSha: "c18174b"
     - version: "pr-137"
     - version: "pr-138"
     - {version: pr-123, gitSha: 676d429}
+    - {version: pr-130, gitSha: 6a3d4d8}
