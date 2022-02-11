@@ -7,44 +7,26 @@ app:
       - host: "dex.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-      - host: "pr-43-dex-ui.stg.aepps.com"
+      - host: "pr-122-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
-            version: "pr-43"
-      - host: "pr-44-dex-ui.stg.aepps.com"
+            version: "pr-122"
+      - host: "pr-130-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
-            version: "pr-44"
-      - host: "pr-64-dex-ui.stg.aepps.com"
+            version: "pr-130"
+      - host: "pr-137-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
-            version: "pr-64"
-      - host: "pr-77-dex-ui.stg.aepps.com"
+            version: "pr-137"
+      - host: "pr-138-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
-            version: "pr-77"
-      - host: "pr-97-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-97"
-      - host: "pr-96-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-96"
-      - host: "pr-109-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-109"
+            version: "pr-138"
   versions:
-    - version: "pr-43"
-    - version: "pr-44"
-    - version: "pr-64"
-    - version: "pr-77"
-    - version: "pr-97"
-    - version: "pr-96"
-    - version: "pr-102"
-    - version: "pr-107"
-    - version: "pr-108"
-    - version: "pr-109"
-      gitSha: "1eb5ebf"
-    - '{version: pr-110, gitSha: 9b00a21}'
+    - version: "pr-122"
+    - version: "pr-130"
+      gitSha: "c18174b"
+    - version: "pr-137"
+    - version: "pr-138"
+    - '{version: pr-123, gitSha: 676d429}'
