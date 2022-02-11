@@ -1,5 +1,4 @@
 app:
-  nameOverride: aepp-http
   image:
     repository: aeternity/aerepl_http
     tag: "latest"

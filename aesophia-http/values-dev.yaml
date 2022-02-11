@@ -1,5 +1,4 @@
 app:
-  nameOverride: aesophia-http
   versions:
     - version: "v4.3.0"
     - version: "v5.0.0"

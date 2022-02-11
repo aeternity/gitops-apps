@@ -1,5 +1,4 @@
 app:
-  nameOverride: aepp-faucet
   image:
     tag: latest
   encValues:

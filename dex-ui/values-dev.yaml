@@ -1,5 +1,4 @@
 app:
-  nameOverride: dex-ui
   image:
     tag: "latest"
   ingress:
