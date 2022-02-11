@@ -1,4 +1,5 @@
-app:  
+app:
+  nameOverride: superhero-wallet
   image:
     repository: aeternity/superhero-wallet
     tag: "latest"
@@ -9,6 +10,3 @@ app:
       - host: "superhero-wallet.dev.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-
-
-

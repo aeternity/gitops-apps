@@ -1,4 +1,5 @@
 app:
+  nameOverride: mndw-frontend
   versions:
     - version: testnet
     - version: mainnet

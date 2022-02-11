@@ -1,4 +1,5 @@
-app:  
+app:
+  nameOverride: aepp-base
   image:
     tag: "master"
 
@@ -8,6 +9,3 @@ app:
       - host: "base.dev.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-
-
-
