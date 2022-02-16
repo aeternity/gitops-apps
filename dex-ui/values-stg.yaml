@@ -33,9 +33,9 @@ app:
             version: "pr-153"
   versions:
     - version: "pr-122"
-    - version: "pr-137"
     - version: "pr-138"
     - version: "pr-147"
       gitSha: "d84bfe3"
     - version: "pr-153"
     - {version: pr-130, gitSha: c178d2a}
+    - {version: pr-137, gitSha: d161b1a}
