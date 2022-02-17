@@ -78,7 +78,7 @@ spec:
             {{- toYaml $.Values.resources | nindent 12 }}
           volumeMounts:
           - name: data
-            mountPath: /opt
+            mountPath: {{ $.Values.persistence.mountPath | default "/opt" }}
       volumes:
       - name: data
       {{- if $.Values.persistence.enabled }}
