@@ -39,11 +39,10 @@ app:
     - version: "pr-138"
     - version: "pr-137"
       gitSha: "1d37daa"
-    - version: "pr-122"
-      gitSha: "d0189eb"
     - version: "pr-130"
       gitSha: "2623a23"
     - version: "pr-161"
       gitSha: "26a4df3"
     - version: "pr-163"
-    - '{version: pr-153, gitSha: 7be792f}'
+    - {version: pr-153, gitSha: 7be792f}
+    - '{version: pr-122, gitSha: cb809bf}'
