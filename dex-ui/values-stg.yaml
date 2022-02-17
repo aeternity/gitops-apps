@@ -11,22 +11,34 @@ app:
         paths:
           - path: "/"
             version: "pr-122"
-      - host: "pr-130-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-130"
       - host: "pr-137-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-137"
-      - host: "pr-138-dex-ui.stg.aepps.com"
+      - host: "pr-153-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
-            version: "pr-138"
+            version: "pr-153"
+      - host: "pr-161-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-161"
+      - host: "pr-163-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-163"
+      - host: "pr-164-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-164"
   versions:
-    - version: "pr-122"
-    - version: "pr-130"
-      gitSha: "c18174b"
     - version: "pr-137"
-    - version: "pr-138"
-    - {version: pr-123, gitSha: 676d429}
+      gitSha: "1d37daa"
+    - version: "pr-161"
+      gitSha: "26a4df3"
+    - version: "pr-163"
+    - version: "pr-153"
+      gitSha: "7be792f"
+    - version: "pr-122"
+      gitSha: "cb809bf"
+    - version: "pr-164"
