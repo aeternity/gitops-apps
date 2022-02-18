@@ -43,7 +43,6 @@ app:
 
   env:
     "S3_REGION": "eu-central-1"
-    "AETERNITY_URL": "https://testnet.aeternity.io"
     "CONTRACT_ADDRESS": "ct_ouZib4wT9cNwgRA1pxgA63XEUd8eQRrG8PcePDEYogBc1VYTq"
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-prd"
