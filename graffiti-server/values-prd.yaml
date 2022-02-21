@@ -43,7 +43,7 @@ app:
 
   env:
     "S3_REGION": "eu-central-1"
-    "NODE_URL": "https://mainnet.aeternity.io"
+    "AETERNITY_URL": "https://mainnet.aeternity.io"
     "CONTRACT_ADDRESS": "ct_ouZib4wT9cNwgRA1pxgA63XEUd8eQRrG8PcePDEYogBc1VYTq"
     "PATH_IDENTIFIER": "mainnet"
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
