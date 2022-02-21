@@ -44,12 +44,8 @@ app:
   env:
     "S3_REGION": "eu-central-1"
     "AETERNITY_URL": "https://mainnet.aeternity.io"
-    "CONTRACT_ADDRESS": "ct_ouZib4wT9cNwgRA1pxgA63XEUd8eQRrG8PcePDEYogBc1VYTq"
+    "CONTRACT_ADDRESS": "ct_2L8CMtgsb3cz9VbhYdtrSZPU8MbGDhH446WjTnFDm3snyMYTR"
     "PATH_IDENTIFIER": "mainnet"
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-prd"
-    "COMPILER_URL": "https://compiler.aepps.com"
-    "WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
-    "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw/"
-    "REDIS_URL": "redis-graffiti.prd.aepps.com:6379"
     "KEEP_HOT_INTERVAL": "60000"
