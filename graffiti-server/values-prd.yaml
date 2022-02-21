@@ -43,11 +43,11 @@ app:
 
   env:
     "S3_REGION": "eu-central-1"
+    "NODE_URL": "https://mainnet.aeternity.io"
     "CONTRACT_ADDRESS": "ct_ouZib4wT9cNwgRA1pxgA63XEUd8eQRrG8PcePDEYogBc1VYTq"
     "PATH_IDENTIFIER": "mainnet"
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-prd"
-    "NODE_URL": "https://mainnet.aeternity.io/"
     "COMPILER_URL": "https://compiler.aepps.com"
     "WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
     "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw/"
