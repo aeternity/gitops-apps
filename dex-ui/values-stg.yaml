@@ -7,10 +7,6 @@ app:
       - host: "dex.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-      - host: "pr-122-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-122"
       - host: "pr-166-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
@@ -34,8 +30,6 @@ app:
       gitSha: "1f7f310"
     - version: "pr-153"
       gitSha: "21e3e17"
-    - version: "pr-122"
-      gitSha: "81b4692"
     - version: "pr-166"
       gitSha: "82a6b7c"
     - version: "pr-181"
