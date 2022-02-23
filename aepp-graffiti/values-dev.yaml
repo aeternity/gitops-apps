@@ -1,0 +1,14 @@
+app:
+  image:
+    repository: aeternity/aepp-grafitti
+    tag: "dev"
+
+  service:
+    port: 80
+
+  ingress:
+    enabled: true
+    hosts:
+      - host: "aepp-grafitti.dev.aepps.com"
+        paths:
+          - path: "/"
