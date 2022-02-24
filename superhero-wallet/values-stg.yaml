@@ -1,12 +1,16 @@
-app:  
+app:
   image:
-    repository: aeternity/superhero-wallet
+    repository: "aeternity/superhero-wallet"
     tag: "latest"
-
   ingress:
-    enabled: true
+    enabled: "true"
     hosts:
       - host: "superhero-wallet.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-
+      - host: "pr-1407-superhero-wallet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1407"
+  versions:
+    - version: "pr-1407"
