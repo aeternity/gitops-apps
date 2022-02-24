@@ -29,7 +29,7 @@ app:
     - version: "pr-153"
       gitSha: "21e3e17"
     - version: "pr-188"
-    - version: "pr-189"
     - version: "pr-166"
       gitSha: "a978c8f"
     - {version: pr-175, gitSha: 846a073}
+    - {version: pr-189, gitSha: 1d5258c}
