@@ -1,7 +1,9 @@
 app:
   image:
-    repository: "aeternity/superhero-ui-web"
+    repository: "aeternity/superhero-ui-ssr"
     tag: "latest"
+  service:
+    port: 8080
   ingress:
     enabled: "true"
     hosts:
