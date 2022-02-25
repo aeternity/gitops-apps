@@ -8,4 +8,9 @@ app:
       - host: "superhero-ssr.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-1198-superhero-ui-web.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1198"
+  versions:
+    - version: "pr-1198"
