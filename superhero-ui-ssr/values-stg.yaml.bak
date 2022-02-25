@@ -5,8 +5,9 @@ app:
   ingress:
     enabled: "true"
     hosts:
-      - host: "superhero-ssr.stg.aepps.com" # has to be changed/disscused
+      - host: "superhero.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
   versions:
-    - {version: pr-1197, gitSha: e5910b0}
+    - version:
+    - '{version: pr-1197, gitSha: e5910b0}'
