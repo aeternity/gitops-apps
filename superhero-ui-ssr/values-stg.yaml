@@ -11,4 +11,4 @@ app:
         paths:
           - path: "/"
   versions:
-    - {version: pr-1197, gitSha: e5910b0}
+    - {version: pr-1197, gitSha: 7d666fa}

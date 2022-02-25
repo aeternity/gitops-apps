@@ -1,7 +1,9 @@
 app:
   image:
-    repository: "aeternity/superhero-ui-web"
+    repository: "aeternity/superhero-ui-ssr"
     tag: "latest"
+  service:
+    port: 8080
   ingress:
     enabled: "true"
     hosts:
@@ -9,5 +11,4 @@ app:
         paths:
           - path: "/"
   versions:
-    - version:
-    - '{version: pr-1197, gitSha: e5910b0}'
+    - '{version: pr-1197, gitSha: 7d666fa}'
