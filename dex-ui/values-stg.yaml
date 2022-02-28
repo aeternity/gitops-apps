@@ -28,8 +28,6 @@ app:
           - path: "/"
             version: "pr-206"
   versions:
-    - version: "pr-167"
-      gitSha: "1f7f310"
     - version: "pr-153"
       gitSha: "21e3e17"
     - version: "pr-188"
@@ -37,3 +35,4 @@ app:
     - version: "pr-206"
     - {version: pr-189, gitSha: 02ac6e8}
     - {version: pr-175, gitSha: 9b10429}
+    - {version: pr-167, gitSha: 73d7daa}
