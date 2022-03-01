@@ -1,37 +1,39 @@
-app:  
+app:
   image:
-    repository: aeternity/aesophia_http
+    repository: "aeternity/aesophia_http"
     tag: "latest"
-  
   service:
-    type: ClusterIP
-    port: 3080
-
+    type: "ClusterIP"
+    port: "3080"
   probes:
     liveness:
       config:
         httpGet:
-          path: /version
+          path: "/version"
     readiness:
       config:
         httpGet:
-          path: /version
-
+          path: "/version"
   ingress:
-    enabled: true
+    enabled: "true"
     stripPrefix: "/v[0-9]+"
     hosts:
       - host: "compiler.stg.aepps.com"
         paths:
-          - path: /v4
+          - path: "/v4"
             version: "v4.3.0"
-          - path: /v5
+          - path: "/v5"
             version: "v5.0.0"
-          - path: /v6
+          - path: "/v6"
             version: "v6.1.0"
-          - path: /
+          - path: "/"
             version: "v6.1.0"
+      - host: "pr-86-aesophia-http.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-86"
   versions:
     - version: "v4.3.0"
     - version: "v5.0.0"
     - version: "v6.1.0"
+    - version: "pr-86"
