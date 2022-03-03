@@ -1,13 +1,18 @@
 app:
   image:
-    repository: aeternity/aepp-grafitti
+    repository: "aeternity/aepp-grafitti"
     tag: "stg"
   service:
-    port: 80
+    port: "80"
   ingress:
-    enabled: true
+    enabled: "true"
     hosts:
       - host: "aepp-grafitti.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+      - host: "stg-aepp-graffiti.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "stg"
+  versions:
+    - version: "stg"
