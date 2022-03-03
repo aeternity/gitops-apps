@@ -48,4 +48,4 @@ app:
     "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-stg"
   versions:
-    - {version: pr-198, gitSha: 8afab4b}
+    - {version: pr-198, gitSha: de2b78f}
