@@ -28,6 +28,6 @@ app:
       gitSha: "21e3e17"
     - version: "pr-188"
     - {version: pr-189, gitSha: 02ac6e8}
-    - {version: pr-175, gitSha: 9b10429}
     - {version: pr-167, gitSha: 5d923af}
-    - '{version: pr-206, gitSha: 1bba783}'
+    - {version: pr-206, gitSha: 1bba783}
+    - '{version: pr-175, gitSha: c9dc695}'
