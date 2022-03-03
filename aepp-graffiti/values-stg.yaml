@@ -10,5 +10,4 @@ app:
       - host: "aepp-grafitti.stg.aepps.com"
         paths:
           - path: "/"
-  versions:
-    - {version: stg, gitSha: 2c995f2}
+  versions: []
