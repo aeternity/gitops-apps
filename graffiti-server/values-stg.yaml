@@ -30,10 +30,6 @@ app:
       - host: "graffiti-server.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-197-graffiti-server.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-197"
   persistence:
     enabled: "true"
     accessMode: "ReadWriteOnce"
@@ -47,5 +43,4 @@ app:
     "PATH_IDENTIFIER": "/"
     "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-stg"
-  versions:
-    - {version: pr-197, gitSha: 2c995f2}
+  versions: []
