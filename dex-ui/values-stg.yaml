@@ -11,10 +11,6 @@ app:
         paths:
           - path: "/"
             version: "pr-188"
-      - host: "pr-230-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-230"
   versions:
     - version: "pr-153"
       gitSha: "21e3e17"
@@ -22,4 +18,3 @@ app:
     - version: "pr-167"
       gitSha: "2d878b4"
     - {version: pr-206, gitSha: 878259d}
-    - {version: pr-230, gitSha: 4fb0abd}
