@@ -35,8 +35,6 @@ app:
     - version: "pr-153"
       gitSha: "21e3e17"
     - version: "pr-188"
-    - version: "pr-230"
-      gitSha: "d4815fa"
     - version: "pr-223"
       gitSha: "c14e946"
     - version: "pr-206"
@@ -45,3 +43,4 @@ app:
       gitSha: "2d878b4"
     - {version: pr-189, gitSha: 4f64439}
     - {version: pr-232, gitSha: c0efa28}
+    - {version: pr-230, gitSha: dd3e4f5}
