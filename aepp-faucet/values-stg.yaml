@@ -15,9 +15,3 @@ app:
       - host: "faucet.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-53-aepp-faucet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-53"
-  versions:
-    - version: "pr-53"
