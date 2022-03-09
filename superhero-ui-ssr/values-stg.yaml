@@ -3,7 +3,7 @@ app:
     repository: "aeternity/superhero-ui-ssr"
     tag: "latest"
   service:
-    port: "8080"
+    port: 8080
   ingress:
     enabled: "true"
     hosts:
