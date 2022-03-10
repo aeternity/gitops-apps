@@ -9,18 +9,18 @@ app:
       config:
         httpGet:
           path: "/"
-        initialDelaySeconds: "120"
-        periodSeconds: "120"
-        successThreshold: "1"
-        timeoutSeconds: "60"
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
     readiness:
       config:
         httpGet:
           path: "/"
-        initialDelaySeconds: "120"
-        periodSeconds: "120"
-        successThreshold: "1"
-        timeoutSeconds: "60"
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
   ingress:
     enabled: "true"
     hosts:
