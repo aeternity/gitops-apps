@@ -6,24 +6,24 @@ app:
     S3_KEY: "AgASoM4etCjaXLcIqnJzxcRtKbK0xJDlaETZzzzMxZj/626GU9rjUl/zkKKn5i+S1+VXPbYnGH6hReIzTUpkDYYCKF/gSwp2NeRVrVNxIW1JuC95sK9K2TF3p94cZC6Tc/Qm2FzOo7I35jMWFF1Smdst1nzcRsmIcjhSSnzRABSSOHOj5o5fAW3sTAYuwVgtZRvqjy9O99Hl7HZpywT3kgtAWPDCSOtcndMmqHCNAxHb73nbntOx86nL/asMAGU8BY0iVTgt6Ik9khJYopvdWwhWSlm/QHXc6S8hZuPT6xg3jwrEv5vLWKdaWCNIY5d25XXiWYyaeDWxiZSNUfsut9R1Ei98WBXSYhNCqXiluVXZjarZNbUxBZqeZ3fUg190PPv8IGBu73GNvJ5J+jc+MXjmy1+Q37ts16i1sqdO14KkxPDijkXd3CSQEuSunRfWRnWh4QiCFQbybbk3CCYMlOp8ZAYX7X5Eoi/jojx1niMwLTpPixuf1a2nxLut9xFFPKv+w+c9B+LJBXPXR7G026FVNd7VWeCh5QDkA2MmUBwl4449MsUwfKReJfClk8ASUyZ6w6XwfHv3+XHQwxntJA7pRyu7tltBwGTHGVZm/Ngx9mCmCIgdujEfZb07z3ip67BPSD/IUBMydj2bTHVyLcXVvAvSUBaMXOP6LFzgQyyXOInf2isbQP8666vsm3xe+gw0TzQanvZq2nxiGqHI7DeAgK1rgw=="
     S3_SECRET: "AgCe5zP6dEvpO12/L126goQQaNkL1dKf9xqIl+sg7XJKuph/C61MXODSvP/GM1BQGfoWk2ojRi879vIjG0E9J+hCShTolX9VqlF6FVzwuBOMrR2iT0aYVOsFJCYDmUPSWOhhhX6El21cgxTe4BzBH84yM/lTaK8JmUxmCS2aB1rQtzlGOypXSI78C2bF5mSYf82pU+5u4PQG/FqdgTTpigdmm3I9XinFBCIWm4FHI3M/DCaoRwMHKKMAwnruYZgl6+JLbLFObU6/Ltv3Hv9aZxtS/fOvBtbVlwTaRMdFyZ1xj4ioUeopLwdT4UZh/2kC0dTRj8VRohgthmwgBAWzDlVn8NI726xTMwqwPafHg5Dfm2tm7LFq8p7JUt9sBNdhvFtde9oW85udQ47ag7RY27zPb3guRPYyzF0M2Cgbh8qD2/g6Wi+DPopRLUzvHNZV088E7orTJwM4qjbtqSYjU3Ry4CuHkEQvP3Ut+gFBsUTCZ0q4v0UCQLxXeKWNWM9T2Rau4IleNOext9DdcJrsDrtnlKpMjEGdr43SDV3beJOZSSz19+IicZVox447QryENfXVvcMjqf1I2j33qCLe+Ht/9u4eGHOcSB+qqYqA4tDNpe4V7dEJtv9Q1uKCoThIx1VZqNUFfNlyH/x6QZW4e42nHL4Ug7hVsC3Q9nzhpS382L7B8kQC993uTQerG/S/LF9d7m9Gge/f8OJU7xQCu4FsdbHckjTNGqGu3Hbp9cawMiRAastsiyqE"
   service:
-    port: "3000"
+    port: 3000
   probes:
     liveness:
       config:
         httpGet:
           path: "/health/testFiles"
-        initialDelaySeconds: "120"
-        periodSeconds: "120"
-        successThreshold: "1"
-        timeoutSeconds: "60"
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
     readiness:
       config:
         httpGet:
           path: "/health/testFiles"
-        initialDelaySeconds: "120"
-        periodSeconds: "120"
-        successThreshold: "1"
-        timeoutSeconds: "60"
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
   ingress:
     enabled: "true"
     hosts:
