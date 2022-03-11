@@ -23,10 +23,6 @@ app:
         paths:
           - path: "/"
             version: "pr-249"
-      - host: "pr-250-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-250"
   versions:
     - version: "pr-153"
       gitSha: "21e3e17"
@@ -34,10 +30,7 @@ app:
       gitSha: "878259d"
     - version: "pr-188"
       gitSha: "471c182"
-    - version: "pr-241"
-      gitSha: "715a68c"
     - version: "pr-248"
     - version: "pr-249"
-    - version: "pr-250"
-      gitSha: "24250b2"
-    - '{version: pr-240, gitSha: add17cd}'
+    - {version: pr-240, gitSha: add17cd}
+    - '{version: pr-241, gitSha: f790aef}'
