@@ -32,7 +32,6 @@ app:
       gitSha: "21e3e17"
     - version: "pr-206"
       gitSha: "878259d"
-    - version: "pr-240"
     - version: "pr-188"
       gitSha: "471c182"
     - version: "pr-241"
@@ -41,3 +40,4 @@ app:
     - version: "pr-249"
     - version: "pr-250"
       gitSha: "24250b2"
+    - {version: pr-240, gitSha: add17cd}
