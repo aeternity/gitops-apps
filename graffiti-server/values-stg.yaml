@@ -24,6 +24,13 @@ app:
         periodSeconds: 120
         successThreshold: 1
         timeoutSeconds: 60
+  resources:
+      limits:
+        cpu: "4"
+        memory: "6Gi"
+      requests:
+        cpu: "2"
+        memory: "4Gi"
   ingress:
     enabled: "true"
     hosts:
