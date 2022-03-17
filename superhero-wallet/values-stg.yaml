@@ -8,9 +8,3 @@ app:
       - host: "superhero-wallet.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-      - host: "pr-1407-superhero-wallet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1407"
-  versions:
-    - version: "pr-1407"
