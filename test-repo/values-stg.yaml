@@ -12,5 +12,10 @@ app:
         paths:
           - path: "/"
             version: "pr-45"
+      - host: "pr-46-test-repo.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-46"
   versions:
     - version: "pr-45"
+    - version: "pr-46"
