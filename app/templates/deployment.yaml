@@ -10,9 +10,9 @@ metadata:
   name: {{ include "app.versionedFullname" (merge (dict "version" $val.version) $) }}
   labels:
     {{- include "app.labels" $ | nindent 4 }}
-    app.kubernetes.io/version: {{ $val.version }}
+    app.kubernetes.io/version: {{ quote $val.version }}
     {{- with $val.gitSha }} 
-    app.kubernetes.io/gitSha: {{ $val.gitSha }}
+    app.kubernetes.io/gitSha: {{ quote $val.gitSha }}
     {{- end }}
 spec:
   {{- if not $.Values.autoscaling.enabled }}
