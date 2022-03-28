@@ -32,9 +32,9 @@ spec:
       {{- end }}
       labels:
         {{- include "app.selectorLabels" $ | nindent 8 }}
-        app.kubernetes.io/version: {{ $val.version }}
+        app.kubernetes.io/version: {{ quote $val.version }}
         {{- with $val.gitSha }} 
-        app.kubernetes.io/gitSha: {{ $val.gitSha }}
+        app.kubernetes.io/gitSha: {{ quote $val.gitSha }}
         {{- end }}
     spec:
       {{- with $.Values.imagePullSecrets }}
