@@ -7,5 +7,4 @@ app:
       - host: "base.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-  versions:
-    - {version: pr-1443, gitSha: e770a03b}
+  versions: []
