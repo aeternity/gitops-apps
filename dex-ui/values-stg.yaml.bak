@@ -15,34 +15,18 @@ app:
         paths:
           - path: "/"
             version: "pr-265"
-      - host: "pr-266-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-266"
       - host: "pr-271-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-271"
-      - host: "pr-282-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-282"
       - host: "pr-283-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-283"
-      - host: "pr-284-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-284"
       - host: "pr-285-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-285"
-      - host: "pr-287-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-287"
       - host: "pr-288-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
@@ -54,15 +38,10 @@ app:
       gitSha: "878259d"
     - version: "pr-265"
       gitSha: "99bf6fe"
-    - version: "pr-282"
     - version: "pr-264"
       gitSha: "305fac5"
     - version: "pr-283"
       gitSha: "76ab46c"
-    - version: "pr-284"
-    - version: "pr-285"
-    - version: "pr-266"
-      gitSha: "c13d21b"
-    - version: "pr-287"
     - version: "pr-288"
-    - '{version: pr-271, gitSha: 0a6132f}'
+    - {version: pr-271, gitSha: 0a6132f}
+    - '{version: pr-285, gitSha: 6ac2223}'
