@@ -36,4 +36,4 @@ app:
     - {version: pr-283, gitSha: 0755074}
     - {version: pr-271, gitSha: 0cb4f56}
     - {version: pr-265, gitSha: dbd33df}
-    - {version: pr-264, gitSha: c679397}
+    - {version: pr-264, gitSha: 5a6714a}
