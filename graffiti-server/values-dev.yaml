@@ -9,6 +9,12 @@ app:
   service:
     port: 3000
 
+  resources:
+    limits:
+      memory: "6Gi"
+    requests:
+      memory: "5Gi"
+      
   probes:
     liveness:
       config:
