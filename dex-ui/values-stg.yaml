@@ -27,10 +27,6 @@ app:
         paths:
           - path: "/"
             version: "pr-288"
-      - host: "pr-295-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-295"
       - host: "pr-297-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
@@ -53,7 +49,5 @@ app:
       gitSha: "5e4e553"
     - version: "pr-283"
       gitSha: "7138962"
-    - version: "pr-295"
-      gitSha: "d37ca9b"
     - version: "pr-297"
     - version: "pr-298"
