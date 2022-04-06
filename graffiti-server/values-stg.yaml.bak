@@ -3,27 +3,34 @@ app:
     repository: "aeternity/graffiti-server"
     tag: "latest"
   encValues:
-    S3_KEY: "AgAerx1upPZDBuIveCpBnzheQoKkPUqXUJs43wQwlHCBxxKJrj0nEZLWZKg8l3qI5Qoiht6w4ox30F0bZ9BovLmTxonmhfwA9beMmvVEm8Ql3PApbqN8v/KE6/awbQWeiV/Uk+4wuBjMyyL/5J9qswVpBuPApW52KpitBDK8QO43Z3mdNlGtWHzSZCiL14zJ5AoP813e0v/EYIx/bafy55xf64diDKalaVpbmZvA+wYgHrijAUvBrgW0H2WVbKcYqD5hknM1AzgHvOCrObeM6o3Oiu3iA9mnnJlBgFZLI+icnZKR3bBl3IZMf/EuKkaG2nPBGyAuLrmJM70875RyCknsvTYjchbF9qfMOkf/fozbJv2csA4nPiPKz0JrNHoPJzvj2+xUTT2E1QUIm5Txvt/j1+fvgQ5BVNYHJa5jRGOKhbVl/TD0RYkCQNaa4pQFzd80npfXnEA1gauq+A94GhezgmsMvVkuM6svK5sT40w24Dmv1DIbSbuXYDXXVTvDprso2iQtQ12NiOTcLq6hJc52+H98iWKLwGDkWDF3HwworroC5r5RtFo7rkctejRpLK9Wid+nHsFiItTef+aw8sEZslcOIsM8j4hNuelUTDPmWUJJIG0pM04sLWTm6M0OlQRtZqrtiUoLaU846lqQTNShnom2ToRa2panmsZPMzLFbvsre8zNvmlrDiYy/QyWhTbTH4uvvIj+Ko3N95Va28DGcGlkHw=="
-    S3_SECRET: "AgAUeF7RzX23R8HH5ZNpba37v6gBU8gc5uU/liYeO8AJElgsjVvyGqOmTpgcNaLyaOG8G1+eNljk96VEaG72kshTXq/CCo+Je7+hOPk3YIlXfqCQrjf1TH32qGvexJfj5crHHU4MLbn6s1awc/SUaT0cJvdAFGvJc41mo3X3sb651t8g4uedJ/yoVV2awUJWMSeReG+Oemz+PpT15Oegj0uf/BMC4wFbwQkIDsRdr3nGMF3vG54P8qOSgJd2c4ErsLI6awCJrQ4mcbWm/f+boCpzIlOdqqh+rIFYsaMNe+JVhD65d//iEXTa6co/oJVwfRK0CQU194NcvMvZCpeBfpQT2M8zlBUuf5P0ieP+o5OObrBJZkioZY6YzSlDEh2srZGAzbZIbYpmJYOnLlCbYCUFusodgzQvA1y25f3iekMNLImU8MhN0DA/CXUwj3gO1TMWE/Eu92DVdO6+Eh69WuNFsG4QlAls7J4PunGd4LEM/ACjLVbw7uEFcO8yrDs8rFNlNxq8CIg4Olok3NQ3Y+DXqjamgN9vZ6/WGu4JkXp1wtK2Oo2NX7VS22vS8QiiD7AscvH0p59EIIPQDG4yz3Dgc4IXfh+EazdFVc7vzLk3FF/hFr5AulItDlFlWLhJRIn6jDHbX9Hls/X/ZK5zG0lplPiUCJEdGibdueedhxI89HRDlsmbnaYmde4Ja18u8T/+hSvCDYPE26Q5EbjN5d3ObOahb6GDRzmkgU0wcSDh4dvKIyYvZG60"
+    S3_KEY: "AgASoM4etCjaXLcIqnJzxcRtKbK0xJDlaETZzzzMxZj/626GU9rjUl/zkKKn5i+S1+VXPbYnGH6hReIzTUpkDYYCKF/gSwp2NeRVrVNxIW1JuC95sK9K2TF3p94cZC6Tc/Qm2FzOo7I35jMWFF1Smdst1nzcRsmIcjhSSnzRABSSOHOj5o5fAW3sTAYuwVgtZRvqjy9O99Hl7HZpywT3kgtAWPDCSOtcndMmqHCNAxHb73nbntOx86nL/asMAGU8BY0iVTgt6Ik9khJYopvdWwhWSlm/QHXc6S8hZuPT6xg3jwrEv5vLWKdaWCNIY5d25XXiWYyaeDWxiZSNUfsut9R1Ei98WBXSYhNCqXiluVXZjarZNbUxBZqeZ3fUg190PPv8IGBu73GNvJ5J+jc+MXjmy1+Q37ts16i1sqdO14KkxPDijkXd3CSQEuSunRfWRnWh4QiCFQbybbk3CCYMlOp8ZAYX7X5Eoi/jojx1niMwLTpPixuf1a2nxLut9xFFPKv+w+c9B+LJBXPXR7G026FVNd7VWeCh5QDkA2MmUBwl4449MsUwfKReJfClk8ASUyZ6w6XwfHv3+XHQwxntJA7pRyu7tltBwGTHGVZm/Ngx9mCmCIgdujEfZb07z3ip67BPSD/IUBMydj2bTHVyLcXVvAvSUBaMXOP6LFzgQyyXOInf2isbQP8666vsm3xe+gw0TzQanvZq2nxiGqHI7DeAgK1rgw=="
+    S3_SECRET: "AgCe5zP6dEvpO12/L126goQQaNkL1dKf9xqIl+sg7XJKuph/C61MXODSvP/GM1BQGfoWk2ojRi879vIjG0E9J+hCShTolX9VqlF6FVzwuBOMrR2iT0aYVOsFJCYDmUPSWOhhhX6El21cgxTe4BzBH84yM/lTaK8JmUxmCS2aB1rQtzlGOypXSI78C2bF5mSYf82pU+5u4PQG/FqdgTTpigdmm3I9XinFBCIWm4FHI3M/DCaoRwMHKKMAwnruYZgl6+JLbLFObU6/Ltv3Hv9aZxtS/fOvBtbVlwTaRMdFyZ1xj4ioUeopLwdT4UZh/2kC0dTRj8VRohgthmwgBAWzDlVn8NI726xTMwqwPafHg5Dfm2tm7LFq8p7JUt9sBNdhvFtde9oW85udQ47ag7RY27zPb3guRPYyzF0M2Cgbh8qD2/g6Wi+DPopRLUzvHNZV088E7orTJwM4qjbtqSYjU3Ry4CuHkEQvP3Ut+gFBsUTCZ0q4v0UCQLxXeKWNWM9T2Rau4IleNOext9DdcJrsDrtnlKpMjEGdr43SDV3beJOZSSz19+IicZVox447QryENfXVvcMjqf1I2j33qCLe+Ht/9u4eGHOcSB+qqYqA4tDNpe4V7dEJtv9Q1uKCoThIx1VZqNUFfNlyH/x6QZW4e42nHL4Ug7hVsC3Q9nzhpS382L7B8kQC993uTQerG/S/LF9d7m9Gge/f8OJU7xQCu4FsdbHckjTNGqGu3Hbp9cawMiRAastsiyqE"
   service:
-    port: "3000"
+    port: 3000
   probes:
     liveness:
       config:
         httpGet:
           path: "/health/testFiles"
-        initialDelaySeconds: "120"
-        periodSeconds: "120"
-        successThreshold: "1"
-        timeoutSeconds: "60"
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
     readiness:
       config:
         httpGet:
           path: "/health/testFiles"
-        initialDelaySeconds: "120"
-        periodSeconds: "120"
-        successThreshold: "1"
-        timeoutSeconds: "60"
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
+  resources:
+    limits:
+      cpu: "2"
+      memory: "6Gi"
+    requests:
+      cpu: "1"
+      memory: "5Gi"
   ingress:
     enabled: "true"
     hosts:
@@ -48,4 +55,4 @@ app:
     "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-stg"
   versions:
-    - '{version: pr-198, gitSha: de2b78f}'
+    - '{version: pr-198, gitSha: cb777b1}'

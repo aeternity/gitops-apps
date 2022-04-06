@@ -7,7 +7,6 @@ app:
     S3_SECRET: "AgCe5zP6dEvpO12/L126goQQaNkL1dKf9xqIl+sg7XJKuph/C61MXODSvP/GM1BQGfoWk2ojRi879vIjG0E9J+hCShTolX9VqlF6FVzwuBOMrR2iT0aYVOsFJCYDmUPSWOhhhX6El21cgxTe4BzBH84yM/lTaK8JmUxmCS2aB1rQtzlGOypXSI78C2bF5mSYf82pU+5u4PQG/FqdgTTpigdmm3I9XinFBCIWm4FHI3M/DCaoRwMHKKMAwnruYZgl6+JLbLFObU6/Ltv3Hv9aZxtS/fOvBtbVlwTaRMdFyZ1xj4ioUeopLwdT4UZh/2kC0dTRj8VRohgthmwgBAWzDlVn8NI726xTMwqwPafHg5Dfm2tm7LFq8p7JUt9sBNdhvFtde9oW85udQ47ag7RY27zPb3guRPYyzF0M2Cgbh8qD2/g6Wi+DPopRLUzvHNZV088E7orTJwM4qjbtqSYjU3Ry4CuHkEQvP3Ut+gFBsUTCZ0q4v0UCQLxXeKWNWM9T2Rau4IleNOext9DdcJrsDrtnlKpMjEGdr43SDV3beJOZSSz19+IicZVox447QryENfXVvcMjqf1I2j33qCLe+Ht/9u4eGHOcSB+qqYqA4tDNpe4V7dEJtv9Q1uKCoThIx1VZqNUFfNlyH/x6QZW4e42nHL4Ug7hVsC3Q9nzhpS382L7B8kQC993uTQerG/S/LF9d7m9Gge/f8OJU7xQCu4FsdbHckjTNGqGu3Hbp9cawMiRAastsiyqE"
   service:
     port: 3000
-
   probes:
     liveness:
       config:
@@ -25,7 +24,6 @@ app:
         periodSeconds: 120
         successThreshold: 1
         timeoutSeconds: 60
-
   resources:
     limits:
       cpu: "2"
@@ -33,7 +31,6 @@ app:
     requests:
       cpu: "1"
       memory: "5Gi"
-
   ingress:
     enabled: "true"
     hosts:
@@ -58,4 +55,4 @@ app:
     "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-stg"
   versions:
-    - {version: pr-198, gitSha: de2b78f}
+    - {version: pr-198, gitSha: cb777b1}
