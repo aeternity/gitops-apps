@@ -8,4 +8,4 @@ app:
         paths:
           - path: "/"
   versions:
-    - {version: pr-1442, gitSha: b67ce966}
+    - {version: pr-1442, gitSha: 3634f0a6}
