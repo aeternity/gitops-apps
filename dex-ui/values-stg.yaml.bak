@@ -50,4 +50,4 @@ app:
     - version: "pr-304"
     - {version: pr-303, gitSha: 4bd3495}
     - {version: pr-265, gitSha: cd994dc}
-    - '{version: pr-299, gitSha: 2b0aa45}'
+    - '{version: pr-299, gitSha: 9acd86a}'
