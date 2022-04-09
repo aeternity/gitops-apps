@@ -1,0 +1,28 @@
+{{- if .Values.velero.enabled -}}
+{{ $versions := .Values.versions }}
+{{ $allVersions := append $versions (merge (dict "version" (default .Values.image.tag .Chart.AppVersion )) $) | compact | uniq }}
+{{- range $key, $val := $allVersions}}
+{{- if $val.version }}
+apiVersion: velero.io/v1
+kind: Schedule
+metadata:
+  name: {{ include "app.versionedFullname" (merge (dict "version" $val.version) $) }}-backup
+  namespace: velero
+  labels:
+    {{- include "app.labels" $ | nindent 4 }}
+    app.kubernetes.io/version: {{ $val.version }}
+    velero.io/storage-location: {{ $.Values.velero.storageLocation }}
+spec:
+  schedule: {{ $.Values.velero.schedule | quote }}
+  template:
+    includedNamespaces:
+        - {{ $.Release.Namespace | quote }}
+    includedResources:
+        {{- range $.Values.velero.includedResources }}
+        - {{ . | quote}}
+        {{- end }}
+    storageLocation: {{ $.Values.velero.storageLocation }}
+    ttl: {{ $.Values.velero.ttl }}
+{{- end }}
+{{- end }}
+{{- end }}

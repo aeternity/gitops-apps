@@ -46,6 +46,16 @@ app:
     storageClass: gp2
     size: 50Gi
     mountPath: /app/data
+  
+  velero:
+    enabled: "true"
+    schedule: "0 1 * * *"
+    # Template is the spec that should be used for each backup triggered by this schedule.
+    includedResources:
+      - "pvcs"
+      - "pvs"
+    storageLocation: default
+    ttl: 720h0m0s
 
   env:
     "S3_REGION": "eu-central-1"
