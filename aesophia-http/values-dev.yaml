@@ -21,6 +21,9 @@ app:
         httpGet:
           path: /version
 
+  velero:
+    enabled: "false"
+    
   ingress:
     enabled: true
     stripPrefix: "/v[0-9]+"

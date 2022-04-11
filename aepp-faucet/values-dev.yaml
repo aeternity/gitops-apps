@@ -1,4 +1,6 @@
 app:
+  velero:
+    enabled: "false"
   image:
     tag: latest
   encValues:

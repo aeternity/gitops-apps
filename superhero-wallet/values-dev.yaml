@@ -3,7 +3,8 @@ app:
   image:
     repository: aeternity/superhero-wallet
     tag: "latest"
-
+  velero:
+    enabled: "false"
   ingress:
     enabled: true
     hosts:

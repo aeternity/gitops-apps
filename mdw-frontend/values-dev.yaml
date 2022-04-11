@@ -3,6 +3,9 @@ app:
     - version: testnet
     - version: mainnet
 
+  velero:
+    enabled: "false"
+    
   ingress:
     enabled: true
     hosts:

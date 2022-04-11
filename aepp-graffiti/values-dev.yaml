@@ -6,6 +6,9 @@ app:
   service:
     port: 80
 
+  velero:
+    enabled: "false"
+    
   ingress:
     enabled: true
     hosts:

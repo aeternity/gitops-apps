@@ -2,6 +2,9 @@ app:
   image:
     tag: "master"
 
+  velero:
+    enabled: "false"
+
   ingress:
     enabled: true
     hosts:

@@ -3,11 +3,12 @@ app:
   image:
     repository: "aeternity/superhero-ui-web"
     tag: "latest"
+  velero:
+    enabled: "false"
   ingress:
     enabled: "true"
     hosts:
       - host: "superhero.dev.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-
 

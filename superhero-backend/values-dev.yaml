@@ -38,6 +38,9 @@ app:
   service:
     port: 3000
 
+  velero:
+    enabled: "false"
+    
   ingress:
     enabled: true
     hosts:
