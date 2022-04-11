@@ -7,4 +7,9 @@ app:
       - host: "base.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-1449-aepp-base.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1449"
+  versions:
+    - version: "pr-1449"
