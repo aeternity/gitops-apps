@@ -1,4 +1,5 @@
-{{- if .Values.velero.enabled -}}
+{{- if .Values.velero -}}
+---
 {{ $versions := .Values.versions }}
 {{ $allVersions := append $versions (merge (dict "version" (default .Values.image.tag .Chart.AppVersion )) $) | compact | uniq }}
 {{- range $key, $val := $allVersions}}

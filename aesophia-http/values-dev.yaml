@@ -3,14 +3,11 @@ app:
     - version: "v4.3.0"
     - version: "v5.0.0"
     - version: "v6.1.0"
-
   image:
-    repository: aeternity/aesophia_http
-  
+    repository: aeternity/aesophia_http 
   service:
     type: ClusterIP
     port: 3080
-
   probes:
     liveness:
       config:
@@ -20,10 +17,6 @@ app:
       config:
         httpGet:
           path: /version
-
-  velero:
-    enabled: "false"
-    
   ingress:
     enabled: true
     stripPrefix: "/v[0-9]+"

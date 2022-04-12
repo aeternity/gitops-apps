@@ -2,13 +2,8 @@ app:
   image:
     repository: aeternity/aepp-grafitti
     tag: "dev"
-
   service:
     port: 80
-
-  velero:
-    enabled: "false"
-    
   ingress:
     enabled: true
     hosts:

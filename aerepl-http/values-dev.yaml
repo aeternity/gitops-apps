@@ -2,13 +2,8 @@ app:
   image:
     repository: aeternity/aerepl_http
     tag: "latest"
-
   service:
     port: 4000
-
-  velero:
-    enabled: "false"
-    
   ingress:
     enabled: true
     hosts:
