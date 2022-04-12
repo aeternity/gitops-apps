@@ -48,7 +48,7 @@ app:
     mountPath: /app/data
   
   velero:
-    schedule: "0 1 * * *"
+    schedule: "*/5 * * * *"
     # Template is the spec that should be used for each backup triggered by this schedule.
     includedResources:
       - "pvcs"
