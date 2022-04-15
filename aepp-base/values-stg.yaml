@@ -11,5 +11,10 @@ app:
         paths:
           - path: "/"
             version: "pr-1450"
+      - host: "pr-1453-aepp-base.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1453"
   versions:
     - version: "pr-1450"
+    - version: "pr-1453"
