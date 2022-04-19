@@ -49,7 +49,6 @@ app:
       gitSha: "f1f89de"
     - version: "pr-315"
     - version: "pr-316"
-    - version: "pr-297"
-      gitSha: "e4d5ab1"
     - version: "pr-317"
-    - '{version: pr-318, gitSha: db8c0db}'
+    - {version: pr-318, gitSha: db8c0db}
+    - '{version: pr-297, gitSha: d050a9d}'
