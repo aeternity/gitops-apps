@@ -2,6 +2,7 @@ app:
   image:
     repository: "aeternity/superhero-ui-ssr"
     tag: "latest"
+    pullPolicy: Always
   service:
     port: 8080
   probes:

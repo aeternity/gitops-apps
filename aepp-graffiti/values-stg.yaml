@@ -2,6 +2,7 @@ app:
   image:
     repository: "aeternity/aepp-grafitti"
     tag: "stg"
+    pullPolicy: Always
   service:
     port: "80"
   ingress:

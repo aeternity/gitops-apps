@@ -2,6 +2,7 @@ app:
   image:
     repository: "aeternity/aesophia_http"
     tag: "latest"
+    pullPolicy: Always
   service:
     type: "ClusterIP"
     port: "3080"

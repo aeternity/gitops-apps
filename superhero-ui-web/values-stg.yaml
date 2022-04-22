@@ -2,6 +2,7 @@ app:
   image:
     repository: "aeternity/superhero-ui-web"
     tag: "latest"
+    pullPolicy: Always
   ingress:
     enabled: "true"
     hosts:

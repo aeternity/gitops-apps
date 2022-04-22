@@ -1,6 +1,7 @@
 app:
   image:
     tag: "master"
+    pullPolicy: Always
   ingress:
     enabled: "true"
     hosts:
