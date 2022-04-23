@@ -1,6 +1,7 @@
 app:
   image:
     tag: "latest"
+    pullPolicy: Always
   ingress:
     enabled: "true"
     hosts:
@@ -45,10 +46,9 @@ app:
     - version: "pr-304"
     - version: "pr-303"
       gitSha: "4bd3495"
-    - version: "pr-288"
-      gitSha: "f1f89de"
     - version: "pr-315"
     - version: "pr-316"
     - version: "pr-317"
     - {version: pr-318, gitSha: db8c0db}
-    - '{version: pr-297, gitSha: d050a9d}'
+    - {version: pr-297, gitSha: 2e9add4}
+    - '{version: pr-288, gitSha: 5d748c1}'
