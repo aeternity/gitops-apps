@@ -29,12 +29,7 @@ app:
             version: "v6.1.0"
           - path: "/"
             version: "v6.1.0"
-      - host: "pr-86-aesophia-http.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-86"
   versions:
     - version: "v4.3.0"
     - version: "v5.0.0"
     - version: "v6.1.0"
-    - version: "pr-86"
