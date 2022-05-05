@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternitybot
+    repository: aeternitybot/aepp-base-hc
     tag: "pr-1"
   ingress:
     enabled: true
