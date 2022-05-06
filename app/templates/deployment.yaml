@@ -44,6 +44,27 @@ spec:
       serviceAccountName: {{ include "app.serviceAccountName" $ }}
       securityContext:
         {{- toYaml $.Values.podSecurityContext | nindent 8 }}
+      {{- if $.Values.postgresql.enabled }}
+      initContainers:
+        - name: {{ include "app.fullname" $ }}-init
+          image: "{{ $.Values.image.repository | default (print "aeternity/" $.Release.Name) }}:{{ $val.version }}"
+          imagePullPolicy: {{ $.Values.image.pullPolicy }}
+          command: ["/bin/sh"]
+          args:
+            - -c
+            - >-
+                rm -rf .env &&
+                npx prisma db push --accept-data-loss
+          env:
+            - name: "DATABASE_URL"
+              value: 'postgresql://{{ $.Values.postgresql.username }}:{{ $.Values.postgresql.password }}@{{ $.Values.postgresql.host }}:{{ $.Values.postgresql.host_port }}/{{ include "app.fullname" $ }}?schema={{ include "app.fullname" $ }}-{{ $val.version }}'
+            - name: "POSTGRES_DB"
+              value: "{{ include "app.fullname" $ }}"
+            - name: "POSTGRES_SCHEMA"
+              value: "{{ include "app.fullname" $ }}-{{ $val.version }}"
+            - name: "POSTGRES_PASSWORD"
+              value: "{{ $.Values.postgresql.password }}"
+        {{- end }}
       containers:
         - name: {{ include "app.fullname" $ }}
           securityContext:
@@ -51,6 +72,16 @@ spec:
           image: "{{ $.Values.image.repository | default (print "aeternity/" $.Release.Name) }}:{{ $val.version }}"
           imagePullPolicy: {{ $.Values.image.pullPolicy }}
           env:
+            {{- if $.Values.postgresql.enabled }}
+            - name: "DATABASE_URL"
+              value: 'postgresql://{{ $.Values.postgresql.username }}:{{ $.Values.postgresql.password }}@{{ $.Values.postgresql.host }}:{{ $.Values.postgresql.host_port }}/{{ include "app.fullname" $ }}?schema={{ include "app.fullname" $ }}-{{ $val.version }}'
+            - name: "POSTGRES_DB"
+              value: "{{ include "app.fullname" $ }}"
+            - name: "POSTGRES_SCHEMA"
+              value: "{{ include "app.fullname" $ }}-{{ $val.version }}"
+            - name: "POSTGRES_PASSWORD"
+              value: "{{ $.Values.postgresql.password }}"
+            {{- end }}
             {{- range $key, $value := $.Values.env }}
             - name: {{ $key }}
               value: {{ $value | quote }}
