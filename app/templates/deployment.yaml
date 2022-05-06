@@ -54,16 +54,30 @@ spec:
             - -c
             - >-
                 rm -rf .env &&
+                export DATABASE_URL=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DATABASE?schema=$POSTGRES_SCHEMA &&
                 npx prisma db push --accept-data-loss
           env:
-            - name: "DATABASE_URL"
-              value: 'postgresql://{{ $.Values.postgresql.username }}:{{ $.Values.postgresql.password }}@{{ $.Values.postgresql.host }}:{{ $.Values.postgresql.host_port }}/{{ include "app.fullname" $ }}?schema={{ include "app.fullname" $ }}-{{ $val.version }}'
             - name: "POSTGRES_DB"
               value: "{{ include "app.fullname" $ }}"
+            - name: "POSTGRES_PORT"
+              value: "{{ $.Values.postgresql.port }}"
+            - name: "POSTGRES_HOST"
+              value: "{{ $.Values.postgresql.host }}"
+            - name: "POSTGRES_USERNAME"
+              value: "{{ $.Values.postgresql.username }}"
             - name: "POSTGRES_SCHEMA"
               value: "{{ include "app.fullname" $ }}-{{ $val.version }}"
-            - name: "POSTGRES_PASSWORD"
-              value: "{{ $.Values.postgresql.password }}"
+          {{- range $key, $value := $.Values.env }}
+            - name: {{ $key }}
+              value: {{ $value | quote }}
+            {{- end }}
+            {{- range $key, $value := $.Values.encValues }}
+            - name: {{ $key }}
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "app.fullname" $ }}-secret
+                  key: {{ $key }}
+            {{- end }}
         {{- end }}
       containers:
         - name: {{ include "app.fullname" $ }}
@@ -73,14 +87,16 @@ spec:
           imagePullPolicy: {{ $.Values.image.pullPolicy }}
           env:
             {{- if $.Values.postgresql.enabled }}
-            - name: "DATABASE_URL"
-              value: 'postgresql://{{ $.Values.postgresql.username }}:{{ $.Values.postgresql.password }}@{{ $.Values.postgresql.host }}:{{ $.Values.postgresql.host_port }}/{{ include "app.fullname" $ }}?schema={{ include "app.fullname" $ }}-{{ $val.version }}'
             - name: "POSTGRES_DB"
               value: "{{ include "app.fullname" $ }}"
+            - name: "POSTGRES_PORT"
+              value: "{{ $.Values.postgresql.port }}"
+            - name: "POSTGRES_HOST"
+              value: "{{ $.Values.postgresql.host }}"
+            - name: "POSTGRES_USERNAME"
+              value: "{{ $.Values.postgresql.username }}"
             - name: "POSTGRES_SCHEMA"
               value: "{{ include "app.fullname" $ }}-{{ $val.version }}"
-            - name: "POSTGRES_PASSWORD"
-              value: "{{ $.Values.postgresql.password }}"
             {{- end }}
             {{- range $key, $value := $.Values.env }}
             - name: {{ $key }}
