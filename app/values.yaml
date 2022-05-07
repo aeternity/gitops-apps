@@ -93,6 +93,9 @@ encValues: {}
 persistence:
   enabled: false
 
+postgresql:
+  enabled: false
+
 probes:
   liveness:
     enabled: true
