@@ -93,7 +93,7 @@ encValues: {}
 persistence:
   enabled: false
 
-postgresql:
+init:
   enabled: false
 
 probes:

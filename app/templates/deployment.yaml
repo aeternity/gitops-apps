@@ -44,33 +44,28 @@ spec:
       serviceAccountName: {{ include "app.serviceAccountName" $ }}
       securityContext:
         {{- toYaml $.Values.podSecurityContext | nindent 8 }}
-      {{- if $.Values.postgresql.enabled }}
+      {{- if $.Values.init.enabled }}
       initContainers:
         - name: {{ include "app.fullname" $ }}-init
           image: "{{ $.Values.image.repository | default (print "aeternity/" $.Release.Name) }}:{{ $val.version }}"
           imagePullPolicy: {{ $.Values.image.pullPolicy }}
-          command: ["/bin/sh"]
+          command: {{ $.Values.init.command }}
+          {{- with $.Values.init.args }}
           args:
-            - -c
-            - >-
-                rm -rf .env &&
-                export DATABASE_URL=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DATABASE?schema=$POSTGRES_SCHEMA &&
-                npx prisma db push --accept-data-loss
+          {{- range . }}
+            - {{ . | quote }}
+          {{- end }}
+          {{- end }}
           env:
-            - name: "POSTGRES_DB"
-              value: "{{ include "app.fullname" $ }}"
-            - name: "POSTGRES_PORT"
-              value: "{{ $.Values.postgresql.port }}"
-            - name: "POSTGRES_HOST"
-              value: "{{ $.Values.postgresql.host }}"
-            - name: "POSTGRES_USERNAME"
-              value: "{{ $.Values.postgresql.username }}"
-            - name: "POSTGRES_SCHEMA"
-              value: "{{ include "app.fullname" $ }}-{{ $val.version }}"
           {{- range $key, $value := $.Values.env }}
+            {{- if eq $key "POSTGRES_SCHEMA"}}
             - name: {{ $key }}
-              value: {{ $value | quote }}
+              value: "{{ include "app.fullname" $ }}-{{ $val.version }}"
+            {{- else }}
+            - name: {{ $key }}
+              value: {{ $value | quote }}  
             {{- end }}
+          {{- end }}
             {{- range $key, $value := $.Values.encValues }}
             - name: {{ $key }}
               valueFrom:
@@ -78,7 +73,7 @@ spec:
                   name: {{ include "app.fullname" $ }}-secret
                   key: {{ $key }}
             {{- end }}
-        {{- end }}
+      {{- end }}
       containers:
         - name: {{ include "app.fullname" $ }}
           securityContext:
@@ -86,22 +81,15 @@ spec:
           image: "{{ $.Values.image.repository | default (print "aeternity/" $.Release.Name) }}:{{ $val.version }}"
           imagePullPolicy: {{ $.Values.image.pullPolicy }}
           env:
-            {{- if $.Values.postgresql.enabled }}
-            - name: "POSTGRES_DB"
-              value: "{{ include "app.fullname" $ }}"
-            - name: "POSTGRES_PORT"
-              value: "{{ $.Values.postgresql.port }}"
-            - name: "POSTGRES_HOST"
-              value: "{{ $.Values.postgresql.host }}"
-            - name: "POSTGRES_USERNAME"
-              value: "{{ $.Values.postgresql.username }}"
-            - name: "POSTGRES_SCHEMA"
-              value: "{{ include "app.fullname" $ }}-{{ $val.version }}"
-            {{- end }}
-            {{- range $key, $value := $.Values.env }}
+          {{- range $key, $value := $.Values.env }}
+            {{- if eq $key "POSTGRES_SCHEMA"}}
             - name: {{ $key }}
-              value: {{ $value | quote }}
+              value: "{{ include "app.fullname" $ }}-{{ $val.version }}"
+            {{- else }}
+            - name: {{ $key }}
+              value: {{ $value | quote }}  
             {{- end }}
+          {{- end }}
             {{- range $key, $value := $.Values.encValues }}
             - name: {{ $key }}
               valueFrom:
