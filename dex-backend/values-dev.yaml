@@ -10,7 +10,7 @@ app:
   ingress:
     enabled: "true"
     hosts:
-      - host: "dex-backend.dev.aepps.com" # has to be changed/disscused
+      - host: "dex-backend.dev.aepps.com"
         paths:
           - path: "/"
       - host: "pr-323-dex-ui.stg.aepps.com"
@@ -30,7 +30,7 @@ app:
         npx prisma db push --accept-data-loss
   env:
     "POSTGRES_DB": "dex-backend-app"
-    "POSTGRES_SCHEMA": "dex-backend-app"
+    "POSTGRES_SCHEMA": "dex-backend-app" # will overrided by the template with version name
     "POSTGRES_PORT": "5432"
     "POSTGRES_HOST": "dexdev.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
     "POSTGRES_USERNAME": "postgres"
