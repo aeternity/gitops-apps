@@ -74,6 +74,8 @@ resources: {}
   # requests:
   #   cpu: 100m
   #   memory: 128Mi
+init:
+  enabled: false
 
 autoscaling:
   enabled: false
