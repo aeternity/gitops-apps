@@ -1,0 +1,33 @@
+app:
+  image:
+    repository: aeternitybot/dex-backend
+    tag: "latest"
+    pullPolicy: "Always"
+  encValues:
+    POSTGRES_PASSWORD: "AgB9OJEdhDntbL9PfwOLssE4zYeEaXXwg41VKrAWam7HPEvq1PfgjGiLZBs1P8+TncSXXtRHvHqlhYhSwe2lO7YBsuaRBNWn6vKMTVQZmN4bm9A3pvJPRmvVo7taZTnVG91tCEGAy/hREBsZWckAlM9rl4XX/IKb6nUWz1WQZIN8+GN0inMLPd8wScQnBYFVHrs15Y5+QUsKlipB3GV1jndK0wC3YQLoUPPlVUDFCemU+u0pxA6Cp3iRqVnDpF28KrvO0yBzcQ2QnLiLE6xXBoy2DayeEiahqmWexzAepRDQ7+IG5O0bJq0A0iHhruDYmDXFQMpzGhpt4lZOXQpwscp3etlDxclx8z6DbOvr46csIc5Z35b828S+huaBQjZQ20lHZi2WAIc2DTQ/JgpUT3Gw99uNJjJD+21SGBcyhhoTu1nkjFN9Tm0uwBWzlqcpwCpu9049gRqhKQRqNPjZtEN5xwwtX1PenBH8CSllJyX1ZaOrYla5zwxt/kodw0R4pmbO0MpS4tDazEn712uL3mXQzbCxzPZSVmlUWvnwGS5gr/icPlW9eckNSkZGA3gXBfFDhOeUAHKfott0cSfdeBQrvZof1uJRb/OqRleqbNv7g3f1sHwYOlyTZ7Wtj6zKhRy6cii8IMg/T0W5XTALvjm1TRbgJW4OkHaBTfzKSKgwOlU/12+2v3UdZ1JoEq3/pT7EiDlRDzS87ZloeX4="
+  service:
+    port: 3000
+  ingress:
+    enabled: "true"
+    hosts:
+      - host: "dex-backend.stg.aepps.com"
+        paths:
+          - path: "/"
+  init: 
+    enabled: "true"
+    command: ["/bin/sh"]
+    args:
+      - -c
+      - >-
+        rm -rf .env &&
+        export DATABASE_URL=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DATABASE?schema=$POSTGRES_SCHEMA &&
+        npx prisma db push --accept-data-loss
+  env:
+    "POSTGRES_DB": "dex-backend-app"
+    "POSTGRES_SCHEMA": "dex-backend-app" # will be overrided by the template with version name
+    "POSTGRES_PORT": "5432"
+    "POSTGRES_HOST": "dexdev.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
+    "POSTGRES_USERNAME": "postgres"
+    "NETWORK_NAME": "testnet"
+    "ROUTER_ADDRESS": "ct_MLXQEP12MBn99HL6WDaiTqDbG4bJQ3Q9Bzr57oLfvEkghvpFb"
+    "FACTORY_ADDRESS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9"
