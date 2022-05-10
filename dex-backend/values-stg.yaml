@@ -26,7 +26,7 @@ app:
     "POSTGRES_DB": "dex-backend-app"
     "POSTGRES_SCHEMA": "dex-backend-app" # will be overrided by the template with version name
     "POSTGRES_PORT": "5432"
-    "POSTGRES_HOST": "dexdev.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
+    "POSTGRES_HOST": "dexstg.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
     "POSTGRES_USERNAME": "postgres"
     "NETWORK_NAME": "testnet"
     "ROUTER_ADDRESS": "ct_MLXQEP12MBn99HL6WDaiTqDbG4bJQ3Q9Bzr57oLfvEkghvpFb"
