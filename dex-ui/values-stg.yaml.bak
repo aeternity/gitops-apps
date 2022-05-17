@@ -52,4 +52,4 @@ app:
     - {version: pr-328, gitSha: f5464fd}
     - {version: pr-318, gitSha: de13d52}
     - {version: pr-316, gitSha: fea96fb}
-    - '{version: pr-315, gitSha: 3cb0a6f}'
+    - '{version: pr-315, gitSha: 18db611}'
