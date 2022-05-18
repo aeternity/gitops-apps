@@ -21,6 +21,10 @@ app:
         paths:
           - path: "/"
             version: "pr-57"
+      - host: "pr-58-dex-backend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-58"
   init:
     enabled: "true"
     command: "/bin/sh"
@@ -38,4 +42,6 @@ app:
     "FACTORY_ADDRESS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9"
   versions:
     - version: "pr-56"
-    - {version: pr-57, gitSha: 5948fe5}
+    - version: "pr-57"
+      gitSha: "5948fe5"
+    - version: "pr-58"
