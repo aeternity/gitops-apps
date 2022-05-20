@@ -41,7 +41,7 @@ app:
     "ROUTER_ADDRESS": "ct_MLXQEP12MBn99HL6WDaiTqDbG4bJQ3Q9Bzr57oLfvEkghvpFb"
     "FACTORY_ADDRESS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9"
   versions:
-    - version: "pr-56"
     - version: "pr-57"
       gitSha: "5948fe5"
     - version: "pr-58"
+    - {version: pr-56, gitSha: ccb7717}
