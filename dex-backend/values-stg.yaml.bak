@@ -42,5 +42,5 @@ app:
     "FACTORY_ADDRESS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9"
   versions:
     - version: "pr-58"
-    - {version: pr-56, gitSha: 9b3f21f}
-    - '{version: pr-57, gitSha: 923bf61}'
+    - {version: pr-57, gitSha: 923bf61}
+    - '{version: pr-56, gitSha: 8ee265f}'
