@@ -34,4 +34,4 @@ app:
     "FACTORY_ADDRESS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9"
   versions:
     - {version: pr-56, gitSha: f0c8689}
-    - {version: pr-46, gitSha: f0745e4}
+    - {version: pr-46, gitSha: a7735c9}
