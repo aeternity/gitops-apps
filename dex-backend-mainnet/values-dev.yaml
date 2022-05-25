@@ -10,15 +10,9 @@ app:
   ingress:
     enabled: "true"
     hosts:
-      - host: "dex-backend.dev.aepps.com"
+      - host: "dex-backend-mainnet.dev.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-323-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-323"
-  versions:
-    - {version: pr-323, gitSha: 48e4417}
   init: 
     enabled: "true"
     command: ["/bin/sh"]
@@ -30,10 +24,10 @@ app:
         npx prisma db push --accept-data-loss
   env:
     "POSTGRES_DB": "dex-backend-app"
-    "POSTGRES_SCHEMA": "dex-backend-app" # will be overrided by the template with version name
+    "POSTGRES_SCHEMA": "dex-backend-mainnet-app" # will be overrided by the template with version name
     "POSTGRES_PORT": "5432"
     "POSTGRES_HOST": "dexdev.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
     "POSTGRES_USERNAME": "postgres"
-    "NETWORK_NAME": "testnet"
-    "ROUTER_ADDRESS": "ct_MLXQEP12MBn99HL6WDaiTqDbG4bJQ3Q9Bzr57oLfvEkghvpFb"
-    "FACTORY_ADDRESS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9"
+    "NETWORK_NAME": "mainnet"
+    "ROUTER_ADDRESS": "ct_azbNZ1XrPjXfqBqbAh1ffLNTQ1sbnuUDFvJrXjYz7JQA1saQ3"
+    "FACTORY_ADDRESS": "ct_2mfj3FoZxnhkSw5RZMcP8BfPoB1QR4QiYGNCdkAvLZ1zfF6paW"
