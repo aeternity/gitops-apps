@@ -7,9 +7,9 @@ app:
     POSTGRES_PASSWORD: "AgCllWc6d1ZD5YrxaQb6kfJHSIReahic/EIXpGa1EBWw8fNzhTYLkNarsvN8rRZk3Aq661Pp2tUVpQLiCyhkQKEtaJorU4t7oK/eXvRENjU/KUqEAvqKsZPkEgzGVy4ly/16G2wZHa9wZ68G7pmx4JsBiTr7uwm1oDyVATmEtok5iru4xi1gH2RnewySxzClWeujp53KYEBUGFGtramAZhu7nqHqHeMzrMkxvzUR3hzznvYgpt1CzhLZgny0gBXw5zKGugAi+rUrmVfm1L8KR87BEKXCyzkFM9b/SZSd1SKWuTdoD3aRQa6G0X24K3s0j03G+xVMXQ80h5cUTguzUPB0bx3gobUCAlMe6qazrej2UWQSWLd6sD4WNAJNbCgeXZsw5+Nq1JFexDD9iId6bAiGd5ENKT/onZNSEiGfHFWy4jzopp4Ap8AO6P1U13Iqf6nM6NAVggxBWy56pxKETAOP6cCXoofSPZwk0d0g9qPZtQqbpZgj73V+i0BbrPj6BTezo+nSvOACQLQHAx1mExTWtP3UgG3mVyRodLGjg6n8yp5773sEq6tPRPgR7QNp8RBFUjgB9W/uiqPlC3bbHWLO7PbGX1E4Oi3x0YLOvi+iGon27zmoCGldPzLkJoMRuQIG/oA+YV4y9U6PvEJ9Cwxqas7Xxq41xZGE6w0bSaeTAvEJtC5zArkeGHj7Dwe/NDgcInHG2eX00Qn+P0I="
   probes:
     liveness:
-      enabled: false
+      enabled: "false"
     readiness:
-      enabled: false
+      enabled: "false"
   service:
     port: "3000"
   ingress:
@@ -18,13 +18,17 @@ app:
       - host: "test-repo-mainnet.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
+      - host: "pr-48-test-repo-mainnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-48"
   init:
     enabled: "true"
-    command: ["/bin/sh"]
+    command:
+      - "/bin/sh"
     args:
-      - -c
-      - >-
-        rm -rf .env && export DATABASE_URL=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DATABASE?schema=$POSTGRES_SCHEMA && npx prisma db push --accept-data-loss
+      - "-c"
+      - "rm -rf .env && export DATABASE_URL=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DATABASE?schema=$POSTGRES_SCHEMA && npx prisma db push --accept-data-loss"
   env:
     "POSTGRES_DB": "dex-backend-app"
     "POSTGRES_SCHEMA": "dex-backend-mainnet-app" # will be overrided by the template with version name
@@ -34,3 +38,5 @@ app:
     "NETWORK_NAME": "testnet"
     "ROUTER_ADDRESS": "ct_MLXQEP12MBn99HL6WDaiTqDbG4bJQ3Q9Bzr57oLfvEkghvpFb"
     "FACTORY_ADDRESS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9"
+  versions:
+    - version: "pr-48"
