@@ -5,6 +5,11 @@ app:
     pullPolicy: "Always"
   encValues:
     POSTGRES_PASSWORD: "AgCllWc6d1ZD5YrxaQb6kfJHSIReahic/EIXpGa1EBWw8fNzhTYLkNarsvN8rRZk3Aq661Pp2tUVpQLiCyhkQKEtaJorU4t7oK/eXvRENjU/KUqEAvqKsZPkEgzGVy4ly/16G2wZHa9wZ68G7pmx4JsBiTr7uwm1oDyVATmEtok5iru4xi1gH2RnewySxzClWeujp53KYEBUGFGtramAZhu7nqHqHeMzrMkxvzUR3hzznvYgpt1CzhLZgny0gBXw5zKGugAi+rUrmVfm1L8KR87BEKXCyzkFM9b/SZSd1SKWuTdoD3aRQa6G0X24K3s0j03G+xVMXQ80h5cUTguzUPB0bx3gobUCAlMe6qazrej2UWQSWLd6sD4WNAJNbCgeXZsw5+Nq1JFexDD9iId6bAiGd5ENKT/onZNSEiGfHFWy4jzopp4Ap8AO6P1U13Iqf6nM6NAVggxBWy56pxKETAOP6cCXoofSPZwk0d0g9qPZtQqbpZgj73V+i0BbrPj6BTezo+nSvOACQLQHAx1mExTWtP3UgG3mVyRodLGjg6n8yp5773sEq6tPRPgR7QNp8RBFUjgB9W/uiqPlC3bbHWLO7PbGX1E4Oi3x0YLOvi+iGon27zmoCGldPzLkJoMRuQIG/oA+YV4y9U6PvEJ9Cwxqas7Xxq41xZGE6w0bSaeTAvEJtC5zArkeGHj7Dwe/NDgcInHG2eX00Qn+P0I="
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
   ingress:
     enabled: "true"
     hosts:
