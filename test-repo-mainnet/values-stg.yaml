@@ -10,6 +10,8 @@ app:
       enabled: false
     readiness:
       enabled: false
+  service:
+    port: "3000"
   ingress:
     enabled: "true"
     hosts:
