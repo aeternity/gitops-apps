@@ -7,9 +7,9 @@ app:
     POSTGRES_PASSWORD: "AgCr0TZw6zv48kacL5Ite6UjgkWyV/MZIsodfhGNuO09RmdgNXIjk/ogQjqQIOnfl518PR6GLKgoh1nQOxhEBu6Dg/tuyg4M2SfYah4ZFXiqjcOq8S4QFNtBIuBl0fkbBZyH8oHs6anDIaqYh2qA8lYHmmebT9+N9ui01vQ16TOHJRxQA/+pidVgf8QkrpVQLyoD4ZpqFN+Xz/ThfPCCaPSBFmDevzu0ihl2saenkkfKIGWmUKiSYFrGut7vHZPDMzCW/hJVyJyjMHyEb3l9GwmX0JxjyMoZdvy/vxbawtXC3YqoMuB6j1viwQjlesuc5+uh1M2Kta7sMLbXI8/uGs1Mc7cW3jmkZAKpPseqtx7OYmtH3UJMfTQFjWVF+N0JCE4SQlRdRyKNfUS/MZkSitMu5R7kOYpT6PgE/CbNaEpb92xYOXd7tiX+SN8/myLDtYYOXthEeJQ7C9143jibPLhAih/xK9kVI6veTS9C5aZ/EPxYlgXIeE9k4CtiWVBJFBP5PY+LUmA6AQL42clyyeP8FDp6nn/932oPQGmGRhHPFbp3+YHK1e/bpe170SUo8u+AnW0itBDcS5bq9ncWKOzbI1/xRMaCiu+WlS0vaZK9I0dlGTpMzKHpswxW8ecEtIVS/Tus14iKMRCm48s5kSs43kpT1d82PRVjpR/RDDxWxKWtccO/SCgeeQ041iOH2MhJdpvCZQMVa9mh9xg="
   probes:
     liveness:
-      enabled: false
+      enabled: "false"
     readiness:
-      enabled: false
+      enabled: "false"
   service:
     port: "3000"
   ingress:
@@ -18,15 +18,17 @@ app:
       - host: "test-repo-testnet.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-  init: 
+      - host: "pr-48-test-repo-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-48"
+  init:
     enabled: "true"
-    command: ["/bin/sh"]
+    command:
+      - "/bin/sh"
     args:
-      - -c
-      - >-
-        rm -rf .env &&
-        export DATABASE_URL=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DATABASE?schema=$POSTGRES_SCHEMA &&
-        npx prisma db push --accept-data-loss
+      - "-c"
+      - "rm -rf .env && export DATABASE_URL=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DATABASE?schema=$POSTGRES_SCHEMA && npx prisma db push --accept-data-loss"
   env:
     "POSTGRES_DB": "dex-backend-app"
     "POSTGRES_SCHEMA": "dex-backend-testnet-app" # will be overrided by the template with version name
@@ -36,3 +38,5 @@ app:
     "NETWORK_NAME": "testnet"
     "ROUTER_ADDRESS": "ct_MLXQEP12MBn99HL6WDaiTqDbG4bJQ3Q9Bzr57oLfvEkghvpFb"
     "FACTORY_ADDRESS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9"
+  versions:
+    - version: "pr-48"
