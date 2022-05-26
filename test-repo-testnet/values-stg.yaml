@@ -2,6 +2,8 @@ app:
   image:
     tag: "latest"
     pullPolicy: "Always"
+  encValues:
+    POSTGRES_PASSWORD: "AgCr0TZw6zv48kacL5Ite6UjgkWyV/MZIsodfhGNuO09RmdgNXIjk/ogQjqQIOnfl518PR6GLKgoh1nQOxhEBu6Dg/tuyg4M2SfYah4ZFXiqjcOq8S4QFNtBIuBl0fkbBZyH8oHs6anDIaqYh2qA8lYHmmebT9+N9ui01vQ16TOHJRxQA/+pidVgf8QkrpVQLyoD4ZpqFN+Xz/ThfPCCaPSBFmDevzu0ihl2saenkkfKIGWmUKiSYFrGut7vHZPDMzCW/hJVyJyjMHyEb3l9GwmX0JxjyMoZdvy/vxbawtXC3YqoMuB6j1viwQjlesuc5+uh1M2Kta7sMLbXI8/uGs1Mc7cW3jmkZAKpPseqtx7OYmtH3UJMfTQFjWVF+N0JCE4SQlRdRyKNfUS/MZkSitMu5R7kOYpT6PgE/CbNaEpb92xYOXd7tiX+SN8/myLDtYYOXthEeJQ7C9143jibPLhAih/xK9kVI6veTS9C5aZ/EPxYlgXIeE9k4CtiWVBJFBP5PY+LUmA6AQL42clyyeP8FDp6nn/932oPQGmGRhHPFbp3+YHK1e/bpe170SUo8u+AnW0itBDcS5bq9ncWKOzbI1/xRMaCiu+WlS0vaZK9I0dlGTpMzKHpswxW8ecEtIVS/Tus14iKMRCm48s5kSs43kpT1d82PRVjpR/RDDxWxKWtccO/SCgeeQ041iOH2MhJdpvCZQMVa9mh9xg="
   ingress:
     enabled: "true"
     hosts:
