@@ -18,10 +18,6 @@ app:
       - host: "test-repo-testnet.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-      - host: "pr-47-test-repo-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-47"
   init:
     enabled: "true"
     command:
@@ -38,5 +34,4 @@ app:
     "NETWORK_NAME": "testnet"
     "ROUTER_ADDRESS": "ct_MLXQEP12MBn99HL6WDaiTqDbG4bJQ3Q9Bzr57oLfvEkghvpFb"
     "FACTORY_ADDRESS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9"
-  versions:
-    - {version: pr-47, gitSha: 0028676}
+  versions: []
