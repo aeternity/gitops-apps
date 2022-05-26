@@ -1,5 +1,6 @@
 app:
   image:
+    repository: "aeternitybot/dex-backend"
     tag: "latest"
     pullPolicy: "Always"
   encValues:
