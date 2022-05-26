@@ -1,0 +1,10 @@
+app:
+  image:
+    tag: "latest"
+    pullPolicy: "Always"
+  ingress:
+    enabled: "true"
+    hosts:
+      - host: "test-repo-testnet.stg.aepps.com" # has to be changed/disscused
+        paths:
+          - path: "/"
