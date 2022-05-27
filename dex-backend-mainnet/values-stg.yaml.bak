@@ -34,4 +34,4 @@ app:
     "ROUTER_ADDRESS": "ct_azbNZ1XrPjXfqBqbAh1ffLNTQ1sbnuUDFvJrXjYz7JQA1saQ3"
     "FACTORY_ADDRESS": "ct_2mfj3FoZxnhkSw5RZMcP8BfPoB1QR4QiYGNCdkAvLZ1zfF6paW"
   versions:
-    - '{version: pr-61, gitSha: 3489cb6}'
+    - '{version: pr-61, gitSha: 629fd21}'
