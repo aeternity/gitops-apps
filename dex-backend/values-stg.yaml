@@ -17,6 +17,10 @@ app:
         paths:
           - path: "/"
             version: "pr-59"
+      - host: "pr-62-dex-backend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-62"
   init:
     enabled: "true"
     command: "/bin/sh"
@@ -34,3 +38,4 @@ app:
     "FACTORY_ADDRESS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9"
   versions:
     - version: "pr-59"
+    - version: "pr-62"
