@@ -31,3 +31,6 @@ app:
     "NETWORK_NAME": "mainnet"
     "ROUTER_ADDRESS": "ct_azbNZ1XrPjXfqBqbAh1ffLNTQ1sbnuUDFvJrXjYz7JQA1saQ3"
     "FACTORY_ADDRESS": "ct_2mfj3FoZxnhkSw5RZMcP8BfPoB1QR4QiYGNCdkAvLZ1zfF6paW"
+    "DOC_PAIR": "ct_NNmdSt3Ws4r87pESGKrhGb7VJmC8zpZymXNJKHY8bTLaFttsi"
+    "DOC_TOKEN1": "ct_2dE7Xd7XCg3cwpKWP18VPDwfhz5Miji9FoKMTZN7TYvGt64Kc"
+    "DOC_TOKEN2": "ct_7ur9ypT3a4tjxxv5iG6zEQDQhysNtCKr6tyc7PkqhtRmEw6yY"
