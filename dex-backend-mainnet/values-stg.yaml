@@ -32,4 +32,5 @@ app:
     "DOC_PAIR": "ct_NNmdSt3Ws4r87pESGKrhGb7VJmC8zpZymXNJKHY8bTLaFttsi"
     "DOC_TOKEN1": "ct_2dE7Xd7XCg3cwpKWP18VPDwfhz5Miji9FoKMTZN7TYvGt64Kc"
     "DOC_TOKEN2": "ct_7ur9ypT3a4tjxxv5iG6zEQDQhysNtCKr6tyc7PkqhtRmEw6yY"
-  versions: []
+  versions:
+    - {version: pr-59, gitSha: fa883a7}

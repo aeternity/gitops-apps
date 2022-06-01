@@ -4,7 +4,7 @@ app:
     tag: "latest"
     pullPolicy: "Always"
   encValues:
-    POSTGRES_PASSWORD: "AgCTNrDi3uHR9/XZAk1Oxegsa4q3M/7Ar+L2ObzwKoliceG1U8dLu1FEyDb8iwNXhHneSjVUKHkbjmKPqRH+1J6HWadAbzvALtWZtGidxNnnmIClONF0YYquyb8tjHU2LtARS3mqdg5m78qlreK3b0O8M+tnbRMtUay1OMVVz+wurCeblYwuBT8RPrRCNphf62JyFKmV1L9FWUoikCXuRRW1DlncZquYbX1JC6YIlUaur4D4kyvbTa1rPRJeDNwkEZb0dvvejNJ0acvRkMwwvadfLFV1xu5w99G3B1Ku+Cpss53Q5FfaBOQkZauYWjB5dVGXpuujBT1CEIHwXeQp3umhLMATEYmkHA/bAugbLUGBZvvFYBn80hPXyiQqshwJYsdBYLl+fVfCgEvGtQ5pYscOc9Cu+HqH9FE8vCGbXnLVUdtDrUKm+KMLtnl+Ah2hJ79k/qRDJQl6elSI7qYtdkVs4agm6r+yH7ARmVJnP22QWyIL3QbDCanx7kkZryjoUWapYysN5ODBEf8Nj2GF0fTR+/h4vsYvtmjjI1TmOtKmgH4efQgwlXI5k/hcng2gybv6yw8gKUyhKi6rprbtPi+KpLiFm1KvuajvoIpru6/HjvjNAFwcOjbydTYeo/SO5yed6V5spkjGbwFFgHjPKgCBEACvqXgS+l+p5nMeFUiuLyCOBwmySgf30NfU9v7lXAQSmiHYsLXTyh1xJds="
+    POSTGRES_PASSWORD: "AgCDkugvXm7OTKCMVGiNEdjnSjs3eQm9j7+/MLkoUNCvdMslh6wyLjl9OxpkUJMCaVGCeEctLWO3s52YEYFp3R29mqGfyB8o+5qmf/giY3wW7YBs154sbP1NyBRxD22s58Y3VVMN9sa1wNmkjX5SYQEIhfArAkCJy8cDHCsWEtlsMbgC42Jits+IcAwYE0Uee74JL00BBHlQXPtBqfvbnxxkDo+N9w79CwVyLaK4VlBQogFU6AdUIoy5xWIscIIUAnxleqNqZAwrf4se3R0En49aRNTIjL8vh2TlbRVNbLHgGmmePm/NXMzW82pc7CGuVEjc0bEDZJfQ4iQnLdd8N1cXrOmHuvimcMBP45QH+A0Jhg9N/JO/mx7nAbIVKhUGRg9UxehL0wLu+NiZia/ctAPhniaRf37Z//+xs/wRFKwZgpKp5NrsSdt8lwDhL1gt4YF+CgUu+TfgFOAfDR0cLb2RI4rIKYHx7y0mMHdSBYi7xnSXTptzd+Ers7EnSFGE+brHsWoW5+5f7iEy7Q+y6nLwdHPXM5GkrROSy7oZWajE/BYaU+8OU5feRG+blcjevSgn25c6A+hu/iVHMqvXjQY3MhAAcmvh0X3n231ltbj3r78cxhkIPRry3JIYlbD/EcFIFM7TKsxn9hJpbetnyeZsDuzfRY+ztK/GQz9CCpHX35pKRIeixDEXjaPIwp1w+EMaLDtLqVPDoKlAPwc="
   service:
     port: "3000"
   ingress:
@@ -13,10 +13,6 @@ app:
       - host: "dex-backend-mainnet.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-61-dex-backend-mainnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-61"
   init:
     enabled: "true"
     command:
@@ -33,5 +29,8 @@ app:
     "NETWORK_NAME": "mainnet"
     "ROUTER_ADDRESS": "ct_azbNZ1XrPjXfqBqbAh1ffLNTQ1sbnuUDFvJrXjYz7JQA1saQ3"
     "FACTORY_ADDRESS": "ct_2mfj3FoZxnhkSw5RZMcP8BfPoB1QR4QiYGNCdkAvLZ1zfF6paW"
+    "DOC_PAIR": "ct_NNmdSt3Ws4r87pESGKrhGb7VJmC8zpZymXNJKHY8bTLaFttsi"
+    "DOC_TOKEN1": "ct_2dE7Xd7XCg3cwpKWP18VPDwfhz5Miji9FoKMTZN7TYvGt64Kc"
+    "DOC_TOKEN2": "ct_7ur9ypT3a4tjxxv5iG6zEQDQhysNtCKr6tyc7PkqhtRmEw6yY"
   versions:
-    - '{version: pr-61, gitSha: 17dda9d}'
+    - '{version: pr-59, gitSha: fa883a7}'
