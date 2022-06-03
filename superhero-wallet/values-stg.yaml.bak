@@ -2,6 +2,7 @@ app:
   image:
     repository: "aeternity/superhero-wallet"
     tag: "latest"
+    pullPolicy: Always
   ingress:
     enabled: "true"
     hosts:
@@ -9,4 +10,4 @@ app:
         paths:
           - path: "/"
   versions:
-    - '{version: pr-1412, gitSha: df639ec8}'
+    - '{version: pr-1412, gitSha: 091d53e9}'
