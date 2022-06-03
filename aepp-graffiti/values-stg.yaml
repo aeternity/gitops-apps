@@ -16,4 +16,4 @@ app:
           - path: "/"
             version: "stg"
   versions:
-    - {version: stg, gitSha: d7bafdd}
+    - {version: stg, gitSha: 1636a4b}

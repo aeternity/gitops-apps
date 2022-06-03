@@ -2,6 +2,7 @@ app:
   image:
     repository: "aeternity/aepp-grafitti"
     tag: "stg"
+    pullPolicy: Always
   service:
     port: "80"
   ingress:
@@ -15,4 +16,4 @@ app:
           - path: "/"
             version: "stg"
   versions:
-    - '{version: stg, gitSha: d7bafdd}'
+    - '{version: stg, gitSha: 1636a4b}'
