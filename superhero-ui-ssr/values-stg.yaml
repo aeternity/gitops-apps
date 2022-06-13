@@ -28,5 +28,4 @@ app:
       - host: "superhero.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-  versions:
-    - {version: pr-1198, gitSha: 0c19a26}
+  versions: []
