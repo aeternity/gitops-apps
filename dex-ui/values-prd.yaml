@@ -7,3 +7,6 @@ app:
       - host: "dex.prd.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
+      - host: "aepp.dex.superhero.com" # has to be changed/disscused
+        paths:
+          - path: "/"
