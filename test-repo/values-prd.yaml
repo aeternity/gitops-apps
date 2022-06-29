@@ -1,5 +1,6 @@
 app:
   image:
+    repository: aeternitybot/test-repo
     tag: "latest"
   ingress:
     enabled: "true"
