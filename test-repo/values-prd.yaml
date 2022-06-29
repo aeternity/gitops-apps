@@ -11,9 +11,3 @@ app:
         paths:
           - path: /
             version: latest
-      - host: latest-test-repo.prd.aepps.com
-        paths:
-          - path: /
-            version: latest
-  versions:
-    - {version: latest, gitSha: 22c8ab0}
