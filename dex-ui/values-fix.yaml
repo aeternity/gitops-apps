@@ -1,0 +1,61 @@
+app:
+  image:
+    tag: "latest"
+    pullPolicy: "Always"
+  ingress:
+    enabled: "true"
+    hosts:
+      - host: "dex.stg.aepps.com" # has to be changed/disscused
+        paths:
+          - path: "/"
+      - host: "pr-283-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-283"
+      - host: "pr-297-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-297"
+      - host: "pr-304-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-304"
+      - host: "pr-315-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-315"
+      - host: "pr-316-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-316"
+      - host: "pr-317-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-317"
+      - host: "pr-320-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-320"
+      - host: "pr-323-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-323"
+  versions:
+    - version: "pr-153"
+      gitSha: "21e3e17"
+    - version: "pr-206"
+      gitSha: "878259d"
+    - version: "pr-283"
+      gitSha: "7138962"
+    - version: "pr-304"
+    - version: "pr-303"
+      gitSha: "4bd3495"
+    - version: "pr-315"
+    - version: "pr-316"
+    - version: "pr-317"
+    - version: "pr-318"
+      gitSha: "db8c0db"
+    - version: "pr-297"
+      gitSha: "2e9add4"
+    - version: "pr-320"
+    - {version: pr-323, gitSha: 48e4417}
