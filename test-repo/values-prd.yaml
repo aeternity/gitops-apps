@@ -7,3 +7,5 @@ app:
       - host: "test-repo.prd.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
+  versions:
+    - {version: main, gitSha: 465efd9}

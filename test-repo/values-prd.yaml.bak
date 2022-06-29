@@ -7,9 +7,5 @@ app:
       - host: "test-repo.prd.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-      - host: latest-test-repo.prd.aepps.com
-        paths:
-          - path: /
-            version: latest
   versions:
-    - '{version: latest, gitSha: 22c8ab0}'
+    - '{version: main, gitSha: 465efd9}'
