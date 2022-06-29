@@ -7,15 +7,3 @@ app:
       - host: "test-repo.prd.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-      - host: latest-test-repo.prd.aepps.com
-        paths:
-          '- path': /
-          '  version': latest
-      - host: latest-test-repo.prd.aepps.com
-        paths:
-          '- path': /
-          '  version': latest
-      - host: latest-test-repo.prd.aepps.com
-        paths:
-          '- path': /
-          '  version': latest
