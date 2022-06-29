@@ -11,3 +11,5 @@ app:
         paths:
           - path: /
             version: latest
+  versions:
+    - {version: latest, gitSha: 22c8ab0}
