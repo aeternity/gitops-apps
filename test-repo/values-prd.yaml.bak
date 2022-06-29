@@ -16,4 +16,4 @@ app:
           - path: /
             version: latest
   versions:
-    - '{version: latest, gitSha: }'
+    - '{version: latest, gitSha: 22c8ab0}'
