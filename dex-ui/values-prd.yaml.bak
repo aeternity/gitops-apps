@@ -10,5 +10,9 @@ app:
       - host: "aepp.dex.superhero.com" # has to be changed/disscused
         paths:
           - path: "/"
+      - host: "main-dex-ui.prd.aepps.com" # has to be changed/disscused
+        paths:
+          - path: "/"
+            version: "main"
   versions:
-    - '{version: main, gitSha: 1fcdebd}'
+    - '{version: main, gitSha: 3f07152}'
