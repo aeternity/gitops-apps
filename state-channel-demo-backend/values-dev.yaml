@@ -1,0 +1,10 @@
+app:
+  image:
+    tag: "latest"
+    repository: "aeternitybot/state-channel-demo-backend"
+  ingress:
+    enabled: "true"
+    hosts:
+      - host: "state-channel-demo-backend.dev.aepps.com"
+        paths:
+          - path: "/"
