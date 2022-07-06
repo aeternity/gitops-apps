@@ -2,7 +2,7 @@ app:
   image:
     tag: "latest"
     repository: "aeternitybot/state-channel-demo-frontend"
-    imagePullPolicy: Always
+  imagePullPolicy: Always
   ingress:
     enabled: "true"
     hosts:
