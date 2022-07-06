@@ -8,6 +8,11 @@ app:
       - host: "state-channel-demo-backend.dev.aepps.com"
         paths:
           - path: "/"
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
   env:
     "NODE_URL": "https://testnet.aeternity.io"
     "WS_URL": "wss://sdk-testnet.aepps.com/channel"

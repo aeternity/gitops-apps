@@ -8,6 +8,11 @@ app:
       - host: "state-channel-demo.dev.aepps.com"
         paths:
           - path: "/"
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
   env:
     "VITE_NODE_ENV": "staging"
     "VITE_BOT_SERVICE_URL": "http://localhost:3000"
