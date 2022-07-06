@@ -3,6 +3,8 @@ app:
     tag: "latest"
     repository: "aeternitybot/state-channel-demo-backend"
   imagePullPolicy: Always
+  service:
+    port: 3000
   ingress:
     enabled: "true"
     hosts:
