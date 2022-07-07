@@ -11,6 +11,10 @@ app:
       - host: "state-channel-demo-backend.stg.aepps.com"
         paths:
           - path: "/"
+      - host: "develop-state-channel-demo-backend.prd.aepps.com" 
+        paths:
+          - path: "/"
+            version: "develop"
   probes:
     liveness:
       enabled: false
