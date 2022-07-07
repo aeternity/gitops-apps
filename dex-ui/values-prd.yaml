@@ -4,13 +4,13 @@ app:
   ingress:
     enabled: "true"
     hosts:
-      - host: "dex.prd.aepps.com" # has to be changed/disscused
+      - host: "dex.prd.aepps.com"
         paths:
           - path: "/"
-      - host: "aepp.dex.superhero.com" # has to be changed/disscused
+      - host: "aepp.dex.superhero.com"
         paths:
           - path: "/"
-      - host: "main-dex-ui.prd.aepps.com" # has to be changed/disscused
+      - host: "main-dex-ui.prd.aepps.com" 
         paths:
           - path: "/"
             version: "main"
