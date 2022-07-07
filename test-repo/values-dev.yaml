@@ -1,0 +1,15 @@
+app:
+  image:
+    tag: "develop"
+    pullPolicy: "Always"
+  ingress:
+    enabled: "true"
+    hosts:
+      - host: "develop-test-repo.dev.aepps.com"
+        paths:
+          - path: "/"
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
