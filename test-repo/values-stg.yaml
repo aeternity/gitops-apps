@@ -16,6 +16,10 @@ app:
         paths:
           - path: "/"
             version: "pr-46"
+      - host: "develop-test-repo.stg.aepps.com" 
+        paths:
+          - path: "/"
+            version: "develop"
   versions:
     - version: "pr-45"
     - {version: "pr-46", gitSha: "6751515"}
