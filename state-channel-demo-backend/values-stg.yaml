@@ -11,7 +11,7 @@ app:
       - host: "state-channel-demo-backend.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "develop-state-channel-demo-backend.prd.aepps.com" 
+      - host: "develop-state-channel-demo-backend.prd.aepps.com"
         paths:
           - path: "/"
             version: "develop"
@@ -29,3 +29,4 @@ app:
     "NETWORK_ID": "ae_uat"
   versions:
     - {version: pr-13, gitSha: 11827c2}
+    - {version: develop, gitSha: }
