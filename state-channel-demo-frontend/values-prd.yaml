@@ -1,0 +1,20 @@
+app:
+  image:
+    tag: "latest"
+    repository: "aeternitybot/state-channel-demo-frontend"
+    pullPolicy: "Always"
+  ingress:
+    enabled: "true"
+    hosts:
+      - host: "state-channel-demo.prd.aepps.com"
+        paths:
+          - path: "/"
+      - host: "main-state-channel-demo.prd.aepps.com" 
+        paths:
+          - path: "/"
+            version: "main"
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
