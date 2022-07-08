@@ -20,3 +20,4 @@ app:
       enabled: false
   versions:
     - {version: develop, gitSha: }
+    - {version: pr-13, gitSha: b128919}
