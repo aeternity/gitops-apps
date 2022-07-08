@@ -4,7 +4,7 @@ app:
     repository: "aeternitybot/state-channel-demo-backend"
     pullPolicy: "Always"
   service:
-    port: 3000
+    port: "3000"
   ingress:
     enabled: "true"
     hosts:
@@ -15,11 +15,15 @@ app:
         paths:
           - path: "/"
             version: "develop"
+      - host: "pr-33-state-channel-demo-backend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-33"
   probes:
     liveness:
-      enabled: false
+      enabled: "false"
     readiness:
-      enabled: false
+      enabled: "false"
   env:
     "NODE_URL": "https://testnet.aeternity.io"
     "WS_URL": "wss://sdk-testnet.aepps.com/channel"
@@ -28,5 +32,8 @@ app:
     "BOT_SERVICE_PORT": "3000"
     "NETWORK_ID": "ae_uat"
   versions:
-    - {version: develop, gitSha: }
-    - {version: pr-13, gitSha: 0c296b6}
+    - version: "develop"
+      gitSha: ""
+    - version: "pr-13"
+      gitSha: "0c296b6"
+    - version: "pr-33"
