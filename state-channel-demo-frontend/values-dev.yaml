@@ -9,11 +9,8 @@ app:
       - host: "state-channel-demo.dev.aepps.com"
         paths:
           - path: "/"
-            version: develop
   probes:
     liveness:
       enabled: false
     readiness:
       enabled: false
-  versions:
-    - {version: develop, gitSha: }
