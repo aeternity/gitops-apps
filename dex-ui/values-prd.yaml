@@ -10,9 +10,9 @@ app:
       - host: "aepp.dex.superhero.com"
         paths:
           - path: "/"
-      - host: "main-dex-ui.prd.aepps.com" 
+      - host: "main-dex-ui.prd.aepps.com"
         paths:
           - path: "/"
             version: "main"
   versions:
-    - {version: main, gitSha: c26a448}
+    - {version: main, gitSha: 584aef3}
