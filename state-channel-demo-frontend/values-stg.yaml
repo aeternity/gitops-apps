@@ -13,10 +13,16 @@ app:
         paths:
           - path: "/"
             version: "develop"
+      - host: "pr-35-state-channel-demo-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-35"
   probes:
     liveness:
-      enabled: false
+      enabled: "false"
     readiness:
-      enabled: false
+      enabled: "false"
   versions:
-    - {version: develop, gitSha: ''}
+    - version: "develop"
+      gitSha: ""
+    - version: "pr-35"
