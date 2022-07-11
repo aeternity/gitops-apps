@@ -25,4 +25,5 @@ app:
   versions:
     - version: "develop"
       gitSha: ""
-    - '{version: pr-35, gitSha: 2911309}'
+    - {version: pr-35, gitSha: 2911309}
+    - '{version: pr-28, gitSha: 3ffaba6}'
