@@ -24,4 +24,4 @@ app:
     "BOT_SERVICE_PORT": "3000"
     "NETWORK_ID": "ae_uat"
   versions:
-    - {version: develop, gitSha: 93e15f2}
+    - {version: develop, gitSha: b4a0e54}
