@@ -38,3 +38,4 @@ app:
     "DOC_TOKEN2": "ct_JDp175ruWd7mQggeHewSLS1PFXt9AzThCDaFedxon8mF8xTRF"
   versions:
     - {version: pr-64, gitSha: aa1d397}
+    - {version: pr-68, gitSha: b2f993f}
