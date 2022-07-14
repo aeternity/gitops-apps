@@ -34,3 +34,4 @@ app:
     "DOC_TOKEN2": "ct_7ur9ypT3a4tjxxv5iG6zEQDQhysNtCKr6tyc7PkqhtRmEw6yY"
   versions:
     - {version: pr-64, gitSha: 40f26f0}
+    - {version: pr-68, gitSha: b2f993f}
