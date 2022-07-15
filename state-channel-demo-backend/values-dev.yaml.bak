@@ -11,7 +11,7 @@ app:
       - host: "state-channel-demo-backend.dev.aepps.com"
         paths:
           - path: "/"
-      - host: "develop-state-channel-backend.dev.aepps.com"
+      - host: "develop-state-channel-demo-backend.dev.aepps.com"
         paths:
           - path: "/"
             version: "develop"
@@ -28,4 +28,4 @@ app:
     "BOT_SERVICE_PORT": "3000"
     "NETWORK_ID": "ae_uat"
   versions:
-    - '{version: develop, gitSha: c805b8d}'
+    - '{version: develop, gitSha: ec482b5}'
