@@ -28,10 +28,6 @@ app:
         paths:
           - path: "/"
             version: "pr-385"
-      - host: "pr-387-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-387"
   versions:
     - version: "pr-153"
       gitSha: "21e3e17"
@@ -45,5 +41,4 @@ app:
     - version: "pr-342"
     - version: "pr-376"
     - {version: pr-318, gitSha: bfaadf5}
-    - {version: pr-387, gitSha: ef0c5fc}
     - {version: pr-385, gitSha: 0844b1d}
