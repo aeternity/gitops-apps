@@ -1,6 +1,6 @@
 app:
   image:
-    tag: "v1.10.0"
+    tag: "v1.11.0"
   ingress:
     enabled: "true"
     hosts:
@@ -15,4 +15,4 @@ app:
           - path: "/"
             version: "main"
   versions:
-    - '{version: main, gitSha: d6a0378}'
+    - '{version: main, gitSha: 35936ce}'
