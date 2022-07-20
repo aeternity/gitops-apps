@@ -36,4 +36,4 @@ app:
       gitSha: "0c296b6"
     - {version: develop, gitSha: }
     - {version: pr-50, gitSha: 38b006b}
-    - {version: pr-49, gitSha: 5de8507}
+    - {version: pr-49, gitSha: 4842276}
