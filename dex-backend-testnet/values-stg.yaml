@@ -13,10 +13,6 @@ app:
       - host: "dex-backend-testnet.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-64-dex-backend-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-64"
   init:
     enabled: "true"
     command:
@@ -38,4 +34,3 @@ app:
     "DOC_TOKEN2": "ct_JDp175ruWd7mQggeHewSLS1PFXt9AzThCDaFedxon8mF8xTRF"
   versions:
     - {version: pr-68, gitSha: 894d2a1}
-    - {version: pr-64, gitSha: 61978e8}
