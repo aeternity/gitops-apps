@@ -15,10 +15,6 @@ app:
         paths:
           - path: "/"
             version: "develop"
-      - host: "pr-50-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-50"
       - host: "pr-55-state-channel-demo-backend.stg.aepps.com"
         paths:
           - path: "/"
@@ -44,7 +40,6 @@ app:
       gitSha: "0c296b6"
     - version: "develop"
       gitSha: ""
-    - version: "pr-50"
-      gitSha: "dfb2b46"
     - version: "pr-57"
-    - '{version: pr-55, gitSha: e65b634}'
+    - {version: pr-55, gitSha: e65b634}
+    - '{version: pr-59, gitSha: 2ae2d8c}'
