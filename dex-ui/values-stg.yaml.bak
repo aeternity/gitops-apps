@@ -44,8 +44,7 @@ app:
     - version: "pr-317"
     - version: "pr-342"
     - version: "pr-376"
-    - version: "pr-414"
-      gitSha: "fa790de"
     - version: "pr-417"
       gitSha: "08faa28"
-    - '{version: pr-431, gitSha: ed70fbc}'
+    - {version: pr-431, gitSha: ed70fbc}
+    - '{version: pr-414, gitSha: 1d26974}'
