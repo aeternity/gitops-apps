@@ -5,7 +5,7 @@ app:
   ingress:
     enabled: true
     hosts:
-      - host: "explorer.dev.aepps.com"
+      - host: "mdw-explorer.dev.aepps.com"
         paths:
           - path: /
             version: "mainnet"
