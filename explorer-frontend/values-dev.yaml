@@ -4,6 +4,6 @@ app:
   ingress:
     enabled: "true"
     hosts:
-      - host: "explorer.dev.aepps.com" # has to be changed/disscused
+      - host: "explorer.dev.aepps.com"
         paths:
           - path: "/"
