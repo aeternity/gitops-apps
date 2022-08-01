@@ -9,4 +9,5 @@ app:
       - host: "explorer.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+  versions:
+    - {version: pr-1, gitSha: 938eb4c}
