@@ -1,0 +1,10 @@
+app:
+  image:
+    tag: "latest"
+    pullPolicy: "Always"
+  ingress:
+    enabled: "true"
+    hosts:
+      - host: "explorer.stg.aepps.com"
+        paths:
+          - path: "/"
