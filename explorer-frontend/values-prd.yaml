@@ -9,7 +9,7 @@ app:
       - host: "explorer.prd.aepps.com"
         paths:
           - path: "/"
-      - host: "main-explorer.prd.aepps.com"
+      - host: "master-explorer.prd.aepps.com"
         paths:
           - path: "/"
-            version: "main"
+            version: "master"
