@@ -9,5 +9,11 @@ app:
       - host: "explorer.stg.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-5-explorer.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-5"
   versions:
-    - {version: pr-3, gitSha: 2c1be18}
+    - version: "pr-3"
+      gitSha: "2c1be18"
+    - version: "pr-5"
