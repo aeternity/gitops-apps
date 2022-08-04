@@ -19,10 +19,6 @@ app:
         paths:
           - path: "/"
             version: "pr-57"
-      - host: "pr-72-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-72"
       - host: "pr-75-state-channel-demo-backend.stg.aepps.com"
         paths:
           - path: "/"
@@ -53,4 +49,3 @@ app:
       gitSha: "abee9c0"
     - version: "pr-76"
     - {version: pr-75, gitSha: 82615c0}
-    - {version: pr-72, gitSha: 291f7e7}
