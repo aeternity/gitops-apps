@@ -59,4 +59,3 @@ app:
     - version: "pr-67"
     - version: "pr-68"
     - version: "pr-72"
-    - {version: pr-70, gitSha: 7907afb}
