@@ -19,4 +19,4 @@ app:
     readiness:
       enabled: false
   versions:
-    - {version: develop, gitSha: fd64a9c}
+    - {version: develop, gitSha: 330e8fd}
