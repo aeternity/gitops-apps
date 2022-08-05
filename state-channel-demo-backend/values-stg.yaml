@@ -27,6 +27,10 @@ app:
         paths:
           - path: "/"
             version: "pr-76"
+      - host: "pr-77-state-channel-demo-backend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-77"
   probes:
     liveness:
       enabled: "false"
@@ -48,4 +52,6 @@ app:
     - version: "pr-70"
       gitSha: "abee9c0"
     - version: "pr-76"
-    - {version: pr-75, gitSha: 82615c0}
+    - version: "pr-75"
+      gitSha: "82615c0"
+    - version: "pr-77"
