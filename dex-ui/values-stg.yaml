@@ -36,6 +36,10 @@ app:
         paths:
           - path: "/"
             version: "pr-453"
+      - host: "pr-455-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-455"
   versions:
     - version: "pr-153"
       gitSha: "21e3e17"
@@ -52,5 +56,8 @@ app:
     - version: "pr-433"
       gitSha: "cd48335"
     - version: "pr-453"
-    - {version: pr-444, gitSha: 56090e9}
-    - {version: pr-414, gitSha: 460c5f0}
+    - version: "pr-444"
+      gitSha: "56090e9"
+    - version: "pr-414"
+      gitSha: "460c5f0"
+    - version: "pr-455"
