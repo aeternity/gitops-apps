@@ -1,0 +1,11 @@
+app:
+  image:
+    repository: "aeternity/aepp-hc-ui"
+    tag: "pr-2"
+  ingress:
+    enabled: "true"
+    hosts:
+      - host: "hc-ui.dev.aepps.com" # has to be changed/disscused
+        paths:
+          - path: "/"
+  versions: []
