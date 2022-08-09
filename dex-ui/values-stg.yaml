@@ -55,8 +55,6 @@ app:
     - version: "pr-432"
     - version: "pr-433"
       gitSha: "cd48335"
-    - version: "pr-444"
-      gitSha: "56090e9"
     - version: "pr-455"
     - version: "pr-461"
     - version: "pr-462"
