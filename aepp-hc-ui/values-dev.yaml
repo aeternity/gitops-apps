@@ -8,4 +8,5 @@ app:
       - host: "hc-ui.dev.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-  versions: []
+  versions:
+    - {version: pr-2, gitSha: 46ac908}

@@ -1,12 +1,12 @@
 app:
   image:
-    repository: "aeternitybot/aepp-base-hc"
+    repository: "aeternity/aepp-hc-ui"
     tag: "pr-2"
   ingress:
     enabled: "true"
     hosts:
-      - host: "base-hc.dev.aepps.com" # has to be changed/disscused
+      - host: "hc-ui.dev.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
   versions:
-    - '{version: pr-2, gitSha: 1424137}'
+    - '{version: pr-2, gitSha: 46ac908}'
