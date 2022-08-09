@@ -9,10 +9,6 @@ app:
       - host: "explorer.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-6-explorer.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-6"
       - host: "pr-7-explorer.stg.aepps.com"
         paths:
           - path: "/"
@@ -22,7 +18,5 @@ app:
           - path: "/"
             version: "pr-8"
   versions:
-    - version: "pr-7"
-      gitSha: "cd885d2"
     - {version: pr-8, gitSha: 4314d51}
-    - '{version: pr-6, gitSha: 93d5acd}'
+    - '{version: pr-7, gitSha: 13471f4}'
