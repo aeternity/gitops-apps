@@ -22,8 +22,7 @@ app:
           - path: "/"
             version: "pr-8"
   versions:
-    - version: "pr-6"
-      gitSha: "07e15f2"
     - version: "pr-7"
       gitSha: "cd885d2"
-    - '{version: pr-8, gitSha: 4314d51}'
+    - {version: pr-8, gitSha: 4314d51}
+    - '{version: pr-6, gitSha: 93d5acd}'
