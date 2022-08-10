@@ -13,10 +13,6 @@ app:
       - host: "dex-backend-testnet.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-70-dex-backend-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-70"
   init:
     enabled: "true"
     command:
@@ -39,4 +35,3 @@ app:
   versions:
     - version: "pr-68"
       gitSha: "894d2a1"
-    - {version: pr-70, gitSha: 0fc7438}
