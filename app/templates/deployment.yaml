@@ -97,6 +97,17 @@ spec:
                   name: {{ include "app.fullname" $ }}-secret
                   key: {{ $key }}
             {{- end }}
+            {{- range $key, $value := .Values.secrets.external.values }}
+            - name: {{ $key }}
+              valueFrom:
+                secretKeyRef:
+                  {{- if $.Values.secrets.external.secretName }}
+                  name: {{ $.Values.secrets.external.secretName }}
+                  {{- else }}
+                  name: {{ include "app.fullname" $ }}-external-secrets
+                  {{- end }}
+                  key: {{ $key }}
+            {{- end }}
           ports:
             - name: http
               containerPort: {{ $.Values.service.port }}

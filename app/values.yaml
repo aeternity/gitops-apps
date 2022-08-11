@@ -88,8 +88,6 @@ tolerations: []
 
 affinity: {}
 
-encValues: {}
-
 persistence:
   enabled: false
 
@@ -110,3 +108,11 @@ probes:
       httpGet:
         path: /
         port: http
+
+encValues: {}
+
+secrets:
+  external:
+    remotePrefix: ""
+    secretName: ""
+    values: {}
