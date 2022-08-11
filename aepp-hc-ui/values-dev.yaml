@@ -8,6 +8,7 @@ app:
     AE_FAUCET_URL: "https://dev-faucet-hc.aepps.com/"
     AE_WALLET_URL: "https://base-hc.dev.aepps.com/"
     AE_NODE_URL: "https://testnet-hc.aeternity.io/"
+    STAKING_CONTRACT: "ct_LRbi65kmLtE7YMkG6mvG5TxAXTsPJDZjAtsPuaXtRyPA7gnfJ"
   ingress:
     enabled: "true"
     hosts:
