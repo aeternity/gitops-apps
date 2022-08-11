@@ -3,6 +3,8 @@ app:
     repository: "aeternity/aepp-hc-ui"
     tag: "pr-2"
     pullPolicy: Always
+  env:
+    PORT: 80
   ingress:
     enabled: "true"
     hosts:
