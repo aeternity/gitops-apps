@@ -9,9 +9,4 @@ app:
       - host: "explorer.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-9-explorer.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-9"
-  versions:
-    - version: "pr-9"
+  versions: []
