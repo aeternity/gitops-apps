@@ -5,6 +5,9 @@ app:
     pullPolicy: Always
   env:
     PORT: 80
+    AE_FAUCET_URL: "https://dev-faucet-hc.aepps.com/"
+    AE_WALLET_URL: "https://base-hc.dev.aepps.com/"
+    AE_NODE_URL: "https://testnet-hc.aeternity.io/"
   ingress:
     enabled: "true"
     hosts:
