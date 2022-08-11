@@ -2,6 +2,7 @@ app:
   image:
     repository: "aeternity/aepp-hc-ui"
     tag: "pr-2"
+    pullPolicy: Always
   ingress:
     enabled: "true"
     hosts:
