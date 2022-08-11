@@ -15,3 +15,17 @@ app:
       - host: "hc-ui.dev.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
+  probes:
+    liveness:
+      enabled: true
+      config:
+        httpGet:
+          path: /alive
+          port: http
+        initialDelaySeconds: 60
+    readiness:
+      enabled: true
+      config:
+        httpGet:
+          path: /alive
+          port: http
