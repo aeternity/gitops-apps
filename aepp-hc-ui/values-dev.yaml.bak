@@ -2,11 +2,32 @@ app:
   image:
     repository: "aeternity/aepp-hc-ui"
     tag: "pr-2"
+    pullPolicy: Always
+  env:
+    PORT: 80
+    AE_FAUCET_URL: "https://dev-faucet-hc.aepps.com/"
+    AE_WALLET_URL: "https://base-hc.dev.aepps.com/"
+    AE_NODE_URL: "https://testnet-hc.aeternity.io/"
+    STAKING_CONTRACT: "ct_LRbi65kmLtE7YMkG6mvG5TxAXTsPJDZjAtsPuaXtRyPA7gnfJ"
   ingress:
     enabled: "true"
     hosts:
       - host: "hc-ui.dev.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
+  probes:
+    liveness:
+      enabled: true
+      config:
+        httpGet:
+          path: /alive
+          port: http
+        initialDelaySeconds: 60
+    readiness:
+      enabled: true
+      config:
+        httpGet:
+          path: /alive
+          port: http
   versions:
-    - '{version: pr-2, gitSha: 974e8d6}'
+    - '{version: pr-2, gitSha: 1d8454a}'
