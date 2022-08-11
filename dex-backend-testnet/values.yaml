@@ -1,0 +1,5 @@
+app:
+  secrets:
+    external:
+      values:
+        POSTGRES_PASSWORD: /apps/DEX_TESTNET_POSTGRES_PASSWORD

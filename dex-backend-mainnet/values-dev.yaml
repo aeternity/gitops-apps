@@ -3,8 +3,9 @@ app:
     repository: aeternitybot/dex-backend
     tag: "latest"
     pullPolicy: "Always"
-  encValues:
-    POSTGRES_PASSWORD: "AgAD3yIHiR1Raqz7E+pA7Jt1iuH4tWN8AQDX60YnoyqF6JoiD1b+6dwzfmUt5R9fd6opFp2IxTsZXMc8zrcycQ5NT6ScAO8j+k6/H3qtMgT9LEf2+Kzb4hA9LjZ8dXyEuKw2FFohgzy9blkLtnt/PZgAbthTdw8GTkpL0Kw+WLyPI4w3UpzBdl/7ERRj8jFrzJqA4qu6kOocwshAt6BBN2yw7Kh45wzBfYnJkiK+XziwP2EAZowg8NTxLzPnyqyBuvkOWuz+bt4eMwWI27v2PgqMrvJhx3KxLKZyrov9suTWxFSNP+B8bjG6bjVVj31uORJUizzNG6tW4afBiqBc/nzPXJjxQL5LuIb1dUEOBmlw6+AyOBIcc8m6gD8nty5c8DsaZGV6akDjwuQwndnS6Da7eorMrOEqtkyhvIC8g3KBv3HgQqz9hRbQsGAiZA22RSHug/CrD56wBOVbpfrw+zlgTrbWRqZOFD3KweJ7xnQRTdNl++mMNk5eWt5QYn9MpwebIjbLun81T0Z1RuucsedcFhfiAEa64KGOZrgsD+3Etrhw9Nick5KajHc8Vqh0SdJZWMY2BaQgM/g6trXsQHd3gRHa3Q3uBxVdH5zP2s1qWHKo0veJfVMaYgfOFpijE30NqK8MDKnblOPuks8xYCFJaCTu3Kg94u4h1PD3Y4QTX/Mt8+bWqEmKx5RkCeW1ZW8EO4kIr6MlYodWMuQ="
+  secrets:
+    external:
+      remotePrefix: /k8s/dev-wgt7
   service:
     port: 3000
   ingress:
