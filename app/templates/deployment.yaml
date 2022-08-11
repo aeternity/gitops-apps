@@ -97,7 +97,7 @@ spec:
                   name: {{ include "app.fullname" $ }}-secret
                   key: {{ $key }}
             {{- end }}
-            {{- range $key, $value := .Values.secrets.external.values }}
+            {{- range $key, $value := $.Values.secrets.external.values }}
             - name: {{ $key }}
               valueFrom:
                 secretKeyRef:
