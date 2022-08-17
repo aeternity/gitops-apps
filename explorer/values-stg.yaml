@@ -9,4 +9,9 @@ app:
       - host: "explorer.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-13-explorer.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-13"
+  versions:
+    - version: "pr-13"
