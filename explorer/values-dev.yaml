@@ -1,9 +1,0 @@
-app:
-  image:
-    tag: "latest"
-  ingress:
-    enabled: "true"
-    hosts:
-      - host: "explorer.dev.aepps.com"
-        paths:
-          - path: "/"
