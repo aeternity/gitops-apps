@@ -19,6 +19,13 @@ app:
           path: /version
   ingress:
     enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: https
+      cert-manager.io/cluster-issuer: letsencrypt
+    tls:
+      - hosts:
+        - "compiler.dev.aepps.com"
+        secretName: compiler-cert
     stripPrefix: "/v[0-9]+"
     hosts:
       - host: "compiler.dev.aepps.com"
