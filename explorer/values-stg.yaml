@@ -17,6 +17,13 @@ app:
         paths:
           - path: "/"
             version: "pr-15"
+      - host: "pr-16-explorer.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-16"
   versions:
-    - {version: pr-15, gitSha: e84711d}
-    - {version: pr-13, gitSha: 7a353cd}
+    - version: "pr-15"
+      gitSha: "e84711d"
+    - version: "pr-13"
+      gitSha: "7a353cd"
+    - version: "pr-16"
