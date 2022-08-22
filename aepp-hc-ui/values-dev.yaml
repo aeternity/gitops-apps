@@ -10,7 +10,14 @@ app:
     AE_NODE_URL: "https://testnet-hc.aeternity.io/"
     STAKING_CONTRACT: "ct_LRbi65kmLtE7YMkG6mvG5TxAXTsPJDZjAtsPuaXtRyPA7gnfJ"
   ingress:
-    enabled: "true"
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: https
+      cert-manager.io/cluster-issuer: letsencrypt
+    tls:
+      - hosts:
+        - "hc-ui.dev.aepps.com"
+        secretName: aepp-hc-ui-cert
     hosts:
       - host: "hc-ui.dev.aepps.com" # has to be changed/disscused
         paths:

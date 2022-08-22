@@ -4,7 +4,15 @@ app:
     repository: "aeternitybot/state-channel-demo-frontend"
     pullPolicy: "Always"
   ingress:
-    enabled: "true"
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: https
+      cert-manager.io/cluster-issuer: letsencrypt
+    tls:
+      - hosts:
+        - "state-channel-demo.dev.aepps.com"
+        - "develop-state-channel-demo.dev.aepps.com"
+        secretName: state-channel-demo-frontend-cert
     hosts:
       - host: "state-channel-demo.dev.aepps.com"
         paths:

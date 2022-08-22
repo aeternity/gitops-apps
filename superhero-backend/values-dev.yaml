@@ -34,6 +34,13 @@ app:
     port: 3000  
   ingress:
     enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: https
+      cert-manager.io/cluster-issuer: letsencrypt
+    tls:
+      - hosts:
+        - "superhero-backend.dev.aepps.com"
+        secretName: superhero-backend-cert
     hosts:
       - host: "superhero-backend.dev.aepps.com" # has to be changed/disscused
         paths:

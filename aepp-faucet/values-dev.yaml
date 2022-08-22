@@ -3,6 +3,14 @@ app:
     external:
       remotePrefix: /k8s/dev-wgt7
   ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: https
+      cert-manager.io/cluster-issuer: letsencrypt
+    tls:
+      - hosts:
+        - "faucet.dev.aepps.com"
+        secretName: aepp-faucet-cert
     hosts:
       - host: "faucet.dev.aepps.com"
         paths:

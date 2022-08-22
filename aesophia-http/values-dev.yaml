@@ -25,7 +25,7 @@ app:
     tls:
       - hosts:
         - "compiler.dev.aepps.com"
-        secretName: compiler-cert
+        secretName: aesophia-http-cert
     stripPrefix: "/v[0-9]+"
     hosts:
       - host: "compiler.dev.aepps.com"

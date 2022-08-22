@@ -9,7 +9,14 @@ app:
   service:
     port: 3000
   ingress:
-    enabled: "true"
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: https
+      cert-manager.io/cluster-issuer: letsencrypt
+    tls:
+      - hosts:
+        - "dex-backend-mainnet.dev.aepps.com"
+        secretName: dex-backend-mainnet-cert
     hosts:
       - host: "dex-backend-mainnet.dev.aepps.com"
         paths:

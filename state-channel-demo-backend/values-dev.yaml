@@ -6,7 +6,15 @@ app:
   service:
     port: 3000
   ingress:
-    enabled: "true"
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: https
+      cert-manager.io/cluster-issuer: letsencrypt
+    tls:
+      - hosts:
+        - "state-channel-demo-backend.dev.aepps.com"
+        - "develop-state-channel-demo-backend.dev.aepps.com"
+        secretName: state-channel-demo-backend-cert
     hosts:
       - host: "state-channel-demo-backend.dev.aepps.com"
         paths:

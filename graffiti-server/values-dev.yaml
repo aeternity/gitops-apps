@@ -35,6 +35,13 @@ app:
 
   ingress:
     enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: https
+      cert-manager.io/cluster-issuer: letsencrypt
+    tls:
+      - hosts:
+        - "graffiti-server.dev.aepps.com"
+        secretName: graffiti-server-cert
     hosts:
       - host: "graffiti-server.dev.aepps.com"
         paths:

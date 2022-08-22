@@ -3,6 +3,13 @@ app:
     tag: latest
   ingress:
     enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: https
+      cert-manager.io/cluster-issuer: letsencrypt
+    tls:
+      - hosts:
+        - "contracts.dev.aepps.com"
+        secretName: aepp-contracts-cert
     hosts:
       - host: "contracts.dev.aepps.com"
         paths:

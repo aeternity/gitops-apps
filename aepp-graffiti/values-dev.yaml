@@ -6,6 +6,13 @@ app:
     port: 80
   ingress:
     enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: https
+      cert-manager.io/cluster-issuer: letsencrypt
+    tls:
+      - hosts:
+        - "aepp-grafitti.dev.aepps.com"
+        secretName: aepp-grafitti-cert
     hosts:
       - host: "aepp-grafitti.dev.aepps.com"
         paths:
