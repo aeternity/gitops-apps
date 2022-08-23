@@ -1,0 +1,38 @@
+app:
+  image:
+    repository: aeternitybot/ga-multisig-backend
+    tag: "latest"
+    pullPolicy: "Always"
+  secrets:
+    external:
+      remotePrefix: /k8s/dev-wgt7
+  service:
+    port: 3000
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+    tls:
+      - hosts:
+        - "ga-multisig-backend.dev.aepps.com"
+        secretName: ga-multisig-backend-cert
+    hosts:
+      - host: "ga-multisig-backend.dev.aepps.com"
+        paths:
+          - path: "/"
+  init: 
+    enabled: "true"
+    command: ["/bin/sh"]
+    args:
+      - -c
+      - >-
+        rm -rf .env &&
+        export PG_CONNECTION_URI=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DATABASE?schema=$POSTGRES_SCHEMA &&
+        npx prisma db push --accept-data-loss
+  env:
+    "POSTGRES_DB": "ga-multisig-backend"
+    "POSTGRES_PORT": "5432"
+    "POSTGRES_HOST": "superherodev.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
+    "POSTGRES_USERNAME": "postgres"
+
