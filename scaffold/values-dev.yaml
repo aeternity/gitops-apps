@@ -1,0 +1,22 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/dev-wgt7
+  ingress:
+    stripPrefix: "/v[0-9]+"
+    hosts:
+      - host: "$APP.dev.aepps.com"
+        paths:
+          - path: /
+            version: "latest"
+          - path: /v1
+            version: "v1.0.0"
+      - host: "$APP-v2.dev.aepps.com"
+        paths:
+          - path: "/"
+            version: "v2.0.0"
+    tls:
+      - hosts:
+        - "$APP.dev.aepps.com"
+        - "$APP-v2.dev.aepps.com"
+        secretName: $APP-cert

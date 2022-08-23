@@ -1,0 +1,20 @@
+app:
+  image:
+    repository: "aeternity/$APP"
+    tag: latest
+    pullPolicy: "Always"
+  secrets:
+    external:
+      values:
+        PRIV_KEY: /apps/${APP}_PRIV_KEY
+  service:
+    port: 80
+  versions:
+    - version: "latest"
+    - version: "v1.0.0"
+    - version: "v2.0.0"
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
