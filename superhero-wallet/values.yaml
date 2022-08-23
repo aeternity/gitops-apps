@@ -1,0 +1,10 @@
+app:
+  nameOverride: superhero-wallet
+  image:
+    repository: aeternity/superhero-wallet
+    tag: "latest"
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt

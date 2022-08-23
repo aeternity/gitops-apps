@@ -1,16 +1,10 @@
 app:
-  image:
-    tag: "master"
   ingress:
-    enabled: true
-    annotations:
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      cert-manager.io/cluster-issuer: letsencrypt
+    hosts:
+      - host: "base.dev.aepps.com"
+        paths:
+          - path: "/"
     tls:
       - hosts:
         - "base.dev.aepps.com"
         secretName: aepp-base-cert
-    hosts:
-      - host: "base.dev.aepps.com" # has to be changed/disscused
-        paths:
-          - path: "/"

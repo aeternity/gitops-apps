@@ -1,63 +1,26 @@
 app:
-  image:
-    repository: aeternity/graffiti-server
-    tag: "latest"
   secrets:
     external:
       remotePrefix: /k8s/dev-wgt7
 
-  service:
-    port: 3000
-
   resources:
     limits:
+      cpu: "2"
       memory: "6Gi"
     requests:
+      cpu: "1"
       memory: "5Gi"
-      
-  probes:
-    liveness:
-      config:
-        httpGet:
-          path: /health/testFiles
-        initialDelaySeconds: 120
-        periodSeconds: 120
-        successThreshold: 1
-        timeoutSeconds: 60
-    readiness:
-      config:
-        httpGet:
-          path: /health/testFiles
-        initialDelaySeconds: 120
-        periodSeconds: 120
-        successThreshold: 1
-        timeoutSeconds: 60
 
   ingress:
-    enabled: true
-    annotations:
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      cert-manager.io/cluster-issuer: letsencrypt
-    tls:
-      - hosts:
-        - "graffiti-server.dev.aepps.com"
-        secretName: graffiti-server-cert
     hosts:
       - host: "graffiti-server.dev.aepps.com"
         paths:
           - path: "/"
+    tls:
+      - hosts:
+        - "graffiti-server.dev.aepps.com"
+        secretName: graffiti-server-cert
 
-  persistence:
-    enabled: true
-    accessMode: ReadWriteOnce
-    storageClass: gp2
-    size: 50Gi
-    mountPath: /app/data
-  
   env:
-    "S3_REGION": "eu-central-1"
-    "AETERNITY_URL": "https://testnet.aeternity.io"
-    "CONTRACT_ADDRESS": "ct_eLhLkGX2kfrqj6skdG4AxwjQk2MJy6nsWASnG8aEQFrQ2gDyp"
-    "PATH_IDENTIFIER": "/"
     "IPFS_URL": "http://ipfs.dev.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-dev"

@@ -1,0 +1,18 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/stg-m4n4
+  ingress:
+    hosts:
+      - host: "dex-backend-mainnet.stg.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "dex-backend-mainnet.stg.aepps.com"
+        secretName: dex-backend-mainnet-cert
+  env:
+    "POSTGRES_HOST": "dexstg.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
+  versions:
+    - version: "pr-68"
+      gitSha: "894d2a1"

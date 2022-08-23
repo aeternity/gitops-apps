@@ -1,0 +1,12 @@
+app:
+  image:
+    repository: aeternity/aerepl_http
+    tag: "latest"
+    pullPolicy: Always
+  service:
+    port: 4000
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt

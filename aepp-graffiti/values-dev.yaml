@@ -1,14 +1,5 @@
 app:
-  image:
-    repository: aeternity/aepp-grafitti
-    tag: "dev"
-  service:
-    port: 80
   ingress:
-    enabled: true
-    annotations:
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      cert-manager.io/cluster-issuer: letsencrypt
     tls:
       - hosts:
         - "aepp-grafitti.dev.aepps.com"

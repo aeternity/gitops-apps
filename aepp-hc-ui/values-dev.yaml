@@ -19,7 +19,7 @@ app:
         - "hc-ui.dev.aepps.com"
         secretName: aepp-hc-ui-cert
     hosts:
-      - host: "hc-ui.dev.aepps.com" # has to be changed/disscused
+      - host: "hc-ui.dev.aepps.com"
         paths:
           - path: "/"
   probes:

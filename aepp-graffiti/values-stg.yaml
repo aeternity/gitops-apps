@@ -1,0 +1,19 @@
+app:
+  image:
+    tag: "stg"
+  ingress:
+    tls:
+      - hosts:
+        - "aepp-grafitti.dev.aepps.com"
+        - "stg-aepp-graffiti.stg.aepps.com"
+        secretName: aepp-grafitti-cert
+    hosts:
+      - host: "aepp-grafitti.stg.aepps.com"
+        paths:
+          - path: "/"
+      - host: "stg-aepp-graffiti.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "stg"
+  versions:
+    - {version: stg, gitSha: 1636a4b}

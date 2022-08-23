@@ -1,18 +1,13 @@
 app:
   image:
-    repository: "aeternitybot/aepp-base-hc"
     tag: "pr-2"
   ingress:
-    enabled: true
-    annotations:
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      cert-manager.io/cluster-issuer: letsencrypt
     tls:
       - hosts:
         - "base-hc.dev.aepps.com"
         secretName: aepp-base-hc-cert
     hosts:
-      - host: "base-hc.dev.aepps.com" # has to be changed/disscused
+      - host: "base-hc.dev.aepps.com"
         paths:
           - path: "/"
   versions: []
