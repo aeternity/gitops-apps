@@ -28,11 +28,9 @@ app:
       - -c
       - >-
         rm -rf .env &&
-        export PG_CONNECTION_URI=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DATABASE?schema=$POSTGRES_SCHEMA &&
-        npx prisma db push --accept-data-loss
+        export PG_CONNECTION_URI=postgres://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DATABASE
   env:
     "POSTGRES_DB": "ga-multisig-backend"
     "POSTGRES_PORT": "5432"
     "POSTGRES_HOST": "superherodev.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
     "POSTGRES_USERNAME": "postgres"
-
