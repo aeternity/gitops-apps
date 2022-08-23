@@ -1,0 +1,10 @@
+apiVersion: v2
+name: $APP
+description: A Helm chart for Kubernetes to deploy $APP
+
+version: 0.0.1
+
+dependencies:
+  - name: app
+    version: 0.4.0
+    repository: "file://../app"
