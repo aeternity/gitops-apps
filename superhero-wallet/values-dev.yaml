@@ -1,18 +1,10 @@
 app:
-  nameOverride: superhero-wallet
-  image:
-    repository: aeternity/superhero-wallet
-    tag: "latest"
   ingress:
-    enabled: true
-    annotations:
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      cert-manager.io/cluster-issuer: letsencrypt
+    hosts:
+      - host: "superhero-wallet.dev.aepps.com"
+        paths:
+          - path: "/"
     tls:
       - hosts:
         - "superhero-wallet.dev.aepps.com"
         secretName: superhero-wallet-cert
-    hosts:
-      - host: "superhero-wallet.dev.aepps.com" # has to be changed/disscused
-        paths:
-          - path: "/"

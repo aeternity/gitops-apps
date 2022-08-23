@@ -1,20 +1,5 @@
 app:
-  image:
-    tag: "latest"
-    repository: "aeternitybot/state-channel-demo-backend"
-    pullPolicy: "Always"
-  service:
-    port: 3000
   ingress:
-    enabled: true
-    annotations:
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      cert-manager.io/cluster-issuer: letsencrypt
-    tls:
-      - hosts:
-          - "state-channel-demo-backend.dev.aepps.com"
-          - "develop-state-channel-demo-backend.dev.aepps.com"
-        secretName: state-channel-demo-backend-cert
     hosts:
       - host: "state-channel-demo-backend.dev.aepps.com"
         paths:
@@ -23,17 +8,11 @@ app:
         paths:
           - path: "/"
             version: "develop"
-  probes:
-    liveness:
-      enabled: false
-    readiness:
-      enabled: false
-  env:
-    "NODE_URL": "https://testnet.aeternity.io"
-    "WS_URL": "wss://sdk-testnet.aepps.com/channel"
-    "COMPILER_URL": "https://compiler.aepps.com"
-    "FAUCET_PUBLIC_ADDRESS": "ak_2iBPH7HUz3cSDVEUWiHg76MZJ6tZooVNBmmxcgVK6VV8KAE688"
-    "BOT_SERVICE_PORT": "3000"
-    "NETWORK_ID": "ae_uat"
+    tls:
+      - hosts:
+        - "state-channel-demo-backend.dev.aepps.com"
+        - "develop-state-channel-demo-backend.dev.aepps.com"
+        secretName: state-channel-demo-backend-cert
+
   versions:
     - {version: develop, gitSha: 6b28128}

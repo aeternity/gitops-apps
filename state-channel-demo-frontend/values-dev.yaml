@@ -1,18 +1,5 @@
 app:
-  image:
-    tag: "latest"
-    repository: "aeternitybot/state-channel-demo-frontend"
-    pullPolicy: "Always"
   ingress:
-    enabled: true
-    annotations:
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      cert-manager.io/cluster-issuer: letsencrypt
-    tls:
-      - hosts:
-          - "state-channel-demo.dev.aepps.com"
-          - "develop-state-channel-demo.dev.aepps.com"
-        secretName: state-channel-demo-frontend-cert
     hosts:
       - host: "state-channel-demo.dev.aepps.com"
         paths:
@@ -21,10 +8,11 @@ app:
         paths:
           - path: "/"
             version: "develop"
-  probes:
-    liveness:
-      enabled: false
-    readiness:
-      enabled: false
+    tls:
+      - hosts:
+        - "state-channel-demo.dev.aepps.com"
+        - "develop-state-channel-demo.dev.aepps.com"
+        secretName: state-channel-demo-frontend-cert
+
   versions:
     - {version: develop, gitSha: 6b28128}

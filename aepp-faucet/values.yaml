@@ -1,6 +1,7 @@
 app:
   image:
     tag: latest
+    pullPolicy: "Always"
   env:
     "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
     "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
@@ -13,3 +14,7 @@ app:
     port: 5000
   ingress:
     enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+

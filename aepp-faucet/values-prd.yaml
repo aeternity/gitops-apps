@@ -1,0 +1,13 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/prd-0e9c
+  ingress:
+    hosts:
+      - host: "faucet.prd.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "faucet.prd.aepps.com"
+        secretName: aepp-faucet-cert

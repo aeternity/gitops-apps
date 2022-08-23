@@ -1,0 +1,62 @@
+app:
+  ingress:
+    hosts:
+      - host: "dex.stg.aepps.com"
+        paths:
+          - path: "/"
+      - host: "pr-283-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-283"
+      - host: "pr-317-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-317"
+      - host: "pr-342-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-342"
+      - host: "pr-376-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-376"
+      - host: "pr-432-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-432"
+      - host: "pr-455-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-455"
+      - host: "pr-461-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-461"
+    tls:
+      - hosts:
+        - "dex.stg.aepps.com"
+        - "pr-283-dex-ui.stg.aepps.com"
+        - "pr-317-dex-ui.stg.aepps.com"
+        - "pr-342-dex-ui.stg.aepps.com"
+        - "pr-376-dex-ui.stg.aepps.com"
+        - "pr-432-dex-ui.stg.aepps.com"
+        - "pr-455-dex-ui.stg.aepps.com"
+        - "pr-461-dex-ui.stg.aepps.com"
+        secretName: dex-ui-cert
+  versions:
+    - version: "pr-153"
+      gitSha: "21e3e17"
+    - version: "pr-206"
+      gitSha: "878259d"
+    - version: "pr-283"
+      gitSha: "7138962"
+    - version: "pr-303"
+      gitSha: "4bd3495"
+    - version: "pr-317"
+    - version: "pr-342"
+    - version: "pr-376"
+    - version: "pr-432"
+    - version: "pr-433"
+      gitSha: "cd48335"
+    - version: "pr-455"
+    - version: "pr-461"

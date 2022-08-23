@@ -1,0 +1,15 @@
+app:
+  image:
+    tag: "latest"
+    repository: "aeternitybot/state-channel-demo-frontend"
+    pullPolicy: "Always"
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false

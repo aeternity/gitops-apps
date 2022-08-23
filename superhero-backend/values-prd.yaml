@@ -1,0 +1,28 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/prd-0e9c
+  ingress:
+    hosts:
+      - host: "superhero-backend.prd.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "superhero-backend.prd.aepps.com"
+        secretName: superhero-backend-cert
+  env:
+    "WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
+    "NODE_URL": "https://mainnet.aeternity.io"
+    "COMPILER_URL": "https://latest.compiler.aepps.com"
+    "NODE_ENV": "production"
+    "REDIS_HOST": "172.16.1.111"
+    "REDIS_PORT": "6379"
+    "SENTRY_URL": "https://7e7e97ebdc854d5c9a5e66819e84fa9a@o228669.ingest.sentry.io/5521504"
+    "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
+    "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
+    "PUBLIC_KEY": "ak_HryHrgaVUSxezLQBfNENhptKeXk6tpg4kjWBk88nsU5RJvhNk"
+    "AUTHENTICATION_USER": "user"
+    "POSTGRES_USER": "postgres"
+    "POSTGRES_DB": "superhero"
+    "POSTGRES_HOST": "superheroprd.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"

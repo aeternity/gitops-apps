@@ -1,0 +1,18 @@
+app:
+  ingress:
+    stripPrefix: "/v[0-9]+"
+    hosts:
+      - host: "compiler.prd.aepps.com"
+        paths:
+          - path: /v4
+            version: "v4.3.0"
+          - path: /v5
+            version: "v5.0.0"
+          - path: /v6
+            version: "v6.1.0"
+          - path: /
+            version: "v6.1.0"
+    tls:
+      - hosts:
+        - "compiler.prd.aepps.com"
+        secretName: aesophia-http-cert

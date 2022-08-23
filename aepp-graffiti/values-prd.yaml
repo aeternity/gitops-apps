@@ -1,0 +1,10 @@
+app:
+  ingress:
+    hosts:
+      - host: "aepp-grafitti.prd.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "aepp-grafitti.prd.aepps.com"
+        secretName: aepp-grafitti-cert

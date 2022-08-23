@@ -1,22 +1,10 @@
 app:
-  image:
-    repository: aeternity/aerepl_http
-    tag: "latest"
-  service:
-    port: 4000
   ingress:
-    enabled: true
-    annotations:
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      cert-manager.io/cluster-issuer: letsencrypt
-    tls:
-      - hosts:
-        - "repl.dev.aepps.com"
-        secretName: aerepl-http-cert
     hosts:
       - host: "repl.dev.aepps.com"
         paths:
           - path: "/"
-
-
-
+    tls:
+      - hosts:
+        - "repl.dev.aepps.com"
+        secretName: aerepl-http-cert

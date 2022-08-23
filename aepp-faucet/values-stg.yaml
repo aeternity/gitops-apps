@@ -1,0 +1,15 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/stg-m4n4
+  ingress:
+    hosts:
+      - host: "faucet.stg.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "faucet.stg.aepps.com"
+        secretName: aepp-faucet-cert
+  versions:
+    - {version: pr-53, gitSha: d1fa3b1}

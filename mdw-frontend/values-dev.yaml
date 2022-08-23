@@ -1,17 +1,8 @@
 app:
   versions:
-    - version: testnet
     - version: mainnet
+    - version: testnet
   ingress:
-    enabled: true
-    annotations:
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      cert-manager.io/cluster-issuer: letsencrypt
-    tls:
-      - hosts:
-        - "mdw-explorer.dev.aepps.com"
-        - "mdw-explorer-testnet.dev.aepps.com"
-        secretName: mdw-frontend-cert
     hosts:
       - host: "mdw-explorer.dev.aepps.com"
         paths:
@@ -21,3 +12,8 @@ app:
         paths:
           - path: /
             version: "testnet"
+    tls:
+      - hosts:
+        - "mdw-explorer.dev.aepps.com"
+        - "mdw-explorer-testnet.dev.aepps.com"
+        secretName: mdw-frontend-cert

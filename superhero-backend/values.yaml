@@ -1,7 +1,43 @@
 app:
+  image:
+    tag: "latest"
+    pullPolicy: "Always"
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
   secrets:
     external:
       values:
         POSTGRES_PASSWORD: /apps/SUPERHERO_POSTGRES_PASSWORD
         AUTHENTICATION_PASSWORD: /apps/SUPERHERO_AUTHENTICATION_PASSWORD
         PRIVATE_KEY: /apps/SUPERHERO_PRIVATE_KEY
+  service:
+    port: 3000  
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+  env:
+    "REDIS_HOST": "10.0.1.11"
+    "REDIS_PORT": "6379"
+    "NODE_URL": "https://mainnet.aeternity.io"
+    "COMPILER_URL": "https://latest.compiler.aepps.com"
+    "CONTRACT_V1_ADDRESS": "ct_2AfnEfCSZCTEkxL5Yoi4Yfq6fF7YapHRaFKDJK3THMXMBspp5z"
+    "CONTRACT_V3_ADDRESS": "ct_2Hyt9ZxzXra5NAzhePkRsDPDWppoatVD7CtHnUoHVbuehwR8Nb"
+    "TOKEN_REGISTRY_ADDRESS": "ct_2n76BQCN3zNEjuEvHFNZtgyWPc5zizy47wNrUT3RHP2MrPKhbq"
+    "ORACLE_CONTRACT_ADDRESS": "ct_7wqP18AHzyoqymwGaqQp8G2UpzBCggYiq7CZdJiB71VUsLpR4"
+    "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
+    "IPFS_URL": "http://ipfs.dev.aepps.com:5001"
+    "PUBLIC_KEY": "ak_yrVCHP97UWfCRGMCaojBjdSKuXD3yyC8NkzkReURd4t3jbCQW"
+    "AUTHENTICATION_USER": "user"
+    "NODE_ENV": "production"
+    "WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
+    "ORACLE_GETTER_ADDRESS": "ct_anbp2U5VUsF6PkrX1ER1hSqj76Krpvqy97c5JBLmubBecCWui"
+    "CONTRACT_V1_GETTER_ADDRESS": "ct_NR7Bd7j5LRdzvKZmrMagMkfxzG8ZPWseKQkdwWootpq4kAJY2"
+    "CONTRACT_V3_GETTER_ADDRESS": "ct_2NdZ6PX9tZHWFhgcoYjthYNFF15qxjDwFSsNXRPeajEWazxkTo"
+    "POSTGRES_USER": "postgres"
+    "POSTGRES_DB": "superhero"
+    "POSTGRES_HOST": "superherodev.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"

@@ -1,0 +1,25 @@
+app:
+  image:
+    tag: "latest"
+    pullPolicy: "Always"
+  ingress:
+    enabled: "true"
+    hosts:
+      - host: "test-repo.stg.aepps.com"
+        paths:
+          - path: "/"
+      - host: "pr-45-test-repo.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-45"
+      - host: "pr-46-test-repo.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-46"
+      - host: "develop-test-repo.stg.aepps.com" 
+        paths:
+          - path: "/"
+            version: "develop"
+  versions:
+    - version: "pr-45"
+    - {version: "pr-46", gitSha: "6751515"}
