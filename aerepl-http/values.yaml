@@ -2,7 +2,7 @@ app:
   image:
     repository: aeternity/aerepl_http
     tag: "latest"
-    pullPolicy: Always
+    pullPolicy: "Always"
   service:
     port: 4000
   ingress:

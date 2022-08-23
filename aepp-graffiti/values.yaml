@@ -2,7 +2,7 @@ app:
   image:
     repository: aeternity/aepp-grafitti
     tag: "dev"
-    pullPolicy: Always
+    pullPolicy: "Always"
   service:
     port: 80
   ingress:

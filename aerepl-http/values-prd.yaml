@@ -1,10 +1,10 @@
 app:
   ingress:
     hosts:
-      - host: "repl.stg.aepps.com"
+      - host: "repl.prd.aepps.com"
         paths:
           - path: "/"
     tls:
       - hosts:
-        - "repl.stg.aepps.com"
+        - "repl.prd.aepps.com"
         secretName: aerepl-http-cert

@@ -1,7 +1,7 @@
 app:
   image:
     tag: "master"
-    pullPolicy: Always
+    pullPolicy: "Always"
   ingress:
     enabled: true
     annotations:

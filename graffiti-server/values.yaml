@@ -2,6 +2,7 @@ app:
   image:
     repository: aeternity/graffiti-server
     tag: "latest"
+    pullPolicy: "Always"
 
   secrets:
     values:

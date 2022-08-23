@@ -1,9 +1,5 @@
 app:
   ingress:
-    tls:
-      - hosts:
-        - "compiler.stg.aepps.com"
-        secretName: aesophia-http-cert
     stripPrefix: "/v[0-9]+"
     hosts:
       - host: "compiler.stg.aepps.com"
@@ -16,3 +12,7 @@ app:
             version: "v6.1.0"
           - path: /
             version: "v6.1.0"
+    tls:
+      - hosts:
+        - "compiler.stg.aepps.com"
+        secretName: aesophia-http-cert

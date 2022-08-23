@@ -1,6 +1,7 @@
 app:
   image:
     repository: "aeternitybot/aepp-base-hc"
+    pullPolicy: "Always"
   ingress:
     enabled: true
     annotations:

@@ -1,0 +1,17 @@
+app:
+  image:
+    tag: "v1.0.0"
+  secrets:
+    external:
+      remotePrefix: /k8s/prd-0e9c
+  ingress:
+    hosts:
+      - host: "dex-backend-mainnet.prd.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "dex-backend-mainnet.prd.aepps.com"
+        secretName: dex-backend-mainnet-cert
+  env:
+    "POSTGRES_HOST": "dexprd.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
