@@ -26,3 +26,4 @@ app:
       gitSha: "e84711d"
     - {version: pr-13, gitSha: 843c9f0}
     - {version: pr-16, gitSha: a766b7e}
+    - {version: pr-22, gitSha: 9b9a39b}
