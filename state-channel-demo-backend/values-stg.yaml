@@ -35,10 +35,6 @@ app:
         paths:
           - path: "/"
             version: "pr-83"
-      - host: "pr-84-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-84"
       - host: "pr-86-state-channel-demo-backend.stg.aepps.com"
         paths:
           - path: "/"
@@ -71,4 +67,3 @@ app:
     - version: "pr-83"
       gitSha: "eca58f9"
     - {version: pr-86, gitSha: 43f2cd4}
-    - {version: pr-84, gitSha: 7603db2}
