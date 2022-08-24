@@ -1,10 +1,20 @@
 app:
+  image:
+    repository: aeternitybot/ga-multisig-backend
+    tag: "latest"
+    pullPolicy: "Always"
   secrets:
     external:
       remotePrefix: /k8s/stg-m4n4
       values:
         PG_PASSWORD: /apps/GA_MULTISIG_BACKEND_POSTGRES_PASSWORD
+  service:
+    port: 3000
   ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
     tls:
       - hosts:
         - "ga-multisig-backend.stg.aepps.com"
@@ -14,4 +24,7 @@ app:
         paths:
           - path: "/"
   env:
+    "PG_DB": "ga-multisig-backend"
+    "PG_PORT": "5432"
+    "PG_USER": "postgres"
     "PG_HOST": "superherostg.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
