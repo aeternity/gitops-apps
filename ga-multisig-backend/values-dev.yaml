@@ -6,6 +6,8 @@ app:
   secrets:
     external:
       remotePrefix: /k8s/dev-wgt7
+    values:
+      PG_PASSWORD: /apps/GA_MULTISIG_BACKEND_POSTGRES_PASSWORD
   service:
     port: 3000
   ingress:
