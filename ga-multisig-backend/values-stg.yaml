@@ -18,4 +18,3 @@ app:
     "PG_PORT": "5432"
     "PG_USER": "postgres"
     "PG_HOST": "superherostg.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
-
