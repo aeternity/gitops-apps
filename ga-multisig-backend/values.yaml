@@ -1,5 +1,21 @@
 app:
+  image:
+    repository: aeternitybot/ga-multisig-backend
+    tag: "latest"
+    pullPolicy: "Always"
   secrets:
     external:
       values:
         PG_PASSWORD: /apps/GA_MULTISIG_BACKEND_POSTGRES_PASSWORD
+  service:
+    port: 3000
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+  env:
+    "PG_DB": "ga-multisig-backend"
+    "PG_PORT": "5432"
+    "PG_USER": "postgres"
+
