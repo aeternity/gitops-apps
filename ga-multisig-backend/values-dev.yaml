@@ -5,8 +5,7 @@ app:
     pullPolicy: "Always"
   secrets:
     external:
-      values:
-        POSTGRES_PASSWORD: /apps/GA_MULTISIG_BACKEND_POSTGRES_PASSWORD
+      remotePrefix: /k8s/dev-wgt7
   service:
     port: 3000
   ingress:
@@ -23,8 +22,7 @@ app:
         paths:
           - path: "/"
   env:
-    "POSTGRES_DB": "ga-multisig-backend"
-    "POSTGRES_PORT": "5432"
-    "POSTGRES_HOST": "superherodev.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
-    "POSTGRES_USERNAME": "postgres"
-    "PG_CONNECTION_URI": "postgres://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DATABASE"
+    "PG_DB": "ga-multisig-backend"
+    "PG_PORT": "5432"
+    "PG_HOST": "superherodev.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
+    "PG_USER": "postgres"

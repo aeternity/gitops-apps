@@ -1,5 +1,4 @@
-app:
-  secrets:
-    external:
-      values:
-        POSTGRES_PASSWORD: /apps/GA_MULTISIG_BACKEND_POSTGRES_PASSWORD
+secrets:
+  external:
+    values:
+      PG_PASSWORD: /apps/GA_MULTISIG_BACKEND_POSTGRES_PASSWORD
