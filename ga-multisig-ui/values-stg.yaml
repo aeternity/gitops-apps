@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternitybot/ga-multisig-ui
+    repository: "aeternitybot/ga-multisig-ui"
     tag: "latest"
     pullPolicy: "Always"
   ingress:
@@ -9,3 +9,9 @@ app:
       - host: "ga-multisig-ui.stg.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-4-ga-multisig-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-4"
+  versions:
+    - version: "pr-4"
