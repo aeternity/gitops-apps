@@ -10,7 +10,7 @@ app:
   ingress:
     enabled: "true"
     hosts:
-      - host: "dex-backend-mainnet.stg.aepps.com"
+      - host: "ga-multisig-backend.stg.aepps.com"
         paths:
           - path: "/"
   env:
