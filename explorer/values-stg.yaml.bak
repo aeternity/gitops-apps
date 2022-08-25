@@ -21,4 +21,4 @@ app:
     - {version: pr-16, gitSha: a766b7e}
     - {version: pr-13, gitSha: df1d629}
     - {version: pr-22, gitSha: 03464d9}
-    - '{version: pr-15, gitSha: c3ab228}'
+    - '{version: pr-15, gitSha: d96fd9c}'
