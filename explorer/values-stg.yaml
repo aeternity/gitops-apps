@@ -25,4 +25,4 @@ app:
     - {version: pr-16, gitSha: a766b7e}
     - {version: pr-15, gitSha: e3a4ffa}
     - {version: pr-22, gitSha: 5091dc2}
-    - {version: pr-13, gitSha: e66e8aa}
+    - {version: pr-13, gitSha: 1f95fc8}
