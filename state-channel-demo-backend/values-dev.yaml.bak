@@ -14,4 +14,4 @@ app:
           - "develop-state-channel-demo-backend.dev.aepps.com"
         secretName: state-channel-demo-backend-cert
   versions:
-    - '{version: develop, gitSha: 1cc7f75}'
+    - '{version: develop, gitSha: 24d0237}'
