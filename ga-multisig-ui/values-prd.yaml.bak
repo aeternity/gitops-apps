@@ -14,4 +14,4 @@ app:
           - path: "/"
             version: "master"
   versions:
-    - '{version: master, gitSha: 365b749}'
+    - '{version: master, gitSha: 2785e21}'
