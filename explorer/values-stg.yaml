@@ -13,10 +13,6 @@ app:
         paths:
           - path: "/"
             version: "pr-16"
-      - host: "pr-24-explorer.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-24"
       - host: "pr-26-explorer.stg.aepps.com"
         paths:
           - path: "/"
@@ -26,5 +22,4 @@ app:
       gitSha: "df1d629"
     - version: "pr-16"
       gitSha: "9b8b544"
-    - version: "pr-24"
     - version: "pr-26"
