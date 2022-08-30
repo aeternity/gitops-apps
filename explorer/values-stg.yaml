@@ -17,9 +17,14 @@ app:
         paths:
           - path: "/"
             version: "pr-24"
+      - host: "pr-25-explorer.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-25"
   versions:
     - version: "pr-13"
       gitSha: "df1d629"
     - version: "pr-16"
       gitSha: "9b8b544"
     - version: "pr-24"
+    - version: "pr-25"
