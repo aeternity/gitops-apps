@@ -12,3 +12,9 @@ app:
       - host: "repl.prd.aepps.com"
         paths:
           - path: "/"
+      - host: "master-repl.prd.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
+  versions:
+    - {version: master, gitSha: ""}
