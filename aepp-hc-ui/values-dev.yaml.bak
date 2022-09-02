@@ -37,4 +37,4 @@ app:
           path: /alive
           port: http
   versions:
-    - {version: pr-2, gitSha: be57163}
+    - '{version: pr-2, gitSha: be57163}'
