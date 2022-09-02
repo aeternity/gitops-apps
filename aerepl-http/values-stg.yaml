@@ -1,14 +1,19 @@
 app:
   image:
-    repository: aeternity/aerepl_http
+    repository: "aeternity/aerepl_http"
     tag: "latest"
-    pullPolicy: Always
+    pullPolicy: "Always"
   service:
-    port: 4000
-
+    port: "4000"
   ingress:
-    enabled: true
+    enabled: "true"
     hosts:
       - host: "repl.stg.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-28-aerepl-http.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-28"
+  versions:
+    - version: "pr-28"
