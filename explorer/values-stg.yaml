@@ -9,10 +9,6 @@ app:
       - host: "explorer.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-29-explorer.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-29"
       - host: "pr-30-explorer.stg.aepps.com"
         paths:
           - path: "/"
@@ -21,4 +17,3 @@ app:
     - version: "pr-13"
       gitSha: "df1d629"
     - version: "pr-30"
-    - {version: pr-29, gitSha: 955cdfc}
