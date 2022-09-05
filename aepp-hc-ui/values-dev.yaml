@@ -23,10 +23,6 @@ app:
       - host: "hc-ui.dev.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-6-aepp-hc-ui.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-6"
   probes:
     liveness:
       enabled: "true"
@@ -41,5 +37,4 @@ app:
         httpGet:
           path: "/alive"
           port: "http"
-  versions:
-    - version: "pr-6"
+  versions: []
