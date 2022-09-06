@@ -1,7 +1,7 @@
 app:
   image:
     repository: aeternity/aerepl_http
-    tag: "latest"
+    tag: "v2.1.2"
   service:
     port: 4000
   ingress:
@@ -15,4 +15,4 @@ app:
           - path: "/"
             version: "master"
   versions:
-    - '{version: master, gitSha: e0ea337}'
+    - '{version: master, gitSha: 92f6c70}'
