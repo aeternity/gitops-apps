@@ -11,5 +11,4 @@ app:
       - host: "repl.stg.aepps.com"
         paths:
           - path: "/"
-  versions:
-    - {version: pr-32, gitSha: ac4bedd}
+  versions: []
