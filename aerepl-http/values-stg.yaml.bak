@@ -12,4 +12,4 @@ app:
         paths:
           - path: "/"
   versions:
-    - {version: pr-32, gitSha: ac4bedd}
+    - '{version: pr-32, gitSha: ac4bedd}'
