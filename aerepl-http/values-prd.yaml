@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternity/aerepl_http
+    repository: aeternitybot/aerepl_http
     tag: "v2.1.2"
   service:
     port: 4000
