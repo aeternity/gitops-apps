@@ -22,4 +22,4 @@ app:
       gitSha: "df1d629"
     - version: "pr-30"
       gitSha: "65eae33"
-    - {version: pr-31, gitSha: 25e051c}
+    - '{version: pr-31, gitSha: 25e051c}'
