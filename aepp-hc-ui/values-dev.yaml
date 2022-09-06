@@ -1,7 +1,7 @@
 app:
   image:
     repository: "aeternity/aepp-hc-ui"
-    tag: "pr-2"
+    tag: "pr-6"
     pullPolicy: "Always"
   env:
     PORT: "80"
