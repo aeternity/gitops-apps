@@ -22,4 +22,4 @@ app:
     readiness:
       enabled: false
   versions:
-    - '{version: main, gitSha: a0a06c4}'
+    - '{version: main, gitSha: fb1e039}'
