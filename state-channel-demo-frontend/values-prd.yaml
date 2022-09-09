@@ -9,6 +9,9 @@ app:
       - host: "state-channel-demo.prd.aepps.com"
         paths:
           - path: "/"
+      - host: "statechannel.aepps.com"
+        paths:
+          - path: "/"
       - host: "main-state-channel-demo.prd.aepps.com"
         paths:
           - path: "/"
