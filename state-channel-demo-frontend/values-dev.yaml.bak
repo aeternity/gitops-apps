@@ -4,6 +4,9 @@ app:
       - host: "state-channel-demo.dev.aepps.com"
         paths:
           - path: "/"
+      - host: "statechannel.aepps.com"
+        paths:
+          - path: "/"
       - host: "develop-state-channel-demo.dev.aepps.com"
         paths:
           - path: "/"
@@ -12,6 +15,7 @@ app:
       - hosts:
           - "state-channel-demo.dev.aepps.com"
           - "develop-state-channel-demo.dev.aepps.com"
+          - "statechannel.aepps.com"
         secretName: state-channel-demo-frontend-cert
   versions:
-    - '{version: develop, gitSha: f0cd8b8}'
+    - '{version: develop, gitSha: 0a24e93}'
