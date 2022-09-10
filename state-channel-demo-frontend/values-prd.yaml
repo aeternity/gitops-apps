@@ -16,6 +16,10 @@ app:
         paths:
           - path: "/"
             version: "main"
+    tls:
+      - hosts:
+          - "statechannel.aepps.com"
+        secretName: state-channel-demo-frontend-cert
   probes:
     liveness:
       enabled: false
