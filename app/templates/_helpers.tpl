@@ -75,3 +75,4 @@ Get a resource full name based on versions configuration
         {{- include "app.fullname" . }}-{{ include "app.escape" .version }}
     {{- end }}
 {{- end }}
+

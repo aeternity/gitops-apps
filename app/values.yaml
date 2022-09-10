@@ -75,9 +75,6 @@ resources: {}
   #   cpu: 100m
   #   memory: 128Mi
 
-init:
-  enabled: false
-
 autoscaling:
   enabled: false
   minReplicas: 1
@@ -91,9 +88,10 @@ tolerations: []
 
 affinity: {}
 
-encValues: {}
-
 persistence:
+  enabled: false
+
+init:
   enabled: false
 
 probes:
@@ -110,3 +108,11 @@ probes:
       httpGet:
         path: /
         port: http
+
+encValues: {}
+
+secrets:
+  external:
+    remotePrefix: ""
+    secretName: ""
+    values: {}
