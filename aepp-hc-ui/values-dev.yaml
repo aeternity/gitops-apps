@@ -23,6 +23,10 @@ app:
       - host: "hc-ui.dev.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-8-aepp-hc-ui.dev.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-8"
   probes:
     liveness:
       enabled: "true"
@@ -30,11 +34,12 @@ app:
         httpGet:
           path: "/alive"
           port: "http"
-        initialDelaySeconds: 60
+        initialDelaySeconds: "60"
     readiness:
       enabled: "true"
       config:
         httpGet:
           path: "/alive"
           port: "http"
-  versions: []
+  versions:
+    - version: "pr-8"
