@@ -1,7 +1,7 @@
 app:
   image:
     repository: "aeternity/aepp-hc-ui"
-    tag: "pr-7"
+    tag: "pr-8"
     pullPolicy: "Always"
   env:
     PORT: "80"
@@ -30,7 +30,7 @@ app:
         httpGet:
           path: "/alive"
           port: "http"
-        initialDelaySeconds: "60"
+        initialDelaySeconds: 60
     readiness:
       enabled: "true"
       config:
