@@ -11,4 +11,9 @@ app:
       - host: "repl.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-36-aerepl-http.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-36"
+  versions:
+    - version: "pr-36"
