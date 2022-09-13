@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternity/aerepl_http
+    repository: aeternitybot/aerepl_http
     tag: "v2.1.2"
   service:
     port: 4000
@@ -15,4 +15,4 @@ app:
           - path: "/"
             version: "master"
   versions:
-    - '{version: master, gitSha: 92f6c70}'
+    - '{version: master, gitSha: 7488bc6}'
