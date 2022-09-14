@@ -107,4 +107,4 @@ app:
     - version: "pr-114"
     - version: "pr-115"
     - version: "pr-117"
-    - {version: pr-124, gitSha: 61e1274}
+    - {version: pr-124, gitSha: 2fd24b0}
