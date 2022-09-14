@@ -21,4 +21,4 @@ app:
     "BOT_SERVICE_PORT": "3000"
     "NETWORK_ID": "ae_uat"
     "NODE_URL": "https://testnet.prd.aepps.com"
-    "WS_URL": "ws://testnet.prd.aepps.com:3014/channel"
+    "WS_URL": "ws://testnet.prd.aepps.com/channel"
