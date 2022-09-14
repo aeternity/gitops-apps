@@ -15,5 +15,10 @@ app:
         paths:
           - path: "/"
             version: "pr-36"
+      - host: "pr-37-aerepl-http.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-37"
   versions:
     - version: "pr-36"
+    - version: "pr-37"
