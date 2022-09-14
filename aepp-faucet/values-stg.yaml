@@ -16,5 +16,4 @@ app:
       - host: "faucet.stg.aepps.com"
         paths:
           - path: "/"
-  versions:
-    - {version: pr-53, gitSha: d1fa3b1}
+  versions: []
