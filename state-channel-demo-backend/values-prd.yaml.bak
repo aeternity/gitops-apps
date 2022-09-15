@@ -21,11 +21,11 @@ app:
     readiness:
       enabled: false
   env:
-    "NODE_URL": "https://testnet.aeternity.io"
-    "WS_URL": "wss://sdk-testnet.aepps.com/channel"
+    "NODE_URL": "https://testnet.prd.aepps.com"
+    "WS_URL": "ws://testnet.prd.aepps.com:3014/channel"
     "COMPILER_URL": "https://compiler.aepps.com"
     "FAUCET_PUBLIC_ADDRESS": "ak_2iBPH7HUz3cSDVEUWiHg76MZJ6tZooVNBmmxcgVK6VV8KAE688"
     "BOT_SERVICE_PORT": "3000"
     "NETWORK_ID": "ae_uat"
   versions:
-    - '{version: main, gitSha: fb1e039}'
+    - '{version: main, gitSha: a3ffa12}'
