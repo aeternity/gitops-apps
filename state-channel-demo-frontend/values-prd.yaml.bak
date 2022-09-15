@@ -5,6 +5,9 @@ app:
     pullPolicy: "Always"
   ingress:
     enabled: "true"
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
     hosts:
       - host: "state-channel-demo.prd.aepps.com"
         paths:
@@ -16,10 +19,14 @@ app:
         paths:
           - path: "/"
             version: "main"
+    tls:
+      - hosts:
+          - "statechannel.aepps.com"
+        secretName: state-channel-demo-frontend-cert
   probes:
     liveness:
       enabled: false
     readiness:
       enabled: false
   versions:
-    - '{version: main, gitSha: fb1e039}'
+    - '{version: main, gitSha: a3ffa12}'

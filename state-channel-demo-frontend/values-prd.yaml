@@ -21,7 +21,7 @@ app:
             version: "main"
     tls:
       - hosts:
-        - "statechannel.aepps.com"
+          - "statechannel.aepps.com"
         secretName: state-channel-demo-frontend-cert
   probes:
     liveness:
@@ -29,4 +29,4 @@ app:
     readiness:
       enabled: false
   versions:
-    - {version: main, gitSha: fb1e039}
+    - {version: main, gitSha: a3ffa12}
