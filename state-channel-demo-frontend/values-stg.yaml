@@ -65,6 +65,10 @@ app:
         paths:
           - path: "/"
             version: "pr-138"
+      - host: "pr-139-state-channel-demo-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-139"
   probes:
     liveness:
       enabled: "false"
@@ -95,3 +99,4 @@ app:
     - version: "pr-114"
     - version: "pr-122"
     - version: "pr-138"
+    - version: "pr-139"
