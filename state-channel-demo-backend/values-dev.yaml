@@ -15,3 +15,5 @@ app:
         secretName: state-channel-demo-backend-cert
   versions:
     - {version: develop, gitSha: 359e12b}
+  env:
+    "NODE_ENV": "testnet"
