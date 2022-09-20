@@ -27,5 +27,6 @@ app:
     "FAUCET_PUBLIC_ADDRESS": "ak_2iBPH7HUz3cSDVEUWiHg76MZJ6tZooVNBmmxcgVK6VV8KAE688"
     "BOT_SERVICE_PORT": "3000"
     "NETWORK_ID": "ae_uat"
+    "NODE_ENV": "production"
   versions:
     - {version: main, gitSha: a3ffa12}
