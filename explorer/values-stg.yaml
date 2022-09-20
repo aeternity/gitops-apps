@@ -16,4 +16,4 @@ app:
   versions:
     - version: "pr-13"
       gitSha: "df1d629"
-    - {version: pr-31, gitSha: 6cd0f37}
+    - {version: pr-31, gitSha: 9bca1df}
