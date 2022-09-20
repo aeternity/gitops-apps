@@ -115,6 +115,5 @@ app:
     - version: "pr-114"
     - version: "pr-115"
     - version: "pr-117"
-    - version: "pr-138"
-      gitSha: "9ab7da5"
-    - '{version: pr-141, gitSha: 292885e}'
+    - {version: pr-141, gitSha: 292885e}
+    - '{version: pr-138, gitSha: f27df80}'
