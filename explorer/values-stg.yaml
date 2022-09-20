@@ -13,8 +13,15 @@ app:
         paths:
           - path: "/"
             version: "pr-31"
+      - host: "pr-34-explorer.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-34"
   versions:
     - version: "pr-13"
       gitSha: "df1d629"
-    - {version: pr-31, gitSha: 8fdb346}
-    - {version: pr-34, gitSha: 73e26a1}
+    - version: "pr-31"
+      gitSha: "8fdb346"
+    - version: "pr-34"
+      gitSha: "73e26a1"
+    - version: "pr-34"
