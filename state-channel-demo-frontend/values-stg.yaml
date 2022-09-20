@@ -69,6 +69,10 @@ app:
         paths:
           - path: "/"
             version: "pr-141"
+      - host: "pr-142-state-channel-demo-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-142"
   probes:
     liveness:
       enabled: "false"
@@ -98,5 +102,8 @@ app:
       gitSha: "316f6e4"
     - version: "pr-114"
     - version: "pr-122"
-    - {version: pr-141, gitSha: 6cc39a0}
-    - {version: pr-138, gitSha: 12c617e}
+    - version: "pr-141"
+      gitSha: "6cc39a0"
+    - version: "pr-138"
+      gitSha: "12c617e"
+    - version: "pr-142"
