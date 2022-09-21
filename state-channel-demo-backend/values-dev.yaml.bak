@@ -14,6 +14,6 @@ app:
           - "develop-state-channel-demo-backend.dev.aepps.com"
         secretName: state-channel-demo-backend-cert
   versions:
-    - '{version: develop, gitSha: 69c15de}'
+    - '{version: develop, gitSha: 70a638b}'
   env:
     "NODE_ENV": "testnet"
