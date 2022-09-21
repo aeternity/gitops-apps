@@ -13,10 +13,6 @@ app:
         paths:
           - path: "/"
             version: "pr-34"
-      - host: "pr-35-explorer.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-35"
       - host: "pr-36-explorer.stg.aepps.com"
         paths:
           - path: "/"
@@ -26,7 +22,5 @@ app:
       gitSha: "df1d629"
     - version: "pr-31"
       gitSha: "700e528"
-    - version: "pr-35"
-      gitSha: "b5c5cda"
     - {version: pr-34, gitSha: ce985ed}
     - {version: pr-36, gitSha: 81eacf7}
