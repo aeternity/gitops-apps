@@ -9,18 +9,6 @@ app:
       - host: "explorer.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-37-explorer.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-37"
-      - host: "pr-38-explorer.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-38"
-      - host: "pr-39-explorer.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-39"
   versions:
     - version: "pr-13"
       gitSha: "df1d629"
@@ -28,7 +16,4 @@ app:
       gitSha: "700e528"
     - version: "pr-34"
       gitSha: "c85c00b"
-    - version: "pr-37"
-      gitSha: "47bdf9d"
-    - version: "pr-38"
-    - '{version: pr-39, gitSha: ed8197b}'
+    - '{version: pr-37, gitSha: 32ca07f}'
