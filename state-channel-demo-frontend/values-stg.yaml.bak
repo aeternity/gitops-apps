@@ -122,5 +122,5 @@ app:
       gitSha: "aee5546"
     - version: "pr-148"
     - version: "pr-149"
-    - version: "pr-150"
-    - '{version: pr-154, gitSha: 5cc349a}'
+    - {version: pr-154, gitSha: 5cc349a}
+    - '{version: pr-150, gitSha: 33ded2b}'
