@@ -77,10 +77,6 @@ app:
         paths:
           - path: "/"
             version: "pr-149"
-      - host: "pr-150-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-150"
       - host: "pr-154-state-channel-demo-frontend.stg.aepps.com"
         paths:
           - path: "/"
@@ -123,4 +119,3 @@ app:
     - version: "pr-148"
     - version: "pr-149"
     - {version: pr-154, gitSha: 5cc349a}
-    - {version: pr-150, gitSha: 33ded2b}
