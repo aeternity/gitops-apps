@@ -16,4 +16,5 @@ app:
   versions:
     - {version: develop, gitSha: eeef526}
   env:
-    "NODE_ENV": "testnet"
+    "NODE_ENV": "production"
+
