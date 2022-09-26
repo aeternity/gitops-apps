@@ -128,4 +128,4 @@ app:
       gitSha: "aee5546"
     - {version: pr-161, gitSha: 34fe4c6}
     - {version: pr-102, gitSha: 2a1060b}
-    - {version: pr-156, gitSha: ed47005}
+    - {version: pr-156, gitSha: 4477571}
