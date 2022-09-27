@@ -1,0 +1,10 @@
+app:
+  ingress:
+    hosts:
+      - host: "faucet-nodejs.dev.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "faucet-nodejs.dev.aepps.com"
+        secretName: faucet-nodejs-cert
