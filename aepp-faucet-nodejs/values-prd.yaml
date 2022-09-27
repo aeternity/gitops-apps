@@ -1,0 +1,19 @@
+app:
+  image:
+    tag: "latest"
+    pullPolicy: Always
+  encValues:
+    FAUCET_ACCOUNT_PRIV_KEY: ""
+  env:
+    "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
+    "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
+    "NODE_URL": "https://testnet.aeternity.io"
+  service:
+    port: "5000"
+  ingress:
+    enabled: "true"
+    hosts:
+      - host: "faucet-nodejs.prd.aepps.com"
+        paths:
+          - path: "/"
+  versions: []
