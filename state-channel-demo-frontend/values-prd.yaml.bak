@@ -1,6 +1,6 @@
 app:
   image:
-    tag: "v1.0.0"
+    tag: "v1.0.1"
     repository: "aeternitybot/state-channel-demo-frontend"
     pullPolicy: "Always"
   ingress:
@@ -29,4 +29,4 @@ app:
     readiness:
       enabled: false
   versions:
-    - '{version: main, gitSha: a76a0b6}'
+    - '{version: main, gitSha: ca64fcd}'
