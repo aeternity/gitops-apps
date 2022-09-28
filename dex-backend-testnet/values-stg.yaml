@@ -13,6 +13,10 @@ app:
       - host: "dex-backend-testnet.stg.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-72-dex-backend-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-72"
   init:
     enabled: "true"
     command:
@@ -35,3 +39,4 @@ app:
   versions:
     - version: "pr-68"
       gitSha: "894d2a1"
+    - version: "pr-72"
