@@ -1,12 +1,5 @@
 app:
-  image:
-    repository: "aeternity/aerepl_http"
-    tag: "latest"
-    pullPolicy: "Always"
-  service:
-    port: "4000"
   ingress:
-    enabled: "true"
     hosts:
       - host: "repl.stg.aepps.com"
         paths:
@@ -19,6 +12,12 @@ app:
         paths:
           - path: "/"
             version: "pr-37"
+    tls:
+      - hosts:
+        - "repl.stg.aepps.com"
+        - "pr-36-aerepl-http.stg.aepps.com"
+        - "pr-37-aerepl-http.stg.aepps.com"
+        secretName: aerepl-http-cert
   versions:
     - version: "pr-36"
     - version: "pr-37"
