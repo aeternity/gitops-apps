@@ -1,0 +1,24 @@
+app:
+  image:
+    tag: "v1.2.1"
+    repository: "aeternitybot/state-channel-demo-backend"
+    pullPolicy: "Always"
+  service:
+    port: 3000
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
+  env:
+    "COMPILER_URL": "https://compiler.aepps.com"
+    "FAUCET_PUBLIC_ADDRESS": "ak_2iBPH7HUz3cSDVEUWiHg76MZJ6tZooVNBmmxcgVK6VV8KAE688"
+    "BOT_SERVICE_PORT": "3000"
+    "NETWORK_ID": "ae_uat"
+    "NODE_URL": "https://testnet.prd.aepps.com"
+    "WS_URL": "wss://testnet.prd.aepps.com/channel"

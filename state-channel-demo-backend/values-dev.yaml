@@ -1,0 +1,19 @@
+app:
+  ingress:
+    hosts:
+      - host: "state-channel-demo-backend.dev.aepps.com"
+        paths:
+          - path: "/"
+      - host: "develop-state-channel-demo-backend.dev.aepps.com"
+        paths:
+          - path: "/"
+            version: "develop"
+    tls:
+      - hosts:
+          - "state-channel-demo-backend.dev.aepps.com"
+          - "develop-state-channel-demo-backend.dev.aepps.com"
+        secretName: state-channel-demo-backend-cert
+  versions:
+    - {version: develop, gitSha: 4548a44}
+  env:
+    "NODE_ENV": "production"

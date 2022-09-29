@@ -1,12 +1,5 @@
 app:
-  image:
-    tag: "latest"
-    repository: "aeternitybot/state-channel-demo-backend"
-    pullPolicy: "Always"
-  service:
-    port: "3000"
   ingress:
-    enabled: "true"
     hosts:
       - host: "state-channel-demo-backend.stg.aepps.com"
         paths:
@@ -27,19 +20,14 @@ app:
         paths:
           - path: "/"
             version: "pr-175"
-  probes:
-    liveness:
-      enabled: "false"
-    readiness:
-      enabled: "false"
-  env:
-    "NODE_URL": "https://testnet.aeternity.io"
-    "WS_URL": "wss://sdk-testnet.aepps.com/channel"
-    "COMPILER_URL": "https://compiler.aepps.com"
-    "FAUCET_PUBLIC_ADDRESS": "ak_2iBPH7HUz3cSDVEUWiHg76MZJ6tZooVNBmmxcgVK6VV8KAE688"
-    "BOT_SERVICE_PORT": "3000"
-    "NETWORK_ID": "ae_uat"
-    "NODE_ENV": "testnet"
+    tls:
+      - hosts:
+          - "state-channel-demo-backend.stg.aepps.com"
+          - "pr-102-state-channel-demo-backend.stg.aepps.com"
+          - "pr-138-state-channel-demo-backend.stg.aepps.com"
+          - "pr-156-state-channel-demo-backend.stg.aepps.com"
+          - "pr-175-state-channel-demo-backend.stg.aepps.com"
+        secretName: state-channel-demo-backend-cert
   versions:
     - version: "pr-138"
       gitSha: "aee5546"
@@ -47,3 +35,7 @@ app:
       gitSha: "2a1060b"
     - version: "pr-175"
     - {version: pr-156, gitSha: 4c8575b}
+  env:
+    "NODE_URL": "https://testnet.aeternity.io"
+    "WS_URL": "wss://sdk-testnet.aepps.com/channel"
+    "NODE_ENV": "testnet"
