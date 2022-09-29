@@ -2,9 +2,9 @@ apiVersion: v2
 name: aesophia
 description: A Helm chart for deploying multiple versions of aesophia HTTP compiler to Kubernetes
 
-version: 0.1.0
+version: 0.2.0
 
 dependencies:
   - name: app
-    version: 0.3.0
+    version: 0.4.0
     repository: "file://../app"
