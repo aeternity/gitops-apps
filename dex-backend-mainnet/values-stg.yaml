@@ -12,4 +12,4 @@ app:
         - "dex-backend-mainnet.stg.aepps.com"
         secretName: dex-backend-mainnet-cert
   env:
-    "POSTGRES_HOST": "dexdev.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
+    "POSTGRES_HOST": "dexstg.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
