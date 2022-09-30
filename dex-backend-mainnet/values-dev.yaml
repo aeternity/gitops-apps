@@ -1,15 +1,15 @@
 app:
   secrets:
     external:
-      remotePrefix: /k8s/stg-m4n4
+      remotePrefix: /k8s/dev-wgt7
   ingress:
     hosts:
-      - host: "dex-backend-mainnet.stg.aepps.com"
+      - host: "dex-backend-mainnet.dev.aepps.com"
         paths:
           - path: "/"
     tls:
       - hosts:
-        - "dex-backend-mainnet.stg.aepps.com"
+        - "dex-backend-mainnet.dev.aepps.com"
         secretName: dex-backend-mainnet-cert
   env:
     "POSTGRES_HOST": "dexdev.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
