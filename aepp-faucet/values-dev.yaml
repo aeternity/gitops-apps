@@ -7,11 +7,7 @@ app:
       - host: "faucet.dev.aepps.com"
         paths:
           - path: "/"
-      - host: "faucet2.dev.aepps.com"
-        paths:
-          - path: "/"
-      - host: "faucet3.dev.aepps.com"
-        paths:
-          - path: "/"
     tls:
-      - secretName: aepp-faucet-cert
+      - hosts:
+        - "faucet.dev.aepps.com"
+        secretName: aepp-faucet-cert
