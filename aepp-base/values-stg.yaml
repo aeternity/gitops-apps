@@ -1,16 +1,17 @@
 app:
-  image:
-    tag: "master"
-    pullPolicy: Always
   ingress:
-    enabled: "true"
     hosts:
-      - host: "base.stg.aepps.com" # has to be changed/disscused
+      - host: "base.stg.aepps.com"
         paths:
           - path: "/"
       - host: "pr-1450-aepp-base.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-1450"
+    tls:
+      - hosts:
+        - "base.stg.aepps.com"
+        - "pr-1450-aepp-base.stg.aepps.com"
+        secretName: aepp-base-cert
   versions:
     - version: "pr-1450"
