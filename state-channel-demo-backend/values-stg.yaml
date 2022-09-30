@@ -13,7 +13,11 @@ app:
           - path: "/"
             version: "pr-138"
     tls:
-      - secretName: "state-channel-demo-backend-cert"
+      - hosts:
+        - "state-channel-demo-backend.stg.aepps.com"
+        - "pr-102-state-channel-demo-backend.stg.aepps.com"
+        - "pr-138-state-channel-demo-backend.stg.aepps.com"
+        secretName: "state-channel-demo-backend-cert"
   versions:
     - version: "pr-138"
       gitSha: "aee5546"
