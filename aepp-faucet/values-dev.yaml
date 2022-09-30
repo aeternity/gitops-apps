@@ -13,4 +13,5 @@ app:
     tls:
       - hosts:
         - "faucet.dev.aepps.com"
+        - "faucet2.dev.aepps.com"
         secretName: aepp-faucet-cert
