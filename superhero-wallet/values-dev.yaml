@@ -1,10 +1,10 @@
 app:
   ingress:
     hosts:
-      - host: "superhero-wallet.stg.aepps.com"
+      - host: "superhero-wallet.dev.aepps.com"
         paths:
           - path: "/"
     tls:
       - hosts:
-        - "superhero-wallet.stg.aepps.com"
+        - "superhero-wallet.dev.aepps.com"
         secretName: superhero-wallet-cert
