@@ -1,0 +1,10 @@
+app:
+  ingress:
+    hosts:
+      - host: "ga-multisig-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "ga-multisig-ui.stg.aepps.com"
+        secretName: ga-multisig-ui-cert

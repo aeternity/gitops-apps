@@ -1,0 +1,7 @@
+app:
+  image:
+    repository: "aeternitybot/ga-multisig-ui"
+    tag: "latest"
+    pullPolicy: "Always"
+  ingress:
+    enabled: true
