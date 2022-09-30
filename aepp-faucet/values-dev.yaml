@@ -7,6 +7,9 @@ app:
       - host: "faucet.dev.aepps.com"
         paths:
           - path: "/"
+      - host: "faucet2.dev.aepps.com"
+        paths:
+          - path: "/"
     tls:
       - hosts:
         - "faucet.dev.aepps.com"
