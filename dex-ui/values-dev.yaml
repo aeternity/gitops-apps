@@ -4,11 +4,7 @@ app:
       - host: "dex.dev.aepps.com"
         paths:
           - path: "/"
-      - host: "aepp.dex.aeternity.io"
-        paths:
-          - path: "/"
     tls:
       - hosts:
         - "dex.dev.aepps.com"
-        - "aepp.dex.aeternity.io"
         secretName: dex-ui-cert
