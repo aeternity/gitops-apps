@@ -1,0 +1,15 @@
+app:
+  ingress:
+    hosts:
+      - host: "state-channel-demo.prd.aepps.com"
+        paths:
+          - path: "/"
+      - host: "main-state-channel-demo.prd.aepps.com"
+        paths:
+          - path: "/"
+            version: "main"
+    tls:
+      - hosts:
+        - "state-channel-demo.prd.aepps.com"
+        - "main-state-channel-demo.prd.aepps.com"
+        secretName: state-channel-demo-frontend-cert
