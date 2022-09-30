@@ -1,0 +1,20 @@
+app:
+  image:
+    tag: latest
+    pullPolicy: "Always"
+  env:
+    "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
+    "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
+    "NODE_URL": "https://testnet.aeternity.io"
+  secrets:
+    external:
+      values:
+        FAUCET_ACCOUNT_PRIV_KEY: /apps/FAUCET_ACCOUNT_PRIV_KEY
+  service:
+    port: 5000
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+
