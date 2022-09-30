@@ -1,8 +1,16 @@
 app:
-  encValues:
-    POSTGRES_PASSWORD: "AgBH9dwqR2jS9VhfWdCyM6EM0ENUHIu8DZnqrjhCTBv+fHwL9J8+OZnKSDHSJG3NmTeeywBzW/T5ghjLOE/Hg+CKviecnXKdlS3HQH68PqYtijWLSTwRXG71EzPDygxYzRqM+ZK3N+exgD8RDa/iY/nlbU9aw6B9pzO9xcH4N1LEr1iz/JRXpIbqXjcqD85VnlNhFPDfdUUmoW1Ipk1XiZwPBlsIuiEyUS1B3/3qzV3SGEpyLbxQCf7xV+dHh4gGpOP9K8d2WgvEcmay2juTogRdRIMfxQgqDu1Pop5Xe3wKSlEIWeFydvLXh/sIPeHIWSHZ8jZ/9JaL8g+iFtnaje0kQwozA9AyUBfJnyubPUecbBVegUOF/XT5LUG7zn2J5jxElUXhp5h0d4091+rqcisBOgHFHx6RcmPb1WhMt5ibSWZRFIaEH1F89tIwcrgguWGRubqmsY0j0e0FTtMYphxeLspccGGQRknSv51jPxFzpw/BmTHmAQ4D5XFOKns9mBSmLp+IZzGeGQhaXJEgOFSOYzb7yuan32iUCwrvsKMX1Y3nsy5UQtqRDwq4fNq6G87fVE6OldVJ5akDSaH9wtwLgLcCHj2gyIYUaRI4pN0sjEwbmpV4sTdzgimYGTv0iy7XG7Bf29zZ9m75ofn1Xd8f27VN3WKKRwSzHqTmoTQEE2WuVscxdMiqsrCytthYDL7pLZPGVQR9IlhLoQ8="
-    AUTHENTICATION_PASSWORD: "AgA6U+uWxQ4sjgDnZ33e9yFNSByinciThfV7ZaMyfL/5nZNjORDw5XSjQmRbjkjoJ/kffPtxqbz7exI520gu47NykhhlMe08v4lcHMDIX71NIDQ6hNXZWh+FMKfQjV8a7VMsj9sSipQVbWdV8lNkdYnPsSAZ8JJM6PmF3JFBDN0VO36k72hCyi55ZI1ZQEiJqruguo1QlmPxq4FVe0Ia43bzVwnHXYXySQaCMtBFzL3Bey98C+mE3N80EilHp2BXTbsThY0+EoEHewAuld0K+Hsr6ulJ9YVrhsTmDQQwthCXQn23HYfA99yIS5Q4adPIjRGE6vidmTb5WgqvXZJdCZBhhWumk9ExfCM8wVFcsY/fGtDdw/6SkGemu6ma+VdVqknqpr8T7WmSWKR9/Wui5chRB0mdI8y0VBSdqZyc+bk8TzHk6BIcj0eaeoXzofLWKcqavd0HypU0njzhW90giygL5VOfaMWa1kDQMJdCDXhZMpC2BvjlJZ1UP5XPswLpJecg+9Z7PNgERAIzvy/PEGqzOGXEc1JteykbGWQVn+oxP2JQCjseOxm69UvHGQLL6L6LR6Vl7nhM6pSyyXblnpCEzRTOKkQRylAucBSxrf82EPAWZIDlrGd57AifxydE+uxq4OvjFrKePTXpz8/9cRhfftyI7LINV/a+ZUC9WyTnt6wfHcP9x5+PniwABsV7TSKs8a1U2+iLEN7IZrgz/C3+vbQ="
-    PRIVATE_KEY: "AgBelRGVAohwNkbWc/o6vBgaatfq6YCdoDHadHKQwzWwjM4VEkG7aoHfr0lyP0b9MzACTfX89VeYYfSipBiCfMrJhYTgKa7JPuxYT1UDc+2xQRwgvmQb6DL0FWkGBeZeYRa0kaQ0+180QnOG2MAN4VEr1+cuMOMP4+Sc4DSCR1LYXXDKsI8JnD9z/+VjU6R82Qi2SnaaSoUCRuSY9VAH/pBCpuqCVCO0H+WyQS1Od4jDLQOsBq4hRlHNcaOR+roHAmlUeVeuM7T8bU0e5KjypTSKPKkEptxtnJXnMPNIb9hTDT7UJ/dugAVoEUX9I1fUHvRlOqx4tZPtNeIhEDlXdWaUNFXyqqiUHMcoxbmunvfGmj/bCUHHXeloqwAupFAmneNEjhMcHwMX+k3i5j7gfTjOipqCyWYT99PKuiFr6gEhRajpe45AesH1NyDeVBlFgX0mZNCBdAO6iQGX+fNxR/Rmmuv/8Hb28G1fd89bA/IwJ/yoMwRgvIe6hY6Bxnr/RrjZpJG1GvHo1fCgenPQpGsnmuoT/vFWBB23gEblto4fkWxYcDIDgcYJTzX9zxvfP6/pM7HOLFZ+ZSf4uX8Chgd3P8YFyfuujgXWJAgGm6phLSfkYCqVMQKrIlwsFKQlAF/qXNiYAJzOEAVoHE03Lil6YZ8SfoLrgujyTDtNtmaW5cdTkZC+ZDn9qWotzB9pa1i41Y80Va5RgZl0rYOTkmtMgo3aR6ejDV8U9QYw/ZtjEFHOUJxSKCW6JM/Ojl+yXGvCwqn6HyedK7Bf4Pwm4zn7JajiBa5EU885Fj/I9jspi/fRp5LNaeLg9SYOdYYqY4+8rjOwj00K7X/j+ET83Sgth4xPCtE5HUHRx9ZLJQlTVQ=="
+  secrets:
+    external:
+      remotePrefix: /k8s/stg-m4n4
+  ingress:
+    hosts:
+      - host: "superhero-backend.stg.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "superhero-backend.stg.aepps.com"
+        secretName: superhero-backend-cert
   env:
     "REDIS_HOST": "192.168.1.111"
     "REDIS_PORT": "6379"
@@ -26,21 +34,3 @@ app:
     "POSTGRES_USER": "postgres"
     "POSTGRES_DB": "superhero"
     "POSTGRES_HOST": "superherostg.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
-  image:
-    tag: "latest"
-    pullPolicy: Always
-  probes:
-    liveness:
-      enabled: false
-    readiness:
-      enabled: false
-  service:
-    port: 3000
-  ingress:
-    enabled: true
-    hosts:
-      - host: "superhero-backend.stg.aepps.com" # has to be changed/disscused
-        paths:
-          - path: "/"
-  versions:
-    - {version: pr-394, gitSha: 48e5a95}
