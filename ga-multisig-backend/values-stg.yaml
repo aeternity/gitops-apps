@@ -1,20 +1,15 @@
 app:
-  encValues:
-    PG_PASSWORD: "AgCtyb9kJ0Qj3oDAbhUHgPx9LC8msKyNQF6qd0+Xb3D2ldkU3G68T8ojEyqqQSx+otkJ1qZdiUkaAo9fNn3pl/0Txf6lhhYudCKXgm2YZpDMM1tr6LPVc4kg5haPkbAEHdGJp/1W4z4WNbtoK5YghSddqQuw7DMwZaNSxA04fGIh6YKwTWbyzKgxl2Ijx1qq/9KFBluK2funoZMgRVHLToJYnIF+IZA8JBuC26Nh4w3RfpQdW5X8bAUxJyU0+9c6dARDvUamxFrIeMFjqLWVkwiW+tPK0UMgoIW8na2GLenTUiZKYJMP43S4N6Djd1tCsDJmxKTGXG8axA8+8dccmUFXE4sqKoC/gDiCKCfvOkyhkiUe0dUTv8wKw7jSQxLmNKxQ0pqKI031jrXhf1ASmf+3wWnMsBQoIm54XSndAAWF4WQVajbQpdM34wYFUUg/LObRRSHvFWgJyZclF/KllmMv5IxzgI11LmdFEVpRLxTV6Wa7mgryENpNDFaKSzUDaEc+HDm4/teTY6Z/yImoyNyUHxCm5FmQJRVe87M9A2mBKNJ+qijecxgguWUKA98NUN+It1zFw8W2umjGR9U1sSet7IiedtMXSIrWszNDVJn/nBrRyitEXaMl3fcp2GW2Yip4Ay7bEV6GhRH/9ZekhYMxlfDTdfaSRSHk4WnuhaURnhJx32wbbYhFVWqqD7h7SZTdzN6xEUYa94Dx9dg="
-  image:
-    repository: aeternitybot/ga-multisig-backend
-    tag: "latest"
-    pullPolicy: "Always"
-  service:
-    port: 3000
+  secrets:
+    external:
+      remotePrefix: /k8s/stg-m4n4
   ingress:
-    enabled: "true"
+    tls:
+      - hosts:
+        - "ga-multisig-backend.stg.aepps.com"
+        secretName: ga-multisig-backend-cert
     hosts:
       - host: "ga-multisig-backend.stg.aepps.com"
         paths:
           - path: "/"
   env:
-    "PG_DB": "ga-multisig-backend"
-    "PG_PORT": "5432"
-    "PG_USER": "postgres"
     "PG_HOST": "superherostg.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
