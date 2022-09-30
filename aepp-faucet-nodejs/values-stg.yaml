@@ -1,13 +1,13 @@
 app:
   secrets:
     external:
-      remotePrefix: /k8s/dev-wgt7
+      remotePrefix: /k8s/stg-m4n4
   ingress:
     hosts:
-      - host: "faucet-nodejs.dev.aepps.com"
+      - host: "faucet-nodejs.stg.aepps.com"
         paths:
           - path: "/"
     tls:
       - hosts:
-        - "faucet-nodejs.dev.aepps.com"
+        - "faucet-nodejs.stg.aepps.com"
         secretName: aepp-faucet-cert
