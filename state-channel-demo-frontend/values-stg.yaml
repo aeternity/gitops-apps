@@ -21,10 +21,6 @@ app:
         paths:
           - path: "/"
             version: "pr-175"
-      - host: "pr-176-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-176"
   probes:
     liveness:
       enabled: "false"
@@ -37,4 +33,3 @@ app:
       gitSha: "2a1060b"
     - version: "pr-175"
       gitSha: "1fdd056"
-    - version: "pr-176"
