@@ -8,7 +8,7 @@ app:
     hosts:
       - host: "state-channel-demo.stg.aepps.com"
         paths:
-          - path: "/"      
+          - path: "/"
       - host: "pr-102-state-channel-demo-frontend.stg.aepps.com"
         paths:
           - path: "/"
@@ -32,8 +32,8 @@ app:
       enabled: "false"
   versions:
     - version: "pr-138"
-      gitSha: "aee5546"    
+      gitSha: "aee5546"
     - version: "pr-102"
       gitSha: "2a1060b"
-    - {version: pr-156, gitSha: 4c8575b}
     - {version: pr-175, gitSha: 1fdd056}
+    - {version: pr-156, gitSha: d1569ec}
