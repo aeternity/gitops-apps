@@ -8,6 +8,3 @@ app:
       - hosts:
         - "superhero-wallet.stg.aepps.com"
         secretName: superhero-wallet-cert
-
-  versions:
-    - {version: pr-1412, gitSha: ad31f821}

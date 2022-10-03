@@ -11,5 +11,3 @@ app:
       - hosts:
         - "faucet.stg.aepps.com"
         secretName: aepp-faucet-cert
-  versions:
-    - {version: pr-53, gitSha: d1fa3b1}

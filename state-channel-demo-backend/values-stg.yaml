@@ -4,64 +4,26 @@ app:
       - host: "state-channel-demo-backend.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "develop-state-channel-demo-backend.prd.aepps.com"
+      - host: "pr-102-state-channel-demo-backend.stg.aepps.com"
         paths:
           - path: "/"
-            version: "develop"
-      - host: "pr-57-state-channel-demo-backend.stg.aepps.com"
+            version: "pr-102"
+      - host: "pr-138-state-channel-demo-backend.stg.aepps.com"
         paths:
           - path: "/"
-            version: "pr-57"
-      - host: "pr-75-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-75"
-      - host: "pr-76-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-76"
-      - host: "pr-77-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-77"
-      - host: "pr-83-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-83"
-      - host: "pr-84-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-84"
-      - host: "pr-85-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-85"
+            version: "pr-138"
     tls:
       - hosts:
         - "state-channel-demo-backend.stg.aepps.com"
-        - "develop-state-channel-demo-backend.stg.aepps.com"
-        - "pr-57-state-channel-demo-backend.stg.aepps.com"
-        - "pr-75-state-channel-demo-backend.stg.aepps.com"
-        - "pr-76-state-channel-demo-backend.stg.aepps.com"
-        - "pr-77-state-channel-demo-backend.stg.aepps.com"
-        - "pr-83-state-channel-demo-backend.stg.aepps.com"
-        - "pr-84-state-channel-demo-backend.stg.aepps.com"
-        - "pr-85-state-channel-demo-backend.stg.aepps.com"
-        secretName: state-channel-demo-backend-cert
-
+        - "pr-102-state-channel-demo-backend.stg.aepps.com"
+        - "pr-138-state-channel-demo-backend.stg.aepps.com"
+        secretName: "state-channel-demo-backend-cert"
   versions:
-    - version: "pr-13"
-      gitSha: "0c296b6"
-    - version: "develop"
-      gitSha: ""
-    - version: "pr-57"
-    - version: "pr-70"
-      gitSha: "abee9c0"
-    - version: "pr-76"
-    - version: "pr-75"
-      gitSha: "82615c0"
-    - version: "pr-77"
-      gitSha: "2416a7a"
-    - version: "pr-84"
-    - version: "pr-85"
-    - {version: pr-83, gitSha: eca58f9}
+    - version: "pr-138"
+      gitSha: "aee5546"
+    - version: "pr-102"
+      gitSha: "2a1060b"
+  env:
+    "NODE_URL": "https://testnet.aeternity.io"
+    "WS_URL": "wss://sdk-testnet.aepps.com/channel"
+    "NODE_ENV": "testnet"

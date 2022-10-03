@@ -4,89 +4,15 @@ app:
       - host: "state-channel-demo.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "develop-state-channel-demo-backend.prd.aepps.com"
-        paths:
-          - path: "/"
-            version: "develop"
-      - host: "pr-37-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-37"
-      - host: "pr-43-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-43"
-      - host: "pr-55-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-55"
-      - host: "pr-62-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-62"
-      - host: "pr-67-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-67"
-      - host: "pr-68-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-68"
-      - host: "pr-72-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-72"
-      - host: "pr-75-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-75"
-      - host: "pr-79-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-79"
-      - host: "pr-84-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-84"
-      - host: "pr-85-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-85"
+
     tls:
       - hosts:
-        - "state-channel-demo.dev.aepps.com"
-        - "develop-state-channel-demo.dev.aepps.com"
-        - "pr-37-state-channel-demo-frontend.stg.aepps.com"
-        - "pr-43-state-channel-demo-frontend.stg.aepps.com"
-        - "pr-55-state-channel-demo-frontend.stg.aepps.com"
-        - "pr-62-state-channel-demo-frontend.stg.aepps.com"
-        - "pr-67-state-channel-demo-frontend.stg.aepps.com"
-        - "pr-68-state-channel-demo-frontend.stg.aepps.com"
-        - "pr-72-state-channel-demo-frontend.stg.aepps.com"
-        - "pr-75-state-channel-demo-frontend.stg.aepps.com"
-        - "pr-79-state-channel-demo-frontend.stg.aepps.com"
-        - "pr-84-state-channel-demo-frontend.stg.aepps.com"
-        - "pr-85-state-channel-demo-frontend.stg.aepps.com"
+          - "state-channel-demo.stg.aepps.com"
+          - "pr-102-state-channel-demo-frontend.stg.aepps.com"
+          - "pr-138-state-channel-demo-frontend.stg.aepps.com"
         secretName: state-channel-demo-frontend-cert
-
   versions:
-    - version: "pr-37"
-    - version: "pr-27"
-      gitSha: "ccf4f4b"
-    - version: "pr-43"
-    - version: "develop"
-      gitSha: ""
-    - version: "pr-62"
-    - version: "pr-55"
-      gitSha: "011297b"
-    - version: "pr-67"
-    - version: "pr-68"
-    - version: "pr-72"
-      gitSha: "24f37b7"
-    - version: "pr-75"
-      gitSha: "82615c0"
-    - version: "pr-79"
-      gitSha: "6f29c37"
-    - version: "pr-84"
-    - version: "pr-85"
-    - {version: pr-83, gitSha: eca58f9}
+    - version: "pr-138"
+      gitSha: "aee5546"
+    - version: "pr-102"
+      gitSha: "2a1060b"

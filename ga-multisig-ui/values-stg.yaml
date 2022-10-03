@@ -1,10 +1,17 @@
 app:
   ingress:
     hosts:
-      - host: "ga-multisig-ui.stg.aepps.com"
+      - host: "ga-multisig-ui.dev.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-4-ga-multisig-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-4"
     tls:
       - hosts:
-        - "ga-multisig-ui.stg.aepps.com"
+        - "ga-multisig-ui.dev.aepps.com"
+        - "pr-4-ga-multisig-ui.stg.aepps.com"
         secretName: ga-multisig-ui-cert
+  versions:
+    - version: "pr-4"

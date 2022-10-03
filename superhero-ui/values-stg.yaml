@@ -1,0 +1,10 @@
+app:
+  ingress:
+    hosts:
+      - host: "superhero.stg.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "superhero.stg.aepps.com"
+        secretName: superhero-cert

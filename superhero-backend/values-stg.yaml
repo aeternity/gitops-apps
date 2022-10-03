@@ -11,8 +11,6 @@ app:
       - hosts:
         - "superhero-backend.stg.aepps.com"
         secretName: superhero-backend-cert
-  versions:
-    - {version: pr-394, gitSha: 48e5a95}
   env:
     "REDIS_HOST": "192.168.1.111"
     "REDIS_PORT": "6379"
