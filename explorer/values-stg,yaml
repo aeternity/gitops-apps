@@ -2,7 +2,6 @@ app:
   image:
     tag: "latest"
   ingress:
-    enabled: "true"
     hosts:
       - host: "explorer.stg.aepps.com"
         paths:
