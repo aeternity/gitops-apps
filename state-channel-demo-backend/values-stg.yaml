@@ -12,10 +12,6 @@ app:
         paths:
           - path: "/"
             version: "pr-138"
-      - host: "pr-180-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-180"
     tls:
       - hosts:
           - "state-channel-demo-backend.stg.aepps.com"
@@ -27,7 +23,6 @@ app:
       gitSha: "aee5546"
     - version: "pr-102"
       gitSha: "2a1060b"
-    - {version: pr-180, gitSha: c101135}
   env:
     "NODE_URL": "https://testnet.aeternity.io"
     "WS_URL": "wss://sdk-testnet.aepps.com/channel"
