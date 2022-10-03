@@ -7,3 +7,7 @@ app:
       - host: "explorer.stg.aepps.com"
         paths:
           - path: "/"
+    tls:
+      - hosts:
+        - "explorer.stg.aepps.com"
+        secretName: explorer-cert

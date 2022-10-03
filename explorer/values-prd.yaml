@@ -11,5 +11,9 @@ app:
         paths:
           - path: "/"
             version: "master"
+    tls:
+      - hosts:
+        - "explorer.stg.aepps.com"
+        secretName: explorer-cert
   versions:
     - {version: master, gitSha: 48a92d5}
