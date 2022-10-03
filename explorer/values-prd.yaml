@@ -1,0 +1,15 @@
+app:
+  image:
+    tag: "latest"
+  ingress:
+    enabled: "true"
+    hosts:
+      - host: "explorer.prd.aepps.com"
+        paths:
+          - path: "/"
+      - host: "master-explorer.prd.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
+  versions:
+    - {version: master, gitSha: 48a92d5}

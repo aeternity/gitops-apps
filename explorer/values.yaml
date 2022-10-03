@@ -1,0 +1,4 @@
+app:
+  image:
+    repository: "aeternitybot/explorer-frontend"
+    pullPolicy: "Always"
