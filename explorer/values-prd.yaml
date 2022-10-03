@@ -12,7 +12,7 @@ app:
             version: "master"
     tls:
       - hosts:
-        - "explorer.stg.aepps.com"
+        - "explorer.prd.aepps.com"
         secretName: explorer-cert
   versions:
     - {version: master, gitSha: 48a92d5}
