@@ -8,7 +8,7 @@ app:
         paths:
           - path: /
             version: "mainnet"
-      - host: "mdw-explorer-testnet.dev.aepps.com" # has to be changed/discussed
+      - host: "mdw-explorer-testnet.dev.aepps.com"
         paths:
           - path: /
             version: "testnet"
