@@ -1,6 +1,4 @@
 app:
-  image:
-    tag: "latest"
   ingress:
     hosts:
       - host: "explorer.prd.aepps.com"

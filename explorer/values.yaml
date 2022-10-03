@@ -1,5 +1,6 @@
 app:
   image:
+    tag: "latest"
     repository: "aeternitybot/explorer-frontend"
     pullPolicy: "Always"
   ingress:
