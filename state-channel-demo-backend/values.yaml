@@ -22,3 +22,4 @@ app:
     "NETWORK_ID": "ae_uat"
     "NODE_URL": "https://testnet.prd.aepps.com"
     "WS_URL": "wss://testnet.prd.aepps.com/channel"
+    "NODE_ENV": "testnet"
