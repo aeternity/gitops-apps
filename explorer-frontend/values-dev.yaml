@@ -1,10 +1,10 @@
 app:
   ingress:
     hosts:
-      - host: "explorer-frontend.stg.aepps.com"
+      - host: "explorer-frontend.dev.aepps.com"
         paths:
           - path: "/"
     tls:
       - hosts:
-        - "explorer-frontend.stg.aepps.com"
+        - "explorer-frontend.dev.aepps.com"
         secretName: explorer-frontend-cert
