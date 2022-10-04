@@ -3,6 +3,7 @@ app:
     external:
       remotePrefix: /k8s/prd-0e9c
   image:
+    repository: aeternitybot/dex-backend-mainnet
     tag: "v1.0.0"
   ingress:
     hosts:
