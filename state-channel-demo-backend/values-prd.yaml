@@ -13,3 +13,5 @@ app:
         - "state-channel-demo-backend.prd.aepps.com"
         - "main-state-channel-demo-backend.prd.aepps.com"
         secretName: state-channel-demo-backend-cert
+  env:
+    "NODE_ENV": "testnet"
