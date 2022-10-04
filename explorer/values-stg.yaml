@@ -4,7 +4,13 @@ app:
       - host: "explorer.stg.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-47-explorer.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-47"
     tls:
       - hosts:
-        - "explorer.stg.aepps.com"
-        secretName: explorer-cert
+          - "explorer.stg.aepps.com"
+        secretName: "explorer-cert"
+  versions:
+    - version: "pr-47"
