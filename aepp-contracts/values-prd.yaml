@@ -1,0 +1,10 @@
+app:
+  ingress:
+    tls:
+      - hosts:
+        - "contracts.prd.aepps.com"
+        secretName: aepp-contracts-cert
+    hosts:
+      - host: "contracts.prd.aepps.com"
+        paths:
+          - path: "/"
