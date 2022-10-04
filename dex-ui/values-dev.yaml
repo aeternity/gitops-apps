@@ -1,0 +1,10 @@
+app:
+  ingress:
+    hosts:
+      - host: "dex.dev.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "dex.dev.aepps.com"
+        secretName: dex-ui-cert

@@ -1,14 +1,10 @@
 app:
-  image:
-    repository: aeternity/aepp-grafitti
-    tag: "latest"
-
-  service:
-    port: 80
-
   ingress:
-    enabled: true
     hosts:
       - host: "aepp-grafitti.prd.aepps.com"
         paths:
           - path: "/"
+    tls:
+      - hosts:
+        - "aepp-grafitti.prd.aepps.com"
+        secretName: aepp-grafitti-cert

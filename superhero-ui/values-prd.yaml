@@ -1,10 +1,10 @@
 app:
-  image:
-    repository: "aeternity/superhero-ui-web"
-    tag: "latest"
   ingress:
-    enabled: "true"
     hosts:
-      - host: "superhero.prd.aepps.com" # has to be changed/disscused
+      - host: "superhero.prd.aepps.com"
         paths:
           - path: "/"
+    tls:
+      - hosts:
+        - "superhero.prd.aepps.com"
+        secretName: superhero-cert

@@ -1,0 +1,25 @@
+app:
+  versions:
+    - version: "v4.3.0"
+    - version: "v5.0.0"
+    - version: "v6.1.0"
+  image:
+    repository: aeternity/aesophia_http 
+    pullPolicy: "Always"
+  service:
+    type: ClusterIP
+    port: 3080
+  probes:
+    liveness:
+      config:
+        httpGet:
+          path: /version
+    readiness:
+      config:
+        httpGet:
+          path: /version
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt

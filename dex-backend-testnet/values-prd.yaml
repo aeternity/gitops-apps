@@ -1,38 +1,15 @@
 app:
-  image:
-    repository: aeternitybot/dex-backend-testnet
-    tag: "latest"
-    pullPolicy: "Always"
-  encValues:
-    POSTGRES_PASSWORD: "AgA7+dhACnop/XyDYBKAesISJ22xQic4VJSScAOo7C43AEJ5QGUQ8NcTSsH7RyUFeysGKs+wUt1ACKcMaEJbtZAKqKm4xeOLPG1BRIlfQ/4eWgpFxi3vFf6jSe/b2oOTexEFl9ckyTIsGaAhkYZXFlQMtMB4kX9lwPjGJWUPkLpevf40CbDM5a44hlmtmDi8NcczScoY2YuBgUPdNUEEIDghOPniIkUAenINer4PWCAG+IrbVIY0NkCorz07PctqUjtmKrWDMKyPdo6a9YdrSECFNT3T6FLEp7LlF7jkhja3JzkF4tUZwaHckHOH3aHdovc9NzRXaSrMdPDXTNYG9X3XxLdso56LdOewWQMFR901YdhQ4YiuF5xvS6c6bhB2cBiWnLLilIA8ub2WAvw+I3CA1S6gauyp6fCWtTOfcUBW+AVxxDqCr+fYSbtpQPK/aa77kK9LSCfkOytVDjBWrHc250bD6dL2uZ3WX1npIStuROsdwFzYrlaOJpfyFmeaSJwdxeB89ElYmNUASR8CxmdKPhU6Z1XgL+N1y4C+QY7qQwWP5rmzj24QPYry0lpbaGrq2RBvGqPVFGgn90GF541nuYHYyTP0Ewkw3qNBTdgSrPI22kUv9xLNv4x7jw/QvBKIiFkp9dKTMq+dW48AJPavarCwz59mBrZK1silt1fPwNPIjxUYsu/hRVoFfEC6qV0XX4ULKetbu+iTL10="
-    AUTH_TOKEN: "AgAL83n9x8NCYWk7qRuHQiF0Ybok7Qt/SfTujMIQ/iH2XXmBrJFbXc+6Hfb+pdRJBRApqTYM4PLCvz02H1HGTM2VVRrgu3D3cIOtnk7/5dOr7wwtnRXpZbRnkl2cZxOKr4+Ddm9mAgoLH04ZDFTwvl03YgSyk10f5IXL9Uld8SmwhWH0TgJG+MVFfZ34YFtmlm1cboI5r1Dc8p/6h5OJ2NwfuFxP2tmR3M/vaCy0jMisi7NBEjPFlMHgn57x4Z9pd5+6FRXfI4WTvAtqMaJjrQB3CZMHRnPrfYx5Ogs70tuOOZOchRnd3EYBXEWsxW3YNLHBi2AaThaF2KPEAQj0KEkyoprrKAj8C54F2GuwpnvV7z+hTxeujza41qylMOa0HAylAPyHz8gc1O8pdQh7M+lw+3Ed0d75o929X0f68zaY+53T/5l51Yjnx2xuKsl9k8Gcgu4ML2Uc1ButmeXtTN4K2TuAPIJXMHivXl7GQtw8X5I+/huTnfcv+qXDSLdQ5tyYi9MfJZaBAEQD9G8OGXdmV9UJywX3H80eHtljQCyRH75h9HGdhG86na/7L8aAAignEbV7KjIskHZmopjP8hCtaXfau8qNvM7Tl+PCueLXGH3suhbXkicGuxlh/DLfuSgo8j7KTohPaU03Fo/uXdKFKfvY//m281kpSbawGSV5U0xjduMcF/wy7PP1i/DZfg7WRm0pN67Y8eC2HI+SeQToOQpfDvuVojFLpZmHI9RT/w=="
-  service:
-    port: 3000
+  secrets:
+    external:
+      remotePrefix: /k8s/prd-0e9c
   ingress:
-    enabled: "true"
     hosts:
       - host: "dex-backend-testnet.prd.aepps.com"
         paths:
           - path: "/"
-  init: 
-    enabled: "true"
-    command: ["/bin/sh"]
-    args:
-      - -c
-      - >-
-        rm -rf .env &&
-        export DATABASE_URL=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DATABASE?schema=$POSTGRES_SCHEMA &&
-        npx prisma db push --accept-data-loss
+    tls:
+      - hosts:
+        - "dex-backend-testnet.prd.aepps.com"
+        secretName: dex-backend-testnet-cert
   env:
-    "POSTGRES_DB": "dex-backend-app"
-    "POSTGRES_SCHEMA": "dex-backend-testnet-app" # will be overrided by the template with version name
-    "POSTGRES_PORT": "5432"
     "POSTGRES_HOST": "dexprd.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
-    "POSTGRES_USERNAME": "postgres"
-    "NETWORK_NAME": "testnet"
-    "ROUTER_ADDRESS": "ct_MLXQEP12MBn99HL6WDaiTqDbG4bJQ3Q9Bzr57oLfvEkghvpFb"
-    "FACTORY_ADDRESS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9"
-    "DOC_PAIR": "ct_2JZNDfAQHZMfoBuh32Aijd9TR8A5SHUVBzxC6x5d4sS7o8xeqN"
-    "DOC_TOKEN1": "ct_b7FZHQzBcAW4r43ECWpV3qQJMQJp5BxkZUGNKrqqLyjVRN3SC"
-    "DOC_TOKEN2": "ct_JDp175ruWd7mQggeHewSLS1PFXt9AzThCDaFedxon8mF8xTRF"
-

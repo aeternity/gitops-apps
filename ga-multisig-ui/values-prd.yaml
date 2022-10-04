@@ -1,17 +1,10 @@
 app:
-  image:
-    repository: aeternitybot/ga-multisig-ui
-    tag: "latest"
-    pullPolicy: "Always"
   ingress:
-    enabled: "true"
     hosts:
       - host: "ga-multisig-ui.prd.aepps.com"
         paths:
           - path: "/"
-      - host: "master-ga-multisig-ui.prd.aepps.com"
-        paths:
-          - path: "/"
-            version: "master"
-  versions:
-    - {version: master, gitSha: ec8613b}
+    tls:
+      - hosts:
+        - "ga-multisig-ui.prd.aepps.com"
+        secretName: ga-multisig-ui-cert

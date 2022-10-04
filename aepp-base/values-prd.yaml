@@ -1,9 +1,12 @@
-app:  
+app:
   image:
     tag: "v1.0.2"
   ingress:
-    enabled: true
     hosts:
       - host: "base.prd.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
+    tls:
+      - hosts:
+        - "base.prd.aepps.com"
+        secretName: aepp-base-cert

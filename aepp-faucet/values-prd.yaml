@@ -1,19 +1,13 @@
 app:
-  image:
-    tag: "latest"
-    repository: aeternity/aepp-faucet-nodejs
-    pullPolicy: Always
-  encValues:
-    FAUCET_ACCOUNT_PRIV_KEY: "AgA5TxwmE/rlPJRCmKiJu0TYO0kVkGOpaqZOh0JRJ+WxyUE86BsYyeg0WGPK9706BRmYQqcAsfrUo4E80aCnJXnG4ayZqwu9husOgukWrUsUhZxRtsY3myMxqbRWaWsZlctU7zo7qbmOolFyqLpxoBYXGX5C75KZGmHmY/oChX5O2nZfSYEV2l4jl7x2CT+qcN91L7dDCR43xT7b/mtbvy+ATy8MnJWBGk94cZFcgGFJaXvtwws7BqHDhvhxTDLAjylZtDI1VZujCPD093d4+Q37p9xAC+UwLned7iNmZTWZn2R2NUUQVi2UwYP//wUjaKXd8lFJ2YJVZQ/huc0hyV5vlbIEkG6NgGhJOub9aESqb2R0JcfBP41zq8xxQHNJ87UVZY3XWBD+MXAlShrcZ8YhoT9OvdRqBX31ngeGov2kfHQGwFVPI1dlA6ksfsVQZKYh0XpPXFFM6XMF0jrLEvIrQLxs8Q25SYtsBSkOcy1Fkgn2/faIn+HHgn5Upiz6AaFAwY7dAxjvUaUN1bEDip1UOzd8j6xm+AKh/E+e7jXjEZgh71Mg+HWU2ueN+gBELUvr/hyumTRX9kYE5dh7PLr7X7uXzehfi5BXimqewfDjY07CoTnbAbKt/KgTg8vPiRYd8+D0kzuiTULElsUZrlnxAeV6wyRKRHbCkNx2eWvXJMjRm0dt5SUxng72XysPSo5UN99b9YYftZ3LWzB+rLeBojfxO4SHNjnIVpyMi89Pz0BRKCfcj+dTQ376G76Cg58QeRx/lFWdaixZV5LV2uJD3wL667rUc0o9jkMU+MShJluYEqLokj2DbG/qbLTx5Onl6p1QVwW4UQDOZrN1vOo/65Myhrf9OVKQ/aHO9NrKnw=="
-  env:
-    "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
-    "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
-    "NODE_URL": "https://testnet.aeternity.io"
-  service:
-    port: "5000"
+  secrets:
+    external:
+      remotePrefix: /k8s/prd-0e9c
   ingress:
-    enabled: "true"
     hosts:
       - host: "faucet.prd.aepps.com"
         paths:
           - path: "/"
+    tls:
+      - hosts:
+        - "faucet.prd.aepps.com"
+        secretName: aepp-faucet-cert

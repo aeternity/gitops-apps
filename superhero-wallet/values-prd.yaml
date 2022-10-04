@@ -1,11 +1,10 @@
-app:  
-  image:
-    repository: aeternity/superhero-wallet
-    tag: "latest"
-
+app:
   ingress:
-    enabled: true
     hosts:
       - host: "superhero-wallet.prd.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
+    tls:
+      - hosts:
+        - "superhero-wallet.prd.aepps.com"
+        secretName: superhero-wallet-cert

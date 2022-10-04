@@ -1,48 +1,17 @@
 app:
-  image:
-    repository: aeternity/graffiti-server
-    tag: "latest"
-  encValues:
-    S3_KEY: "AgC9FAFtPZivk0yUHawugkyDwL3KiGMlkAesvBvlpS+CoIpG1TXCHZGz+uvtBsBlxDh+0bcZcOWn4qpn1rkzxbelfgHpniCjmQ/SMfmNaU+ceWaDRasbHMGC32vDNIpMfx0xTLdUnl/B+odf0O93Q2V8BM+CCcPbjeYpHCzB/3MeOm30hGu+z7WSU8fFgWrqOdZc/gZQF+g6DnyRtiQojnFdeQMhY2LaHVKmgu4MVN5RSGGmcGaEmGGSgMlmGMFsIc1K5rdV4iT2t0J2n/mt0cx2hZFs3choSKHHEhfLdF26VW0eR7E3Wu/j3HsZdJOOU1WTPe7Z1TMGr3o459bSKrRxZlcJEQu9rQKigeFyGX6CvjBrfVIO7PD2n96oqoNUnPxP3b2DLElX5mKdmwZ5OopBCi1bd8Hf8WIYSr+xEMCVPG5UIxXBlHyHBbS+7yEh0ZUStPkzTaIsX8UnnRNMD1pr7iilGz2KSYccFe0ijIo+fqF48NauUJHn+uuh6nxSXM9Bl1aFnyiXchiZ1FIHylCCYrgCQVfvfeH3QxXujzcKjEW6cck5sPiJ0Ymnp+/kISEFjmngjtDVCkrxqPoxApA/Mj5VEDuAQxe5Bnf3p+qh5AOocFmLM1KYGMsq4NqT2yRxuD380KWmorji7DM2MAFTMKp+aEVVzXnAREIgGpYaAxuc2sbUk2LfpsFoFI1tSc7o0D1OvKu+MLKS5cyHk6bd8k6YWA=="
-    S3_SECRET: "AgDBfsMp75osr/2OkLmYt4Po+4mG/ehq3CRnq5SAcpxwyeS9RwE8OQ+0E35oTmKQSHUK2c5etDm4p4wAEwAFKVOZJCBfpXeHVLkpR39joT4koDkctM7OQehUfrI5/qGoCIWng0HI+hNNPnbCki+hlhyWYBpwKgAcwBG5sqivxyXVn9qiXYm21wQ9GLXzADJKR0/zZLPasyhixiiZWdHHyG4Dgwf83exm0sScN7gjYKhSXQnitVDZoZsB7oOp2x8MBnXzPxxdO5kV9ZhN2JwaPCQ58UQ+sPJROYZp9KNfqZZalb7nw9x88sZA2DZXQAFO6Lo+BS7vB2+Xxs0kPD1hz6abdJ+43hE3WfK1x5okLZjIH/Uq2VSoc30BD+w/BshxB65gG+Mu9+/FQYvc7uKAtrDGhYf9J4eTrDI37Ql9EyuyjWBtcxpJ4VWMZxrbioFXH8Zv8yjFPBB+vEldkPz2Hzrp6vavZJ9NCOX9vJS7ZJuEkpkq2tJpBfkOUxr+64VNHcTNVCFFibekCuUP8cHyynhDpg76nXfvSlemfuLmbnaAy29XDxLrDsx5VNSM6fgeAG34EzLthh/Tiooik77yrqWdJaNtD9s/kTfL/b0DCQepPyRrmvA4wQ24ITy28iq10hqZt3jqjLUFai7Sm/cAYMcN2p0iORHdlotdUY85VmvSZlW4U6If1J3G6G7EZHnKtSXA/qyddflsW53LjSXfpZkCOPCLuRmzSL+SmBVsWYqETnJRzOaGZSC+"
-
-  service:
-    port: 3000
-
-  probes:
-    liveness:
-      config:
-        httpGet:
-          path: /health/testFiles
-        initialDelaySeconds: 120
-        periodSeconds: 120
-        successThreshold: 1
-        timeoutSeconds: 60
-    readiness:
-      config:
-        httpGet:
-          path: /health/testFiles
-        initialDelaySeconds: 120
-        periodSeconds: 120
-        successThreshold: 1
-        timeoutSeconds: 60
-
+  secrets:
+    external:
+      remotePrefix: /k8s/prd-0e9c
   ingress:
-    enabled: true
     hosts:
       - host: "graffiti-server.prd.aepps.com"
         paths:
           - path: "/"
-
-  persistence:
-    enabled: true
-    accessMode: ReadWriteOnce
-    storageClass: gp2
-    size: 50Gi
-    mountPath: /app/data
-
+    tls:
+      - hosts:
+        - "graffiti-server.prd.aepps.com"
+        secretName: graffiti-server-cert
   env:
-    "S3_REGION": "eu-central-1"
     "AETERNITY_URL": "https://mainnet.aeternity.io"
     "CONTRACT_ADDRESS": "ct_2L8CMtgsb3cz9VbhYdtrSZPU8MbGDhH446WjTnFDm3snyMYTR"
     "PATH_IDENTIFIER": "mainnet"

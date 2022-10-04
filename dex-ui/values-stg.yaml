@@ -1,0 +1,29 @@
+app:
+  ingress:
+    hosts:
+      - host: "dex.stg.aepps.com"
+        paths:
+          - path: "/"
+      - host: "pr-480-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-480"
+      - host: "pr-481-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-481"
+      - host: "pr-483-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-483"
+    tls:
+      - hosts:
+        - "dex.stg.aepps.com"
+        - "pr-480-dex-ui.stg.aepps.com"
+        - "pr-481-dex-ui.stg.aepps.com"
+        - "pr-483-dex-ui.stg.aepps.com"
+        secretName: dex-ui-cert
+  versions:
+    - version: "pr-480"
+    - version: "pr-481"
+    - version: "pr-483"

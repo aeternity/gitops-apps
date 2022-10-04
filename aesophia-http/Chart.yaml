@@ -1,5 +1,5 @@
 apiVersion: v2
-name: aesophia
+name: aesophia-http
 description: A Helm chart for deploying multiple versions of aesophia HTTP compiler to Kubernetes
 
 version: 0.1.0

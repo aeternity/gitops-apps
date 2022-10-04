@@ -1,36 +1,17 @@
 app:
+  secrets:
+    external:
+      remotePrefix: /k8s/prd-0e9c
   image:
-    repository: aeternitybot/dex-backend-mainnet
     tag: "v1.0.0"
-    pullPolicy: "Always"
-  encValues:
-    POSTGRES_PASSWORD: "AgA+CkROvlqGzuOlZYa6pUEAoz67oymtRtsiDkIJfq6Kl63W0aPw5Iznk5rE4RHxAVzotcbfiBvbtibodIg2od0KsLHz90VgQleI1FFqJpzOser36pa+2Fhkw3t5GcVxtj1qwZn24cMvp250RKjAFBQ+ECqU04i99VG9z0rIxzD68qrOdpmSA8mLBhyA2xG7U0yAPvqMjBoee1C/Vg7mGrWI9rMb5Jvk7MZ0NLFBaU2ofP34lIFLrKgdHMG5k1mDCOAdVQ+Fm+3l3mmxQPobeQHnvdWM3hjShLhdlZpfwX7f5TK1u4h1Dk7S8zK5Ivtl8Hi4Wfobj3xXjCdcwvzoOAnoLOExIsPvgDD6MYfL4TtlDyQivVkA4MXXoFoVHsoPkGEXNND9MEA0eJ4C9zB1i4lvnxn4X71gBiiQQ+Ua/zvLrfaJGxGR55I293EiFSOJGjqs1u64TWwXjC4l7F9n2QZH74dk8AciVRE/g9VCJCbG7j3mdm/s/If1MLmBI9YA3PKd1dFN1uM5EzKGf5BlvU+jkSTqRgZsyPkBnv/t2MIb0HcCw6treOVkMTL8MzhEicyBk/PWLFCpva2Tgu8rraLkZAumJWlH5BeOVja96MspO3BnmNlQUe4cz5q4HR6xO8n2LSnmR07PX5GtAdZq2srovCEp16CkdPNIkKc+xSxDXQMY7NrGpx/zpOO27fPSOvV5K309dqyurtke57k="
-    AUTH_TOKEN: "AgCbxGwfr3D0haRI8vNY+Up4Vhjq2UUBg9EUfy8KMm6GjzYwn05Bot7a7LH1hL2z6ihXma2kR2660ptB3nQqjk20G/qxNE5YSSrWdaOP7XyEiCICyd9bSCJvPqSIwLWJZZZYRh7YxC1o0g0IwHQFYme3e/hfbTpatDzPsQiIk3lLLQe17ZGcBcolp44ObF5jMd4rc+o2GZJYPwSre66txDOcCV+7tJFHOgMxvOXN28nlW+qqiQMl0z9P/FMpm72XKjCAO4lnWlrtVajMDiRawkmYs8RgWCixsqLD1t6b4h5EGtK1pjY2qEnYWgPoOpaiXukVeH/dnTMCU/ZGgwo0DIZrnheI1jdu8YhjFkI21KaAOfdQVL1REva3UqhQuvk16kmJqGqQaZzECw/ctOr7/x9dX7HURkvOe3thHiD4RTPUVXORJiDisIRVQHB9elecsEYc15XCnrN7f01AfzMWrYYDE2MsiIzzDZSvc2BxkvTjDz7R2foPc9tXZ1qqPhqMKsmAEDJXkaNLfwJ1WZ8pnKLqryQBI1d6Y/DRe3tj59Jj4X0crQKJ0M//iRcT7WoB4M5HG2xb3BB5Az8KTcV8ADD/SmCHCENwy5kfwOzAgrqc8xSnBwnqT/ArUMPZHb81a8ZzzZaVqN/MI26D5/sAks6FscqQb7tOR8F+aGBF4Wl9D1hUn5QnISY2Q5VfaRqzeUOq2CA7LLxJ8w769QGCqJpdr1C509AggVeqIYYhmjuFgw=="
-  service:
-    port: 3000
   ingress:
-    enabled: "true"
     hosts:
       - host: "dex-backend-mainnet.prd.aepps.com"
         paths:
           - path: "/"
-  init:
-    enabled: "true"
-    command: ["/bin/sh"]
-    args:
-      - -c
-      - >-
-        rm -rf .env && export DATABASE_URL=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DATABASE?schema=$POSTGRES_SCHEMA && npx prisma db push --accept-data-loss
+    tls:
+      - hosts:
+        - "dex-backend-mainnet.prd.aepps.com"
+        secretName: dex-backend-mainnet-cert
   env:
-    "POSTGRES_DB": "dex-backend-app"
-    "POSTGRES_SCHEMA": "dex-backend-mainnet-app" # will be overrided by the template with version name
-    "POSTGRES_PORT": "5432"
     "POSTGRES_HOST": "dexprd.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
-    "POSTGRES_USERNAME": "postgres"
-    "NETWORK_NAME": "mainnet"
-    "ROUTER_ADDRESS": "ct_azbNZ1XrPjXfqBqbAh1ffLNTQ1sbnuUDFvJrXjYz7JQA1saQ3"
-    "FACTORY_ADDRESS": "ct_2mfj3FoZxnhkSw5RZMcP8BfPoB1QR4QiYGNCdkAvLZ1zfF6paW"
-    "DOC_PAIR": "ct_NNmdSt3Ws4r87pESGKrhGb7VJmC8zpZymXNJKHY8bTLaFttsi"
-    "DOC_TOKEN1": "ct_2dE7Xd7XCg3cwpKWP18VPDwfhz5Miji9FoKMTZN7TYvGt64Kc"
-    "DOC_TOKEN2": "ct_7ur9ypT3a4tjxxv5iG6zEQDQhysNtCKr6tyc7PkqhtRmEw6yY"
-

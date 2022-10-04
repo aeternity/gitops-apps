@@ -1,16 +1,19 @@
 app:
   versions:
-    - version: testnet
     - version: mainnet
-
+    - version: testnet
   ingress:
-    enabled: true
     hosts:
-      - host: "explorer-testnet.prd.aepps.com" # has to be changed/disscused
-        paths:
-          - path: /
-            version: "testnet"
-      - host: "explorer-mainnet.prd.aepps.com" # has to be changed/disscused
+      - host: "mdw-explorer.prd.aepps.com"
         paths:
           - path: /
             version: "mainnet"
+      - host: "mdw-explorer-testnet.prd.aepps.com"
+        paths:
+          - path: /
+            version: "testnet"
+    tls:
+      - hosts:
+        - "mdw-explorer.prd.aepps.com"
+        - "mdw-explorer-testnet.prd.aepps.com"
+        secretName: mdw-frontend-cert

@@ -2,7 +2,6 @@ app:
   image:
     tag: "v1.17.2"
   ingress:
-    enabled: "true"
     hosts:
       - host: "dex.prd.aepps.com"
         paths:
@@ -14,5 +13,12 @@ app:
         paths:
           - path: "/"
             version: "main"
+    tls:
+      - hosts:
+        - "dex.prd.aepps.com"
+        - "aepp.dex.superhero.com"
+        - "main-dex-ui.prd.aepps.com"
+        secretName: dex-ui-cert
+
   versions:
-    - {version: main, gitSha: a8c6c31}
+    - {version: main, gitSha: d96b5ab}

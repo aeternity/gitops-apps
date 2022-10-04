@@ -1,10 +1,5 @@
 app:
-  image:
-    tag: "latest"
-    repository: "aeternitybot/explorer-frontend"
-    pullPolicy: "Always"
   ingress:
-    enabled: "true"
     hosts:
       - host: "explorer.prd.aepps.com"
         paths:
@@ -13,5 +8,9 @@ app:
         paths:
           - path: "/"
             version: "master"
+    tls:
+      - hosts:
+        - "explorer.prd.aepps.com"
+        secretName: explorer-cert
   versions:
-    - {version: master, gitSha: ffed0c7}
+    - {version: master, gitSha: 48a92d5}
