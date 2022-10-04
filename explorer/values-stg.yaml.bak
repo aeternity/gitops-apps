@@ -13,4 +13,4 @@ app:
           - "explorer.stg.aepps.com"
         secretName: "explorer-cert"
   versions:
-    - '{version: pr-47, gitSha: f08b1ec}'
+    - '{version: pr-47, gitSha: ee7584f}'
