@@ -8,8 +8,12 @@ app:
         paths:
           - path: "/"
             version: "main"
+      - host: "statechannel.aepps.com"
+        paths:
+          - path: "/"
     tls:
       - hosts:
         - "state-channel-demo.prd.aepps.com"
         - "main-state-channel-demo.prd.aepps.com"
+        - "statechannel.aepps.com"
         secretName: state-channel-demo-frontend-cert
