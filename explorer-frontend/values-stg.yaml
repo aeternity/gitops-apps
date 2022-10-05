@@ -8,6 +8,10 @@ app:
         paths:
           - path: "/"
             version: "pr-48"
+      - host: "pr-49-explorer-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-49"
     tls:
       - hosts:
           - "explorer.stg.aepps.com"
@@ -16,3 +20,4 @@ app:
     - version: "pr-46"
       gitSha: "cf34751"
     - version: "pr-48"
+    - version: "pr-49"
