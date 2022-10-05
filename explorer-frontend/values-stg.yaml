@@ -15,6 +15,7 @@ app:
     tls:
       - hosts:
           - "explorer.stg.aepps.com"
+          - "pr-49-explorer-frontend.stg.aepps.com"
         secretName: "explorer-cert"
   versions:
     - version: "pr-46"
