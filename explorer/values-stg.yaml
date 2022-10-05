@@ -4,9 +4,15 @@ app:
       - host: "explorer.stg.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-48-explorer.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-48"
     tls:
       - hosts:
           - "explorer.stg.aepps.com"
         secretName: "explorer-cert"
   versions:
-    - {version: pr-46, gitSha: cf34751}
+    - version: "pr-46"
+      gitSha: "cf34751"
+    - version: "pr-48"
