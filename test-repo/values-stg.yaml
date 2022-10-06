@@ -17,4 +17,5 @@ app:
         - "test-repo.stg.aepps.com"
         - "pr-70-test-repo.stg.aepps.com"
   versions:
-    - "pr-70"
+    - version: "pr-70"
+
