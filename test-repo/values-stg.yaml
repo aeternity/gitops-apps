@@ -10,5 +10,7 @@ app:
         paths:
           - path: "/"
     tls:
+      - hosts:
+          - "test-repo.stg.aepps.com"
       - secretName: "test-repo-cert"
   versions: []
