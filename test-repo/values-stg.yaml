@@ -2,6 +2,7 @@ app:
   image:
     tag: "latest"
     pullPolicy: "Always"
+    repository: "aeternitybot/test-repo"
   ingress:
     enabled: "true"
     hosts:
