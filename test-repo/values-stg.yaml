@@ -9,6 +9,4 @@ app:
         paths:
           - path: "/"
   tls:
-    - {}
-  versions:
-    - version: "pr-70"
+    - "test-repo.stg.aepps.com"
