@@ -9,14 +9,6 @@ app:
       - host: "test-repo.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-      - host: "pr-72-test-repo.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-72"
     tls:
-      - hosts:
-          - "test-repo.stg.aepps.com"
-          - "pr-72-test-repo.stg.aepps.com"
-        secretName: "test-repo-cert"
-  versions:
-    - {version: pr-72, gitSha: e32a022}
+      - secretName: "test-repo-cert"
+  versions: []
