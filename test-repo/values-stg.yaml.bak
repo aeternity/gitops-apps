@@ -19,4 +19,4 @@ app:
           - "pr-72-test-repo.stg.aepps.com"
         secretName: "test-repo-cert"
   versions:
-    - {version: pr-72, gitSha: e32a022}
+    - '{version: pr-72, gitSha: e32a022}'
