@@ -8,10 +8,16 @@ app:
         paths:
           - path: "/"
             version: "pr-4"
+      - host: "pr-5-ga-multisig-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-5"
     tls:
       - hosts:
-        - "ga-multisig-ui.dev.aepps.com"
-        - "pr-4-ga-multisig-ui.stg.aepps.com"
-        secretName: ga-multisig-ui-cert
+          - "ga-multisig-ui.dev.aepps.com"
+          - "pr-4-ga-multisig-ui.stg.aepps.com"
+          - "pr-5-ga-multisig-ui.stg.aepps.com"
+        secretName: "ga-multisig-ui-cert"
   versions:
     - version: "pr-4"
+    - version: "pr-5"
