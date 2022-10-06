@@ -26,7 +26,7 @@ app:
     - version: "pr-138"
       gitSha: "aee5546"
     - version: "pr-190"
-    - {version: pr-102, gitSha: e52043d}
+    - '{version: pr-102, gitSha: e52043d}'
   env:
     "NODE_URL": "https://testnet.aeternity.io"
     "WS_URL": "wss://sdk-testnet.aepps.com/channel"
