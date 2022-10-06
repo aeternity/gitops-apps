@@ -16,8 +16,13 @@ app:
         paths:
           - path: "/"
             version: "pr-65"
+      - host: "pr-66-test-repo.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-66"
     tls:
-      - hosts: "pr-64-test-repo.stg.aepps.com"
+      - hosts: "pr-64-test-repo.stg.aepps.compr-66-test-repo.stg.aepps.com"
   versions:
     - "pr-64"
     - version: "pr-65"
+    - "pr-66"
