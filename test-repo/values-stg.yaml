@@ -13,8 +13,7 @@ app:
           - path: "/"
             version: "pr-71"
     tls:
-      - hosts: "pr-71-test-repo.stg.aepps.com"
-  tls:
-    - "test-repo.stg.aepps.com"
+      - hosts:
+        - "test-repo.stg.aepps.com"
   versions:
     - version: "pr-71"
