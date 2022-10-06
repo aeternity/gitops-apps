@@ -9,5 +9,5 @@ app:
           - path: "/"
     tls:
       - hosts:
-        - "faucet.stg.aepps.com"
+          - "faucet.stg.aepps.com"
         secretName: aepp-faucet-cert
