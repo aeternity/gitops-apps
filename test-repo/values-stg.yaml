@@ -12,9 +12,9 @@ app:
         paths:
           - path: "/"
             version: "pr-70"
-    tls:
-      - hosts:
-          - "test-repo.stg.aepps.com"
-          - "pr-70-test-repo.stg.aepps.com"
+  tls:
+    - hosts:
+        - "test-repo.stg.aepps.com"
+        - "pr-70-test-repo.stg.aepps.com"
   versions:
     - "pr-70"
