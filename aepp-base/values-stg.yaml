@@ -8,10 +8,16 @@ app:
         paths:
           - path: "/"
             version: "pr-1450"
+      - host: "pr-1457-aepp-base.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1457"
     tls:
       - hosts:
-        - "base.stg.aepps.com"
-        - "pr-1450-aepp-base.stg.aepps.com"
-        secretName: aepp-base-cert
+          - "base.stg.aepps.com"
+          - "pr-1450-aepp-base.stg.aepps.com"
+          - "pr-1457-aepp-base.stg.aepps.com"
+        secretName: "aepp-base-cert"
   versions:
     - version: "pr-1450"
+    - version: "pr-1457"
