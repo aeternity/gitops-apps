@@ -8,18 +8,5 @@ app:
       - host: "test-repo.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-      - host: "pr-64-test-repo.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-64"
-      - host: "pr-65-test-repo.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-65"
     tls:
-      - {}
-  versions:
-    - "pr-64"
-    - version: "pr-65"
-    - "pr-66"
-    - "pr-67"
+      - "test-repo.stg.aepps.com"
