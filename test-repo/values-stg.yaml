@@ -9,8 +9,14 @@ app:
       - host: "test-repo.stg.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
+      - host: "pr-74-test-repo.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-74"
     tls:
       - hosts:
           - "test-repo.stg.aepps.com"
+          - "pr-74-test-repo.stg.aepps.com"
       - secretName: "test-repo-cert"
-  versions: []
+  versions:
+    - version: "pr-74"
