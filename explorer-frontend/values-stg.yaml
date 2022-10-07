@@ -16,6 +16,6 @@ app:
       - secretName: "explorer-cert"
   versions:
     - version: "pr-53"
-    - {version: pr-52, gitSha: 7876a1f}
     - {version: pr-51, gitSha: eca0a7a}
     - {version: pr-50, gitSha: 166d913}
+    - {version: pr-52, gitSha: 578f680}
