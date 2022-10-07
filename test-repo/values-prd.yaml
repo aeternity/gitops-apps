@@ -9,4 +9,4 @@ app:
         paths:
           - path: "/"
   versions:
-    - {version: main, gitSha: abc6e01}
+    - {version: main, gitSha: e52675b}
