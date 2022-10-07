@@ -12,3 +12,5 @@ app:
       - hosts:
         - "faucet-nodejs.prd.aepps.com"
         secretName: aepp-faucet-cert
+  versions:
+    - {version: latest, gitSha: ""}
