@@ -20,6 +20,10 @@ app:
         paths:
           - path: "/"
             version: "pr-195"
+      - host: "pr-196-state-channel-demo-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-196"
     tls:
       - hosts:
           - "state-channel-demo.stg.aepps.com"
@@ -37,3 +41,4 @@ app:
       gitSha: "e52043d"
     - version: "pr-190"
     - version: "pr-195"
+    - version: "pr-196"
