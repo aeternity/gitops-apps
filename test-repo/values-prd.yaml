@@ -1,7 +1,6 @@
 app:
   image:
     repository: aeternitybot/test-repo
-    tag: "main"
   ingress:
     enabled: "true"
     hosts:
