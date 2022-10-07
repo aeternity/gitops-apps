@@ -7,6 +7,7 @@ app:
       - host: "faucet-nodejs.prd.aepps.com"
         paths:
           - path: "/"
+            version: "latest"
     tls:
       - hosts:
         - "faucet-nodejs.prd.aepps.com"
