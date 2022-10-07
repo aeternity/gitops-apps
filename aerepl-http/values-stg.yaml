@@ -4,14 +4,8 @@ app:
       - host: "repl.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-39-aerepl-http.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-39"
     tls:
       - hosts:
           - "repl.stg.aepps.com"
-          - "pr-39-aerepl-http.stg.aepps.com"
         secretName: "aerepl-http-cert"
-  versions:
-    - version: "pr-39"
+  versions: []
