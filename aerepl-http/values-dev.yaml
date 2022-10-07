@@ -4,6 +4,9 @@ app:
       - host: "repl.dev.aepps.com"
         paths:
           - path: "/"
+      - host: "default-cert-test.dev.aepps.com"
+        paths:
+          - path: "/"
     tls:
       - hosts:
         - "repl.dev.aepps.com"
