@@ -9,4 +9,4 @@ app:
           - "repl.prd.aepps.com"
         secretName: aerepl-http-cert
   versions:
-    - {version: master, gitSha: 1cd0f81}
+    - '{version: master, gitSha: 1cd0f81}'
