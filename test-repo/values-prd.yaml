@@ -1,6 +1,7 @@
 app:
   image:
     repository: aeternitybot/test-repo
+    pullPolicy: "Always"
   ingress:
     enabled: "true"
     hosts:
