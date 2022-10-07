@@ -16,11 +16,16 @@ app:
         paths:
           - path: "/"
             version: "pr-190"
+      - host: "pr-195-state-channel-demo-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-195"
     tls:
       - hosts:
           - "state-channel-demo.stg.aepps.com"
           - "pr-102-state-channel-demo-frontend.stg.aepps.com"
           - "pr-138-state-channel-demo-frontend.stg.aepps.com"
+          - "pr-195-state-channel-demo-frontend.stg.aepps.com"
         secretName: "state-channel-demo-frontend-cert"
   versions:
     - version: "pr-138"
@@ -31,3 +36,4 @@ app:
     - version: "pr-102"
       gitSha: "e52043d"
     - version: "pr-190"
+    - version: "pr-195"
