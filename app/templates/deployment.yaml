@@ -25,7 +25,7 @@ spec:
       app.kubernetes.io/version: {{ $val.version }}
       {{- end }}
   strategy: 
-    type: {{ $.Values.strategy.type }}
+    type: {{ $.Values.strategy.type  | default "RollingUpdate" }}
   template:
     metadata:
       {{- with $.Values.podAnnotations }}
