@@ -14,7 +14,6 @@ app:
 
   probes:
     liveness:
-      enabled: false
       config:
         httpGet:
           path: /health/testFiles
@@ -23,7 +22,6 @@ app:
         successThreshold: 1
         timeoutSeconds: 60
     readiness:
-      enabled: false
       config:
         httpGet:
           path: /health/testFiles
