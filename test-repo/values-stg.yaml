@@ -1,27 +1,22 @@
 app:
-  image:
-    tag: "latest"
-    pullPolicy: "Always"
-    repository: "aeternitybot/test-repo"
+  secrets:
+    external:
+      remotePrefix: /k8s/stg-m4n4
+
+  resources:
+    limits:
+      cpu: "2"
+      memory: "6Gi"
+    requests:
+      cpu: "1"
+      memory: "5Gi"
+
   ingress:
-    enabled: "true"
     hosts:
-      - host: "test-repo.stg.aepps.com" # has to be changed/disscused
+      - host: "test-repo.stg.aepps.com"
         paths:
-          - path: "/"
-      - host: "pr-74-test-repo.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-74"
-      - host: "pr-81-test-repo.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-81"
-    tls:
-      - hosts:
-          - "test-repo.stg.aepps.com"
-          - "pr-74-test-repo.stg.aepps.com"
-      - secretName: "test-repo-cert"
-  versions:
-    - version: "pr-74"
-    - version: "pr-81"
+          - path: "/" 
+  env:
+    "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
+    "S3_BUCKET": "aeternity-superhero-graffiti-stg"
+  
