@@ -38,7 +38,7 @@ app:
 
   persistence:
     enabled: true
-    accessMode: ReadWriteOnce
+    accessMode: ReadOnlyMany
     storageClass: gp2
     size: 50Gi
     mountPath: /app/data
