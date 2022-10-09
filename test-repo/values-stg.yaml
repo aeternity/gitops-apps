@@ -13,10 +13,6 @@ app:
         paths:
           - path: "/"
             version: "pr-74"
-      - host: "stg-test-repo.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "stg"
     tls:
       - hosts:
           - "test-repo.stg.aepps.com"
@@ -24,4 +20,3 @@ app:
       - secretName: "test-repo-cert"
   versions:
     - version: "pr-74"
-    - version: "stg"
