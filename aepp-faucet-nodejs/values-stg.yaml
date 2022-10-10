@@ -4,10 +4,10 @@ app:
       remotePrefix: /k8s/stg-m4n4
   ingress:
     hosts:
-      - host: "faucet-nodejs.stg.aepps.com"
+      - host: "faucet.aepps.com"
         paths:
           - path: "/"
     tls:
       - hosts:
-        - "faucet-nodejs.stg.aepps.com"
+        - "faucet.aepps.com"
         secretName: aepp-faucet-cert
