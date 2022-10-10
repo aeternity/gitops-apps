@@ -37,7 +37,7 @@ app:
       cert-manager.io/cluster-issuer: letsencrypt
 
   persistence:
-    enabled: true
+    enabled: false
     accessMode: ReadWriteOnce
     storageClass: gp2
     size: 50Gi
@@ -48,3 +48,5 @@ app:
     "AETERNITY_URL": "https://testnet.aeternity.io"
     "CONTRACT_ADDRESS": "ct_eLhLkGX2kfrqj6skdG4AxwjQk2MJy6nsWASnG8aEQFrQ2gDyp"
     "PATH_IDENTIFIER": "/"
+    "BACKUP_REMOTE": "true"
+    "BACKUP_IPFS": "true"
