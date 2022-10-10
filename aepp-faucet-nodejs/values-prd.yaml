@@ -7,7 +7,10 @@ app:
       - host: "faucet-nodejs.prd.aepps.com"
         paths:
           - path: "/"
+            version: "latest"
     tls:
       - hosts:
-        - "faucet-nodejs.prd.aepps.com"
+          - "faucet-nodejs.prd.aepps.com"
         secretName: aepp-faucet-cert
+  versions:
+    - {version: latest, gitSha: f302569}

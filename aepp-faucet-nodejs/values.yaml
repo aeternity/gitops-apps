@@ -1,6 +1,5 @@
 app:
   image:
-    tag: latest
     pullPolicy: "Always"
   env:
     "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
