@@ -4,13 +4,13 @@ app:
       remotePrefix: /k8s/prd-0e9c
   ingress:
     hosts:
-      - host: "faucet.aepps.com"
+      - host: "faucet-nodejs.prd.aepps.com"
         paths:
           - path: "/"
             version: "latest"
     tls:
       - hosts:
-          - "faucet.aepps.com"
+          - "faucet-nodejs.prd.aepps.com"
         secretName: aepp-faucet-cert
   versions:
     - {version: latest, gitSha: f302569}
