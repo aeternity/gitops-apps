@@ -12,10 +12,6 @@ app:
         paths:
           - path: "/"
             version: "pr-53"
-      - host: "pr-54-explorer-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-54"
       - host: "pr-55-explorer-frontend.stg.aepps.com"
         paths:
           - path: "/"
@@ -28,4 +24,3 @@ app:
     - version: "pr-55"
     - {version: pr-51, gitSha: b972a1c}
     - {version: pr-53, gitSha: eaa3584}
-    - {version: pr-54, gitSha: 2d25588}
