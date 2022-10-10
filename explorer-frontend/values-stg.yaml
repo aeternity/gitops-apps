@@ -19,8 +19,8 @@ app:
     tls:
       - secretName: "explorer-cert"
   versions:
-    - version: "pr-53"
     - version: "pr-52"
       gitSha: "fac74f1"
     - version: "pr-54"
     - {version: pr-51, gitSha: 2483f60}
+    - {version: pr-53, gitSha: c8f909f}
