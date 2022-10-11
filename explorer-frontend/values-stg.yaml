@@ -8,10 +8,6 @@ app:
         paths:
           - path: "/"
             version: "pr-48"
-      - host: "pr-53-explorer-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-53"
       - host: "pr-55-explorer-frontend.stg.aepps.com"
         paths:
           - path: "/"
@@ -27,4 +23,3 @@ app:
       gitSha: "fca1ccc"
     - {version: pr-57, gitSha: 4b512de}
     - {version: pr-52, gitSha: cc4323e}
-    - {version: pr-53, gitSha: 8473d9b}
