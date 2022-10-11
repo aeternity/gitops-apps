@@ -27,4 +27,4 @@ app:
       gitSha: "fca1ccc"
     - {version: pr-57, gitSha: 4b512de}
     - {version: pr-52, gitSha: cc4323e}
-    - {version: pr-53, gitSha: d45c833}
+    - {version: pr-53, gitSha: 8473d9b}
