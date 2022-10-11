@@ -8,14 +8,6 @@ app:
         paths:
           - path: "/"
             version: "pr-180"
-      - host: "pr-190-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-190"
-      - host: "pr-190-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-190"
       - host: "pr-195-state-channel-demo-frontend.stg.aepps.com"
         paths:
           - path: "/"
@@ -33,4 +25,3 @@ app:
       gitSha: "9e3bad0"
     - version: "pr-195"
     - version: "pr-196"
-    - {version: pr-190, gitSha: 72bd726}
