@@ -20,6 +20,10 @@ app:
         paths:
           - path: "/"
             version: "pr-59"
+      - host: "pr-60-explorer-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-60"
     tls:
       - secretName: "explorer-cert"
   versions:
@@ -27,4 +31,6 @@ app:
       gitSha: "fca1ccc"
     - version: "pr-57"
       gitSha: "4b512de"
-    - {version: pr-59, gitSha: 809f284}
+    - version: "pr-59"
+      gitSha: "809f284"
+    - version: "pr-60"
