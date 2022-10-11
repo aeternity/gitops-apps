@@ -1,0 +1,10 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/dev-wgt7
+
+  ingress:
+    hosts:
+      - host: "governance.dev.aepps.com"
+        paths:
+          - path: "/"
