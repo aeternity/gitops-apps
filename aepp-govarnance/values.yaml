@@ -4,6 +4,24 @@ app:
     tag: "latest"
     pullPolicy: "Always"
 
+  probes:
+    liveness:
+      config:
+        httpGet:
+          path: /health/testFiles
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
+    readiness:
+      config:
+        httpGet:
+          path: /health/testFiles
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
+
   service:
     port: 3000
 
