@@ -8,14 +8,6 @@ app:
         paths:
           - path: "/"
             version: "pr-138"
-      - host: "pr-190-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-190"
-      - host: "pr-190-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-190"
       - host: "pr-196-state-channel-demo-backend.stg.aepps.com"
         paths:
           - path: "/"
@@ -35,8 +27,6 @@ app:
       gitSha: "aee5546"
     - version: "pr-196"
     - version: "pr-199"
-    - version: "pr-190"
-      gitSha: "72bd726"
     - version: "pr-207"
   env:
     "NODE_URL": "https://testnet.aeternity.io"
