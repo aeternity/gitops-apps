@@ -13,4 +13,4 @@ app:
           - "faucet.aepps.com"
         secretName: aepp-faucet-cert
   versions:
-    - {version: latest, gitSha: cf7b949}
+    - '{version: latest, gitSha: cf7b949}'
