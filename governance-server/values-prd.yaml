@@ -1,6 +1,6 @@
 app:
   ingress:
     hosts:
-      - host: "aepp-govarnance.prd.aepps.com"
+      - host: "governance-server.prd.aepps.com"
         paths:
           - path: "/"
