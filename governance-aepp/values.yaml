@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternity/governance-aepp
+    repository: aeternitybot/governance-aepp
     tag: "latest"
     pullPolicy: "Always"
 
