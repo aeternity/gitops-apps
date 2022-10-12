@@ -51,8 +51,7 @@ app:
     args:
       - -c
       - >-
-        mkdir -p /data/rendered
-        mkdir -p /data/backup
+        mkdir -p /data/backup && mkdir -p /data/rendered
   env:
     "S3_REGION": "eu-central-1"
     "AETERNITY_URL": "https://testnet.aeternity.io"
