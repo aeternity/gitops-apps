@@ -39,7 +39,7 @@ app:
       cert-manager.io/cluster-issuer: letsencrypt
 
   persistence:
-    enabled: true
+    enabled: false
     accessMode: ReadWriteOnce
     storageClass: gp2
     size: 50Gi
