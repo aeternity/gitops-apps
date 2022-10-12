@@ -1,7 +1,7 @@
 app:
   image:
     repository: aeternity/graffiti-server
-    tag: "latest"
+    tag: "test"
     pullPolicy: "Always"
 
   secrets:
@@ -44,14 +44,7 @@ app:
     storageClass: gp2
     size: 50Gi
     mountPath: /app/data/
-  
-  init: 
-    enabled: true
-    command: ["/bin/sh"]
-    args:
-      - -c
-      - >-
-        mkdir -p /data/backup && mkdir -p /data/rendered
+
   env:
     "S3_REGION": "eu-central-1"
     "AETERNITY_URL": "https://testnet.aeternity.io"
