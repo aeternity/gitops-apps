@@ -20,6 +20,10 @@ app:
         paths:
           - path: "/"
             version: "pr-207"
+      - host: "pr-210-state-channel-demo-backend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-210"
     tls:
       - secretName: "state-channel-demo-backend-cert"
   versions:
@@ -28,6 +32,7 @@ app:
     - version: "pr-196"
     - version: "pr-199"
     - version: "pr-207"
+    - version: "pr-210"
   env:
     "NODE_URL": "https://testnet.aeternity.io"
     "WS_URL": "wss://sdk-testnet.aepps.com/channel"
