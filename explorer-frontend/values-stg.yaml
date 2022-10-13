@@ -12,10 +12,6 @@ app:
         paths:
           - path: "/"
             version: "pr-55"
-      - host: "pr-57-explorer-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-57"
       - host: "pr-63-explorer-frontend.stg.aepps.com"
         paths:
           - path: "/"
@@ -26,4 +22,3 @@ app:
     - version: "pr-55"
       gitSha: "5c641f0"
     - {version: pr-63, gitSha: 68dfdf0}
-    - {version: pr-57, gitSha: 78c98dc}
