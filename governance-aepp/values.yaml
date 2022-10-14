@@ -1,0 +1,20 @@
+app:
+  image:
+    repository: aeternitybot/governance-aepp
+    tag: "latest"
+    pullPolicy: "Always"
+
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
+
+  service:
+    port: 80
+
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
