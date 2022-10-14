@@ -1,0 +1,10 @@
+app:
+  ingress:
+    hosts:
+      - host: "governance-server-testnet.prd.aepps.com"
+        paths:
+          - path: "/"
+
+    tls:
+      - hosts:
+        - "governance-server-testnet.prd.aepps.com" 
