@@ -1,0 +1,30 @@
+app:
+  image:
+    repository: aeternitybot/governance-server-mainnet
+    tag: "latest"
+    pullPolicy: "Always"
+
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
+
+  service:
+    port: 3000
+
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+
+  env:
+    "KEEP_HOT_INTERVAL": "60000"
+    "CONTRACT_ADDRESS": "ct_ouZib4wT9cNwgRA1pxgA63XEUd8eQRrG8PcePDEYogBc1VYTq"
+    "COMPILER_URL": "https://compiler.aeternity.io"  
+    "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
+    "NODE_URL": "https://mainnet.aeternity.io/"
+    "PORT": "3000"
+    "REDIS_URL": "redis://redis-master.redis.svc.cluster.local:6379"
+    "WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
