@@ -12,13 +12,24 @@ app:
         paths:
           - path: "/"
             version: "pr-55"
-      - host: "pr-57-explorer-frontend.stg.aepps.com"
+      - host: "pr-63-explorer-frontend.stg.aepps.com"
         paths:
           - path: "/"
-            version: "pr-57"
+            version: "pr-63"
+      - host: "pr-65-explorer-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-65"
+      - host: "pr-66-explorer-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-66"
     tls:
       - secretName: "explorer-cert"
   versions:
-    - version: "pr-57"
-      gitSha: "4b512de"
-    - {version: pr-55, gitSha: 8a13898}
+    - version: "pr-55"
+      gitSha: "5c641f0"
+    - version: "pr-63"
+      gitSha: "68dfdf0"
+    - version: "pr-65"
+    - version: "pr-66"
