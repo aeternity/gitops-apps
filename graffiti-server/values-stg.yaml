@@ -16,18 +16,6 @@ app:
       - host: "graffiti-server.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-198-graffiti-server.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-198"
-    tls:
-      - hosts:
-        - "graffiti-server.stg.aepps.com"
-        - "pr-198-graffiti-server.stg.aepps.com"
-        secretName: graffiti-server-cert
-
-  versions:
-    - {version: pr-198, gitSha: cb777b1}
 
   env:
     "IPFS_URL": "http://ipfs.stg.aepps.com:5001"

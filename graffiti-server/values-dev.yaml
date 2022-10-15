@@ -16,11 +16,6 @@ app:
       - host: "graffiti-server.dev.aepps.com"
         paths:
           - path: "/"
-    tls:
-      - hosts:
-        - "graffiti-server.dev.aepps.com"
-        secretName: graffiti-server-cert
-
   env:
     "IPFS_URL": "http://ipfs.dev.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-dev"
