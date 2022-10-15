@@ -36,13 +36,6 @@ app:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
 
-  persistence:
-    enabled: true
-    accessMode: ReadWriteOnce
-    storageClass: gp2
-    size: 50Gi
-    mountPath: /app/data
-
   env:
     "S3_REGION": "eu-central-1"
     "AETERNITY_URL": "https://testnet.aeternity.io"
