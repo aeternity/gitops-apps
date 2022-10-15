@@ -14,7 +14,7 @@ app:
   env:
     "AETERNITY_URL": "https://mainnet.aeternity.io"
     "CONTRACT_ADDRESS": "ct_2L8CMtgsb3cz9VbhYdtrSZPU8MbGDhH446WjTnFDm3snyMYTR"
-    "PATH_IDENTIFIER": "mainnet"
+    "PATH_IDENTIFIER": "/"
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-prd"
     "KEEP_HOT_INTERVAL": "60000"
