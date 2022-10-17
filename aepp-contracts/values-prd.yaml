@@ -9,6 +9,6 @@ app:
           - path: "/"
     tls:
       - hosts:
-        - "contracts.prd.aepps.com"
         - "contracts.aepps.com"
+        - "contracts.prd.aepps.com"
         secretName: aepp-contracts-cert

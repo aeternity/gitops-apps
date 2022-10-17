@@ -4,9 +4,11 @@ app:
       - host: "repl.prd.aepps.com"
         paths:
           - path: "/"
+      - host: "repl.aepps.com"
+        paths:
+          - path: "/"
     tls:
       - hosts:
+          - "repl.aepps.com"
           - "repl.prd.aepps.com"
         secretName: aerepl-http-cert
-  versions:
-    - {version: master, gitSha: 1cd0f81}

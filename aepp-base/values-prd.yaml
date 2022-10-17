@@ -3,10 +3,18 @@ app:
     tag: "v1.0.2"
   ingress:
     hosts:
-      - host: "base.prd.aepps.com" # has to be changed/disscused
+      - host: "base.prd.aepps.com"
+        paths:
+          - path: "/"
+      - host: "base.aepps.com"
+        paths:
+          - path: "/"
+      - host: "base.aeternity.io"
         paths:
           - path: "/"
     tls:
       - hosts:
+        - "base.aepps.com"
+        - "base.aeternity.io"
         - "base.prd.aepps.com"
         secretName: aepp-base-cert
