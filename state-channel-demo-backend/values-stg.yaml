@@ -24,10 +24,6 @@ app:
         paths:
           - path: "/"
             version: "pr-218"
-      - host: "pr-221-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-221"
     tls:
       - secretName: "state-channel-demo-backend-cert"
   versions:
@@ -40,7 +36,6 @@ app:
       gitSha: "754a8ce"
     - version: "pr-223"
       gitSha: "b4dd6f4"
-    - {version: pr-221, gitSha: 1151495}
   env:
     "NODE_URL": "https://testnet.aeternity.io"
     "WS_URL": "wss://sdk-testnet.aepps.com/channel"
