@@ -7,15 +7,7 @@ app:
       - host: "faucet.prd.aepps.com"
         paths:
           - path: "/"
-      - host: "faucet.aepps.com"
-        paths:
-          - path: "/"
-      - host: "faucet.aeternity.io"
-        paths:
-          - path: "/"
     tls:
       - hosts:
-        - "faucet.aepps.com"
-        - "faucet.aeternity.io"
         - "faucet.prd.aepps.com"
         secretName: aepp-faucet-cert
