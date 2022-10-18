@@ -22,6 +22,10 @@ app:
             version: "v6.1.0"
           - path: /
             version: "v6.1.0"
+      - host: "latest.compiler.aepps.com"
+        paths:
+          - path: /
+            version: "v6.1.0"
       - host: "compiler.aeternity.io"
         paths:
           - path: /v4
@@ -37,4 +41,5 @@ app:
         - "compiler.aepps.com"
         - "compiler.aeternity.io"
         - "compiler.prd.aepps.com"
+        - "latest.compiler.aepps.com"
         secretName: aesophia-http-cert
