@@ -11,6 +11,6 @@ app:
     tls:
       - hosts:
           - "faucet-nodejs.prd.aepps.com"
-        secretName: aepp-faucet-cert
+        secretName: aepp-faucet-nodejs-cert
   versions:
     - {version: latest, gitSha: ae1e006}
