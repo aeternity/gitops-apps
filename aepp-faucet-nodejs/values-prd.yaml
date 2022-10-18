@@ -7,12 +7,15 @@ app:
       - host: "faucet-nodejs.prd.aepps.com"
         paths:
           - path: "/"
+            version: "latest"
       - host: "faucet.aepps.com"
         paths:
           - path: "/"
+            version: "latest"
       - host: "faucet.aeternity.io"
         paths:
           - path: "/"
+            version: "latest"
     tls:
       - hosts:
           - "faucet.aepps.com"
