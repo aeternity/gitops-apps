@@ -7,8 +7,12 @@ app:
       - host: "repl.aepps.com"
         paths:
           - path: "/"
+      - host: "repl.aeternity.io"
+        paths:
+          - path: "/"
     tls:
       - hosts:
           - "repl.aepps.com"
+          - "repl.aeternity.io"
           - "repl.prd.aepps.com"
         secretName: aerepl-http-cert
