@@ -20,6 +20,10 @@ app:
         paths:
           - path: "/"
             version: "pr-226"
+      - host: "pr-227-state-channel-demo-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-227"
     tls:
       - secretName: "state-channel-demo-frontend-cert"
   versions:
@@ -30,3 +34,4 @@ app:
     - version: "pr-195"
     - version: "pr-196"
     - version: "pr-226"
+    - version: "pr-227"
