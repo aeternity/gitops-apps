@@ -24,6 +24,10 @@ app:
         paths:
           - path: "/"
             version: "pr-227"
+      - host: "pr-233-state-channel-demo-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-233"
     tls:
       - secretName: "state-channel-demo-frontend-cert"
   versions:
@@ -35,4 +39,6 @@ app:
     - version: "pr-196"
     - version: "pr-226"
     - version: "pr-227"
-    - {version: pr-232, gitSha: 694a973}
+    - version: "pr-232"
+      gitSha: "694a973"
+    - version: "pr-233"
