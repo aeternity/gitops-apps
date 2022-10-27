@@ -41,4 +41,4 @@ app:
     - {version: pr-83, gitSha: c48d7c1}
     - {version: pr-65, gitSha: 260dd09}
     - {version: pr-81, gitSha: dacc678}
-    - {version: pr-78, gitSha: aa1bb59}
+    - {version: pr-78, gitSha: 7da28e5}
