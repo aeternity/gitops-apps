@@ -42,5 +42,5 @@ app:
     - version: "pr-81"
       gitSha: "dacc678"
     - {version: pr-84, gitSha: 0941c7d}
-    - {version: pr-78, gitSha: 05075e2}
-    - '{version: pr-83, gitSha: 9f323e1}'
+    - {version: pr-83, gitSha: 9f323e1}
+    - '{version: pr-78, gitSha: 2d78dae}'
