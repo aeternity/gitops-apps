@@ -30,7 +30,7 @@ app:
             version: "pr-85"
     tls:
       - hosts:
-        - "explorer-frontend.stg.aepps.com"
+          - "explorer-frontend.stg.aepps.com"
         secretName: explorer-frontend-cert
   versions:
     - version: "pr-70"
@@ -39,4 +39,4 @@ app:
       gitSha: "0941c7d"
     - {version: pr-82, gitSha: 58e1166}
     - {version: pr-83, gitSha: cdd0310}
-    - {version: pr-85, gitSha: a073707}
+    - {version: pr-85, gitSha: fa1d52c}
