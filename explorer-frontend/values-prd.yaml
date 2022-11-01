@@ -1,16 +1,17 @@
 app:
   ingress:
     hosts:
-      - host: "explorer.prd.aepps.com"
+      - host: "explorer-frontend.prd.aepps.com"
         paths:
           - path: "/"
-      - host: "master-explorer.prd.aepps.com"
+      - host: "master-explorer-frontend.prd.aepps.com"
         paths:
           - path: "/"
             version: "master"
     tls:
       - hosts:
-        - "explorer.prd.aepps.com"
-        secretName: explorer-cert
+        - "explorer-frontend.prd.aepps.com"
+        - "master-explorer-frontend.prd.aepps.com"
+        secretName: explorer-frontend-cert
   versions:
     - {version: master, gitSha: 48a92d5}

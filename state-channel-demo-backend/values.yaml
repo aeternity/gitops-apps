@@ -1,6 +1,6 @@
 app:
   image:
-    tag: "v1.2.2"
+    tag: "v1.2.3"
     repository: "aeternitybot/state-channel-demo-backend"
     pullPolicy: "Always"
   service:
@@ -22,3 +22,4 @@ app:
     "NETWORK_ID": "ae_uat"
     "NODE_URL": "https://testnet.prd.aepps.com"
     "WS_URL": "wss://testnet.prd.aepps.com/channel"
+    "NODE_ENV": "testnet"

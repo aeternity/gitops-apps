@@ -1,7 +1,7 @@
 app:
   ingress:
     hosts:
-      - host: "explorer.stg.aepps.com"
+      - host: "explorer-frontend.stg.aepps.com"
         paths:
           - path: "/"
       - host: "pr-48-explorer.stg.aepps.com"
@@ -29,7 +29,9 @@ app:
           - path: "/"
             version: "pr-85"
     tls:
-      - secretName: "explorer-cert"
+      - hosts:
+        - "explorer-frontend.stg.aepps.com"
+        secretName: explorer-frontend-cert
   versions:
     - version: "pr-70"
       gitSha: "8fdc407"
