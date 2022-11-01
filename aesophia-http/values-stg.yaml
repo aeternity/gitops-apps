@@ -10,6 +10,8 @@ app:
             version: "v5.0.0"
           - path: /v6
             version: "v6.1.0"
+          - path: /v7
+            version: "v7.0.1"
           - path: /
             version: "v6.1.0"
     tls:
