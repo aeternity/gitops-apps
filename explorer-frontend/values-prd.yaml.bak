@@ -14,4 +14,4 @@ app:
           - "master-explorer-frontend.prd.aepps.com"
         secretName: explorer-frontend-cert
   versions:
-    - '{version: master, gitSha: 3477fda}'
+    - '{version: master, gitSha: 00ac5c6}'
