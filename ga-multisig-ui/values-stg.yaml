@@ -1,7 +1,7 @@
 app:
   ingress:
     hosts:
-      - host: "ga-multisig-ui.dev.aepps.com"
+      - host: "ga-multisig-ui.stg.aepps.com"
         paths:
           - path: "/"
       - host: "pr-4-ga-multisig-ui.stg.aepps.com"

@@ -1,0 +1,16 @@
+app:
+  ingress:
+    hosts:
+      - host: "ga-multisig-ui.prd.aepps.com"
+        paths:
+          - path: "/"
+      - host: "master-ga-multisig-ui.prd.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "ga-multisig-ui.prd.aepps.com"
+        - "master-ga-multisig-ui.prd.aepps.com"
+        secretName: ga-multisig-ui-cert
+  versions:
+    - {version: master, gitSha: 2da04f2}
