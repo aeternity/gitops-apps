@@ -1,51 +1,56 @@
 app:
   ingress:
-    stripPrefix: "/v[0-9]+"
     hosts:
-      - host: "compiler.prd.aepps.com"
-        paths:
-          - path: /v4
-            version: "v4.3.0"
-          - path: /v5
-            version: "v5.0.0"
-          - path: /v6
-            version: "v6.1.0"
-          - path: /v7
-            version: "v7.0.1"
-          - path: /
-            version: "v6.1.0"
       - host: "compiler.aepps.com"
         paths:
-          - path: /v4
-            version: "v4.3.0"
-          - path: /v5
-            version: "v5.0.0"
-          - path: /v6
-            version: "v6.1.0"
-          - path: /v7
-            version: "v7.0.1"
           - path: /
             version: "v6.1.0"
+      - host: "v4.compiler.aepps.com"
+        paths:
+          - path: /
+            version: "v4.3.0"
+      - host: "v5.compiler.aepps.com"
+        paths:
+          - path: /
+            version: "v5.0.0"
+      - host: "v6.compiler.aepps.com"
+        paths:
+          - path: /
+            version: "v6.1.0"
+      - host: "v7.compiler.aepps.com"
+        paths:
+          - path: /
+            version: "v7.0.1"
+
       - host: "latest.compiler.aepps.com"
         paths:
           - path: /
             version: "v6.1.0"
+
       - host: "compiler.aeternity.io"
         paths:
-          - path: /v4
-            version: "v4.3.0"
-          - path: /v5
-            version: "v5.0.0"
-          - path: /v6
-            version: "v6.1.0"
-          - path: /v7
-            version: "v7.0.1"
           - path: /
             version: "v6.1.0"
+      - host: "v4.compiler.aeternity.io"
+        paths:
+          - path: /
+            version: "v4.3.0"
+      - host: "v5.compiler.aeternity.io"
+        paths:
+          - path: /
+            version: "v5.0.0"
+      - host: "v6.compiler.aeternity.io"
+        paths:
+          - path: /
+            version: "v6.1.0"
+      - host: "v7.compiler.aeternity.io"
+        paths:
+          - path: /
+            version: "v7.0.1"
     tls:
       - hosts:
         - "compiler.aepps.com"
+        - "*.compiler.aepps.com"
         - "compiler.aeternity.io"
-        - "compiler.prd.aepps.com"
-        - "latest.compiler.aepps.com"
+        - "*.compiler.aeternity.io"
         secretName: aesophia-http-cert
