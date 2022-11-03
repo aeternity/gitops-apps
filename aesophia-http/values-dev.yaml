@@ -1,7 +1,7 @@
 app:
-  labels:
-    solver: test
   ingress:
+    labels:
+      solver: test
     stripPrefix: "/v[0-9]+"
     hosts:
       - host: "compiler.dev.aepps.com"
