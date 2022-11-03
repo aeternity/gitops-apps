@@ -1,7 +1,5 @@
 app:
   ingress:
-    labels:
-      solver: test
     stripPrefix: "/v[0-9]+"
     hosts:
       - host: "compiler.dev.aepps.com"
@@ -19,4 +17,5 @@ app:
     tls:
       - hosts:
         - "compiler.dev.aepps.com"
+        - "*.compiler.dev.aepps.com"
         secretName: aesophia-http-cert

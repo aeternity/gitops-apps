@@ -21,6 +21,8 @@ app:
           path: /version
   ingress:
     enabled: true
+    labels:
+      solver: route53
     annotations:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
