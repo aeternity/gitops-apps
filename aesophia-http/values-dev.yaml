@@ -1,4 +1,6 @@
 app:
+  labels:
+    solver: test
   ingress:
     stripPrefix: "/v[0-9]+"
     hosts:
