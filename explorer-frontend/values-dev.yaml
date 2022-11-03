@@ -4,7 +4,3 @@ app:
       - host: "explorer-frontend.dev.aepps.com"
         paths:
           - path: "/"
-    tls:
-      - hosts:
-        - "explorer-frontend.dev.aepps.com"
-        secretName: explorer-frontend-cert

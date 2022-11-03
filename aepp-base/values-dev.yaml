@@ -4,7 +4,3 @@ app:
       - host: "base.dev.aepps.com"
         paths:
           - path: "/"
-    tls:
-      - hosts:
-        - "base.dev.aepps.com"
-        secretName: aepp-base-cert

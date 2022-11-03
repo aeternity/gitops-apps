@@ -7,9 +7,5 @@ app:
       - host: "dex-backend-testnet.dev.aepps.com"
         paths:
           - path: "/"
-    tls:
-      - hosts:
-        - "dex-backend-testnet.dev.aepps.com"
-        secretName: dex-backend-testnet-cert
   env:
     "POSTGRES_HOST": "dexdev.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"

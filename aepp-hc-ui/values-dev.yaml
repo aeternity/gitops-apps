@@ -15,10 +15,6 @@ app:
     annotations:
       traefik.ingress.kubernetes.io/router.entrypoints: "websecure"
       cert-manager.io/cluster-issuer: "letsencrypt"
-    tls:
-      - hosts:
-          - "hc-ui.dev.aepps.com"
-        secretName: "aepp-hc-ui-cert"
     hosts:
       - host: "hc-ui.dev.aepps.com"
         paths:

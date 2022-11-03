@@ -3,10 +3,6 @@ app:
     external:
       remotePrefix: /k8s/dev-wgt7
   ingress:
-    tls:
-      - hosts:
-        - "ga-multisig-backend.dev.aepps.com"
-        secretName: ga-multisig-backend-cert
     hosts:
       - host: "ga-multisig-backend.dev.aepps.com"
         paths:

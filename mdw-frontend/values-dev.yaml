@@ -12,8 +12,3 @@ app:
         paths:
           - path: /
             version: "testnet"
-    tls:
-      - hosts:
-        - "mdw-explorer.dev.aepps.com"
-        - "mdw-explorer-testnet.dev.aepps.com"
-        secretName: mdw-frontend-cert

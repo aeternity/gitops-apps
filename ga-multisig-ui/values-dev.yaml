@@ -4,7 +4,3 @@ app:
       - host: "ga-multisig-ui.dev.aepps.com"
         paths:
           - path: "/"
-    tls:
-      - hosts:
-        - "ga-multisig-ui.dev.aepps.com"
-        secretName: ga-multisig-ui-cert

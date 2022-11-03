@@ -4,7 +4,3 @@ app:
       - host: "superhero-wallet.dev.aepps.com"
         paths:
           - path: "/"
-    tls:
-      - hosts:
-        - "superhero-wallet.dev.aepps.com"
-        secretName: superhero-wallet-cert

@@ -7,7 +7,3 @@ app:
       - host: "faucet-nodejs.dev.aepps.com"
         paths:
           - path: "/"
-    tls:
-      - hosts:
-        - "faucet-nodejs.dev.aepps.com"
-        secretName: aepp-faucet-nodejs-cert
