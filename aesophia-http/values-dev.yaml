@@ -1,28 +1,28 @@
 app:
   ingress:
     hosts:
-      - host: "compiler.stg.aepps.com"
+      - host: "compiler.dev.aepps.com"
         paths:
           - path: /
             version: "v6.1.0"
-      - host: "v4.compiler.stg.aepps.com"
+      - host: "v4.compiler.dev.aepps.com"
         paths:
           - path: /
             version: "v4.3.0"
-      - host: "v5.compiler.stg.aepps.com"
+      - host: "v5.compiler.dev.aepps.com"
         paths:
           - path: /
             version: "v5.0.0"
-      - host: "v6.compiler.stg.aepps.com"
+      - host: "v6.compiler.dev.aepps.com"
         paths:
           - path: /
             version: "v6.1.0"
-      - host: "v7.compiler.stg.aepps.com"
+      - host: "v7.compiler.dev.aepps.com"
         paths:
           - path: /
             version: "v7.0.1"
     tls:
       - hosts:
-        - "compiler.stg.aepps.com"
-        - "*.compiler.stg.aepps.com"
+        - "compiler.dev.aepps.com"
+        - "*.compiler.dev.aepps.com"
         secretName: aesophia-http-cert
