@@ -4,7 +4,3 @@ app:
       - host: "repl.dev.aepps.com"
         paths:
           - path: "/"
-    tls:
-      - hosts:
-        - "repl.dev.aepps.com"
-        secretName: aerepl-http-cert
