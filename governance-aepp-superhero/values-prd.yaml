@@ -1,0 +1,9 @@
+app:
+  ingress:
+    hosts:
+      - host: "governance-superhero.prd.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "governance-superhero.prd.aepps.com"

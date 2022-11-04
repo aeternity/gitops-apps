@@ -1,0 +1,12 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/dev-wgt7
+  image:
+    repository: aeternitybot/superhero-governance-aepp
+
+  ingress:
+    hosts:
+      - host: "governance-superhero.dev.aepps.com"
+        paths:
+          - path: "/"
