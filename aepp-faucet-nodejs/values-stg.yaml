@@ -4,9 +4,6 @@ app:
       remotePrefix: /k8s/stg-m4n4
   ingress:
     hosts:
-      - host: "faucet.aepps.com"
+      - host: "faucet-nodejs.stg.aepps.com"
         paths:
           - path: "/"
-            version: "latest"
-  versions:
-    - {version: latest, gitSha: cf7b949}
