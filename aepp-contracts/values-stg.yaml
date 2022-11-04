@@ -1,9 +1,5 @@
 app:
   ingress:
-    tls:
-      - hosts:
-        - "contracts.stg.aepps.com"
-        secretName: aepp-contracts-cert
     hosts:
       - host: "contracts.stg.aepps.com"
         paths:

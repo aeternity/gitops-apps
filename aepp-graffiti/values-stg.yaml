@@ -4,6 +4,4 @@ app:
       - host: "aepp-grafitti.stg.aepps.com"
         paths:
           - path: "/"
-    tls:
-      - secretName: aepp-grafitti-cert
   versions: []

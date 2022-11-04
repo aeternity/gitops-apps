@@ -16,13 +16,6 @@ app:
         paths:
           - path: "/"
             version: "pr-483"
-    tls:
-      - hosts:
-          - "dex.stg.aepps.com"
-          - "pr-480-dex-ui.stg.aepps.com"
-          - "pr-481-dex-ui.stg.aepps.com"
-          - "pr-483-dex-ui.stg.aepps.com"
-        secretName: "dex-ui-cert"
   versions:
     - version: "pr-480"
     - version: "pr-481"

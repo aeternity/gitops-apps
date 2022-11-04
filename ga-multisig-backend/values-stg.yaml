@@ -3,10 +3,6 @@ app:
     external:
       remotePrefix: /k8s/stg-m4n4
   ingress:
-    tls:
-      - hosts:
-          - "ga-multisig-backend.stg.aepps.com"
-        secretName: ga-multisig-backend-cert
     hosts:
       - host: "ga-multisig-backend.stg.aepps.com"
         paths:

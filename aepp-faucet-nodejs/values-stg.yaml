@@ -8,9 +8,5 @@ app:
         paths:
           - path: "/"
             version: "latest"
-    tls:
-      - hosts:
-          - "faucet.aepps.com"
-        secretName: aepp-faucet-cert
   versions:
     - {version: latest, gitSha: cf7b949}

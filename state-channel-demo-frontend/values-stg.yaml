@@ -24,8 +24,6 @@ app:
         paths:
           - path: "/"
             version: "pr-227"
-    tls:
-      - secretName: "state-channel-demo-frontend-cert"
   versions:
     - version: "pr-138"
       gitSha: "aee5546"

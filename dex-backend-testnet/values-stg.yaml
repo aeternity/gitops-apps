@@ -11,11 +11,6 @@ app:
         paths:
           - path: "/"
             version: "pr-73"
-    tls:
-      - hosts:
-          - "dex-backend-testnet.stg.aepps.com"
-          - "pr-73-dex-backend-testnet.stg.aepps.com"
-        secretName: "dex-backend-testnet-cert"
   env:
     "POSTGRES_HOST": "dexstg.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
   versions:

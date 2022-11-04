@@ -7,10 +7,6 @@ app:
       - host: "superhero-backend.stg.aepps.com"
         paths:
           - path: "/"
-    tls:
-      - hosts:
-        - "superhero-backend.stg.aepps.com"
-        secretName: superhero-backend-cert
   env:
     "REDIS_HOST": "192.168.1.111"
     "REDIS_PORT": "6379"
