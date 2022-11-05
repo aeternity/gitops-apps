@@ -20,8 +20,6 @@ app:
         paths:
           - path: "/"
             version: "pr-88"
-    tls:
-      - hosts: "pr-87-test-repo.stg.aepps.com"
   env:
     "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-stg"
