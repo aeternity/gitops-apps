@@ -16,12 +16,7 @@ app:
       - host: "test-repo.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-89-test-repo.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-89"
   env:
     "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-stg"
-  versions:
-    - {version: pr-89, gitSha: c4da8f6}
+  versions: []
