@@ -24,6 +24,10 @@ app:
         paths:
           - path: "/"
             version: "pr-227"
+      - host: "pr-236-state-channel-demo-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-236"
   versions:
     - version: "pr-138"
       gitSha: "aee5546"
@@ -35,3 +39,4 @@ app:
     - version: "pr-227"
     - version: "pr-232"
       gitSha: "694a973"
+    - version: "pr-236"
