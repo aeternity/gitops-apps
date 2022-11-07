@@ -12,13 +12,19 @@ app:
     port: 3080
   probes:
     liveness:
+      enabled: true
       config:
-        httpGet:
-          path: /version
+        tcpSocket:
+          port: http
+        initialDelaySeconds: 1
+        timeoutSeconds: 6
     readiness:
+      enabled: true
       config:
         httpGet:
           path: /version
+          port: http
+        timeoutSeconds: 3
   ingress:
     enabled: true
     labels:
