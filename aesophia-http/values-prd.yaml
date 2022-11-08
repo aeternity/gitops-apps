@@ -1,5 +1,5 @@
 app:
-  replicaCount: 2
+  replicaCount: 4
   ingress:
     hosts:
       - host: "compiler.aepps.com"
