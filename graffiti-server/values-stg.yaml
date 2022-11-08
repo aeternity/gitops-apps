@@ -16,11 +16,6 @@ app:
       - host: "graffiti-server.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-198-graffiti-server.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-198"
-
   env:
     "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-stg"
