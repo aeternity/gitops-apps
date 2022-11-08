@@ -5,9 +5,10 @@ app:
     pullPolicy: "Always"
 
   secrets:
-    values:
-      S3_KEY: /apps/GRAFFITI_S3_KEY
-      S3_SECRET: /apps/GRAFFITI_S3_SECRET
+    external:
+      values:
+        S3_KEY: /apps/GRAFFITI_S3_KEY
+        S3_SECRET: /apps/GRAFFITI_S3_SECRET
 
   service:
     port: 3000
