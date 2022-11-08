@@ -18,14 +18,14 @@ app:
         tcpSocket:
           port: http
         initialDelaySeconds: 1
-        timeoutSeconds: 6
+        timeoutSeconds: 10
     readiness:
       enabled: true
       config:
         httpGet:
           path: /version
           port: http
-        timeoutSeconds: 3
+        timeoutSeconds: 5
   ingress:
     enabled: true
     labels:
