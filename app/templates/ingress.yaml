@@ -35,14 +35,16 @@ spec:
       http:
         paths:
           {{- range .paths }}
-          - path: {{ .path }}
+          - pathType: Prefix
+            path: {{ .path }}
             backend:
-              {{- if .version }}
-              serviceName: {{ $fullName }}-{{ include "app.escape" .version }}
-              {{- else }}
-              serviceName: {{ $fullName }}
+              service:
+                {{- if .version }}
+                name: {{ $fullName }}-{{ include "app.escape" .version }}
+                {{- else }}
+                name: {{ $fullName }}
               {{- end }}
-              servicePort: {{ $svcPort }}
+                port: {{ $svcPort }}
           {{- end }}
     {{- end }}
 {{- end }}
