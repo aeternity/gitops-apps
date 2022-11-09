@@ -20,10 +20,6 @@ app:
         paths:
           - path: "/"
             version: "pr-90"
-      - host: "pr-93-explorer-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-93"
       - host: "pr-97-explorer-frontend.stg.aepps.com"
         paths:
           - path: "/"
@@ -43,4 +39,3 @@ app:
       gitSha: "c7521ed"
     - version: "pr-98"
       gitSha: "null"
-    - {version: "pr-93", gitSha: "b2185aa"}
