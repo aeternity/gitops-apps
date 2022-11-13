@@ -7,11 +7,6 @@ app:
       - host: "dex-backend-testnet.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-73-dex-backend-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-73"
   env:
     "POSTGRES_HOST": "dexstg.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
-  versions:
-    - version: "pr-73"
+  versions: []
