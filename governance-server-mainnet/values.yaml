@@ -4,6 +4,12 @@ app:
     tag: "latest"
     pullPolicy: "Always"
 
+  resources:
+    limits:
+      memory: 78Mi
+    requests:
+      memory: 78Mi
+
   probes:
     liveness:
       enabled: false

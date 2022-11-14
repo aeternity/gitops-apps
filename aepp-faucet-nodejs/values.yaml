@@ -2,6 +2,11 @@ app:
   image:
     tag: latest
     pullPolicy: "Always"
+  resources:
+    limits:
+      memory: 72Mi
+    requests:
+      memory: 72Mi
   env:
     "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
     "EXPLORER_URL": "https://explorer.testnet.aeternity.io"

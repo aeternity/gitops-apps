@@ -4,6 +4,14 @@ app:
     tag: "latest"
     pullPolicy: "Always"
 
+  resources:
+    limits:
+      cpu: 300m
+      memory: 288Mi
+    requests:
+      cpu: 200m
+      memory: 288Mi
+
   secrets:
     external:
       values:

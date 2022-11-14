@@ -3,6 +3,11 @@ app:
     repository: aeternity/aerepl_http
     tag: "latest"
     pullPolicy: "Always"
+  resources:
+    limits:
+      memory: 80Mi
+    requests:
+      memory: 80Mi
   service:
     port: 4000
   ingress:

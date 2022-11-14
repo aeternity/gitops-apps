@@ -2,6 +2,11 @@ app:
   image:
     tag: latest
     pullPolicy: "Always"
+  resources:
+    limits:
+      memory: 64Mi
+    requests:
+      memory: 64Mi
   env:
     "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
     "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
@@ -17,4 +22,3 @@ app:
     annotations:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
-
