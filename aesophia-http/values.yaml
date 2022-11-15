@@ -9,11 +9,11 @@ app:
     pullPolicy: "Always"
   resources:
     limits:
-      cpu: 75m
-      memory: 128Mi
+      cpu: 300m
+      memory: 256Mi
     requests:
-      cpu: 50m
-      memory: 128Mi
+      cpu: 200m
+      memory: 256Mi
   service:
     type: ClusterIP
     port: 3080
