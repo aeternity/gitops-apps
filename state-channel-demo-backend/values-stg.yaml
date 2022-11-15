@@ -13,9 +13,8 @@ app:
           - path: "/"
             version: "pr-246"
   versions:
-    - version: "pr-246"
-      gitSha: "null"
     - {version: "pr-245", gitSha: "e0498c7"}
+    - {version: "pr-246", gitSha: "b471479"}
   env:
     "NODE_URL": "https://testnet.aeternity.io"
     "WS_URL": "wss://sdk-testnet.aepps.com/channel"
