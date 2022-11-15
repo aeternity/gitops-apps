@@ -4,16 +4,11 @@ app:
       - host: "state-channel-demo-backend.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-245-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-245"
       - host: "pr-246-state-channel-demo-backend.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-246"
   versions:
-    - {version: "pr-245", gitSha: "e0498c7"}
     - {version: "pr-246", gitSha: "b471479"}
   env:
     "NODE_URL": "https://testnet.aeternity.io"
