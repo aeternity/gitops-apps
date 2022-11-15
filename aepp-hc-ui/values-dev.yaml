@@ -3,6 +3,13 @@ app:
     repository: "aeternity/aepp-hc-ui"
     tag: "pr-8"
     pullPolicy: "Always"
+  resources:
+    limits:
+      cpu: 45m
+      memory: 108Mi
+    requests:
+      cpu: 30m
+      memory: 108Mi
   env:
     PORT: "80"
     AE_FAUCET_URL: "https://dev-faucet-hc.aepps.com/"
