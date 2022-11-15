@@ -12,6 +12,11 @@ app:
         paths:
           - path: "/"
             version: "pr-246"
+      - host: "pr-249-state-channel-demo-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-249"
   versions:
     - version: "pr-245"
     - version: "pr-246"
+    - version: "pr-249"
