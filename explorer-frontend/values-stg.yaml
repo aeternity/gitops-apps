@@ -25,8 +25,6 @@ app:
       gitSha: "8fdc407"
     - version: "pr-102"
       gitSha: "d1b203c"
-    - version: "pr-99"
-      gitSha: "a998ae5"
     - version: "pr-104"
       gitSha: "a5da8c6"
     - version: "pr-105"
