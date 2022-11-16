@@ -5,10 +5,10 @@ app:
 
   resources:
     limits:
-      cpu: 45m
+      cpu: 75m
       memory: 168Mi
     requests:
-      cpu: 30m
+      cpu: 50m
       memory: 168Mi
 
   ingress:
