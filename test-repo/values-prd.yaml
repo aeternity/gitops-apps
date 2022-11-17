@@ -11,3 +11,4 @@ app:
             version: "main"
   versions:
     - {version: "latest", gitSha: "8f0c893"}
+    - {version: "main", gitSha: "b1999e4"}
