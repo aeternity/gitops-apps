@@ -4,10 +4,6 @@ app:
       - host: "dex.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-480-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-480"
       - host: "pr-481-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
@@ -17,6 +13,5 @@ app:
           - path: "/"
             version: "pr-483"
   versions:
-    - version: "pr-480"
     - version: "pr-481"
     - version: "pr-483"
