@@ -1,6 +1,6 @@
 app:
   image:
-    tag: "v1.17.2"
+    tag: "v1.17.3"
   ingress:
     hosts:
       - host: "dex.prd.aepps.com"
