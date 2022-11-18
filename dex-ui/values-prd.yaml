@@ -15,10 +15,9 @@ app:
             version: "main"
     tls:
       - hosts:
-        - "dex.prd.aepps.com"
-        - "aepp.dex.superhero.com"
-        - "main-dex-ui.prd.aepps.com"
+          - "dex.prd.aepps.com"
+          - "aepp.dex.superhero.com"
+          - "main-dex-ui.prd.aepps.com"
         secretName: dex-ui-cert
-
   versions:
-    - {version: main, gitSha: d96b5ab}
+    - {version: "main", gitSha: "522f050"}
