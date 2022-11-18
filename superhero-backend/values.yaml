@@ -4,10 +4,10 @@ app:
     pullPolicy: "Always"
   resources:
     limits:
-      memory: 320Mi
+      memory: 512Mi
     requests:
       cpu: 300m
-      memory: 320Mi
+      memory: 512Mi
   probes:
     liveness:
       enabled: false
