@@ -5,10 +5,10 @@ app:
     pullPolicy: "Always"
   resources:
     limits:
-      memory: 108Mi
+      memory: "108Mi"
     requests:
-      cpu: 30m
-      memory: 108Mi
+      cpu: "30m"
+      memory: "108Mi"
   env:
     PORT: "80"
     AE_FAUCET_URL: "https://dev-faucet-hc.aepps.com/"
@@ -25,6 +25,10 @@ app:
       - host: "hc-ui.dev.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-10-aepp-hc-ui.dev.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-10"
   probes:
     liveness:
       enabled: "true"
@@ -32,11 +36,12 @@ app:
         httpGet:
           path: "/alive"
           port: "http"
-        initialDelaySeconds: 60
+        initialDelaySeconds: "60"
     readiness:
       enabled: "true"
       config:
         httpGet:
           path: "/alive"
           port: "http"
-  versions: []
+  versions:
+    - version: "pr-10"
