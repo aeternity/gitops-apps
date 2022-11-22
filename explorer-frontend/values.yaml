@@ -3,6 +3,11 @@ app:
     tag: "latest"
     repository: "aeternitybot/explorer-frontend"
     pullPolicy: "Always"
+  resources:
+    limits:
+      memory: 12Mi
+    requests:
+      memory: 12Mi
   ingress:
     enabled: true
     annotations:

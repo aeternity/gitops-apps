@@ -3,6 +3,12 @@ app:
     repository: aeternitybot/dex-backend-mainnet
     tag: "latest"
     pullPolicy: "Always"
+  resources:
+    limits:
+      memory: 164Mi
+    requests:
+      cpu: 30m
+      memory: 164Mi
   secrets:
     external:
       values:

@@ -3,6 +3,11 @@ app:
     tag: "v1.2.9"
     repository: "aeternitybot/state-channel-demo-backend"
     pullPolicy: "Always"
+  resources:
+    limits:
+      memory: 80Mi
+    requests:
+      memory: 80Mi
   service:
     port: 3000
   ingress:
