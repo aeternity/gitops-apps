@@ -1,0 +1,26 @@
+app:
+  image:
+    repository: aeternity/aepp-hc-ui
+    pullPolicy: "Always"
+  resources:
+    limits:
+      memory: 108Mi
+    requests:
+      cpu: 30m
+      memory: 108Mi
+  env:
+    PORT: "80"
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+  probes:
+    liveness:
+      config:
+        httpGet:
+          path: /alive
+    readiness:
+      config:
+        httpGet:
+          path: /alive
