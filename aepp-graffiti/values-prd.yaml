@@ -4,6 +4,9 @@ app:
       - host: "aepp-grafitti.prd.aepps.com"
         paths:
           - path: "/"
+      - host: "test-graffiti.aeternity.com"
+        paths:
+          - path: "/"
     tls:
       - hosts:
         - "aepp-grafitti.prd.aepps.com"
