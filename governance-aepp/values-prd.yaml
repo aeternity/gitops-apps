@@ -4,6 +4,9 @@ app:
       - host: "governance.prd.aepps.com"
         paths:
           - path: "/"
+      - host: "governance.aeternity.com"
+        paths:
+          - path: "/"
     tls:
       - hosts:
         - "governance.prd.aepps.com"
