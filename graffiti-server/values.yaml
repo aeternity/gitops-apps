@@ -17,7 +17,7 @@ app:
       enabled: false
       config:
         httpGet:
-          path: /health/testFiles
+          path: /health
         initialDelaySeconds: 120
         periodSeconds: 120
         successThreshold: 1
@@ -26,7 +26,7 @@ app:
       enabled: false
       config:
         httpGet:
-          path: /health/testFiles
+          path: /health
         initialDelaySeconds: 120
         periodSeconds: 120
         successThreshold: 1
