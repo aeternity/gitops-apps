@@ -4,11 +4,7 @@ app:
       - host: "aepp-grafitti.prd.aepps.com"
         paths:
           - path: "/"
-      - host: "graffiti.aeternity.com"
-        paths:
-          - path: "/"
     tls:
       - hosts:
         - "aepp-grafitti.prd.aepps.com"
-        - "graffiti.aeternity.com"
         secretName: aepp-grafitti-cert
