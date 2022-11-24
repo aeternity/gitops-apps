@@ -3,7 +3,6 @@ app:
     repository: aeternity/graffiti-server
     tag: "latest"
     pullPolicy: "Always"
-
   secrets:
     values:
       S3_KEY: /apps/GRAFFITI_S3_KEY
