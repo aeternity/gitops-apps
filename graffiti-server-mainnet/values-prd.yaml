@@ -4,15 +4,15 @@ app:
       remotePrefix: /k8s/prd-0e9c
   ingress:
     hosts:
-      - host: "graffiti-server.prd.aepps.com"
+      - host: "graffiti-server-mainnet.prd.aepps.com"
         paths:
           - path: "/"
     tls:
       - hosts:
-        - "graffiti-server.prd.aepps.com"
+        - "graffiti-server-mainnet.prd.aepps.com"
         secretName: graffiti-server-cert
   env:
-    "AETERNITY_URL": "https://mainnet.aeternity.io"
+    "NODE_URL": "https://mainnet.aeternity.io"
     "CONTRACT_ADDRESS": "ct_ftU4u1wEsiWd6YN4AAekEArJmLds4K8AB2k4UXKxn32Yrf5n5"
     "PATH_IDENTIFIER": "/"
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"

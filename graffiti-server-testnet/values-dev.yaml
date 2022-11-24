@@ -13,12 +13,12 @@ app:
 
   ingress:
     hosts:
-      - host: "graffiti-server.dev.aepps.com"
+      - host: "graffiti-server-testnet.dev.aepps.com"
         paths:
           - path: "/"
     tls:
       - hosts:
-        - "graffiti-server.dev.aepps.com"
+        - "graffiti-server-testnet.dev.aepps.com"
         secretName: graffiti-server-cert
 
   env:

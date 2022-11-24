@@ -1,0 +1,26 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/dev-wgt7
+
+  resources:
+    limits:
+      cpu: "2"
+      memory: "6Gi"
+    requests:
+      cpu: "1"
+      memory: "5Gi"
+
+  ingress:
+    hosts:
+      - host: "graffiti-server-mainnet.dev.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "graffiti-server-mainnet.dev.aepps.com"
+        secretName: graffiti-server-cert
+
+  env:
+    "IPFS_URL": "http://ipfs.dev.aepps.com:5001"
+    "S3_BUCKET": "aeternity-superhero-graffiti-dev"

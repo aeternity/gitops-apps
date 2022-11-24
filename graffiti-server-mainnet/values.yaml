@@ -1,0 +1,47 @@
+app:
+  image:
+    repository: aeternity/graffiti-server
+    tag: "latest"
+    pullPolicy: "Always"
+
+  secrets:
+    values:
+      S3_KEY: /apps/GRAFFITI_S3_KEY
+      S3_SECRET: /apps/GRAFFITI_S3_SECRET
+
+  service:
+    port: 3000
+
+  probes:
+    liveness:
+      enabled: false
+      config:
+        httpGet:
+          path: /health
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
+    readiness:
+      enabled: false
+      config:
+        httpGet:
+          path: /health
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
+
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+
+  env:
+    "S3_REGION": "eu-central-1"
+    "NODE_URL": "https://testnet.aeternity.io"
+    "CONTRACT_ADDRESS": "ct_eLhLkGX2kfrqj6skdG4AxwjQk2MJy6nsWASnG8aEQFrQ2gDyp"
+    "PATH_IDENTIFIER": "/"
+    "COMPILER_URL": "https://compiler.aeternity.io"
+

@@ -1,0 +1,25 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/stg-m4n4
+
+  resources:
+    limits:
+      cpu: "2"
+      memory: "6Gi"
+    requests:
+      cpu: "1"
+      memory: "5Gi"
+
+  ingress:
+    hosts:
+      - host: "graffiti-server-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "graffiti-server.stg.aepps.com"
+        secretName: graffiti-server-cert
+  env:
+    "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
+    "S3_BUCKET": "aeternity-superhero-graffiti-stg"

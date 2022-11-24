@@ -40,8 +40,7 @@ app:
 
   env:
     "S3_REGION": "eu-central-1"
-    "AETERNITY_URL": "https://testnet.aeternity.io"
-    "CONTRACT_ADDRESS": "ct_eLhLkGX2kfrqj6skdG4AxwjQk2MJy6nsWASnG8aEQFrQ2gDyp"
+    "NODE_URL": "https://testnet.aeternity.io"
+    "CONTRACT_ADDRESS": "ct_uJ5NKmuX7eX79QPerixR7Z8zEdxKCKJw1yzHjX1tsmRP17tuP"
     "PATH_IDENTIFIER": "/"
     "COMPILER_URL": "https://compiler.aeternity.io"
-
