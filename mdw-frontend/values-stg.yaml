@@ -1,7 +1,10 @@
 app:
   versions:
-    - version: mainnet
-    - version: testnet
+    - version: "mainnet"
+      gitSha: "null"
+    - version: "testnet"
+      gitSha: "null"
+    - {version: "pr-181-testnet", gitSha: "51593ce"}
   ingress:
     hosts:
       - host: "mdw-explorer.stg.aepps.com"
