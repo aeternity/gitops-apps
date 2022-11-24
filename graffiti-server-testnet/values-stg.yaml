@@ -18,7 +18,7 @@ app:
           - path: "/"
     tls:
       - hosts:
-        - "graffiti-server.stg.aepps.com"
+        - "graffiti-server-testnet.stg.aepps.com"
         secretName: graffiti-server-cert
   env:
     "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
