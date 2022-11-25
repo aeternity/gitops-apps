@@ -1,6 +1,6 @@
 app:
   image:
-    tag: "develop"
+    tag: "pr-82"
     pullPolicy: "Always"
   ingress:
     enabled: "true"
