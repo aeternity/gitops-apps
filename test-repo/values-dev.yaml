@@ -1,7 +1,7 @@
 app:
   image:
-    tag: "pr-82"
     pullPolicy: "Always"
+    tag: "latest"
   ingress:
     enabled: "true"
     hosts:
