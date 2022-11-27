@@ -1,7 +1,7 @@
 app:
   image:
     repository: aeternitybot/test-repo
-    tag: "pr-82"
+    tag: "stg"
     pullPolicy: "Always"
 
   secrets:
