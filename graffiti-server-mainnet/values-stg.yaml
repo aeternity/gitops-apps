@@ -17,7 +17,7 @@ app:
     tls:
       - hosts:
         - "graffiti-server-mainnet.stg.aepps.com"
-        secretName: graffiti-server-cert
+        secretName: graffiti-server-mainnet-cert
   env:
     "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-stg"

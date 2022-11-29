@@ -10,10 +10,10 @@ app:
     tls:
       - hosts:
         - "graffiti-server-mainnet.prd.aepps.com"
-        secretName: graffiti-server-cert
+        secretName: graffiti-server-mainnet-cert
   env:
     "NODE_URL": "https://mainnet.aeternity.io"
     "PATH_IDENTIFIER": "/"
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-prd"
-    "KEEP_HOT_INTERVAL": "60000"
+
