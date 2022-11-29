@@ -1,0 +1,10 @@
+app:
+  image:
+    repository: aeternitybot/graffiti-frontend
+    tag: "stg"
+    pullPolicy: "Always"
+  ingress:
+    hosts:
+      - host: "graffiti.stg.aepps.com"
+        paths:
+          - path: "/"

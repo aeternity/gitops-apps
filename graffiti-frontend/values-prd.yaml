@@ -1,0 +1,14 @@
+app:
+  ingress:
+    hosts:
+      - host: "graffiti.aeternity.com"
+        paths:
+          - path: "/"
+      - host: "graffiti.prd.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "graffiti.aeternity.com"
+        - "graffiti.prd.aepps.com"
+        secretName: graffiti-cert

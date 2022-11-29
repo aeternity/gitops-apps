@@ -1,0 +1,21 @@
+app:
+  image:
+    repository: aeternitybot/graffiti-frontend
+    tag: "latest"
+    pullPolicy: "Always"
+
+  resources:
+    limits:
+      memory: 288Mi
+    requests:
+      cpu: 200m
+      memory: 288Mi
+
+  service:
+    port: 80
+
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
