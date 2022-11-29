@@ -1,0 +1,47 @@
+app:
+  image:
+    repository: aeternitybot/graffiti-frontend
+    tag: "latest"
+    pullPolicy: "Always"
+
+  resources:
+    limits:
+      memory: 288Mi
+    requests:
+      cpu: 200m
+      memory: 288Mi
+
+  secrets:
+    external:
+      values:
+        S3_KEY: /apps/GRAFFITI_S3_KEY
+        S3_SECRET: /apps/GRAFFITI_S3_SECRET
+
+  service:
+    port: 3000
+
+  probes:
+    liveness:
+      enabled: false
+      config:
+        httpGet:
+          path: /health/testFiles
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
+    readiness:
+      enabled: false
+      config:
+        httpGet:
+          path: /health/testFiles
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
+
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt

@@ -1,0 +1,14 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/stg-m4n4
+
+  ingress:
+    hosts:
+      - host: "graffiti-server-mainnet.stg.aepps.com"
+        paths:
+          - path: "/"
+  env:
+    "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
+    "S3_BUCKET": "aeternity-superhero-graffiti-stg"
+
