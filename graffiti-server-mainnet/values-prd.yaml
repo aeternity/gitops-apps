@@ -15,4 +15,4 @@ app:
     "NODE_URL": "https://mainnet.aeternity.io"
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-prd"
-
+    "SYNC_STORAGE": "true"
