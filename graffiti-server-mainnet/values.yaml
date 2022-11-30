@@ -28,6 +28,12 @@ app:
         periodSeconds: 120
         successThreshold: 1
         timeoutSeconds: 60
+  persistence:
+    enabled: true
+    accessMode: ReadWriteOnce
+    storageClass: gp2
+    size: 50Gi
+    mountPath: /app/data
   ingress:
     enabled: true
     annotations:
@@ -38,4 +44,3 @@ app:
     "NODE_URL": "https://mainnet.aeternity.io"
     "CONTRACT_ADDRESS": "ct_ftU4u1wEsiWd6YN4AAekEArJmLds4K8AB2k4UXKxn32Yrf5n5"
     "PATH_IDENTIFIER": "/"
-
