@@ -43,4 +43,4 @@ app:
     "S3_REGION": "eu-central-1"
     "NODE_URL": "https://testnet.aeternity.io"
     "CONTRACT_ADDRESS": "ct_uJ5NKmuX7eX79QPerixR7Z8zEdxKCKJw1yzHjX1tsmRP17tuP"
-    "PATH_IDENTIFIER": "/"
+

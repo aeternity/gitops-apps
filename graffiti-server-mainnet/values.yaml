@@ -43,4 +43,4 @@ app:
     "S3_REGION": "eu-central-1"
     "NODE_URL": "https://mainnet.aeternity.io"
     "CONTRACT_ADDRESS": "ct_ftU4u1wEsiWd6YN4AAekEArJmLds4K8AB2k4UXKxn32Yrf5n5"
-    "PATH_IDENTIFIER": "/"
+

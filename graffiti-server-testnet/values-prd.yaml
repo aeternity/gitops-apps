@@ -13,7 +13,5 @@ app:
         secretName: graffiti-server-testnet-cert
   env:
     "NODE_URL": "https://testnet.aeternity.io"
-    "PATH_IDENTIFIER": "/"
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-prd"
-
