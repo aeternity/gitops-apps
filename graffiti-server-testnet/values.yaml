@@ -33,7 +33,7 @@ app:
     accessMode: ReadWriteOnce
     storageClass: gp2
     size: 50Gi
-    mountPath: /app/data
+    mountPath: /app/data/backup
   ingress:
     enabled: true
     annotations:
