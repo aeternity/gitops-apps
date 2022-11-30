@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternity/graffiti-server
+    repository: aeternitybot/graffiti-server
     tag: "latest"
     pullPolicy: "Always"
   secrets:
