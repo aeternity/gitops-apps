@@ -38,4 +38,4 @@ app:
     - version: "pr-115"
       gitSha: "null"
     - {version: "pr-117", gitSha: "e9d111d"}
-    - {version: "pr-116", gitSha: "adb1720"}
+    - {version: "pr-116", gitSha: "ef8689c"}
