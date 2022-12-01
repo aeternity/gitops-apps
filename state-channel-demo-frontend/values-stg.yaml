@@ -12,9 +12,15 @@ app:
         paths:
           - path: "/"
             version: "pr-246"
+      - host: "pr-254-state-channel-demo-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-254"
   versions:
     - version: "pr-245"
       gitSha: "null"
     - version: "pr-246"
       gitSha: "null"
-    - {version: "pr-253", gitSha: "c02ade1"}
+    - version: "pr-253"
+      gitSha: "c02ade1"
+    - version: "pr-254"
