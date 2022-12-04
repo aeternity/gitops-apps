@@ -39,7 +39,7 @@ app:
   persistence:
     enabled: true
     accessMode: ReadWriteOnce
-    storageClass: ebs-sc
+    storageClass: gp2
     size: 50Gi
     mountPath: /app/data
 
