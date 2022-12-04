@@ -16,7 +16,12 @@ app:
       - host: "test-repo.stg.aepps.com"
         paths:
           - path: "/"
+      - host: "98-test-repo.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "98"
   env:
     "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-stg"
-  versions: []
+  versions:
+    - version: "98"
