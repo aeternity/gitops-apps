@@ -16,4 +16,4 @@ app:
   env:
     "NODE_ENV": "production"
   versions:
-    - {version: "latest", gitSha: "5ee393e"}
+    - {version: "latest", gitSha: "8bc9c12"}
