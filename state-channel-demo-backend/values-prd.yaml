@@ -10,8 +10,10 @@ app:
             version: "latest"
     tls:
       - hosts:
-        - "state-channel-demo-backend.prd.aepps.com"
-        - "main-state-channel-demo-backend.prd.aepps.com"
+          - "state-channel-demo-backend.prd.aepps.com"
+          - "main-state-channel-demo-backend.prd.aepps.com"
         secretName: state-channel-demo-backend-cert
   env:
     "NODE_ENV": "production"
+  versions:
+    - {version: "latest", gitSha: "5ee393e"}
