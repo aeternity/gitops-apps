@@ -4,10 +4,7 @@ app:
       - host: "state-channel-demo-backend.prd.aepps.com"
         paths:
           - path: "/"
-      - host: "main-state-channel-demo-backend.prd.aepps.com"
-        paths:
-          - path: "/"
-            version: "latest"
+        version: "latest"
     tls:
       - hosts:
           - "state-channel-demo-backend.prd.aepps.com"

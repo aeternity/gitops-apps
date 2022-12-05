@@ -4,9 +4,11 @@ app:
       - host: "state-channel-demo.prd.aepps.com"
         paths:
           - path: "/"
+        version: "latest"
       - host: "statechannel.aepps.com"
         paths:
           - path: "/"
+        version: "latest"
     tls:
       - hosts:
           - "state-channel-demo.prd.aepps.com"
