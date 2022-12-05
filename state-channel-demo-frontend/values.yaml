@@ -1,6 +1,6 @@
 app:
   image:
-    tag: "latest"
+    tag: "v1.3.2"
     repository: "aeternitybot/state-channel-demo-frontend"
     pullPolicy: "Always"
   ingress:
