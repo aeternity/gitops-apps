@@ -15,4 +15,4 @@ app:
           - "statechannel.aepps.com"
         secretName: state-channel-demo-frontend-cert
   versions:
-    - {version: "latest", gitSha: "2f10b11"}
+    - {version: "latest", gitSha: "17a0276"}
