@@ -4,10 +4,4 @@ app:
       - host: "state-channel-demo.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-253-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-253"
-  versions:
-    - version: "pr-253"
-      gitSha: "c02ade1"
+  versions: []
