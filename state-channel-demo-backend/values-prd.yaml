@@ -4,6 +4,7 @@ app:
       - host: "state-channel-demo-backend.prd.aepps.com"
         paths:
           - path: "/"
+        version: "latest"
       - host: "main-state-channel-demo-backend.prd.aepps.com"
         paths:
           - path: "/"
@@ -15,3 +16,5 @@ app:
         secretName: state-channel-demo-backend-cert
   env:
     "NODE_ENV": "production"
+  versions:
+    - {version: latest, gitSha: "2f10b11"}
