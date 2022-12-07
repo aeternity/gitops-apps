@@ -1,0 +1,18 @@
+app:
+  ingress:
+    hosts:
+      - host: "mdw-explorer.prd.aepps.com"
+        paths:
+          - path: /
+      - host: "explorer.aepps.com"
+        paths:
+          - path: /
+      - host: "explorer.aeternity.io"
+        paths:
+          - path: /
+    tls:
+      - hosts:
+        - "explorer.aepps.com"
+        - "explorer.aeternity.io"
+        - "mdw-explorer.prd.aepps.com"
+        secretName: mdw-frontend-cert

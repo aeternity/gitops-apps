@@ -1,0 +1,10 @@
+app:
+  ingress:
+    hosts:
+      - host: "mdw-explorer.stg.aepps.com"
+        paths:
+          - path: /
+    tls:
+      - hosts:
+        - "mdw-explorer.stg.aepps.com"
+        secretName: mdw-frontend-cert
