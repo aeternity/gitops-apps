@@ -6,6 +6,7 @@ app:
       gitSha: "null"
     - {version: "pr-181-testnet", gitSha: "f737c36"}
     - {version: "pr-181-mainnet", gitSha: "f737c36"}
+    - {version: "pr-181", gitSha: "f737c36"}
   ingress:
     hosts:
       - host: "mdw-explorer.stg.aepps.com"
