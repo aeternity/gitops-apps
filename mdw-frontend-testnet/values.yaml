@@ -15,3 +15,4 @@ app:
     "NUXT_APP_NODE_WS": "wss://testnet.aeternity.io/mdw/websocket"
     "NUXT_APP_OTHER_DEPLOYMENTS": "MAINNET@https://explorer.aeternity.io"
     "NUXT_APP_ENABLE_FAUCET": "true"
+    "NUXT_APP_FAUCET_API": "https://testnet.faucet.aepps.com/account"

@@ -15,4 +15,3 @@ app:
     "NUXT_APP_OTHER_DEPLOYMENTS": "TESTNET@https://explorer.testnet.aeternity.io"
     "NUXT_APP_NETWORK_NAME": "MAINNET"
     "NUXT_APP_ENABLE_FAUCET": "false"
-    "NUXT_APP_FAUCET_API": "https://testnet.faucet.aepps.com/account"
