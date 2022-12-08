@@ -11,5 +11,10 @@ app:
         paths:
           - path: "/"
             version: "stg"
+      - host: "stg-graffiti-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "stg"
   versions:
+    - version: "stg"
     - version: "stg"
