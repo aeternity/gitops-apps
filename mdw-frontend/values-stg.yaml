@@ -4,11 +4,6 @@ app:
       gitSha: "null"
     - version: "testnet"
       gitSha: "null"
-    - version: "pr-181-testnet"
-      gitSha: "f737c36"
-    - version: "pr-181-mainnet"
-      gitSha: "f737c36"
-    - version: "pr-185"
   ingress:
     hosts:
       - host: "mdw-explorer.stg.aepps.com"
@@ -19,7 +14,3 @@ app:
         paths:
           - path: "/"
             version: "testnet"
-      - host: "pr-185-mdw-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-185"
