@@ -1,6 +1,4 @@
 app:
-  strategy:
-    type: "Recreate"
   secrets:
     external:
       remotePrefix: "/k8s/stg-m4n4"
