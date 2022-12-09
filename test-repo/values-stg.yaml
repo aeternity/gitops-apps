@@ -11,10 +11,6 @@ app:
       memory: "5Gi"
   ingress:
     hosts:
-      - host: "test-repo.stg.aepps.com"
-        paths:
-          - path: "/"
-        version: "stg"
       - host: "stg-test-repo.stg.aepps.com"
         paths:
           - path: "/"
