@@ -16,4 +16,9 @@ app:
       - host: "test-repo.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+      - host: "stg-test-repo.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "stg"
+  versions:
+    - version: "stg"
