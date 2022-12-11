@@ -1,4 +1,5 @@
 app:
+  strategyType: "Recreate"
   secrets:
     external:
       remotePrefix: "/k8s/stg-m4n4"
@@ -10,5 +11,10 @@ app:
       cpu: "1"
       memory: "5Gi"
   ingress:
-    hosts: []
-  versions: []
+    hosts:
+      - host: "stg-test-repo.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "stg"
+  versions:
+    - {version: "stg", gitSha: "9249684"}
