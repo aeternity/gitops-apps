@@ -10,10 +10,5 @@ app:
       cpu: "1"
       memory: "5Gi"
   ingress:
-    hosts:
-      - host: "stg-test-repo.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "stg"
-  versions:
-    - {version: "stg", gitSha: "9249684"}
+    hosts: []
+  versions: []
