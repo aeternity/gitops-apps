@@ -1,4 +1,7 @@
 app:
+  strategy:
+    type: "Recreate"
+    
   image:
     repository: aeternitybot/graffiti-server
     tag: "latest"
