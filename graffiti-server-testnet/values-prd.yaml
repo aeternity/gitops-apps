@@ -1,0 +1,16 @@
+app:
+  ingress:
+    hosts:
+      - host: "graffiti-server-testnet.prd.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "graffiti-server-testnet.prd.aepps.com"
+        secretName: graffiti-server-testnet-cert
+  env:
+    "NODE_URL": "https://testnet.aeternity.io"
+    "CONTRACT_ADDRESS": "ct_uJ5NKmuX7eX79QPerixR7Z8zEdxKCKJw1yzHjX1tsmRP17tuP"
+    "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
+    "S3_BUCKET": "aeternity-superhero-graffiti-prd"
+

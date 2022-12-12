@@ -5,16 +5,22 @@ app:
 
   resources:
     limits:
-      memory: 168Mi
+      cpu: "2"
+      memory: "6Gi"
     requests:
-      cpu: 50m
-      memory: 168Mi
+      cpu: "1"
+      memory: "5Gi"
 
   ingress:
     hosts:
-      - host: "graffiti-server.dev.aepps.com"
+      - host: "graffiti-server-mainnet.dev.aepps.com"
         paths:
           - path: "/"
+    tls:
+      - hosts:
+        - "graffiti-server-mainnet.dev.aepps.com"
+        secretName: graffiti-server-mainnet-cert
+
   env:
     "IPFS_URL": "http://ipfs.dev.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-dev"

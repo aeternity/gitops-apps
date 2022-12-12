@@ -3,20 +3,11 @@ app:
     external:
       remotePrefix: /k8s/stg-m4n4
 
-  resources:
-    limits:
-      cpu: "2"
-      memory: "6Gi"
-    requests:
-      cpu: "1"
-      memory: "5Gi"
-
   ingress:
     hosts:
-      - host: "graffiti-server.stg.aepps.com"
+      - host: "graffiti-server-testnet.stg.aepps.com"
         paths:
           - path: "/"
-
   env:
     "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-stg"
