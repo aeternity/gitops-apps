@@ -1,19 +1,18 @@
 app:
-  versions:
-    - version: mainnet
-    - version: testnet
   ingress:
     hosts:
       - host: "mdw-explorer.prd.aepps.com"
         paths:
           - path: /
-            version: "mainnet"
-      - host: "mdw-explorer-testnet.prd.aepps.com"
+      - host: "explorer.aepps.com"
         paths:
           - path: /
-            version: "testnet"
+      - host: "explorer.aeternity.io"
+        paths:
+          - path: /
     tls:
       - hosts:
+        - "explorer.aepps.com"
+        - "explorer.aeternity.io"
         - "mdw-explorer.prd.aepps.com"
-        - "mdw-explorer-testnet.prd.aepps.com"
         secretName: mdw-frontend-cert

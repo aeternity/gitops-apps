@@ -1,0 +1,11 @@
+app:
+  ingress:
+    hosts:
+      - host: "mdw-explorer-testnet.stg.aepps.com" # has to be changed/discussed
+        paths:
+          - path: /
+            version: "testnet"
+    tls:
+      - hosts:
+        - "mdw-explorer-testnet.stg.aepps.com"
+        secretName: mdw-frontend-cert
