@@ -3,6 +3,14 @@ app:
     repository: aeternity/mdw-frontend
     pullPolicy: "Always"
     tag: "latest"
+  
+  resources:
+    limits:
+      memory: 288Mi
+    requests:
+      cpu: 200m
+      memory: 288Mi
+      
   ingress:
     enabled: true
     annotations:
