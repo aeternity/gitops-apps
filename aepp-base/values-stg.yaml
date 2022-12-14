@@ -12,8 +12,13 @@ app:
         paths:
           - path: "/"
             version: "pr-1461"
+      - host: "pr-110-aepp-base.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-110"
   versions:
     - version: "pr-1450"
       gitSha: "null"
     - version: "pr-1461"
       gitSha: "null"
+    - version: "pr-110"
