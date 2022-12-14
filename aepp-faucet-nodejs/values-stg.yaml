@@ -1,10 +1,15 @@
 app:
   secrets:
     external:
-      remotePrefix: /k8s/stg-m4n4
+      remotePrefix: "/k8s/stg-m4n4"
   ingress:
     hosts:
       - host: "faucet-nodejs.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-16-aepp-faucet-nodejs.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-16"
+  versions:
+    - version: "pr-16"
