@@ -21,4 +21,4 @@ app:
       gitSha: "null"
     - version: "pr-1461"
       gitSha: "null"
-    - {version: "pr-110", gitSha: "/home/runner/work/_temp/_runner_file_commands/set_output_47a445d2-cd34-485a-ab76-195e4609ba32"}
+    - {version: "pr-110", gitSha: ""}
