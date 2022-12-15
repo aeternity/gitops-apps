@@ -7,9 +7,4 @@ app:
       - host: "faucet-nodejs.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-16-aepp-faucet-nodejs.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-16"
-  versions:
-    - {version: "pr-16", gitSha: "39f5a88"}
+  versions: []
