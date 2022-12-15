@@ -4,4 +4,9 @@ app:
       - host: "repl.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-44-aerepl-http.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-44"
+  versions:
+    - version: "pr-44"
