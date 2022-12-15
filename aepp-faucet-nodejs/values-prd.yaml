@@ -23,4 +23,4 @@ app:
           - "faucet-nodejs.prd.aepps.com"
         secretName: aepp-faucet-nodejs-cert
   versions:
-    - {version: "latest", gitSha: "8813525"}
+    - {version: "latest", gitSha: "f1d63f4"}
