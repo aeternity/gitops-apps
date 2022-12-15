@@ -8,5 +8,10 @@ app:
         paths:
           - path: "/"
             version: "pr-4"
+      - host: "pr-6-ga-multisig-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-6"
   versions:
     - version: "pr-4"
+    - version: "pr-6"
