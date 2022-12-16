@@ -16,7 +16,12 @@ app:
         paths:
           - path: "/"
             version: "pr-488"
+      - host: "pr-489-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-489"
   versions:
     - version: "pr-481"
     - version: "pr-483"
     - version: "pr-488"
+    - version: "pr-489"
