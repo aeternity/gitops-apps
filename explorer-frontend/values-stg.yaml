@@ -24,10 +24,6 @@ app:
         paths:
           - path: "/"
             version: "pr-131"
-      - host: "pr-132-explorer-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-132"
       - host: "pr-134-explorer-frontend.stg.aepps.com"
         paths:
           - path: "/"
@@ -45,4 +41,3 @@ app:
       gitSha: "null"
     - version: "pr-134"
       gitSha: "null"
-    - {version: "pr-132", gitSha: "2e2ffeb"}
