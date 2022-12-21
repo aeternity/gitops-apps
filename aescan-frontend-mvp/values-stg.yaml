@@ -4,4 +4,9 @@ app:
       - host: "aescan-frontend-mvp.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-147-aescan-frontend-mvp.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-147"
+  versions:
+    - version: "pr-147"
