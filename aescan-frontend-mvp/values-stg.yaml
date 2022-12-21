@@ -4,5 +4,4 @@ app:
       - host: "aescan-frontend-mvp.stg.aepps.com"
         paths:
           - path: "/"
-  versions:
-    - {version: "pr-142", gitSha: "ea71be3"}
+  versions: []
