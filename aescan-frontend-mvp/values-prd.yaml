@@ -1,0 +1,17 @@
+app:
+  ingress:
+    hosts:
+      - host: "aescan-frontend-mvp.prd.aepps.com"
+        paths:
+          - path: "/"
+      - host: "master-aescan-frontend-mvp.prd.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
+    tls:
+      - hosts:
+          - "aescan-frontend-mvp.prd.aepps.com"
+          - "master-aescan-frontend-mvp.prd.aepps.com"
+        secretName: aescan-frontend-mvp-cert
+  versions:
+    - {version: "master", gitSha: "42e735a"}
