@@ -1,0 +1,10 @@
+app:
+  ingress:
+    hosts:
+      - host: "aescan-frontend-mvp.dev.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "aescan-frontend-mvp.dev.aepps.com"
+        secretName: aescan-frontend-mvp-cert

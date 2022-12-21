@@ -1,0 +1,6 @@
+app:
+  ingress:
+    hosts:
+      - host: "aescan-frontend-mvp.stg.aepps.com"
+        paths:
+          - path: "/"
