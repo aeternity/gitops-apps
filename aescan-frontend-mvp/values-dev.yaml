@@ -1,6 +1,6 @@
 app:
   ingress:
     hosts:
-      - host: "explorer-frontend.dev.aepps.com"
+      - host: "aescan-frontend-mvp.dev.aepps.com"
         paths:
           - path: "/"
