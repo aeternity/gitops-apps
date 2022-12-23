@@ -9,5 +9,5 @@ app:
           - path: "/"
             version: "pr-148"
   versions:
-    - {version: "pr-141", gitSha: "2797160"}
     - {version: "pr-148", gitSha: "aeeffac"}
+    - {version: "pr-141", gitSha: "ce294d8"}
