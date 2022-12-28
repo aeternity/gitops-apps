@@ -4,3 +4,12 @@ app:
       - host: "aescan-frontend-mvp.dev.aepps.com"
         paths:
           - path: "/"
+      - host: "develop-aescan-frontend-mvp.dev.aepps.com"
+        paths:
+          - path: "/"
+            version: "develop"
+    tls:
+      - hosts:
+          - "aescan-frontend-mvp.dev.aepps.com"
+          - "develop-aescan-frontend-mvp.dev.aepps.com"
+        secretName: aescan-frontend-mvp-cert
