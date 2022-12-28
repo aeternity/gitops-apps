@@ -14,4 +14,4 @@ app:
           - "develop-aescan-frontend-mvp.dev.aepps.com"
         secretName: aescan-frontend-mvp-cert
   versions:
-    - {version: "develop", gitSha: ""}
+    - {version: "develop", gitSha: "ac06d81"}
