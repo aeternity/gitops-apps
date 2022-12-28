@@ -1,13 +1,6 @@
 app:
-  image:
-    tag: "develop"
-    repository: "aeternitybot/aescan-frontend-mvp"
-    pullPolicy: "Always"
   ingress:
     hosts:
-      - host: "aescan-frontend-mvp.dev.aepps.com"
-        paths:
-          - path: "/"
       - host: "develop-aescan-frontend-mvp.dev.aepps.com"
         paths:
           - path: "/"
