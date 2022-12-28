@@ -1,4 +1,8 @@
 app:
+  image:
+    tag: "develop"
+    repository: "aeternitybot/aescan-frontend-mvp"
+    pullPolicy: "Always"
   ingress:
     hosts:
       - host: "aescan-frontend-mvp.dev.aepps.com"
