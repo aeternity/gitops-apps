@@ -12,10 +12,5 @@ app:
         paths:
           - path: "/"
             version: "develop"
-    tls:
-      - hosts:
-          - "aescan-frontend-mvp.dev.aepps.com"
-          - "develop-aescan-frontend-mvp.dev.aepps.com"
-        secretName: aescan-frontend-mvp-cert
   versions:
     - {version: "develop", gitSha: "ac06d81"}
