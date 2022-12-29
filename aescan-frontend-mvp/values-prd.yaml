@@ -15,3 +15,4 @@ app:
         secretName: aescan-frontend-mvp-cert
   versions:
     - {version: "master", gitSha: "0b31278"}
+    - {version: "main", gitSha: "93a2591"}
