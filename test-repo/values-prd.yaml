@@ -2,6 +2,7 @@ app:
   image:
     repository: aeternitybot/test-repo
     pullPolicy: "Always"
+    tag: v1.0.5
   ingress:
     enabled: "true"
     hosts:
