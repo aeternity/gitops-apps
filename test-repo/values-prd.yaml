@@ -9,7 +9,3 @@ app:
       - host: "test-repo.prd.aepps.com" # has to be changed/disscused
         paths:
           - path: "/"
-            version: "main"
-  versions:
-    - {version: "latest", gitSha: "8f0c893"}
-    - {version: "main", gitSha: "b1999e4"}
