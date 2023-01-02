@@ -9,8 +9,8 @@ app:
           - path: "/"
     tls:
       - hosts:
-        - "ga-multisig-ui.prd.aepps.com"
-        - "master-ga-multisig-ui.prd.aepps.com"
+          - "ga-multisig-ui.prd.aepps.com"
+          - "master-ga-multisig-ui.prd.aepps.com"
         secretName: ga-multisig-ui-cert
   versions:
-    - {version: master, gitSha: 2da04f2}
+    - {version: "master", gitSha: "31e6883"}
