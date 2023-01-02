@@ -17,4 +17,3 @@ app:
             version: "stg"
   versions:
     - {version: "stg", gitSha: "453e643"}
-    - {version: "pr-210", gitSha: "78bb6e3"}
