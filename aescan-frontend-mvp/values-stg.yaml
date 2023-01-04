@@ -16,10 +16,6 @@ app:
         paths:
           - path: "/"
             version: "pr-152"
-      - host: "pr-160-aescan-frontend-mvp.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-160"
       - host: "pr-164-aescan-frontend-mvp.stg.aepps.com"
         paths:
           - path: "/"
@@ -43,6 +39,4 @@ app:
       gitSha: "3b23899"
     - version: "pr-164"
       gitSha: "null"
-    - version: "pr-160"
-      gitSha: "de5eb36"
     - {version: "pr-166", gitSha: "30cc2be"}
