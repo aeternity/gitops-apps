@@ -12,9 +12,4 @@ app:
       - host: "hc-ui.dev.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-10-aepp-hc-ui.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-10"
-  versions:
-    - {version: "pr-10", gitSha: "efbe53e"}
+  versions: []
