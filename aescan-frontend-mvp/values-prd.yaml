@@ -10,4 +10,4 @@ app:
           - "master-aescan-frontend-mvp.prd.aepps.com"
         secretName: aescan-frontend-mvp-cert
   image:
-    tag: 0.3.0
+    tag: 0.3.1
