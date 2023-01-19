@@ -3,11 +3,6 @@ app:
     tag: "latest"
     repository: "aeternitybot/aescan-frontend-mvp"
     pullPolicy: "Always"
-  resources:
-    limits:
-      memory: 12Mi
-    requests:
-      memory: 12Mi
   ingress:
     enabled: true
     annotations:
