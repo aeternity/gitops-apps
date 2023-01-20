@@ -1,0 +1,30 @@
+app:
+  ingress:
+    hosts:
+      - host: "base.stg.aepps.com"
+        paths:
+          - path: "/"
+      - host: "pr-1450-aepp-base.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1450"
+      - host: "pr-1461-aepp-base.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1461"
+      - host: "pr-110-aepp-base.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-110"
+      - host: "pr-1468-aepp-base.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1468"
+  versions:
+    - version: "pr-1450"
+      gitSha: "null"
+    - version: "pr-1461"
+      gitSha: "null"
+    - version: "pr-110"
+      gitSha: "5bae387"
+    - version: "pr-1468"
