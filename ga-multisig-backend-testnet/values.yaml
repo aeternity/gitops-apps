@@ -12,7 +12,7 @@ app:
   secrets:
     external:
       values:
-        PG_PASSWORD: /apps/GA_MULTISIG_BACKEND_POSTGRES_PASSWORD
+        PG_PASSWORD: /apps/GA_MULTISIG_BACKEND_POSTGRES_PASSWORD_TESTNET
   service:
     port: 3000
   ingress:
@@ -21,6 +21,6 @@ app:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
   env:
-    "PG_DB": "ga-multisig-backend"
+    "PG_DB": "ga-multisig-backend-testnet"
     "PG_PORT": "5432"
     "PG_USER": "postgres"
