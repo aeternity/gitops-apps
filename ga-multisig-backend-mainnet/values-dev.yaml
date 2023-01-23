@@ -4,7 +4,7 @@ app:
       remotePrefix: /k8s/dev-wgt7
   ingress:
     hosts:
-      - host: "ga-multisig-backend.dev.aepps.com"
+      - host: "ga-multisig-backend-mainnet.dev.aepps.com"
         paths:
           - path: "/"
   env:
