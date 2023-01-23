@@ -16,6 +16,6 @@ app:
     "MIDDLEWARE_URL": "https://testnet.aeternity.io/mdw"
     "NODE_URL": "https://testnet.aeternity.io"
   versions:
-    - {version: "main", gitSha: "65ac790"}
+    - {version: "main", gitSha: "589f4c7"}
   image:
     tag: v1.0.1
