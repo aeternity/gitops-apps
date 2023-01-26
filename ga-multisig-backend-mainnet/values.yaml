@@ -1,14 +1,14 @@
 app:
   image:
     repository: aeternitybot/ga-multisig-backend
-    tag: "latest"
+    tag: "v1.0.1"
     pullPolicy: "Always"
   resources:
     limits:
-      memory: 96Mi
+      memory: 150Mi
     requests:
-      cpu: 150m
-      memory: 96Mi
+      cpu: 300m
+      memory: 150Mi
   secrets:
     external:
       values:
@@ -24,3 +24,5 @@ app:
     "PG_DB": "ga-multisig-backend-mainnet"
     "PG_PORT": "5432"
     "PG_USER": "postgres"
+    "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
+    "NODE_URL": "https://mainnet.aeternity.io"
