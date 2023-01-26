@@ -1,0 +1,28 @@
+app:
+  image:
+    repository: aeternitybot/ga-multisig-backend
+    tag: "v1.0.1"
+    pullPolicy: "Always"
+  resources:
+    limits:
+      memory: 96Mi
+    requests:
+      cpu: 150m
+      memory: 96Mi
+  secrets:
+    external:
+      values:
+        PG_PASSWORD: /apps/GA_MULTISIG_BACKEND_POSTGRES_PASSWORD_TESTNET
+  service:
+    port: 3000
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+  env:
+    "PG_DB": "ga-multisig-backend-testnet"
+    "PG_PORT": "5432"
+    "PG_USER": "postgres"
+    "MIDDLEWARE_URL": "https://testnet.aeternity.io/mdw"
+    "NODE_URL": "https://testnet.aeternity.io"

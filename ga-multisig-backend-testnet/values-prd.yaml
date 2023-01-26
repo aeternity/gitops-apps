@@ -1,0 +1,15 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/prd-0e9c
+  ingress:
+    tls:
+      - hosts:
+        - "ga-multisig-backend-testnet.prd.aepps.com"
+        secretName: ga-multisig-backend-testnet-cert
+    hosts:
+      - host: "ga-multisig-backend-testnet.prd.aepps.com"
+        paths:
+          - path: "/"
+  env:
+    "PG_HOST": "superheroprd.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
