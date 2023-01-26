@@ -9,6 +9,23 @@ app:
     requests:
       cpu: 300m
       memory: 150Mi
+  probes:
+    liveness:
+      config:
+        httpGet:
+          path: /health
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
+    readiness:
+      config:
+        httpGet:
+          path: /health
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
   secrets:
     external:
       values:
