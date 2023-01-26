@@ -1,0 +1,47 @@
+app:
+  image:
+    repository: aeternitybot/ga-multisig-backend
+    tag: v1.0.1
+    pullPolicy: "Always"
+  resources:
+    limits:
+      memory: 150Mi
+    requests:
+      cpu: 300m
+      memory: 150Mi
+  probes:
+    liveness:
+      config:
+        httpGet:
+          path: /health
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
+    readiness:
+      config:
+        httpGet:
+          path: /health
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
+  secrets:
+    external:
+      values:
+        PG_PASSWORD: /apps/GA_MULTISIG_BACKEND_POSTGRES_PASSWORD_MAINNET
+  service:
+    port: 3000
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+  env:
+    "PG_DB": "ga-multisig-backend-mainnet"
+    "PG_PORT": "5432"
+    "PG_USER": "postgres"
+    "MIDDLEWARE_URL": https://mainnet.aeternity.io/mdw
+    "NODE_URL": https://mainnet.aeternity.io
+  serviceMonitor:
+    enabled: false

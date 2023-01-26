@@ -5,10 +5,10 @@ app:
   ingress:
     tls:
       - hosts:
-        - "ga-multisig-backend.stg.aepps.com"
-        secretName: ga-multisig-backend-cert
+        - "ga-multisig-backend-testnet.stg.aepps.com"
+        secretName: ga-multisig-backend-testnet-cert
     hosts:
-      - host: "ga-multisig-backend.stg.aepps.com"
+      - host: "ga-multisig-backend-testnet.stg.aepps.com"
         paths:
           - path: "/"
   env:
