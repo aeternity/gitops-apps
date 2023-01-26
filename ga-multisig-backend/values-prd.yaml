@@ -13,8 +13,8 @@ app:
           - path: "/"
   env:
     "PG_HOST": "superheroprd.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
-    "MIDDLEWARE_URL": "https://testnet.aeternity.io/mdw"
-    "NODE_URL": "https://testnet.aeternity.io"
+    "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
+    "NODE_URL": "https://mainnet.aeternity.io"
   versions:
     - {version: "main", gitSha: "589f4c7"}
   image:
