@@ -44,10 +44,6 @@ app:
         paths:
           - path: "/"
             version: "pr-189"
-      - host: "pr-206-aescan-frontend-mvp.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-206"
       - host: "pr-207-aescan-frontend-mvp.stg.aepps.com"
         paths:
           - path: "/"
@@ -91,8 +87,6 @@ app:
       gitSha: "null"
     - version: "pr-189"
       gitSha: "null"
-    - version: "pr-206"
-      gitSha: "6aab074"
     - version: "pr-208"
       gitSha: "null"
     - version: "pr-207"
