@@ -4,4 +4,9 @@ app:
       - host: "state-channel-demo.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-260-state-channel-demo-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-260"
+  versions:
+    - version: "pr-260"
