@@ -8,6 +8,11 @@ app:
         paths:
           - path: "/"
             version: "pr-4"
+      - host: "pr-9-ga-multisig-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-9"
   versions:
     - version: "pr-4"
       gitSha: "null"
+    - version: "pr-9"
