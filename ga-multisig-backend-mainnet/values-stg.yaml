@@ -5,7 +5,7 @@ app:
   ingress:
     tls:
       - hosts:
-        - "ga-multisig-backend-mainnet.stg.aepps.com"
+          - "ga-multisig-backend-mainnet.stg.aepps.com"
         secretName: ga-multisig-backend-mainnet-cert
     hosts:
       - host: "ga-multisig-backend-mainnet.stg.aepps.com"
