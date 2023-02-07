@@ -6,17 +6,11 @@ app:
     tls:
       - hosts:
           - "ga-multisig-backend-mainnet.stg.aepps.com"
-          - "pr-11-ga-multisig-backend-mainnet.stg.aepps.com"
         secretName: "ga-multisig-backend-mainnet-cert"
     hosts:
       - host: "ga-multisig-backend-mainnet.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-11-ga-multisig-backend-mainnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-11"
   env:
     "PG_HOST": "superherostg.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
-  versions:
-    - version: "pr-11"
+  versions: []
