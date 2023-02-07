@@ -5,7 +5,7 @@ app:
   ingress:
     tls:
       - hosts:
-        - "ga-multisig-backend-testnet.prd.aepps.com"
+          - "ga-multisig-backend-testnet.prd.aepps.com"
         secretName: ga-multisig-backend-testnet-cert
     hosts:
       - host: "ga-multisig-backend-testnet.prd.aepps.com"
@@ -13,3 +13,5 @@ app:
           - path: "/"
   env:
     "PG_HOST": "superheroprd.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
+  versions:
+    - {version: "main", gitSha: "b563ec4"}
