@@ -87,4 +87,4 @@ app:
       gitSha: "df2deda"
     - version: "pr-221"
       gitSha: "a0b9273"
-    - version: "pr-229"
+    - {version: "pr-229", gitSha: "5c05d12"}
