@@ -3,7 +3,7 @@ app:
     - version: "v4.3.0"
     - version: "v5.0.0"
     - version: "v6.1.0"
-    - version: "v7.0.1"
+    - version: "v7.1.1"
   image:
     repository: aeternity/aesophia_http 
     pullPolicy: "Always"

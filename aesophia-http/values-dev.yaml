@@ -21,7 +21,7 @@ app:
       - host: "v7.compiler.dev.aepps.com"
         paths:
           - path: /
-            version: "v7.0.1"
+            version: "v7.1.1"
     tls:
       - hosts:
         - "compiler.dev.aepps.com"
