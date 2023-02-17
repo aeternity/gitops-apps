@@ -117,3 +117,6 @@ secrets:
     remotePrefix: ""
     secretName: ""
     values: {}
+
+serviceMonitor:
+  enabled: false
