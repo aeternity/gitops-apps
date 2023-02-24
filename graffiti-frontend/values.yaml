@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternitybot/graffiti-frontend
+    repository: aeternity/aepp-grafitti
     pullPolicy: "Always"
   resources:
     limits:
