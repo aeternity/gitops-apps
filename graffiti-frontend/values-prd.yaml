@@ -13,4 +13,4 @@ app:
           - "graffiti.prd.aepps.com"
         secretName: graffiti-cert
   versions:
-    - {version: "", gitSha: "e41e204"}
+    - {version: "latest", gitSha: "e41e204"}
