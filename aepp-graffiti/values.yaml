@@ -1,6 +1,7 @@
 app:
   image:
     repository: aeternity/aepp-grafitti
+    tag: "latest"
     pullPolicy: "Always"
   service:
     port: 80
