@@ -1,7 +1,6 @@
 app:
   image:
     repository: aeternitybot/graffiti-frontend
-    tag: "latest"
     pullPolicy: "Always"
   resources:
     limits:
