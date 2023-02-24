@@ -14,5 +14,3 @@ app:
         secretName: graffiti-cert
   versions:
     - {version: "latest", gitSha: "e41e204"}
-  image:
-    tag: latest
