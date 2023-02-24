@@ -9,5 +9,7 @@ app:
           - path: "/"
     tls:
       - hosts:
-        - "aepp-grafitti.prd.aepps.com"
+          - "aepp-grafitti.prd.aepps.com"
         secretName: aepp-grafitti-cert
+  versions:
+    - {version: "", gitSha: "0d691fd"}
