@@ -9,6 +9,8 @@ app:
           - path: "/"
     tls:
       - hosts:
-        - "graffiti.aeternity.com"
-        - "graffiti.prd.aepps.com"
+          - "graffiti.aeternity.com"
+          - "graffiti.prd.aepps.com"
         secretName: graffiti-cert
+  versions:
+    - {version: "", gitSha: "e41e204"}
