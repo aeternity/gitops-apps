@@ -25,7 +25,7 @@ app:
     accessMode: ReadWriteOnce
     storageClass: gp2
     size: 50Gi
-    mountPath: /app/
+    mountPath: /app/files
   env:
     "REDIS_HOST": "10.0.1.11"
     "REDIS_PORT": "6379"
