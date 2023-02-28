@@ -4,9 +4,9 @@ app:
     pullPolicy: "Always"
   probes:
     liveness:
-      enabled: false
+      enabled: true
     readiness:
-      enabled: false
+      enabled: true
   secrets:
     external:
       values:
@@ -20,6 +20,12 @@ app:
     annotations:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
+  persistence:
+    enabled: true
+    accessMode: ReadWriteOnce
+    storageClass: gp2
+    size: 50Gi
+    mountPath: /app/
   env:
     "REDIS_HOST": "10.0.1.11"
     "REDIS_PORT": "6379"
