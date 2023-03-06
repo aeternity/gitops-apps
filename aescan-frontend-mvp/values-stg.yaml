@@ -14,4 +14,4 @@ app:
             version: "pr-240"
   versions:
     - {version: "pr-245", gitSha: "d7942dd"}
-    - {version: "pr-240", gitSha: "a7670e8"}
+    - {version: "pr-240", gitSha: "2ac7761"}
