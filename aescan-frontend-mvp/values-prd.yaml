@@ -10,7 +10,7 @@ app:
           - "master-aescan-frontend-mvp.prd.aepps.com"
         secretName: aescan-frontend-mvp-cert
   image:
-    tag: 0.3.1
+    tag: 0.4.0
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan-frontend-mvp.prd.aepps.com"
     "NUXT_PUBLIC_SENTRY_DSN": "http://ca073f3a8941437ea8726ac0b5617841@sentry.dev.service.aepps.com/3"
