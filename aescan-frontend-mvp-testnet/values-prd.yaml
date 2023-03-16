@@ -1,0 +1,22 @@
+app:
+  ingress:
+    hosts:
+      - host: "aescan-frontend-mvp-testnet.prd.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+          - "aescan-frontend-mvp-testnet.prd.aepps.com"
+          - "master-aescan-frontend-mvp-testnet.prd.aepps.com"
+        secretName: aescan-frontend-mvp-testnet-cert
+  image:
+    tag: 0.4.0
+  env:
+    "NUXT_PUBLIC_APP_DOMAIN": "aescan-frontend-mvp-testnet.prd.aepps.com" 
+    "NUXT_PUBLIC_SENTRY_DSN": "https://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
+    "NUXT_PUBLIC_NETWORK_NAME": "TESTNET"
+    "NUXT_PUBLIC_MIDDLEWARE_URL": "https://testnet.aeternity.io/mdw"
+    "NUXT_PUBLIC_NODE_URL": "https://testnet.aeternity.io/v3"
+    "NUXT_PUBLIC_WEBSOCKET_URL": "wss://testnet.aeternity.io/mdw/websocket"
+    "NUXT_PUBLIC_ALTERNATIVE_NETWORK_NAME": "MAINNET"
+    "NUXT_PUBLIC_ALTERNATIVE_NETWORK_URL": "https://aescan-frontend-mvp.prd.aepps.com"
