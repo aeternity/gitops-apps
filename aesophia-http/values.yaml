@@ -3,10 +3,16 @@ app:
     - version: "v4.3.0"
     - version: "v5.0.0"
     - version: "v6.1.0"
-    - version: "v7.0.1"
+    - version: "v7.2.0"
   image:
     repository: aeternity/aesophia_http 
     pullPolicy: "Always"
+  resources:
+    limits:
+      memory: 256Mi
+    requests:
+      cpu: 200m
+      memory: 256Mi
   service:
     type: ClusterIP
     port: 3080

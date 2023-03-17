@@ -21,7 +21,7 @@ app:
       - host: "v7.compiler.aepps.com"
         paths:
           - path: /
-            version: "v7.0.1"
+            version: "v7.2.0"
 
       - host: "latest.compiler.aepps.com"
         paths:
@@ -47,7 +47,7 @@ app:
       - host: "v7.compiler.aeternity.io"
         paths:
           - path: /
-            version: "v7.0.1"
+            version: "v7.2.0"
     tls:
       - hosts:
         - "compiler.aepps.com"
