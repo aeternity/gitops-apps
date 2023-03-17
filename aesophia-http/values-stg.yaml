@@ -20,7 +20,7 @@ app:
       - host: "v7.compiler.stg.aepps.com"
         paths:
           - path: /
-            version: "v7.1.1"
+            version: "v7.2.0"
     tls:
       - hosts:
         - "compiler.stg.aepps.com"
