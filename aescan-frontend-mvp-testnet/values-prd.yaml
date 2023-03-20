@@ -20,3 +20,4 @@ app:
     "NUXT_PUBLIC_WEBSOCKET_URL": "wss://testnet.aeternity.io/mdw/websocket"
     "NUXT_PUBLIC_ALTERNATIVE_NETWORK_NAME": "MAINNET"
     "NUXT_PUBLIC_ALTERNATIVE_NETWORK_URL": "https://aescan-frontend-mvp.prd.aepps.com"
+    "NUXT_PUBLIC_DEX_BACKEND_URL": "https://dex-backend-testnet.prd.aepps.com"
