@@ -6,6 +6,7 @@ app:
     "NUXT_PUBLIC_WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
     "NUXT_PUBLIC_ALTERNATIVE_NETWORK_NAME": "TESTNET"
     "NUXT_PUBLIC_ALTERNATIVE_NETWORK_URL": "https://develop-aescan-frontend-mvp-testnet.dev.aepps.com"
+    "NUXT_PUBLIC_DEX_BACKEND_URL": "https://dex-backend-mainnet.prd.aepps.com"
   ingress:
     hosts:
       - host: "aescan-frontend-mvp.stg.aepps.com"
