@@ -9,7 +9,7 @@ app:
           - path: "/"
     tls:
       - hosts:
-        - "superhero-backend.prd.aepps.com"
+          - "superhero-backend.prd.aepps.com"
         secretName: superhero-backend-cert
   env:
     "WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
@@ -26,3 +26,5 @@ app:
     "POSTGRES_USER": "postgres"
     "POSTGRES_DB": "superhero"
     "POSTGRES_HOST": "superheroprd.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
+  image:
+    tag: v3.1.2
