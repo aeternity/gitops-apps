@@ -27,4 +27,4 @@ app:
     "POSTGRES_DB": "superhero"
     "POSTGRES_HOST": "superheroprd.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
   image:
-    tag: v3.1.2
+    tag: v3.1.4
