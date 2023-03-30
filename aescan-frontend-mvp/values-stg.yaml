@@ -24,10 +24,6 @@ app:
         paths:
           - path: "/"
             version: "pr-280"
-      - host: "pr-285-aescan-frontend-mvp.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-285"
       - host: "pr-288-aescan-frontend-mvp.stg.aepps.com"
         paths:
           - path: "/"
@@ -48,4 +44,3 @@ app:
     - version: "pr-288"
       gitSha: "null"
     - {version: "pr-290", gitSha: "86f85d8"}
-    - {version: "pr-285", gitSha: "3b17d3d"}
