@@ -10,9 +10,9 @@ app:
           - "master-aescan-frontend-mvp-testnet.prd.aepps.com"
         secretName: aescan-frontend-mvp-testnet-cert
   image:
-    tag: 0.4.0
+    tag: 0.5.0
   env:
-    "NUXT_PUBLIC_APP_DOMAIN": "aescan-frontend-mvp-testnet.prd.aepps.com" 
+    "NUXT_PUBLIC_APP_DOMAIN": "aescan-frontend-mvp-testnet.prd.aepps.com"
     "NUXT_PUBLIC_SENTRY_DSN": "https://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
     "NUXT_PUBLIC_NETWORK_NAME": "TESTNET"
     "NUXT_PUBLIC_MIDDLEWARE_URL": "https://testnet.aeternity.io/mdw"
