@@ -1,0 +1,10 @@
+app:
+  ingress:
+    hosts:
+      - host: "aescan.dev.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "aescan.dev.aepps.com"
+        secretName: aescan-cert

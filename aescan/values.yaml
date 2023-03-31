@@ -1,0 +1,15 @@
+app:
+  image:
+    tag: "0.0.1"
+    repository: "aeternity/aescan"
+    pullPolicy: "Always"
+  resources:
+    limits:
+      memory: 256Mi
+    requests:
+      memory: 256Mi
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
