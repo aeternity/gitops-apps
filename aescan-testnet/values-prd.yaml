@@ -10,7 +10,7 @@ app:
           - "master-aescan-testnet.prd.aepps.com"
         secretName: aescan-testnet-cert
   image:
-    tag: 0.5.0
+    tag: 0.0.1
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan-testnet.prd.aepps.com"
     "NUXT_PUBLIC_SENTRY_DSN": "https://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
