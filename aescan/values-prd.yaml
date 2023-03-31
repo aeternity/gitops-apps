@@ -1,0 +1,23 @@
+app:
+  ingress:
+    hosts:
+      - host: "aescan.prd.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+          - "aescan.prd.aepps.com"
+          - "master-aescan.prd.aepps.com"
+        secretName: aescan-cert
+  image:
+    tag: 0.5.0
+  env:
+    "NUXT_PUBLIC_APP_DOMAIN": "aescan.prd.aepps.com"
+    "NUXT_PUBLIC_SENTRY_DSN": "https://ca073f3a8941437ea8726ac0b5617841@sentry.dev.service.aepps.com/3"
+    "NUXT_PUBLIC_NETWORK_NAME": "MAINNET"
+    "NUXT_PUBLIC_MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
+    "NUXT_PUBLIC_NODE_URL": "https://mainnet.aeternity.io/v3"
+    "NUXT_PUBLIC_WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
+    "NUXT_PUBLIC_ALTERNATIVE_NETWORK_NAME": "TESTNET"
+    "NUXT_PUBLIC_ALTERNATIVE_NETWORK_URL": "https://aescan-testnet.prd.aepps.com"
+    "NUXT_PUBLIC_DEX_BACKEND_URL": "https://dex-backend-mainnet.prd.aepps.com"
