@@ -16,5 +16,10 @@ app:
         paths:
           - path: "/"
             version: "pr-1"
+      - host: "pr-2-aescan.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-2"
   versions:
     - version: "pr-1"
+    - version: "pr-2"
