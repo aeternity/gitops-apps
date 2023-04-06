@@ -20,13 +20,8 @@ app:
         paths:
           - path: "/"
             version: "pr-2"
-      - host: "pr-46-aescan.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-46"
   versions:
     - version: "pr-1"
       gitSha: "null"
     - version: "pr-2"
       gitSha: "f995c5f"
-    - version: "pr-46"
