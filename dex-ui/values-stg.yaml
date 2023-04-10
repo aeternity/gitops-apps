@@ -24,9 +24,14 @@ app:
         paths:
           - path: "/"
             version: "pr-490"
+      - host: "pr-495-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-495"
   versions:
     - version: "pr-481"
     - version: "pr-483"
     - version: "pr-488"
     - version: "pr-489"
     - version: "pr-490"
+    - version: "pr-495"
