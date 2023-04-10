@@ -29,9 +29,14 @@ app:
           - path: "/"
             version: "pr-495"
   versions:
-    - version: "pr-481"
     - version: "pr-483"
+      gitSha: "null"
     - version: "pr-488"
+      gitSha: "null"
     - version: "pr-489"
+      gitSha: "null"
     - version: "pr-490"
+      gitSha: "null"
     - version: "pr-495"
+      gitSha: "null"
+    - {version: "pr-481", gitSha: "7001ffd"}
