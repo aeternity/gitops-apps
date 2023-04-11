@@ -21,3 +21,4 @@ app:
     "NUXT_PUBLIC_ALTERNATIVE_NETWORK_NAME": "TESTNET"
     "NUXT_PUBLIC_ALTERNATIVE_NETWORK_URL": "https://aescan-testnet.prd.aepps.com"
     "NUXT_PUBLIC_DEX_BACKEND_URL": "https://dex-backend-mainnet.prd.aepps.com"
+    "NUXT_PUBLIC_AE_TOKEN_ID": "ct_J3zBY8xxjsRr3QojETNw48Eb38fjvEuJKkQ6KzECvubvEcvCa"
