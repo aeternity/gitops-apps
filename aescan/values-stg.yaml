@@ -33,11 +33,19 @@ app:
         paths:
           - path: "/"
             version: "pr-19"
+      - host: "pr-60-aescan.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-60"
   versions:
     - version: "pr-1"
       gitSha: "null"
     - version: "pr-47"
       gitSha: "null"
-    - {version: "pr-54", gitSha: "698775b"}
-    - {version: "pr-19", gitSha: "27aebaa"}
-    - {version: "pr-57", gitSha: "ec8c66c"}
+    - version: "pr-54"
+      gitSha: "698775b"
+    - version: "pr-19"
+      gitSha: "27aebaa"
+    - version: "pr-57"
+      gitSha: "ec8c66c"
+    - version: "pr-60"
