@@ -70,5 +70,6 @@ app:
       gitSha: "bda3def"
     - version: "pr-134"
       gitSha: "feb01ff"
-    - version: "pr-137"
     - version: "pr-138"
+      gitSha: "null"
+    - {version: "pr-137", gitSha: "5dba97a"}
