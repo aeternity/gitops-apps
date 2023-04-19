@@ -33,10 +33,6 @@ app:
         paths:
           - path: "/"
             version: "pr-126"
-      - host: "pr-128-aescan.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-128"
       - host: "pr-130-aescan.stg.aepps.com"
         paths:
           - path: "/"
@@ -60,8 +56,6 @@ app:
       gitSha: "null"
     - version: "pr-126"
       gitSha: "43a628f"
-    - version: "pr-128"
-      gitSha: "null"
     - version: "pr-109"
       gitSha: "1e020b0"
     - version: "pr-130"
