@@ -11,8 +11,13 @@ app:
         paths:
           - path: "/"
             version: "pr-75"
+      - host: "pr-78-dex-backend-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-78"
   env:
     "POSTGRES_HOST": "dexstg.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
   versions:
     - version: "pr-75"
       gitSha: "f5abfb7"
+    - version: "pr-78"
