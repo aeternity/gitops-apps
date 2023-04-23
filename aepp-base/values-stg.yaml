@@ -23,4 +23,4 @@ app:
       gitSha: "null"
     - version: "pr-110"
       gitSha: "5bae387"
-    - {version: "pr-1472", gitSha: "17f33a2a"}
+    - {version: "pr-1472", gitSha: "046b2065"}
