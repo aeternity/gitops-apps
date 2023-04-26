@@ -4,3 +4,10 @@ app:
       - host: "base.dev.aepps.com"
         paths:
           - path: "/"
+            version: "develop"
+    tls:
+      - hosts:
+        - "base.dev.aepps.com"
+        secretName: aepp-base-cert
+  versions:
+    - {version: "develop", gitSha: "1c8259f"}
