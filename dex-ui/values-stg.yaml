@@ -4,10 +4,6 @@ app:
       - host: "dex.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-481-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-481"
       - host: "pr-483-dex-ui.stg.aepps.com"
         paths:
           - path: "/"
@@ -25,5 +21,4 @@ app:
       gitSha: "null"
     - version: "pr-489"
       gitSha: "null"
-    - {version: "pr-481", gitSha: "7001ffd"}
     - {version: "pr-495", gitSha: "b6fc01d"}
