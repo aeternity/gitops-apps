@@ -20,4 +20,4 @@ app:
           - "main-dex-ui.prd.aepps.com"
         secretName: dex-ui-cert
   versions:
-    - {version: "main", gitSha: "50d4ebf"}
+    - {version: "main", gitSha: "12e063e"}
