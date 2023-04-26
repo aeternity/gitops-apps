@@ -69,6 +69,10 @@ app:
         paths:
           - path: "/"
             version: "pr-174"
+      - host: "pr-175-aescan.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-175"
   versions:
     - version: "pr-1"
       gitSha: "null"
@@ -97,3 +101,4 @@ app:
     - version: "pr-151"
       gitSha: "54201ae"
     - version: "pr-174"
+    - version: "pr-175"
