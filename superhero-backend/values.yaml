@@ -4,9 +4,9 @@ app:
     pullPolicy: "Always"
   probes:
     liveness:
-      enabled: true
+      enabled: false
     readiness:
-      enabled: true
+      enabled: false
   secrets:
     external:
       values:
