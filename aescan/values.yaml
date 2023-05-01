@@ -3,6 +3,11 @@ app:
     tag: "latest"
     repository: "aeternity/aescan"
     pullPolicy: "Always"
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
   ingress:
     enabled: true
     annotations:
