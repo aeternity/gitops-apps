@@ -3,6 +3,11 @@ app:
     tag: "0.0.1"
     repository: "aeternity/aescan"
     pullPolicy: "Always"
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
   resources:
     limits:
       memory: 256Mi
