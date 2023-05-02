@@ -57,10 +57,6 @@ app:
         paths:
           - path: "/"
             version: "pr-189"
-      - host: "pr-190-aescan.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-190"
       - host: "pr-195-aescan.stg.aepps.com"
         paths:
           - path: "/"
@@ -91,4 +87,3 @@ app:
     - version: "pr-195"
       gitSha: "null"
     - {version: "pr-187", gitSha: "1b6ff81"}
-    - {version: "pr-190", gitSha: "17789dd"}
