@@ -2,9 +2,10 @@ app:
   secrets:
     external:
       remotePrefix: "/k8s/stg-m4n4"
-
   ingress:
     hosts:
       - host: "governance.stg.aepps.com"
         paths:
           - path: "/"
+  versions:
+    - {version: "stg", gitSha: "d7bde29"}
