@@ -10,6 +10,13 @@ app:
         S3_SECRET: /apps/GRAFFITI_S3_SECRET
   service:
     port: 3000
+  resources:
+    limits:
+      cpu: "2"
+      memory: "6Gi"
+    requests:
+      cpu: "1"
+      memory: "4Gi"
   probes:
     liveness:
       enabled: false
