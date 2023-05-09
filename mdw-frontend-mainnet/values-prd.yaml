@@ -1,4 +1,8 @@
 app:
+  image:
+    repository: aeternity/mdw-frontend
+    pullPolicy: "Always"
+    tag: "latest"
   ingress:
     hosts:
       - host: "mdw-explorer.prd.aepps.com"
