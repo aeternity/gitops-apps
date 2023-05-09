@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternity/mdw-frontend
+    repository: aeternitybot/mdw-frontend
     pullPolicy: "Always"
     tag: "latest"
   ingress:
