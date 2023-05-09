@@ -12,8 +12,13 @@ app:
         paths:
           - path: "/"
             version: "pr-489"
+      - host: "pr-497-dex-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-497"
   versions:
     - version: "pr-483"
       gitSha: "null"
     - version: "pr-489"
       gitSha: "null"
+    - version: "pr-497"
