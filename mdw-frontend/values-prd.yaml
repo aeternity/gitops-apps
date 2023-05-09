@@ -1,39 +1,22 @@
 app:
-  versions:
-    - version: mainnet
-    - version: testnet
+  image:
+    repository: aeternity/mdw-frontend
+    pullPolicy: "Always"
+    tag: "latest"
   ingress:
     hosts:
       - host: "mdw-explorer.prd.aepps.com"
         paths:
           - path: /
-            version: "latest"
       - host: "explorer.aepps.com"
         paths:
           - path: /
-            version: "mainnet"
       - host: "explorer.aeternity.io"
         paths:
           - path: /
-            version: "mainnet"
-      - host: "mdw-explorer-testnet.prd.aepps.com"
-        paths:
-          - path: /
-            version: "testnet"
-      - host: "testnet.explorer.aepps.com"
-        paths:
-          - path: /
-            version: "testnet"
-      - host: "explorer.testnet.aeternity.io"
-        paths:
-          - path: /
-            version: "testnet"
     tls:
       - hosts:
         - "explorer.aepps.com"
-        - "testnet.explorer.aepps.com"
         - "explorer.aeternity.io"
-        - "explorer.testnet.aeternity.io"
         - "mdw-explorer.prd.aepps.com"
-        - "mdw-explorer-testnet.prd.aepps.com"
         secretName: mdw-frontend-cert
