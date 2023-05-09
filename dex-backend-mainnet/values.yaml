@@ -9,10 +9,10 @@ app:
         POSTGRES_PASSWORD: /apps/DEX_MAINNET_POSTGRES_PASSWORD
   resources:
     limits:
-      memory: 150Mi
+      memory: 550Mi
     requests:
-      cpu: 300m
-      memory: 150Mi
+      cpu: 500m
+      memory: 550Mi
   service:
     port: 3000
   ingress:
