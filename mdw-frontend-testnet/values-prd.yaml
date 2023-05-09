@@ -18,4 +18,4 @@ app:
         - "testnet.explorer.aepps.com"
         - "explorer.testnet.aeternity.io"
         - "mdw-explorer-testnet.prd.aepps.com"
-        secretName: mdw-frontend-cert
+        secretName: mdw-frontend-testnet-cert
