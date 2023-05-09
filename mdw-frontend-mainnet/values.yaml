@@ -1,8 +1,4 @@
 app:
-  image:
-    repository: aeternity/mdw-frontend
-    pullPolicy: "Always"
-    tag: "latest"
   ingress:
     enabled: true
     annotations:
