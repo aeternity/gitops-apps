@@ -7,7 +7,7 @@ app:
       - host: "mdw-explorer.prd.aepps.com"
         paths:
           - path: /
-            version: "mainnet"
+            version: "latest"
       - host: "explorer.aepps.com"
         paths:
           - path: /
