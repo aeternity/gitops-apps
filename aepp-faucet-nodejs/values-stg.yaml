@@ -7,4 +7,9 @@ app:
       - host: "faucet-nodejs.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-19-aepp-faucet-nodejs.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-19"
+  versions:
+    - version: "pr-19"
