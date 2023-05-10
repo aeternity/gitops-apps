@@ -5,10 +5,10 @@ app:
     tag: "latest"
   resources:
     limits:
-      memory: 32Mi
+      memory: 64Mi
     requests:
       cpu: 100m
-      memory: 32Mi
+      memory: 64Mi
   ingress:
     enabled: true
     annotations:
