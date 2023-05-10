@@ -1,0 +1,6 @@
+app:
+  ingress:
+    hosts:
+      - host: "mdw-explorer-mainnet.dev.aepps.com"
+        paths:
+          - path: /
