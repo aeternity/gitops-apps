@@ -7,6 +7,11 @@ app:
     external:
       values:
         POSTGRES_PASSWORD: /apps/DEX_TESTNET_POSTGRES_PASSWORD
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
   service:
     port: 3000
   ingress:
