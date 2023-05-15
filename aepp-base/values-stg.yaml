@@ -47,8 +47,6 @@ app:
       gitSha: "5bae387"
     - version: "pr-1478"
       gitSha: "null"
-    - version: "pr-1490"
-      gitSha: "639f5974"
     - version: "pr-1487"
       gitSha: "5cc41dd0"
     - version: "pr-1489"
@@ -57,3 +55,4 @@ app:
       gitSha: "d004c000"
     - {version: "pr-1493", gitSha: "f9f86a74"}
     - {version: "pr-1494", gitSha: "f5f7f4df"}
+    - {version: "pr-1490", gitSha: "fbf94d5c"}
