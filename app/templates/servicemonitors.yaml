@@ -24,8 +24,8 @@ spec:
   jobLabel: {{ .Release.Name }}
   selector:
     matchLabels:
-      app: 
-      release: {{ .Release.Name }}
+      {{- include "app.selectorLabels" $ | nindent 6 }}
+      app.kubernetes.io/version: {{ $val.version }}
   namespaceSelector:
     matchNames:
       - {{ .Release.Namespace }}

@@ -1,0 +1,14 @@
+app:
+  image:
+    repository: "aeternity/aemon"
+    tag: latest
+    pullPolicy: "Always"
+  env:
+    AEMON_CONFIG: "etc/aemon/testnet.json"
+  service:
+    port: 3000
+  ingress:
+    enabled: false
+  serviceMonitor:
+    enabled: true
+    path: /
