@@ -1,0 +1,13 @@
+app:
+  ingress:
+    hosts:
+      - host: "token-sale.prd.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+          - "token-sale.prd.aepps.com"
+          - "master-token-sale.prd.aepps.com"
+        secretName: token-sale-cert
+  image:
+    tag: 1.0.0
