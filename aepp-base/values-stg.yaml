@@ -44,6 +44,10 @@ app:
         paths:
           - path: "/"
             version: "pr-1501"
+      - host: "pr-1503-aepp-base.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1503"
   versions:
     - version: "pr-1450"
       gitSha: "null"
@@ -61,6 +65,10 @@ app:
       gitSha: "3d9d1527"
     - version: "pr-1497"
       gitSha: "c47d6c9c"
-    - {version: "pr-1494", gitSha: "625eddbc"}
-    - {version: "pr-1500", gitSha: "35b0e2f7"}
-    - {version: "pr-1501", gitSha: "90f0d675"}
+    - version: "pr-1494"
+      gitSha: "625eddbc"
+    - version: "pr-1500"
+      gitSha: "35b0e2f7"
+    - version: "pr-1501"
+      gitSha: "90f0d675"
+    - version: "pr-1503"
