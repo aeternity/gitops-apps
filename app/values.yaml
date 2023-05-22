@@ -115,3 +115,7 @@ secrets:
 
 serviceMonitor:
   enabled: false
+  interval: 30s
+  metricsPort: http
+  path: /metrics
+  scheme: ""

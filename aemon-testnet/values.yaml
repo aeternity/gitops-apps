@@ -1,0 +1,20 @@
+app:
+  image:
+    repository: "aeternity/aemon"
+    tag: latest
+    pullPolicy: "Always"
+  resources:
+    limits:
+      memory: 256Mi
+    requests:
+      cpu: 200m
+      memory: 256Mi
+  env:
+    AEMON_CONFIG: "etc/aemon/testnet.json"
+  service:
+    port: 3000
+  ingress:
+    enabled: false
+  serviceMonitor:
+    enabled: true
+    path: /
