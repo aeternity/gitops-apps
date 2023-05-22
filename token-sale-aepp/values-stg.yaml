@@ -8,3 +8,5 @@ app:
       - hosts:
         - "token-sale.stg.aepps.com"
         secretName: token-sale-cert
+  image:
+    tag: "v1.0.0"  
