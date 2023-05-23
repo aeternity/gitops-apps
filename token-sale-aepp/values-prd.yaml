@@ -10,4 +10,4 @@ app:
           - "master-token-sale.prd.aepps.com"
         secretName: token-sale-cert
   image:
-    tag: v1.0.0
+    tag: v1.1.0
