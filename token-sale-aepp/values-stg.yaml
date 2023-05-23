@@ -9,4 +9,4 @@ app:
         - "token-sale.stg.aepps.com"
         secretName: token-sale-cert
   image:
-    tag: "v1.0.0"  
+    tag: "v1.0.0"
