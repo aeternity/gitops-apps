@@ -4,10 +4,14 @@ app:
       - host: "aescan.prd.aepps.com"
         paths:
           - path: "/"
+      - host: "aescan.io"
+        paths:
+          - path: "/"
     tls:
       - hosts:
           - "aescan.prd.aepps.com"
           - "master-aescan.prd.aepps.com"
+          - "aescan.io"
         secretName: aescan-cert
   image:
     tag: 0.1.0
