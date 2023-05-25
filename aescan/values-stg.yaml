@@ -13,7 +13,7 @@ app:
       - host: "aescan.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "test.aescan.io"
+      - host: "aescan.io"
         paths:
           - path: "/"
       - host: "pr-1-aescan.stg.aepps.com"
