@@ -4,6 +4,9 @@ app:
       - host: "aescan-testnet.prd.aepps.com"
         paths:
           - path: "/"
+      - host: "testnet.aescan.io"
+        paths:
+          - path: "/"
     tls:
       - hosts:
           - "aescan-testnet.prd.aepps.com"
