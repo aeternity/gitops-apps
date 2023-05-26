@@ -16,7 +16,7 @@ app:
           - "master-aescan.prd.aepps.com"
         secretName: aescan-cert
   image:
-    tag: 0.1.0
+    tag: 0.2.0
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.io"
     "NUXT_PUBLIC_SENTRY_DSN": "https://ca073f3a8941437ea8726ac0b5617841@sentry.dev.service.aepps.com/3"
