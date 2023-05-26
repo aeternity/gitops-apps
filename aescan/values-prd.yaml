@@ -7,6 +7,9 @@ app:
       - host: "aescan.io"
         paths:
           - path: "/"
+      - host: "www.aescan.io"
+        paths:
+          - path: "/"
     tls:
       - hosts:
           - "aescan.prd.aepps.com"
