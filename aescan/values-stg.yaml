@@ -76,6 +76,10 @@ app:
         paths:
           - path: "/"
             version: "pr-272"
+      - host: "pr-273-aescan.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-273"
   versions:
     - version: "pr-1"
       gitSha: "null"
@@ -108,3 +112,4 @@ app:
     - version: "pr-269"
       gitSha: "c7bf0e6"
     - version: "pr-272"
+    - version: "pr-273"
