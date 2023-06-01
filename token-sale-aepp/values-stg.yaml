@@ -4,15 +4,10 @@ app:
       - host: "token-sale.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-20-token-sale-aepp.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-20"
     tls:
       - hosts:
           - "token-sale.stg.aepps.com"
         secretName: "token-sale-cert"
   image:
     tag: "v1.0.0"
-  versions:
-    - {version: "pr-20", gitSha: "0f59581"}
+  versions: []
