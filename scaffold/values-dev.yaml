@@ -9,14 +9,16 @@ app:
         paths:
           - path: /
             version: "latest"
-          - path: /v1
-            version: "v1.0.0"
-      - host: "$APP-v2.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "v2.0.0"
-    tls:
-      - hosts:
-        - "$APP.dev.aepps.com"
-        - "$APP-v2.dev.aepps.com"
-        secretName: $APP-cert
+      # One application have have multiple routes pointing to different (or same) version
+      #     - path: /v1
+      #       version: "v1.0.0"
+      # - host: "$APP-v2.dev.aepps.com"
+      #   paths:
+      #     - path: "/"
+      #       version: "v2.0.0"
+    # Most applications does not require spefiic sertificate but utilize the wildcard cert of the environment
+    # tls:
+    #   - hosts:
+    #     - "$APP.dev.aepps.com"
+    #     - "$APP-v2.dev.aepps.com"
+    #     secretName: $APP-cert
