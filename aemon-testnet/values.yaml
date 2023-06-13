@@ -11,6 +11,7 @@ app:
       memory: 256Mi
   env:
     AEMON_CONFIG: "etc/aemon/testnet.json"
+    AEMON_ENABLE_METRICS: true
   service:
     port: 3000
   ingress:
