@@ -4,7 +4,7 @@ app:
       remotePrefix: "/k8s/dev-wgt7"
   versions:
     - version: "pr-13"
-      gitSha: "95c64e28affc1f06bc9b615d8b8eae6be3cdc1f0"
+      gitSha: "f8091338044b89db475fd59d050d53d3b069c243"
   ingress:
     hosts:
       - host: "pr-13-.dev.aepps.com"
@@ -12,6 +12,10 @@ app:
           - path: "/"
             version: "pr-13"
       - host: "pr-13-.dev.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-13"
+      - host: "pr-13-aemon-testnet.dev.aepps.com"
         paths:
           - path: "/"
             version: "pr-13"
