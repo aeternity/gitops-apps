@@ -5,8 +5,14 @@ app:
   versions:
     - version: "pr-13"
       gitSha: "28ee9b57ddbe1573c6c9b53943b1aa18a0b12197"
+    - version: "pr-13"
+      gitSha: "8caee016907cb1d5c956c9092d60cde942eef63b"
   ingress:
     hosts:
+      - host: "pr-13-.dev.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-13"
       - host: "pr-13-.dev.aepps.com"
         paths:
           - path: "/"
