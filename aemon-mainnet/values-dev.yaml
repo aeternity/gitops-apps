@@ -1,4 +1,13 @@
 app:
   secrets:
     external:
-      remotePrefix: /k8s/dev-wgt7
+      remotePrefix: "/k8s/dev-wgt7"
+  versions:
+    - version: "pr-13"
+      gitSha: "8caee016907cb1d5c956c9092d60cde942eef63b"
+  ingress:
+    hosts:
+      - host: "pr-13-.dev.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-13"
