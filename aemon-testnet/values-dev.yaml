@@ -29,3 +29,5 @@ app:
         paths:
           - path: "/"
             version: "master"
+  image:
+    tag: v0.0.3
