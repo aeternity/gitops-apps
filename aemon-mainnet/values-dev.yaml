@@ -6,7 +6,7 @@ app:
     - version: "pr-13"
       gitSha: "f8091338044b89db475fd59d050d53d3b069c243"
     - version: "master"
-      gitSha: "2bca08057ce399c1398fb0259b7a9c34ecb8c2a0"
+      gitSha: "45d3e261287ade86682aa0e1b8b9162765430379"
   ingress:
     hosts:
       - host: "pr-13-.dev.aepps.com"
@@ -25,5 +25,9 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "master-aemon-mainnet.dev.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
   image:
-    tag: v0.0.3
+    tag: "v0.0.3"
