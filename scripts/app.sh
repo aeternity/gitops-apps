@@ -14,8 +14,6 @@ function delete-version {
     : "${APP_VERSION:?Please provide application version}"
 
     CONFIG_FILE=${APP}/values-${APP_ENV}.yaml
-
-    export APP_VERSION
     yq -i 'del( .app.versions[] | select(.version == env(APP_VERSION)) )' $CONFIG_FILE
 }
 
@@ -25,14 +23,10 @@ function update-version {
     : "${APP_VERSION:?Please provide application version}"
     : "${APP_VERSION_SHA:?Please provide application version SHA}"
 
-    CONFIG_FILE=${APP}/values-${APP_ENV}.yaml
-
-    export APP_VERSION
-    export APP_VERSION_SHA
-    export APP_HOST=${APP_VERSION}-${APP}
-
     delete-version $APP
     update-host $APP
+
+    CONFIG_FILE=${APP}/values-${APP_ENV}.yaml
     yq -i '.app.versions += [{"version": strenv(APP_VERSION), "gitSha": strenv(APP_VERSION_SHA)}] | .. style="double"' $CONFIG_FILE
 }
 
@@ -42,8 +36,6 @@ function update-tag {
     : "${APP_VERSION:?Please provide application version}"
 
     CONFIG_FILE=${APP}/values-${APP_ENV}.yaml
-
-    export APP_VERSION
     yq -i '.app.image.tag = env(APP_VERSION)' $CONFIG_FILE
 }
 
@@ -52,10 +44,10 @@ function delete-host {
     : "${APP_ENV:?Please provide application environment}"
     : "${APP_VERSION:?Please provide application version}"
 
-    CONFIG_FILE=${APP}/values-${APP_ENV}.yaml
+    APP_HOST_PREFIX=${APP_HOST_PREFIX-"${APP_VERSION}-"}
+    export APP_HOST="${APP_HOST_PREFIX}${APP}.${APP_ENV}.${APP_DOMAIN}"
 
-    export APP_VERSION
-    export APP_HOST="${APP_VERSION}-${APP}.${APP_ENV}.${APP_DOMAIN}"
+    CONFIG_FILE=${APP}/values-${APP_ENV}.yaml
     yq -i 'del( .app.ingress.hosts[] | select(.host == env(APP_HOST)) )' $CONFIG_FILE
 }
 
@@ -64,11 +56,12 @@ function update-host {
     : "${APP_ENV:?Please provide application environment}"
     : "${APP_VERSION:?Please provide application version}"
 
-    CONFIG_FILE=${APP}/values-${APP_ENV}.yaml
+    APP_HOST_PREFIX=${APP_HOST_PREFIX-"${APP_VERSION}-"}
+    export APP_HOST="${APP_HOST_PREFIX}${APP}.${APP_ENV}.${APP_DOMAIN}"
 
-    export APP_VERSION
-    export APP_HOST="${APP_VERSION}-${APP}.${APP_ENV}.${APP_DOMAIN}"
     delete-host $APP
+
+    CONFIG_FILE=${APP}/values-${APP_ENV}.yaml
     yq -i '.app.ingress.hosts += [{"host": strenv(APP_HOST), "paths": [{"path": "/", "version": strenv(APP_VERSION)}]}]' $CONFIG_FILE
 }
 
