@@ -68,6 +68,7 @@ function update-host {
 
     export APP_VERSION
     export APP_HOST="${APP_VERSION}-${APP}.${APP_ENV}.${APP_DOMAIN}"
+    delete-host $APP
     yq -i '.app.ingress.hosts += [{"host": strenv(APP_HOST), "paths": [{"path": "/", "version": strenv(APP_VERSION)}]}]' $CONFIG_FILE
 }
 
