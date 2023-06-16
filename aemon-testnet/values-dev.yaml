@@ -3,35 +3,11 @@ app:
     external:
       remotePrefix: "/k8s/dev-wgt7"
   versions:
-    - version: "pr-13"
-      gitSha: "f8091338044b89db475fd59d050d53d3b069c243"
     - version: "master"
       gitSha: "45d3e261287ade86682aa0e1b8b9162765430379"
   ingress:
     hosts:
-      - host: "pr-13-.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-13"
-      - host: "pr-13-.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-13"
-      - host: "pr-13-aemon-testnet.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-13"
-      - host: "pr-13-aemon-testnet.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-13"
-      - host: "master-aemon-testnet.dev.aepps.com"
+      - host: "aemon-testnet.dev.aepps.com"
         paths:
           - path: "/"
             version: "master"
-      - host: "master-aemon-testnet.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "master"
-  image:
-    tag: "v0.0.3"
