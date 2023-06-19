@@ -33,7 +33,7 @@ function diff-all {
     exclude=()
 
     for e in ${ALWAYS_EXCLUDE[@]}; do
-        exclude+=(":(exclude)/$e")
+        exclude+=(":(exclude)$e")
     done
 
     git diff $dst..$src ${exclude[@]}
