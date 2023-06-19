@@ -6,6 +6,10 @@ APP_DOMAIN=${APP_DOMAIN:-"aepps.com"}
 function usage {
     echo "Usage:"
     echo "$0 update-version <app path> - Update application version"
+    echo "$0 delete-version <app path> - Delete application version"
+    echo "$0 update-tag <app path> - Update application tag"
+    echo "$0 delete-host <app path> - Update application host"
+    echo "$0 update-host <app path> - Update application versioned host"
 }
 
 function delete-version {
