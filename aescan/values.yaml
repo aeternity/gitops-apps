@@ -8,6 +8,11 @@ app:
       enabled: false
     readiness:
       enabled: false
+  resources:
+    limits:
+      memory: 256Mi
+    requests:
+      memory: 256Mi
   ingress:
     enabled: true
     annotations:
