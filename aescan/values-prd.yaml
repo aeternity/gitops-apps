@@ -15,6 +15,12 @@ app:
           - "aescan.prd.aepps.com"
           - "master-aescan.prd.aepps.com"
         secretName: aescan-cert
+  resources:
+    limits:
+      memory: 256Mi
+    requests:
+      cpu: 200m
+      memory: 256Mi
   image:
     tag: 0.2.2
   env:
