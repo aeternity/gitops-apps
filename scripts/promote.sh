@@ -33,7 +33,7 @@ function diff-all {
     exclude=()
 
     for e in ${ALWAYS_EXCLUDE[@]}; do
-        exclude+=(":(exclude)/$e")
+        exclude+=(":(exclude)$e")
     done
 
     git diff $dst..$src ${exclude[@]}
@@ -49,11 +49,6 @@ function ignore_path {
         git add "${path}"
 
         git checkout "${destination}" "${path}" > /dev/null 2>&1 || true
-    fi
-
-    # if the env values file hasn't been initialized yet
-    if [[ ! -f $path ]]; then
-        git checkout "${source}" "${path}" > /dev/null 2>&1 || true
     fi
 }
 
