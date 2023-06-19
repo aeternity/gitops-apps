@@ -1,7 +1,6 @@
 app:
   image:
     repository: "aeternity/aemon"
-    tag: latest
     pullPolicy: "Always"
   resources:
     limits:
