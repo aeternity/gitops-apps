@@ -2,6 +2,12 @@ app:
   image:
     tag: "latest"
     pullPolicy: "Always"
+  resources:
+    limits:
+      memory: 512Mi
+    requests:
+      cpu: 300m
+      memory: 512Mi
   probes:
     liveness:
       enabled: false
