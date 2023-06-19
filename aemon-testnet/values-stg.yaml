@@ -1,0 +1,10 @@
+app:
+  ingress:
+    hosts:
+      - host: "aemon-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
+  versions:
+    - version: "master"
+      gitSha: "4e0a937"
