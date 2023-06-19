@@ -3,6 +3,14 @@ app:
     repository: aeternity/mdw-frontend
     pullPolicy: "Always"
     tag: "latest"
+  
+  resources:
+    limits:
+      memory: 288Mi
+    requests:
+      cpu: 200m
+      memory: 288Mi
+      
   ingress:
     enabled: true
     annotations:
@@ -15,5 +23,3 @@ app:
     "NUXT_APP_OTHER_DEPLOYMENTS": "TESTNET@https://explorer.testnet.aeternity.io"
     "NUXT_APP_NETWORK_NAME": "MAINNET"
     "NUXT_APP_ENABLE_FAUCET": "false"
-  service:
-    port: 3000
