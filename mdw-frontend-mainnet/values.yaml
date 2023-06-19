@@ -3,19 +3,19 @@ app:
     repository: aeternity/mdw-frontend
     pullPolicy: "Always"
     tag: "latest"
-  
   resources:
     limits:
-      memory: 288Mi
+      memory: 128Mi
     requests:
       cpu: 200m
-      memory: 288Mi
-      
+      memory: 128Mi
   ingress:
     enabled: true
     annotations:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
+  service:
+    port: 3000
   env:
     "NUXT_APP_NODE_URL": "https://mainnet.aeternity.io/v3"
     "NUXT_APP_NODE_WS": "wss://mainnet.aeternity.io/mdw/websocket"
