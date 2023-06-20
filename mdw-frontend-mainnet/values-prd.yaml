@@ -1,4 +1,9 @@
 app:
+  resources:
+    limits:
+      memory: 192Mi
+    requests:
+      memory: 192Mi
   ingress:
     hosts:
       - host: "mdw-explorer.prd.aepps.com"
