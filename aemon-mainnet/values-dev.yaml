@@ -4,7 +4,7 @@ app:
       remotePrefix: "/k8s/dev-wgt7"
   versions:
     - version: "master"
-      gitSha: "93dc76e"
+      gitSha: "edeee9f"
   ingress:
     hosts:
       - host: "aemon-mainnet.dev.aepps.com"
