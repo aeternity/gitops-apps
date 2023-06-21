@@ -11,3 +11,5 @@ app:
         secretName: token-sale-cert
   image:
     tag: v1.1.0
+  versions:
+    - {version: "main", gitSha: "9b7d22f"}
