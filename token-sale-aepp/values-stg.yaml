@@ -15,4 +15,4 @@ app:
   image:
     tag: "v1.0.0"
   versions:
-    - {version: "pr-28", gitSha: "8416356"}
+    - {version: "pr-28", gitSha: "3073676"}
