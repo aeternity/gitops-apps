@@ -1,5 +1,6 @@
 app:
   image:
+    tag: "master"
     repository: "aeternity/aescan"
     pullPolicy: "Always"
   probes:
