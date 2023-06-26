@@ -1,6 +1,5 @@
 app:
   image:
-    tag: "latest"
     repository: "aeternitybot/state-channel-demo-backend"
     pullPolicy: "Always"
   service:
