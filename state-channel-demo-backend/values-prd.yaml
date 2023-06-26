@@ -1,4 +1,11 @@
 app:
+  resources:
+    limits:
+      cpu: "2"
+      memory: "3Gi"
+    requests:
+      cpu: "1"
+      memory: "2Gi"
   ingress:
     hosts:
       - host: "state-channel-demo-backend.prd.aepps.com"
