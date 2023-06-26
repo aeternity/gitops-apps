@@ -11,6 +11,13 @@ app:
       - hosts:
           - "dex-backend-testnet.prd.aepps.com"
         secretName: dex-backend-testnet-cert
+  resources:
+    limits:
+      cpu: "2"
+      memory: "6Gi"
+    requests:
+      cpu: "1"
+      memory: "5Gi"
   env:
     "POSTGRES_HOST": "dexprd.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
   image:
