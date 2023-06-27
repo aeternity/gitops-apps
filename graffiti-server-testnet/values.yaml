@@ -2,7 +2,7 @@ app:
   strategyType: "Recreate"
   
   image:
-    repository: aeternitybot/graffiti-server-testnet
+    repository: aeternitybot/graffiti-server
     tag: "latest"
     pullPolicy: "Always"
 
