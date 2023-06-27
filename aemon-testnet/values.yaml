@@ -4,10 +4,10 @@ app:
     pullPolicy: "Always"
   resources:
     limits:
-      memory: 256Mi
+      memory: 288Mi
     requests:
       cpu: 200m
-      memory: 256Mi
+      memory: 288Mi
   env:
     AEMON_CONFIG: "etc/aemon/testnet.json"
     AEMON_ENABLE_METRICS: true
