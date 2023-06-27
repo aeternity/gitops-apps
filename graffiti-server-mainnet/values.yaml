@@ -8,10 +8,10 @@ app:
 
   resources:
     limits:
-      memory: 288Mi
+      memory: 384Mi
     requests:
       cpu: 200m
-      memory: 288Mi
+      memory: 384Mi
 
   secrets:
     external:
