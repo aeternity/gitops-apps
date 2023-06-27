@@ -7,13 +7,3 @@ app:
       - host: "graffiti.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "stg-graffiti-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "stg"
-      - host: "stg-graffiti-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "stg"
-  versions:
-    - {version: "stg", gitSha: "453e643"}
