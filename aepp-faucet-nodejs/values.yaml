@@ -4,9 +4,9 @@ app:
     pullPolicy: "Always"
   resources:
     limits:
-      memory: 72Mi
+      memory: 128Mi
     requests:
-      memory: 72Mi
+      memory: 128Mi
   env:
     "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
     "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
