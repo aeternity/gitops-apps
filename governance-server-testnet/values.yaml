@@ -13,9 +13,15 @@ app:
 
   probes:
     liveness:
-      enabled: false
+      enabled: true
+      config:
+        httpGet:
+          path: /version
     readiness:
-      enabled: false
+      enabled: true
+      config:
+        httpGet:
+          path: /version
 
   service:
     port: 3000
