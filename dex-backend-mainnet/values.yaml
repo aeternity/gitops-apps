@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternitybot/dex-backend
+    repository: aeternitybot/dex-backend-mainnet
     tag: "latest"
     pullPolicy: "Always"
   secrets:
