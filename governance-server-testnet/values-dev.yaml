@@ -5,6 +5,6 @@ app:
 
   ingress:
     hosts:
-      - host: "governance-server.dev.aepps.com"
+      - host: "governance-server-testnet.dev.aepps.com"
         paths:
           - path: "/"
