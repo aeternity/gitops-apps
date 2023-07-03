@@ -2,6 +2,7 @@ app:
   image:
     repository: "aeternitybot/state-channel-demo-backend"
     pullPolicy: "Always"
+    tag: latest
   service:
     port: 3000
   ingress:
