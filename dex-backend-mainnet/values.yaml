@@ -14,7 +14,6 @@ app:
       enabled: false
   resources:
     limits:
-      cpu: "2"
       memory: "6Gi"
     requests:
       cpu: "1"
