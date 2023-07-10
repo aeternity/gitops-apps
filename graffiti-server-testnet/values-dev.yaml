@@ -4,7 +4,6 @@ app:
       remotePrefix: /k8s/dev-wgt7
   resources:
     limits:
-      cpu: "2"
       memory: "6Gi"
     requests:
       cpu: "1"
