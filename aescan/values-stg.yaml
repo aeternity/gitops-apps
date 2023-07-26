@@ -64,6 +64,10 @@ app:
         paths:
           - path: "/"
             version: "pr-403"
+      - host: "pr-405-aescan.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-405"
   versions:
     - version: "pr-285"
       gitSha: "null"
@@ -83,6 +87,10 @@ app:
       gitSha: "3a4c97b"
     - version: "pr-401"
       gitSha: "null"
-    - {version: "pr-403", gitSha: "f70baaa"}
-    - {version: "pr-381", gitSha: "3fc6775"}
-    - {version: "pr-379", gitSha: "8a8cba6"}
+    - version: "pr-403"
+      gitSha: "f70baaa"
+    - version: "pr-381"
+      gitSha: "3fc6775"
+    - version: "pr-379"
+      gitSha: "8a8cba6"
+    - version: "pr-405"
