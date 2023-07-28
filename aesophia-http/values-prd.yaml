@@ -27,7 +27,7 @@ app:
       - host: "v7.compiler.aepps.com"
         paths:
           - path: /
-            version: "v7.2.0"
+            version: "v7.4.0"
 
       - host: "latest.compiler.aepps.com"
         paths:
