@@ -8,5 +8,10 @@ app:
         paths:
           - path: "/"
             version: "pr-260"
+      - host: "pr-261-state-channel-demo-frontend.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-261"
   versions:
     - version: "pr-260"
+    - version: "pr-261"
