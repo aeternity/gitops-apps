@@ -4,10 +4,6 @@ app:
       - host: "state-channel-demo-backend.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-260-state-channel-demo-backend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-260"
       - host: "pr-261-state-channel-demo-backend.stg.aepps.com"
         paths:
           - path: "/"
@@ -15,7 +11,6 @@ app:
   versions:
     - version: "pr-261"
       gitSha: "null"
-    - {version: "pr-260", gitSha: "e39d7af"}
   env:
     "NODE_URL": "https://testnet.aeternity.io"
     "WS_URL": "wss://sdk-testnet.aepps.com/channel"
