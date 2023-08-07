@@ -13,6 +13,7 @@ app:
     external:
       values:
         POSTGRES_PASSWORD: /apps/DEX_MAINNET_POSTGRES_PASSWORD
+        AUTH_TOKEN: /apps/DEX_AUTH_TOKEN
   service:
     port: 3000
   ingress:
