@@ -22,7 +22,7 @@ app:
       cpu: 200m
       memory: 256Mi
   image:
-    tag: 0.4.0
+    tag: 0.5.0
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.io"
     "NUXT_PUBLIC_SENTRY_DSN": "https://ca073f3a8941437ea8726ac0b5617841@sentry.dev.service.aepps.com/3"
