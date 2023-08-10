@@ -12,4 +12,4 @@ app:
   image:
     tag: v2.0.0
   versions:
-    - {version: "main", gitSha: "bf38dd9"}
+    - {version: "main", gitSha: "c1e6673"}
