@@ -17,10 +17,10 @@ app:
         secretName: aescan-cert
   resources:
     limits:
-      memory: 900Mi
+      memory: 4Gi
     requests:
       cpu: 500m
-      memory: 700Mi
+      memory: 1Gi
   image:
     tag: 0.5.0
   env:
