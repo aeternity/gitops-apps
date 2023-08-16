@@ -20,7 +20,7 @@ app:
       memory: 900Mi
     requests:
       cpu: 500m
-      memory: 900Mi
+      memory: 700Mi
   image:
     tag: 0.5.0
   env:
