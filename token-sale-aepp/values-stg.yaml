@@ -4,10 +4,6 @@ app:
       - host: "token-sale.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-42-token-sale-aepp.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-42"
       - host: "pr-44-token-sale-aepp.stg.aepps.com"
         paths:
           - path: "/"
@@ -19,8 +15,6 @@ app:
   image:
     tag: "v1.0.0"
   versions:
-    - version: "pr-42"
-      gitSha: "null"
     - version: "pr-44"
       gitSha: "null"
     - {version: "pr-45", gitSha: "908e8a7"}
