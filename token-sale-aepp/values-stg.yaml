@@ -16,6 +16,10 @@ app:
         paths:
           - path: "/"
             version: "pr-44"
+      - host: "pr-45-token-sale-aepp.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-45"
     tls:
       - hosts:
           - "token-sale.stg.aepps.com"
@@ -26,3 +30,4 @@ app:
     - version: "pr-43"
     - version: "pr-42"
     - version: "pr-44"
+    - version: "pr-45"
