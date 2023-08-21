@@ -10,6 +10,6 @@ app:
           - "master-token-sale.prd.aepps.com"
         secretName: token-sale-cert
   image:
-    tag: v2.0.1
+    tag: v2.1.0
   versions:
     - {version: "main", gitSha: "356b795"}
