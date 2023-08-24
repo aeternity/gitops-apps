@@ -8,4 +8,4 @@ app:
         paths:
           - path: "/"
   versions:
-    - {version: "stg", gitSha: "d7bde29"}
+    - {version: "stg", gitSha: "6812244"}
