@@ -12,6 +12,10 @@ app:
         paths:
           - path: "/"
             version: "pr-50"
+      - host: "pr-51-token-sale-aepp.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-51"
     tls:
       - hosts:
           - "token-sale.stg.aepps.com"
@@ -24,3 +28,4 @@ app:
     - version: "pr-45"
       gitSha: "908e8a7"
     - version: "pr-50"
+    - version: "pr-51"
