@@ -49,7 +49,8 @@ app:
   env:
     "S3_REGION": "eu-central-1"
     "NODE_URL": "https://mainnet.aeternity.io"
-    "CONTRACT_ADDRESS": "ct_rR1BHya4jLXR1d4FpTRfgB5YZmALELwm6kf7f64sVRSjmWtrj"
+    "CONTRACT_ADDRESS": "ct_2Lj41hzQ7xtYqEQGiBwwrW8yDCuz4VRaAcYS28uc9Jq39QTJUQ"
+    
 
 
 
