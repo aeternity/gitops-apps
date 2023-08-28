@@ -4,9 +4,11 @@ app:
       - host: "graffiti.aeternity.com"
         paths:
           - path: "/"
+            version: "latest"
       - host: "graffiti.prd.aepps.com"
         paths:
           - path: "/"
+            version: "latest"
     tls:
       - hosts:
           - "graffiti.aeternity.com"
