@@ -14,4 +14,4 @@ app:
           - "aepp-grafitti.prd.aepps.com"
         secretName: aepp-grafitti-cert
   versions:
-    - {version: "latest", gitSha: "0d691fd"}
+    - {version: "latest", gitSha: "84f1281"}
