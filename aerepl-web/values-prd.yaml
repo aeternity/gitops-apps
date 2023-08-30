@@ -17,6 +17,6 @@ app:
           - "repl.prd.aepps.com"
         secretName: aerepl-http-cert
   versions:
-    - {version: "master", gitSha: "7621a94"}
+    - {version: "master", gitSha: "e66048b"}
   image:
     tag: v3.1.0
