@@ -18,3 +18,5 @@ app:
         secretName: aerepl-http-cert
   versions:
     - {version: "master", gitSha: "7621a94"}
+  image:
+    tag: v3.1.0
