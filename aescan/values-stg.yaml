@@ -117,9 +117,8 @@ app:
       gitSha: "d65b45e"
     - version: "pr-472"
       gitSha: "9fa627f"
-    - version: "pr-487"
-      gitSha: "7d06c84"
     - version: "pr-474"
       gitSha: "2c7e026"
     - {version: "pr-476", gitSha: "21635d8"}
     - {version: "pr-490", gitSha: "907bf8d"}
+    - {version: "pr-487", gitSha: "1a09572"}
