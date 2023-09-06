@@ -19,4 +19,5 @@ app:
     "POSTGRES_HOST": "dexstg.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
   versions:
     - version: "pr-74"
-    - version: "pr-82"
+      gitSha: "null"
+    - {version: "pr-82", gitSha: "48328af"}
