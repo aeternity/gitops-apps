@@ -4,7 +4,7 @@ app:
       remotePrefix: /k8s/prd-0e9c
   image:
     repository: aeternitybot/dex-backend-mainnet
-    tag: "v1.0.0"
+    tag: "v1.0.1"
   ingress:
     hosts:
       - host: "dex-backend-mainnet.prd.aepps.com"
@@ -12,7 +12,7 @@ app:
           - path: "/"
     tls:
       - hosts:
-        - "dex-backend-mainnet.prd.aepps.com"
+          - "dex-backend-mainnet.prd.aepps.com"
         secretName: dex-backend-mainnet-cert
   env:
     "POSTGRES_HOST": "dexprd.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
