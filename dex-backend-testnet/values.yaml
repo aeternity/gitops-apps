@@ -7,6 +7,7 @@ app:
     external:
       values:
         POSTGRES_PASSWORD: /apps/DEX_TESTNET_POSTGRES_PASSWORD
+        AUTH_TOKEN: /apps/DEX_AUTH_TOKEN
   probes:
     liveness:
       enabled: false
