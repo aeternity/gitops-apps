@@ -26,3 +26,4 @@ app:
     "NUXT_PUBLIC_DEX_BACKEND_URL": "https://dex-backend-testnet.prd.aepps.com"
     "NUXT_PUBLIC_AE_TOKEN_ID": "ct_JDp175ruWd7mQggeHewSLS1PFXt9AzThCDaFedxon8mF8xTRF"
     "NUXT_PUBLIC_PLAUSIBLE_DOMAIN": "testnet.aescan.io"
+    "SH_CONTRACTS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9, ct_MLXQEP12MBn99HL6WDaiTqDbG4bJQ3Q9Bzr57oLfvEkghvpFb"
