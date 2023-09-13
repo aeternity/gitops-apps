@@ -17,46 +17,18 @@ app:
       - host: "aescan.io"
         paths:
           - path: "/"
-      - host: "pr-285-aescan.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-285"
       - host: "pr-313-aescan.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-313"
-      - host: "pr-327-aescan.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-327"
-      - host: "pr-347-aescan.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-347"
-      - host: "pr-412-aescan.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-412"
       - host: "pr-428-aescan.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-428"
-      - host: "pr-437-aescan.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-437"
       - host: "pr-475-aescan.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-475"
-      - host: "pr-478-aescan.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-478"
-      - host: "pr-487-aescan.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-487"
       - host: "pr-489-aescan.stg.aepps.com"
         paths:
           - path: "/"
@@ -70,26 +42,12 @@ app:
           - path: "/"
             version: "pr-504"
   versions:
-    - version: "pr-285"
-      gitSha: "null"
-    - version: "pr-347"
-      gitSha: "44cd4a7"
     - version: "pr-313"
       gitSha: "a83c199"
-    - version: "pr-327"
-      gitSha: "63dbf51"
-    - version: "pr-412"
-      gitSha: "dc6fd56"
-    - version: "pr-437"
-      gitSha: "null"
-    - version: "pr-478"
-      gitSha: "0610b0a"
     - version: "pr-489"
       gitSha: "0b771dc"
     - version: "pr-475"
       gitSha: "b6688e2"
-    - version: "pr-487"
-      gitSha: "3218b4b"
     - version: "pr-428"
       gitSha: "93bfbd1"
     - {version: "pr-504", gitSha: "5941c70"}
