@@ -9,7 +9,3 @@ app:
       - host: "mdw-explorer-testnet.prd.aepps.com"
         paths:
           - path: /
-    tls:
-      - hosts:
-        - "mdw-explorer-testnet.prd.aepps.com"
-        secretName: mdw-frontend-testnet-cert
