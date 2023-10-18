@@ -9,7 +9,3 @@ app:
       - host: "mdw-explorer.prd.aepps.com"
         paths:
           - path: /
-    tls:
-      - hosts:
-        - "mdw-explorer.prd.aepps.com"
-        secretName: mdw-frontend-mainnet-cert
