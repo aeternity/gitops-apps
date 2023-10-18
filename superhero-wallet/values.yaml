@@ -1,7 +1,7 @@
 app:
   nameOverride: superhero-wallet
   image:
-    repository: aeternity/superhero-wallet
+    repository: superhero-com/superhero-wallet
     tag: "latest"
     pullPolicy: "Always"
   ingress:
