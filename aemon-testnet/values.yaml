@@ -18,3 +18,5 @@ app:
   serviceMonitor:
     enabled: true
     path: /
+  vpa:
+    enabled: true
