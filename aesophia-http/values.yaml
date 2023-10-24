@@ -8,11 +8,12 @@ app:
     repository: aeternity/aesophia_http 
     pullPolicy: "Always"
   resources:
-    limits:
-      memory: 384Mi
     requests:
-      cpu: 250m
-      memory: 384Mi
+      cpu: 15m
+      memory: 64Mi
+    limits:
+      cpu: 25m
+      memory: 96Mi
   service:
     type: ClusterIP
     port: 3080

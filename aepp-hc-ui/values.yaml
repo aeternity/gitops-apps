@@ -3,11 +3,12 @@ app:
     repository: aeternity/aepp-hc-ui
     pullPolicy: "Always"
   resources:
-    limits:
-      memory: 108Mi
     requests:
-      cpu: 30m
-      memory: 108Mi
+      cpu: 15m
+      memory: 64i
+    limits:
+      cpu: 25m
+      memory: 96Mi
   env:
     PORT: "80"
   ingress:

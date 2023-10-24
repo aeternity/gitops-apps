@@ -4,11 +4,12 @@ app:
     pullPolicy: "Always"
     tag: "latest"
   resources:
-    limits:
-      memory: 128Mi
     requests:
-      cpu: 200m
-      memory: 128Mi
+      cpu: 15m
+      memory: 90Mi
+    limits:
+      cpu: 25m
+      memory: 135Mi
   ingress:
     enabled: true
     annotations:

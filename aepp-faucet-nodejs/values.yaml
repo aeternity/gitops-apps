@@ -3,10 +3,12 @@ app:
     tag: latest
     pullPolicy: "Always"
   resources:
-    limits:
-      memory: 128Mi
     requests:
-      memory: 128Mi
+      cpu: 15m
+      memory: 48i
+    limits:
+      cpu: 25m
+      memory: 72Mi
   env:
     "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
     "EXPLORER_URL": "https://explorer.testnet.aeternity.io"

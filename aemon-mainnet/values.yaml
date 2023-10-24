@@ -3,11 +3,12 @@ app:
     repository: "aeternity/aemon"
     pullPolicy: "Always"
   resources:
-    limits:
-      memory: 288Mi
     requests:
-      cpu: 200m
-      memory: 288Mi
+      cpu: 15m
+      memory: 175Mi
+    limits:
+      cpu: 25m
+      memory: 260Mi
   env:
     AEMON_CONFIG: "etc/aemon/mainnet.json"
     AEMON_ENABLE_METRICS: true
