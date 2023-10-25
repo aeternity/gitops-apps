@@ -13,7 +13,7 @@ app:
       memory: 64Mi
     limits:
       cpu: 75m
-      memory: 128Mi
+      memory: 96Mi
   service:
     type: ClusterIP
     port: 3080

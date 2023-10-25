@@ -9,10 +9,12 @@ app:
     readiness:
       enabled: false
   resources:
-    limits:
-      memory: 256Mi
     requests:
-      memory: 256Mi
+      cpu: 100m
+      memory: 190Mi
+    limits:
+      cpu: 150m
+      memory: 280Mi
   ingress:
     enabled: true
     annotations:
