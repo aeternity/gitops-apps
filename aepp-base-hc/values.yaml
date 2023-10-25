@@ -9,7 +9,7 @@ app:
       cert-manager.io/cluster-issuer: letsencrypt
   resources:
     requests:
-      cpu: 15m
+      cpu: 20m
       memory: 16Mi
     limits:
       cpu: 25m
