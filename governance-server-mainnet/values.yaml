@@ -42,3 +42,28 @@ app:
     "PORT": "3000"
     "REDIS_URL": "redis://governance-server-mainnet-redis-master:6379"
     "WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
+
+redis:
+  architecture: standalone
+  persistence:
+    enabled: false
+  auth:
+    enabled: false
+  master:
+    resources:
+      requests:
+        cpu: 30m
+        memory: 24Mi
+      limits:
+        cpu: 45m
+        memory: 36Mi
+    persistence:
+      enabled: false
+  replica:
+    resources:
+      requests:
+        cpu: 30m
+        memory: 24Mi
+      limits:
+        cpu: 45m
+        memory: 36Mi
