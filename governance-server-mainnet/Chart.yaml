@@ -8,3 +8,6 @@ dependencies:
   - name: app
     version: 0.4.0
     repository: "file://../app"
+  - name: redis
+    version: 17.3.4
+    repository: https://charts.bitnami.com/bitnami

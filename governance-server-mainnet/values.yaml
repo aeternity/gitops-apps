@@ -40,5 +40,5 @@ app:
     "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
     "NODE_URL": "https://mainnet.aeternity.io/"
     "PORT": "3000"
-    "REDIS_URL": "redis://redis-master.redis.svc.cluster.local:6379"
+    "REDIS_URL": "redis://governance-server-mainnet-redis-master:6379"
     "WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
