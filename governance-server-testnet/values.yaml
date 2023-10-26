@@ -40,7 +40,7 @@ app:
     "MIDDLEWARE_URL": "https://testnet.aeternity.io/mdw/"
     "NODE_URL": "https://testnet.aeternity.io/"
     "PORT": "3000"
-    "REDIS_URL": "redis://governance-server-testnet-redis-master.apps.svc.cluster.local:6379"
+    "REDIS_URL": "redis://governance-server-testnet-redis-master:6379"
     "WEBSOCKET_URL": "wss://testnet.aeternity.io/mdw/websocket"
 
 redis:
