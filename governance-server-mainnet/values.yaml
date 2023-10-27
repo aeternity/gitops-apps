@@ -6,11 +6,11 @@ app:
 
   resources:
     requests:
-      cpu: 20m
-      memory: 64Mi
+      cpu: 50m
+      memory: 170Mi
     limits:
-      cpu: 25m
-      memory: 96Mi
+      cpu: 75m
+      memory: 250Mi
 
   probes:
     liveness:
