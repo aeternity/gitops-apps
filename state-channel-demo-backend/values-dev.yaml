@@ -9,6 +9,6 @@ app:
           - path: "/"
             version: "develop"
   versions:
-    - {version: "develop", gitSha: "4146f15"}
+    - {version: "develop", gitSha: "3c9c4d0"}
   env:
     "NODE_ENV": "production"
