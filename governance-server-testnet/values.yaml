@@ -60,6 +60,7 @@ redis:
     persistence:
       enabled: false
   replica:
+    replicaCount: 0
     resources:
       requests:
         cpu: 30m
