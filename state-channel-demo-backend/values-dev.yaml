@@ -10,5 +10,3 @@ app:
             version: "develop"
   versions:
     - {version: "develop", gitSha: "f549200"}
-  env:
-    "NODE_ENV": "production"
