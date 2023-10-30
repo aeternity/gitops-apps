@@ -11,3 +11,6 @@ app:
       - host: "governance.dev.aepps.com"
         paths:
           - path: "/"
+  env:
+    VUE_APP_AE_MAINNET_BACKEND_URL: https://governance-server-mainnet.dev.aepps.com
+    VUE_APP_AE_UAT_BACKEND_URL: https://governance-server-testnet.dev.aepps.com
