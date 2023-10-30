@@ -4,9 +4,6 @@ app:
       - host: "state-channel-demo.dev.aepps.com"
         paths:
           - path: "/"
-      - host: "develop-state-channel-demo.dev.aepps.com"
-        paths:
-          - path: "/"
             version: "develop"
   versions:
     - {version: "develop", gitSha: "02fb3e1"}
