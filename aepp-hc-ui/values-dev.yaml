@@ -12,14 +12,3 @@ app:
       - host: "hc-ui.dev.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-11-aepp-hc-ui.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-11"
-  versions:
-    - version: "pr-10"
-      gitSha: "b70f145"
-    - version: "pr-1"
-      gitSha: "fe60a2b"
-    - version: "pr-11"
-      gitSha: "null"
