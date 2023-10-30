@@ -4,7 +4,6 @@ app:
       - host: "state-channel-demo-backend.dev.aepps.com"
         paths:
           - path: "/"
-            version: "latest"
       - host: "develop-state-channel-demo-backend.dev.aepps.com"
         paths:
           - path: "/"
