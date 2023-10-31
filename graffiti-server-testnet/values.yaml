@@ -7,10 +7,11 @@ app:
     pullPolicy: "Always"
 
   resources:
-    limits:
-      memory: 384Mi
     requests:
       cpu: 200m
+      memory: 384Mi
+    limits:
+      cpu: 250m
       memory: 384Mi
 
   secrets:
