@@ -1,0 +1,19 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/dev-wgt7
+
+  ingress:
+    hosts:
+      - host: "graffiti-server.dev.aepps.com"
+        paths:
+          - path: "/"
+
+  env:
+    "IPFS_URL": "http://ipfs.dev.aepps.com:5001"
+    "S3_REGION": "eu-central-1"
+    "S3_BUCKET": "aeternity-superhero-graffiti-dev"
+    "PATH_IDENTIFIER": "/"
+    "NODE_URL": "https://testnet.aeternity.io"
+    "CONTRACT_ADDRESS": "ct_N4ijuS5Nwg1txyqqkgUBruJgCXrT8G7ZRKWi9N5KjGUhTS3cE"
+    "COMPILER_URL": "https://compiler.dev.aepps.com"
