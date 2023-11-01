@@ -1,6 +1,6 @@
 app:
   image:
-    tag: "latest"
+    tag: "0.8.0"
     repository: "aeternity/aescan"
     pullPolicy: "Always"
   probes:
