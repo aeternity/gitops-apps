@@ -4,14 +4,9 @@ app:
       - host: "base.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-1510-aepp-base.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1510"
       - host: "pr-1512-aepp-base.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-1512"
   versions:
     - {version: "pr-1512", gitSha: "047825cc"}
-    - {version: "pr-1510", gitSha: "5dbd0dea"}
