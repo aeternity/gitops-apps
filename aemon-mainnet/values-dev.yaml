@@ -12,7 +12,7 @@ app:
       - host: "aemon-mainnet.dev.aepps.com"
         paths:
           - path: "/"
-            version: "pr-30"
+            version: "master"
       - host: "pr-30aemon-mainnet.dev.aepps.com"
         paths:
           - path: "/"
