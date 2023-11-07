@@ -6,10 +6,14 @@ app:
     - version: "master"
       gitSha: "b9c38a1"
     - version: "pr-30"
-      gitSha: "13df333"
+      gitSha: "53c9889"
   ingress:
     hosts:
       - host: "aemon-testnet.dev.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-30"
+      - host: "pr-30aemon-testnet.dev.aepps.com"
         paths:
           - path: "/"
             version: "pr-30"
