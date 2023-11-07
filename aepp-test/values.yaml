@@ -2,6 +2,8 @@ app:
   image:
     repository: "aeternitybot/aepp-test"
     pullPolicy: "Always"
+  service:
+    port: 3000
   ingress:
     enabled: true
     annotations:
