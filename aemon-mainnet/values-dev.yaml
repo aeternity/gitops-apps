@@ -5,9 +5,11 @@ app:
   versions:
     - version: "master"
       gitSha: "b9c38a1"
+    - version: "pr-30"
+      gitSha: "13df333"
   ingress:
     hosts:
       - host: "aemon-mainnet.dev.aepps.com"
         paths:
           - path: "/"
-            version: "master"
+            version: "pr-30"
