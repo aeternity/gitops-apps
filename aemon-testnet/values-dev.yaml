@@ -6,7 +6,7 @@ app:
     - version: "pr-30"
       gitSha: "53c9889"
     - version: "master"
-      gitSha: "2820f95"
+      gitSha: "35e9abe"
   ingress:
     hosts:
       - host: "pr-30aemon-testnet.dev.aepps.com"
