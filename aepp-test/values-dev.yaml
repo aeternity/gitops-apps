@@ -4,8 +4,4 @@ app:
       - host: "test.dev.aepps.com"
         paths:
           - path: "/"
-      - host: "-aepp-test.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-2"
   versions: []
