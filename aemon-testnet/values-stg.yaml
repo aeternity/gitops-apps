@@ -5,6 +5,10 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "master-aemon-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
   versions:
     - version: "master"
-      gitSha: "35e9abe"
+      gitSha: "784cc85"
