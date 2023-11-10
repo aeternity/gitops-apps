@@ -6,18 +6,18 @@ app:
     - version: "pr-30"
       gitSha: "53c9889"
     - version: "master"
-      gitSha: "784cc85"
+      gitSha: "088b04d"
   ingress:
     hosts:
       - host: "pr-30aemon-mainnet.dev.aepps.com"
         paths:
           - path: "/"
             version: "pr-30"
-      - host: "aemon-mainnet.dev.aepps.com"
+      - host: "master-aemon-mainnet.dev.aepps.com"
         paths:
           - path: "/"
             version: "master"
-      - host: "master-aemon-mainnet.dev.aepps.com"
+      - host: "aemon-mainnet.dev.aepps.com"
         paths:
           - path: "/"
             version: "master"
