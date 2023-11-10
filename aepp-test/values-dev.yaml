@@ -4,10 +4,4 @@ app:
       - host: "test.dev.aepps.com"
         paths:
           - path: "/"
-      - host: "aepp-test.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-3"
-  versions:
-    - version: "pr-3"
-      gitSha: "525b849"
+  versions: []
