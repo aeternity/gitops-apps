@@ -1,14 +1,14 @@
 app:
   ingress:
     hosts:
-      - host: "aemon-mainnet.stg.aepps.com"
+      - host: "master-aemon-mainnet.stg.aepps.com"
         paths:
           - path: "/"
             version: "master"
-      - host: "master-aemon-mainnet.stg.aepps.com"
+      - host: "aemon-mainnet.stg.aepps.com"
         paths:
           - path: "/"
             version: "master"
   versions:
     - version: "master"
-      gitSha: "784cc85"
+      gitSha: "088b04d"
