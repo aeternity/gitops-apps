@@ -3,20 +3,10 @@ app:
     external:
       remotePrefix: "/k8s/dev-wgt7"
   versions:
-    - version: "pr-30"
-      gitSha: "53c9889"
     - version: "master"
       gitSha: "088b04d"
   ingress:
     hosts:
-      - host: "pr-30aemon-testnet.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-30"
-      - host: "master-aemon-testnet.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "master"
       - host: "aemon-testnet.dev.aepps.com"
         paths:
           - path: "/"
