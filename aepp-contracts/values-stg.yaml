@@ -1,4 +1,7 @@
 app:
+  image:
+    repository: aeternitybot/aepp-contracts
+    tag: master
   ingress:
     hosts:
       - host: "contracts.stg.aepps.com"
