@@ -11,7 +11,7 @@ replicaCount: 1
 
 image:
   repository: ""
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
@@ -51,6 +51,7 @@ ingress:
   annotations:
     kubernetes.io/ingress.class: traefik
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    cert-manager.io/cluster-issuer: letsencrypt
   stripPrefix: ""
   hosts:
     - host: chart-example.local
