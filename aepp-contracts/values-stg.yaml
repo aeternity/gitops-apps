@@ -4,3 +4,10 @@ app:
       - host: "contracts.stg.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-125-aepp-contracts.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-125"
+  versions:
+    - version: "pr-125"
+      gitSha: "903698d"
