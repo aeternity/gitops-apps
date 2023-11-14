@@ -1,4 +1,10 @@
 app:
   ingress:
-    hosts: []
-  versions: []
+    hosts:
+      - host: "pr-6-test.dev.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-6"
+  versions:
+    - version: "pr-6"
+      gitSha: "0a29bbd"
