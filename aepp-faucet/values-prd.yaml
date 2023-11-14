@@ -7,9 +7,6 @@ app:
       - host: "faucet.prd.aepps.com"
         paths:
           - path: "/"
-    tls:
-      - hosts:
-          - "faucet.prd.aepps.com"
-        secretName: aepp-faucet-cert
   image:
     tag: v1.0.0
+    repository: aeternity/aepp-faucet-nodejs
