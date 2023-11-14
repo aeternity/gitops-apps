@@ -13,10 +13,4 @@ app:
       - host: "hyperchain.dev.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-14-hyperchain.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-14"
-  versions:
-    - version: "pr-14"
-      gitSha: "a6abe6e"
+  versions: []
