@@ -1,13 +1,8 @@
 app:
   image:
     repository: "aeternitybot/aepp-contracts"
-    tag: "master"
   ingress:
     hosts:
-      - host: "pr-125-aepp-contracts.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-125"
       - host: "contracts.stg.aepps.com"
         paths:
           - path: "/"

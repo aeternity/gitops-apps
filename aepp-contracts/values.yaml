@@ -1,6 +1,5 @@
 app:
   image:
-    tag: latest
     pullPolicy: "Always"
   ingress:
     enabled: true
