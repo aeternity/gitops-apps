@@ -4,11 +4,14 @@ app:
     tag: "master"
   ingress:
     hosts:
-      - host: "contracts.stg.aepps.com"
-        paths:
-          - path: "/"
       - host: "pr-125-aepp-contracts.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-125"
-  versions: []
+      - host: "contracts.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
+  versions:
+    - version: "master"
+      gitSha: "2b9328e"
