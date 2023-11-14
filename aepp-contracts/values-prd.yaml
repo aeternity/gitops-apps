@@ -1,6 +1,6 @@
 app:
   image:
-    tag: v2.2.0
+    tag: v2.2.1-test
   ingress:
     hosts:
       - host: "contracts.prd.aepps.com"
@@ -11,6 +11,6 @@ app:
           - path: "/"
     tls:
       - hosts:
-        - "contracts.aepps.com"
-        - "contracts.prd.aepps.com"
+          - "contracts.aepps.com"
+          - "contracts.prd.aepps.com"
         secretName: aepp-contracts-cert
