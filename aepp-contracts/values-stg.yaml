@@ -1,7 +1,7 @@
 app:
   image:
-    repository: aeternitybot/aepp-contracts
-    tag: master
+    repository: "aeternitybot/aepp-contracts"
+    tag: "master"
   ingress:
     hosts:
       - host: "contracts.stg.aepps.com"
@@ -13,4 +13,4 @@ app:
             version: "pr-125"
   versions:
     - version: "pr-125"
-      gitSha: "903698d"
+      gitSha: "4c229cb"
