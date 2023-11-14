@@ -1,4 +1,7 @@
 app:
+  image:
+    repository: aeternitybot/aepp-faucet-nodejs
+    tag: ""
   secrets:
     external:
       remotePrefix: /k8s/stg-m4n4
