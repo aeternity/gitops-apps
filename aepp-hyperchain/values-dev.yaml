@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternitybot/aepp-hyperchain
+    repository: "aeternitybot/aepp-hyperchain"
     tag: "pr-8"
   env:
     AE_FAUCET_URL: "https://dev-faucet-hc.aepps.com/"
@@ -13,4 +13,7 @@ app:
       - host: "hyperchain.dev.aepps.com"
         paths:
           - path: "/"
-  versions: []
+            version: "master"
+  versions:
+    - version: "master"
+      gitSha: "a69f50f"
