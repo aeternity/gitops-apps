@@ -1,6 +1,6 @@
 app:
   image:
-    tag: v2.2.1-test
+    tag: v2.2.1-test2
   ingress:
     hosts:
       - host: "contracts.prd.aepps.com"
