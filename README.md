@@ -71,3 +71,10 @@ There is a little script that can do the scaffolding ($APP replacement) explaine
         1. Adjust TLS. List all hosts used in the `hosts` configuration above and set a unique `secretName`
 1. Open `myapp/values-stg.yaml` and adjust the configuration using the same steps as above.
 1. Open `myapp/values-prd.yaml` and adjust the configuration using the same steps as above.
+
+## Application Requirements
+
+- Comply with [12FA](https://12factor.net)
+- Stateless - does not require persistent state on disk
+- Fast startup - does not require more resources during startup than during usual runtime
+- Works on any domain
