@@ -7,10 +7,6 @@ app:
       remotePrefix: "/k8s/stg-m4n4"
   ingress:
     hosts:
-      - host: "aepp-faucet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "master"
       - host: "faucet.stg.aepps.com"
         paths:
           - path: "/"
