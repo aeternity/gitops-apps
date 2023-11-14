@@ -48,8 +48,9 @@ function delete-host {
     : "${APP_ENV:?Please provide application environment}"
     : "${APP_VERSION:?Please provide application version}"
 
+    APP_SUBDOMAIN=${APP_SUBDOMAIN-$APP}
     APP_HOST_PREFIX=${APP_HOST_PREFIX-"${APP_VERSION}-"}
-    export APP_HOST="${APP_HOST_PREFIX}${APP}.${APP_ENV}.${APP_DOMAIN}"
+    export APP_HOST="${APP_HOST_PREFIX}${APP_SUBDOMAIN}.${APP_ENV}.${APP_DOMAIN}"
 
     CONFIG_FILE=${APP}/values-${APP_ENV}.yaml
     yq -i 'del( .app.ingress.hosts[] | select(.host == env(APP_HOST)) )' $CONFIG_FILE
@@ -60,8 +61,9 @@ function update-host {
     : "${APP_ENV:?Please provide application environment}"
     : "${APP_VERSION:?Please provide application version}"
 
+    APP_SUBDOMAIN=${APP_SUBDOMAIN-$APP}
     APP_HOST_PREFIX=${APP_HOST_PREFIX-"${APP_VERSION}-"}
-    export APP_HOST="${APP_HOST_PREFIX}${APP}.${APP_ENV}.${APP_DOMAIN}"
+    export APP_HOST="${APP_HOST_PREFIX}${APP_SUBDOMAIN}.${APP_ENV}.${APP_DOMAIN}"
 
     delete-host $APP
 
