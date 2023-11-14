@@ -7,13 +7,14 @@ app:
       remotePrefix: "/k8s/stg-m4n4"
   ingress:
     hosts:
-      - host: "faucet.stg.aepps.com"
+      - host: "aepp-faucet.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "aepp-faucet.stg.aepps.com"
+            version: "master"
+      - host: "faucet.stg.aepps.com"
         paths:
           - path: "/"
             version: "master"
   versions:
     - version: "master"
-      gitSha: "0ddff22"
+      gitSha: "72a08eb"
