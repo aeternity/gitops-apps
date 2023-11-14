@@ -10,4 +10,10 @@ app:
       - host: "faucet.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+      - host: "aepp-faucet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
+  versions:
+    - version: "master"
+      gitSha: "0ddff22"
