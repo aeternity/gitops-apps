@@ -2,6 +2,7 @@ app:
   image:
     tag: latest
     pullPolicy: "Always"
+    repository: aeternity/aepp-faucet-nodejs
   resources:
     requests:
       cpu: 20m
