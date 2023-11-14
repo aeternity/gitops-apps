@@ -10,10 +10,4 @@ app:
       - host: "faucet.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-20-aepp-faucet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-20"
-  versions:
-    - version: "pr-20"
-      gitSha: "5e89fc3"
+  versions: []
