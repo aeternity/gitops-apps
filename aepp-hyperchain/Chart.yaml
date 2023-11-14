@@ -1,5 +1,5 @@
 apiVersion: v2
-name: aepp-hc-ui
+name: aepp-hyperchain
 description: A Helm chart for Kubernetes
 
 version: 0.2.0

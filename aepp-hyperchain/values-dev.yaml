@@ -9,6 +9,6 @@ app:
     HC_ELECTION_CONTRACT: "ct_t7ESuRFvGdYHwM6KJhKbSnFUJQhnB9aCFed1RWR89ShNDgwWA"
   ingress:
     hosts:
-      - host: "hc-ui.dev.aepps.com"
+      - host: "hyperchain.dev.aepps.com"
         paths:
           - path: "/"

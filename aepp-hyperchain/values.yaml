@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternity/aepp-hc-ui
+    repository: aeternity/aepp-hyperchain
     pullPolicy: "Always"
   resources:
     requests:
