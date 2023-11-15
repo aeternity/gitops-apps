@@ -4,13 +4,16 @@ app:
     tag: ""
   ingress:
     hosts:
-      - host: "repl.stg.aepps.com"
-        paths:
-          - path: "/"
       - host: "pr-60-repl.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-60"
+      - host: "repl.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
   versions:
     - version: "pr-60"
       gitSha: "ec23bbd"
+    - version: "master"
+      gitSha: "1194a09"
