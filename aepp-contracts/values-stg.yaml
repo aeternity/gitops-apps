@@ -7,12 +7,6 @@ app:
         paths:
           - path: "/"
             version: "master"
-      - host: "pr-128-contracts.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-128"
   versions:
     - version: "master"
       gitSha: "e95a730"
-    - version: "pr-128"
-      gitSha: "0dd36f6"
