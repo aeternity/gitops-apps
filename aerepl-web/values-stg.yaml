@@ -1,10 +1,16 @@
 app:
   image:
-    repository: aeternitybot/aerepl-web
+    repository: "aeternitybot/aerepl-web"
     tag: ""
   ingress:
     hosts:
       - host: "repl.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-60-repl.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-60"
+  versions:
+    - version: "pr-60"
+      gitSha: "ec23bbd"
