@@ -1,4 +1,7 @@
 app:
+  image:
+    repository: aeternitybot/aerepl-web
+    tag: ""
   ingress:
     hosts:
       - host: "repl.stg.aepps.com"
