@@ -1,6 +1,6 @@
 app:
   image:
-    tag: v2.2.0
+    tag: v2.2.2
   ingress:
     hosts:
       - host: "contracts.prd.aepps.com"
