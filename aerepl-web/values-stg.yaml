@@ -7,10 +7,4 @@ app:
       - host: "repl.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-59-repl.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-59"
-  versions:
-    - version: "pr-59"
-      gitSha: "5d26ba3"
+  versions: []
