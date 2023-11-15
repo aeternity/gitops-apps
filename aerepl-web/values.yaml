@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternitybot/aerepl_web
+    repository: aeternity/aerepl-web
     tag: "latest"
     pullPolicy: "Always"
   resources:
