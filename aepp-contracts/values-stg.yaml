@@ -7,12 +7,6 @@ app:
         paths:
           - path: "/"
             version: "master"
-      - host: "pr-127-contracts.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-127"
   versions:
     - version: "master"
       gitSha: "19df8d8"
-    - version: "pr-127"
-      gitSha: "a63fe67"
