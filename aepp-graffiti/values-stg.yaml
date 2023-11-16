@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternitybot/aepp-graffiti
+    repository: "aeternitybot/aepp-graffiti"
     tag: ""
   ingress:
     hosts:
@@ -13,4 +13,4 @@ app:
             version: "pr-219"
   versions:
     - version: "pr-219"
-      gitSha: "bdcf26e"
+      gitSha: "98f3166"
