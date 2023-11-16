@@ -1,0 +1,23 @@
+app:
+  image:
+    repository: aeternitybot/graffiti-server
+    tag: ""
+
+  secrets:
+    external:
+      remotePrefix: /k8s/stg-m4n4
+
+  ingress:
+    hosts:
+      - host: "graffiti-server.stg.aepps.com"
+        paths:
+          - path: "/"
+
+  env:
+    "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
+    "S3_REGION": "eu-central-1"
+    "S3_BUCKET": "aeternity-superhero-graffiti-stg"
+    "PATH_IDENTIFIER": "/"
+    "NODE_URL": "https://testnet.aeternity.io"
+    "CONTRACT_ADDRESS": "ct_N4ijuS5Nwg1txyqqkgUBruJgCXrT8G7ZRKWi9N5KjGUhTS3cE"
+    "COMPILER_URL": "https://compiler.stg.aepps.com"
