@@ -1,7 +1,10 @@
 app:
+  image:
+    repository: aeternitybot/aepp-grafitti
+    tag: ""
   ingress:
     hosts:
-      - host: "aepp-grafitti.stg.aepps.com"
+      - host: "grafitti.stg.aepps.com"
         paths:
           - path: "/"
       - host: "pr-219-graffiti.stg.aepps.com"
