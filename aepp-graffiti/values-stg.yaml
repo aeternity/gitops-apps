@@ -4,4 +4,10 @@ app:
       - host: "aepp-grafitti.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-219-graffiti.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-219"
+  versions:
+    - version: "pr-219"
+      gitSha: "bdcf26e"
