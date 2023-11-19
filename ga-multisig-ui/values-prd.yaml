@@ -13,6 +13,6 @@ app:
           - "master-ga-multisig-ui.prd.aepps.com"
         secretName: ga-multisig-ui-cert
   versions:
-    - {version: "master", gitSha: "ded99df"}
+    - {version: "master", gitSha: "216daa6"}
   image:
     tag: v1.1.0
