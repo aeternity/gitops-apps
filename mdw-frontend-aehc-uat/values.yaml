@@ -1,0 +1,25 @@
+app:
+  image:
+    repository: aeternity/mdw-frontend
+    pullPolicy: "Always"
+    tag: "latest"
+  resources:
+    requests:
+      cpu: 70m
+      memory: 120Mi
+    limits:
+      cpu: 100m
+      memory: 180Mi
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+  service:
+    port: 3000
+  env:
+    "NUXT_APP_NETWORK_NAME": "PARENTNET"
+    "NUXT_APP_NODE_URL": "http://13.48.69.203:3013/v3"
+    "NUXT_APP_MDW_URL": "http://13.49.182.111:4000"
+    "NUXT_APP_NODE_WS": "ws://13.49.182.111:4001/websocket"
+    "NUXT_APP_OTHER_DEPLOYMENTS": "HYPERCHAIN@https://explorer.aeternity.io"
