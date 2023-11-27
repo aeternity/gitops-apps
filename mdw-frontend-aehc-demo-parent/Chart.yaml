@@ -1,5 +1,5 @@
 apiVersion: v2
-name: mdw-explorer-aehc-uat
+name: mdw-frontend-aehc-demo-parent
 description: A Helm chart for Kubernetes
 
 version: 0.2.0
