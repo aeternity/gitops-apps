@@ -18,7 +18,7 @@ app:
   service:
     port: 3000
   env:
-    "NUXT_APP_NETWORK_NAME": "PARENTNET"
+    "NUXT_APP_NETWORK_NAME": "PARENTCHAIN"
     "NUXT_APP_NODE_URL": "https://demo-parent.hyperchains.aeternity.io/v3"
     "NUXT_APP_MDW_URL": "https://demo-parent.hyperchains.aeternity.io:8443"
     "NUXT_APP_NODE_WS": "wss://demo-parent.hyperchains.aeternity.io:8443/websocket"
