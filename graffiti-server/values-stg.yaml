@@ -14,6 +14,10 @@ app:
         paths:
           - path: "/"
             version: "pr-219"
+      - host: "pr-220-graffiti-server.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-220"
   env:
     "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
     "S3_REGION": "eu-central-1"
@@ -25,3 +29,5 @@ app:
   versions:
     - version: "pr-219"
       gitSha: "98f3166"
+    - version: "pr-220"
+      gitSha: "3e7ddef"
