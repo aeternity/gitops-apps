@@ -7,10 +7,4 @@ app:
       - host: "graffiti.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-219-graffiti.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-219"
-  versions:
-    - version: "pr-219"
-      gitSha: "98f3166"
+  versions: []
