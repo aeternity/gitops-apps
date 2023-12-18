@@ -1,0 +1,15 @@
+app:
+  image:
+    tag: "develop"
+  ingress:
+    hosts:
+      - host: "base-aehc-demo.dev.aepps.com"
+        paths:
+          - path: "/"
+  env:
+    VUE_APP_NETWORK_NAME: Hyperchain Demo
+    VUE_APP_NODE_URL: https://demo.hyperchains.aeternity.io
+    VUE_APP_MIDDLEWARE_URL: https://demo.hyperchains.aeternity.io:8443
+    VUE_APP_EXPLORER_URL: https://explorer-aehc-demo.dev.aepps.com
+    VUE_APP_COMPILER_URL: https://v7.compiler.dev.aepps.com
+
