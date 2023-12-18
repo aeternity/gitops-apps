@@ -8,6 +8,7 @@ app:
         paths:
           - path: "/"
   env:
-    "EPOCH_URL_DEBUG": "https://demo.hyperchains.aeternity.io"
-    "EXPLORER_URL": "https://explorer-aehc-demo.dev.aepps.com"
-    "NODE_URL": "https://demo.hyperchains.aeternity.io"
+    EPOCH_URL_DEBUG: "https://demo.hyperchains.aeternity.io"
+    EXPLORER_URL: "https://explorer-aehc-demo.dev.aepps.com"
+    NODE_URL: "https://demo.hyperchains.aeternity.io"
+    TOPUP_AMOUNT: 100
