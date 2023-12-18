@@ -13,12 +13,6 @@ app:
         paths:
           - path: "/"
             version: "master"
-      - host: "pr-15-hyperchain.dev.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-15"
   versions:
     - version: "master"
       gitSha: "a69f50f"
-    - version: "pr-15"
-      gitSha: "87773b1"
