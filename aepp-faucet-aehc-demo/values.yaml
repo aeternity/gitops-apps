@@ -10,6 +10,10 @@ app:
     limits:
       cpu: 25m
       memory: 72Mi
+  secrets:
+    external:
+      values:
+        FAUCET_ACCOUNT_PRIV_KEY_AEHC_DEMO: /apps/FAUCET_ACCOUNT_PRIV_KEY_AEHC_DEMO
   service:
     port: 5000
   ingress:

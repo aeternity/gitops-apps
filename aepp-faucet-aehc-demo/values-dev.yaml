@@ -11,7 +11,3 @@ app:
     "EPOCH_URL_DEBUG": "https://demo.hyperchains.aeternity.io"
     "EXPLORER_URL": "https://explorer-aehc-demo.dev.aepps.com"
     "NODE_URL": "https://demo.hyperchains.aeternity.io"
-  secrets:
-    external:
-      values:
-        FAUCET_ACCOUNT_PRIV_KEY: /apps/FAUCET_ACCOUNT_PRIV_KEY_AEHC_DEMO
