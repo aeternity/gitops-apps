@@ -1,0 +1,19 @@
+app:
+  image:
+    repository: aeternity/mdw-frontend
+    pullPolicy: "Always"
+    tag: "latest"
+  resources:
+    requests:
+      cpu: 70m
+      memory: 120Mi
+    limits:
+      cpu: 100m
+      memory: 180Mi
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+  service:
+    port: 3000
