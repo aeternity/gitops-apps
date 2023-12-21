@@ -1,7 +1,7 @@
 app:
   ingress:
     hosts:
-      - host: "explorer-aehc-demo-parent.prd.aepps.com"
+      - host: "parent-explorer.demo.hyperchains.aepps.com"
         paths:
           - path: /
   env:
@@ -9,4 +9,4 @@ app:
     "NUXT_APP_NODE_URL": "https://demo-parent.hyperchains.aeternity.io/v3"
     "NUXT_APP_MDW_URL": "https://demo-parent.hyperchains.aeternity.io:8443"
     "NUXT_APP_NODE_WS": "wss://demo-parent.hyperchains.aeternity.io:8443/websocket"
-    "NUXT_APP_OTHER_DEPLOYMENTS": "HYPERCHAIN@https://explorer-aehc-demo.prd.aepps.com"
+    "NUXT_APP_OTHER_DEPLOYMENTS": "HYPERCHAIN@https://explorer.demo.hyperchains.aepps.com"
