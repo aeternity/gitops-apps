@@ -4,9 +4,14 @@ app:
     tag: master
   ingress:
     hosts:
-      - host: "hyperchain-aehc-demo.prd.aepps.com"
+      - host: "demo.hyperchains.aepps.com"
         paths:
           - path: "/"
+    tls:
+      - hosts:
+        - "demo.hyperchains.aepps.com"
+        - "*.demo.hyperchains.aepps.com"
+        secretName: aehc-demo-cert
   env:
     AE_FAUCET_URL: "https://faucet-aehc-demo.prd.aepps.com"
     AE_WALLET_URL: "https://base-aehc-demo.prd.aepps.com"
