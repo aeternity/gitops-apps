@@ -4,7 +4,7 @@ app:
       remotePrefix: /k8s/prd-0e9c
   ingress:
     hosts:
-      - host: "faucet-aehc-demo.prd.aepps.com"
+      - host: "demo-faucet.hyperchains.aepps.com"
         paths:
           - path: "/"
   env:
