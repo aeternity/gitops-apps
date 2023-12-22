@@ -3,9 +3,9 @@ app:
     tag: develop
   resources:
     requests:
-      memory: 24Mi
-    limits:
       memory: 32Mi
+    limits:
+      memory: 48Mi
   ingress:
     enabled: true
   secrets:
