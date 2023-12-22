@@ -1,6 +1,11 @@
 app:
   image:
     tag: develop
+  resources:
+    requests:
+      memory: 24Mi
+    limits:
+      memory: 32Mi
   ingress:
     enabled: true
   secrets:
