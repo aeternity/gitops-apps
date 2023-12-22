@@ -1,5 +1,5 @@
 apiVersion: v2
-name: aepp-base
+name: aepp-base-backend
 description: A Helm chart for Kubernetes
 
 version: 0.2.0
