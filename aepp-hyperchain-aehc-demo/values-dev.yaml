@@ -2,14 +2,14 @@ app:
   image:
     repository: "aeternity/aepp-hyperchain"
     tag: master
+  ingress:
+    hosts:
+      - host: "hyperchain-aehc-demo.dev.aepps.com"
+        paths:
+          - path: "/"
   env:
     AE_FAUCET_URL: "https://faucet-aehc-demo.dev.aepps.com"
     AE_WALLET_URL: "https://base-aehc-demo.dev.aepps.com"
     AE_NODE_URL: "https://demo.hyperchains.aeternity.io"
     STAKING_CONTRACT: "ct_LRbi65kmLtE7YMkG6mvG5TxAXTsPJDZjAtsPuaXtRyPA7gnfJ"
     HC_ELECTION_CONTRACT: "ct_t7ESuRFvGdYHwM6KJhKbSnFUJQhnB9aCFed1RWR89ShNDgwWA"
-  ingress:
-    hosts:
-      - host: "hyperchain-aehc-demo.dev.aepps.com"
-        paths:
-          - path: "/"
