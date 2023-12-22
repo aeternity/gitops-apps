@@ -3,3 +3,7 @@ app:
     tag: latest
   ingress:
     enabled: true
+  secrets:
+    external:
+      values:
+        VAPID_PRIVATE_KEY: /apps/BASE_VAPID_PRIVATE_KEY
