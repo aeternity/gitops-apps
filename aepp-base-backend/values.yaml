@@ -3,8 +3,10 @@ app:
     tag: develop
   resources:
     requests:
+      cpu: 50m
       memory: 32Mi
     limits:
+      cpu: 75m
       memory: 48Mi
   ingress:
     enabled: true
