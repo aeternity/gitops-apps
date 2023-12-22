@@ -1,0 +1,19 @@
+app:
+  image:
+    tag: develop
+  resources:
+    requests:
+      memory: 32Mi
+    limits:
+      memory: 48Mi
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
+  ingress:
+    enabled: true
+  secrets:
+    external:
+      values:
+        VAPID_PRIVATE_KEY: /apps/BASE_VAPID_PRIVATE_KEY

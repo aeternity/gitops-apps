@@ -1,0 +1,12 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/prd-0e9c
+  ingress:
+    hosts:
+      - host: "base-backend.prd.aepps.com"
+        paths:
+          - path: "/"
+  env:
+    VAPID_SUBJECT: 'mailto: <info@aeternity.com>'
+    VAPID_PUBLIC_KEY: 'BKdMuWCMzVPLTY-ClCNBanQ5Thgji_VMOQKsmTGlTs5DqVyXU4aFv2eHUs2YwK3XY-RS9HdjkIRJK3E20n251Rw'
