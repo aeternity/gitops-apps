@@ -1,13 +1,11 @@
 app:
   image:
     tag: develop
-  resources:
-    requests:
-      cpu: 50m
-      memory: 32Mi
-    limits:
-      cpu: 75m
-      memory: 48Mi
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
   ingress:
     enabled: true
   secrets:
