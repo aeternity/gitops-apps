@@ -1,8 +1,6 @@
 app:
   image:
     tag: develop
-  service:
-    port: 8079
   ingress:
     enabled: true
   secrets:
