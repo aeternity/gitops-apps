@@ -1,11 +1,6 @@
 app:
   image:
-    tag: latest
-  resources:
-    requests:
-      memory: 24Mi
-    limits:
-      memory: 32Mi
+    tag: develop
   service:
     port: 8079
   ingress:
