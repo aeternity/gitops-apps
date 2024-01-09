@@ -8,6 +8,12 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "pr-64-repl.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-64"
   versions:
     - version: "master"
       gitSha: "fdc9700"
+    - version: "pr-64"
+      gitSha: "4082d9b"
