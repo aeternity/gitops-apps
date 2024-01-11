@@ -13,8 +13,14 @@ app:
         paths:
           - path: "/"
             version: "develop"
+      - host: "pr-1526-base.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1526"
   versions:
     - version: "pr-1512"
       gitSha: "047825cc"
     - version: "develop"
       gitSha: "1392b3c"
+    - version: "pr-1526"
+      gitSha: "898c91a"
