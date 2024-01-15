@@ -13,10 +13,6 @@ app:
         paths:
           - path: "/"
             version: "develop"
-      - host: "pr-1530-base.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1530"
       - host: "pr-1531-base.stg.aepps.com"
         paths:
           - path: "/"
@@ -26,7 +22,5 @@ app:
       gitSha: "047825cc"
     - version: "develop"
       gitSha: "4401feb"
-    - version: "pr-1530"
-      gitSha: "d7faad6"
     - version: "pr-1531"
       gitSha: "d836c33"
