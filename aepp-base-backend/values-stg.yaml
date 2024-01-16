@@ -1,4 +1,9 @@
 app:
+  resources:
+    requests:
+      memory: 48Mi
+    limits:
+      memory: 72Mi
   secrets:
     external:
       remotePrefix: /k8s/stg-m4n4
