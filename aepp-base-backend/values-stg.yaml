@@ -1,6 +1,4 @@
 app:
-  image:
-    repository: "aeternitybot/aepp-base"
   secrets:
     external:
       remotePrefix: /k8s/stg-m4n4

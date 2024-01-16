@@ -1,4 +1,6 @@
 app:
+  image:
+    repository: "aeternitybot/aepp-base"
   ingress:
     hosts:
       - host: "pr-1512-aepp-base.stg.aepps.com"
