@@ -3,10 +3,6 @@ app:
     repository: "aeternitybot/aepp-base"
   ingress:
     hosts:
-      - host: "pr-1515-aepp-base.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1515"
       - host: "base.stg.aepps.com"
         paths:
           - path: "/"
@@ -16,8 +12,6 @@ app:
           - path: "/"
             version: "pr-1532"
   versions:
-    - version: "pr-1512"
-      gitSha: "047825cc"
     - version: "develop"
       gitSha: "4d3284b"
     - version: "pr-1532"
