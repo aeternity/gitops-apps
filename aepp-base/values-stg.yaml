@@ -7,12 +7,6 @@ app:
         paths:
           - path: "/"
             version: "develop"
-      - host: "pr-1532-base.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1532"
   versions:
     - version: "develop"
       gitSha: "4d3284b"
-    - version: "pr-1532"
-      gitSha: "263fcaa"
