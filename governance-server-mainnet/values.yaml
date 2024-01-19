@@ -5,17 +5,24 @@ app:
     pullPolicy: "Always"
 
   resources:
-    limits:
-      memory: 128Mi
     requests:
-      cpu: 100m
-      memory: 128Mi
+      cpu: 50m
+      memory: 170Mi
+    limits:
+      cpu: 75m
+      memory: 250Mi
 
   probes:
     liveness:
-      enabled: false
+      enabled: true
+      config:
+        httpGet:
+          path: /version
     readiness:
-      enabled: false
+      enabled: true
+      config:
+        httpGet:
+          path: /version
 
   service:
     port: 3000
@@ -33,5 +40,31 @@ app:
     "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
     "NODE_URL": "https://mainnet.aeternity.io/"
     "PORT": "3000"
-    "REDIS_URL": "redis://redis-master.redis.svc.cluster.local:6379"
+    "REDIS_URL": "redis://governance-server-mainnet-redis-master:6379"
     "WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
+
+redis:
+  architecture: standalone
+  persistence:
+    enabled: false
+  auth:
+    enabled: false
+  master:
+    resources:
+      requests:
+        cpu: 30m
+        memory: 24Mi
+      limits:
+        cpu: 45m
+        memory: 36Mi
+    persistence:
+      enabled: false
+  replica:
+    replicaCount: 0
+    resources:
+      requests:
+        cpu: 30m
+        memory: 24Mi
+      limits:
+        cpu: 45m
+        memory: 36Mi

@@ -1,13 +1,10 @@
 apiVersion: v2
-name: governance-server-mainnet
+name: aepp-faucet-aehc-demo
 description: A Helm chart for Kubernetes
 
 version: 0.2.1
 
-dependencies:
+dependencies: # A list of the chart requirements (optional)
   - name: app
     version: 0.4.0
     repository: "file://../app"
-  - name: redis
-    version: 17.3.4
-    repository: https://charts.bitnami.com/bitnami

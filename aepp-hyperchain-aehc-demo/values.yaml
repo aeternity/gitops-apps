@@ -1,19 +1,26 @@
 app:
   image:
-    repository: aeternity/aerepl-web
-    tag: "latest"
     pullPolicy: "Always"
   resources:
     requests:
-      cpu: 50m
-      memory: 128Mi
+      cpu: 30m
+      memory: 48Mi
     limits:
-      cpu: 75m
-      memory: 192Mi
-  service:
-    port: 4000
+      cpu: 45m
+      memory: 72Mi
+  env:
+    PORT: "80"
   ingress:
     enabled: true
     annotations:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
+  probes:
+    liveness:
+      config:
+        httpGet:
+          path: /alive
+    readiness:
+      config:
+        httpGet:
+          path: /alive

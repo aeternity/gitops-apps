@@ -18,9 +18,8 @@ app:
   service:
     port: 3000
   env:
-    "NUXT_APP_NODE_URL": "https://mainnet.aeternity.io/v3"
-    "NUXT_APP_NODE_WS": "wss://mainnet.aeternity.io/mdw/websocket"
-    "NUXT_APP_MDW_URL": "https://mainnet.aeternity.io/mdw"
-    "NUXT_APP_OTHER_DEPLOYMENTS": "TESTNET@https://explorer.testnet.aeternity.io"
-    "NUXT_APP_NETWORK_NAME": "MAINNET"
-    "NUXT_APP_ENABLE_FAUCET": "false"
+    "NUXT_APP_NETWORK_NAME": "PARENTCHAIN"
+    "NUXT_APP_NODE_URL": "https://demo-parent.hyperchains.aeternity.io/v3"
+    "NUXT_APP_MDW_URL": "https://demo-parent.hyperchains.aeternity.io:8443"
+    "NUXT_APP_NODE_WS": "wss://demo-parent.hyperchains.aeternity.io:8443/websocket"
+    "NUXT_APP_OTHER_DEPLOYMENTS": "HYPERCHAIN@https://explorer-aehc-demo.dev.aepps.com"

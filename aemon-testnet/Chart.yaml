@@ -2,7 +2,7 @@ apiVersion: v2
 name: aemon-testnet
 description: A Helm chart for Kubernetes to deploy aemon-testnet
 
-version: 0.0.1
+version: 0.0.2
 
 dependencies:
   - name: app
