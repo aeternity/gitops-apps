@@ -10,10 +10,6 @@ app:
       - host: "graffiti-server.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-219-graffiti-server.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-219"
       - host: "pr-220-graffiti-server.stg.aepps.com"
         paths:
           - path: "/"
@@ -27,7 +23,5 @@ app:
     "CONTRACT_ADDRESS": "ct_N4ijuS5Nwg1txyqqkgUBruJgCXrT8G7ZRKWi9N5KjGUhTS3cE"
     "COMPILER_URL": "https://compiler.stg.aepps.com"
   versions:
-    - version: "pr-219"
-      gitSha: "98f3166"
     - version: "pr-220"
       gitSha: "3e7ddef"
