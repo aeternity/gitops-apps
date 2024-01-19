@@ -1,6 +1,6 @@
 app:
   image:
-    tag: "develop"
+    tag: ""
     repository: "aeternitybot/aepp-base"
   ingress:
     hosts:
