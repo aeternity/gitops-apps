@@ -1,6 +1,0 @@
-app:
-  ingress:
-    hosts:
-      - host: "superhero.stg.aepps.com"
-        paths:
-          - path: "/"
