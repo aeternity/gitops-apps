@@ -8,18 +8,18 @@ app:
         paths:
           - path: "/"
             version: "develop"
-      - host: "pr-1533-base.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1533"
       - host: "pr-1534-base.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-1534"
+      - host: "pr-1533-base.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1533"
   versions:
     - version: "develop"
       gitSha: "115f4fd"
-    - version: "pr-1533"
-      gitSha: "c56325d"
     - version: "pr-1534"
       gitSha: "4f6c5f3"
+    - version: "pr-1533"
+      gitSha: "02972d3"
