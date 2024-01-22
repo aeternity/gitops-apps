@@ -17,8 +17,10 @@ app:
       gitSha: "fdc9700"
     - version: "pr-64"
       gitSha: "4082d9b"
-  probes:
-    liveness:
-      enabled: false
-    readiness:
-      enabled: false
+  resources:
+    requests:
+      cpu: 50m
+      memory: 384Mi
+    limits:
+      cpu: 75m
+      memory: 512Mi
