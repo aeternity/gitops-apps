@@ -4,16 +4,16 @@ app:
     repository: "aeternitybot/aepp-base"
   ingress:
     hosts:
-      - host: "base.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "develop"
       - host: "pr-1534-base.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-1534"
+      - host: "base.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "develop"
   versions:
-    - version: "develop"
-      gitSha: "115f4fd"
     - version: "pr-1534"
       gitSha: "8c5e19b"
+    - version: "develop"
+      gitSha: "f486525"
