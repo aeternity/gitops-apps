@@ -1,7 +1,8 @@
 app:
   image:
-    tag: "master"
     pullPolicy: "Always"
+    repository: aeternitybot/aepp-base
+    tag: "develop"
   ingress:
     enabled: true
     annotations:
