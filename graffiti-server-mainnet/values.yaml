@@ -11,11 +11,12 @@ app:
   service:
     port: 3000
   resources:
-    limits:
-      memory: "6Gi"
     requests:
-      cpu: "1"
+      cpu: 800m
       memory: "4Gi"
+    limits:
+      cpu: "1"
+      memory: "6Gi"
   probes:
     liveness:
       enabled: false
