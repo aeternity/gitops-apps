@@ -44,12 +44,8 @@ function ignore_path {
     destination=${2:-}
     path=${3:-}
 
-    if [[ -f $path ]]; then
-        rm -f "${path}" > /dev/null
-        git add "${path}"
-
-        git checkout "${destination}" "${path}" > /dev/null 2>&1 || true
-    fi
+    git checkout "${destination}" "${path}" > /dev/null 2>&1 || true
+    git add "${path}" > /dev/null 2>&1 || true
 }
 
 function app {
