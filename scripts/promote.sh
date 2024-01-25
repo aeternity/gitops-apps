@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-ALWAYS_EXCLUDE=('README.md' 'scaffold' 'test-repo' 'test-repo-testnet' 'test-repo-mainnet' 'aepp-base-hc' 'aepp-hc-ui')
+ALWAYS_EXCLUDE=('README.md' 'scaffold' 'test-repo' 'test-repo-testnet' 'test-repo-mainnet' 'aepp-base-hc' 'aepp-hc-ui' 'ga-multisig-backend-mainnet' 'ga-multisig-backend-testnet' 'ga-multisig-ui' 'dex-ui' 'dex-backend-mainnet' 'dex-backend-testnet')
 ENV_EXCLUDE=('values-dev.yaml' 'values-stg.yaml' 'values-prd.yaml')
 function usage {
     echo "Usage:"
