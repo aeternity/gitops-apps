@@ -18,3 +18,11 @@ app:
     annotations:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
+
+  resources:
+    requests:
+      cpu: 20m
+      memory: 10Mi
+    limits:
+      cpu: 25m
+      memory: 14Mi
