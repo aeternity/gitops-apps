@@ -8,7 +8,6 @@ app:
       - host: "graffiti.aeternity.com"
         paths:
           - path: "/"
-            version: "latest"
     tls:
       - hosts:
           - "graffiti.aeternity.com"
