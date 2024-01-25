@@ -3,6 +3,8 @@ app:
     repository: "aeternity/aepp-hyperchain"
     tag: master
   ingress:
+    labels:
+      solver: route53
     hosts:
       - host: "demo.hyperchains.aepps.com"
         paths:
