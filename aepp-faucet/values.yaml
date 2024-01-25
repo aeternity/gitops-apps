@@ -2,11 +2,14 @@ app:
   image:
     tag: latest
     pullPolicy: "Always"
+    repository: aeternity/aepp-faucet-nodejs
   resources:
-    limits:
-      memory: 64Mi
     requests:
-      memory: 64Mi
+      cpu: 20m
+      memory: 48Mi
+    limits:
+      cpu: 25m
+      memory: 72Mi
   env:
     "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
     "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
