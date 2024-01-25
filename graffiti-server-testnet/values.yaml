@@ -36,6 +36,7 @@ app:
   persistence:
     enabled: true
     accessMode: ReadWriteOnce
+    storageClass: gp3
     size: 1Gi
     mountPath: /app/data/backup
 
