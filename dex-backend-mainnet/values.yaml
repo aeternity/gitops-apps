@@ -13,12 +13,6 @@ app:
       enabled: false
     readiness:
       enabled: false
-  resources:
-    limits:
-      memory: "6Gi"
-    requests:
-      cpu: "1"
-      memory: "5Gi"
   service:
     port: 3000
   ingress:

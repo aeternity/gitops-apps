@@ -2,6 +2,13 @@ app:
   secrets:
     external:
       remotePrefix: /k8s/prd-0e9c
+  resources:
+    requests:
+      cpu: 800m
+      memory: "5Gi"
+    limits:
+      cpu: "1"
+      memory: "6Gi"
   ingress:
     hosts:
       - host: "dex-backend-testnet.prd.aepps.com"
@@ -11,12 +18,6 @@ app:
       - hosts:
           - "dex-backend-testnet.prd.aepps.com"
         secretName: dex-backend-testnet-cert
-  resources:
-    limits:
-      memory: "6Gi"
-    requests:
-      cpu: "1"
-      memory: "5Gi"
   env:
     "POSTGRES_HOST": "dexprd.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
   image:
