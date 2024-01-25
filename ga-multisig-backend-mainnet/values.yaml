@@ -4,10 +4,11 @@ app:
     tag: v1.0.1
     pullPolicy: "Always"
   resources:
-    limits:
-      memory: 150Mi
     requests:
       cpu: 300m
+      memory: 100Mi
+    limits:
+      cpu: 450m
       memory: 150Mi
   probes:
     liveness:
