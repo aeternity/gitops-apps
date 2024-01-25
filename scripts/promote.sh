@@ -44,8 +44,12 @@ function ignore_path {
     destination=${2:-}
     path=${3:-}
 
-    git checkout "${destination}" "${path}" > /dev/null 2>&1 || true
-    git add "${path}" > /dev/null 2>&1 || true
+    if [[ -f $path ]]; then
+        rm -f "${path}" > /dev/null
+        git add "${path}"
+
+        git checkout "${destination}" "${path}" > /dev/null 2>&1 || true
+    fi
 }
 
 function app {
@@ -62,6 +66,8 @@ function app {
     for e in ${ENV_EXCLUDE[@]}; do
         ignore_path $source $destination $chart/$e
     done
+
+    git checkout $destination $chart/values-$destination.yaml
 
     echo "---------------------------------------------------------------"
     echo "Review your promote with:"
