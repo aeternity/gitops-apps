@@ -8,11 +8,12 @@ app:
     repository: aeternity/aesophia_http
     pullPolicy: "Always"
   resources:
-    limits:
-      memory: 256Mi
     requests:
       cpu: 200m
-      memory: 256Mi
+      memory: 120Mi
+    limits:
+      cpu: 300m
+      memory: 180Mi
   service:
     type: ClusterIP
     port: 3080
@@ -34,6 +35,8 @@ app:
         timeoutSeconds: 5
   ingress:
     enabled: true
+    labels:
+      solver: route53
     annotations:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
