@@ -5,8 +5,4 @@ app:
         paths:
           - path: /
   env:
-    "NUXT_APP_NETWORK_NAME": "PARENTCHAIN"
-    "NUXT_APP_NODE_URL": "https://demo-parent.hyperchains.aeternity.io/v3"
-    "NUXT_APP_MDW_URL": "https://demo-parent.hyperchains.aeternity.io:8443"
-    "NUXT_APP_NODE_WS": "wss://demo-parent.hyperchains.aeternity.io:8443/websocket"
     "NUXT_APP_OTHER_DEPLOYMENTS": "HYPERCHAIN@https://explorer.demo.hyperchains.aepps.com"
