@@ -1,0 +1,6 @@
+app:
+  ingress:
+    hosts:
+      - host: "mdw-explorer-testnet.stg.aepps.com"
+        paths:
+          - path: /
