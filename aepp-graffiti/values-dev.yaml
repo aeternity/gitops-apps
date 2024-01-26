@@ -1,6 +1,6 @@
 app:
   ingress:
     hosts:
-      - host: "aepp-grafitti.dev.aepps.com"
+      - host: "aepp-graffiti.dev.aepps.com"
         paths:
           - path: "/"
