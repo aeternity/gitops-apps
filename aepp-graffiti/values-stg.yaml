@@ -7,10 +7,13 @@ app:
       - host: "graffiti.stg.aepps.com"
         paths:
           - path: "/"
+            version: "master"
       - host: "pr-220-graffiti.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-220"
   versions:
+    - version: "master"
+      gitSha: "2c8513f"
     - version: "pr-220"
       gitSha: "3e7ddef"
