@@ -4,3 +4,5 @@ app:
       - host: "explorer-aehc-demo.dev.aepps.com"
         paths:
           - path: /
+  env:
+    "NUXT_APP_OTHER_DEPLOYMENTS": "PARENTCHAIN@https://explorer-aehc-demo-parent.dev.aepps.com"
