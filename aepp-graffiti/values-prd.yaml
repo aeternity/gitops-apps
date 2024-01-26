@@ -4,7 +4,6 @@ app:
       - host: "aepp-grafitti.prd.aepps.com"
         paths:
           - path: "/"
-            version: "latest"
       - host: "graffiti.aeternity.com"
         paths:
           - path: "/"
@@ -13,5 +12,3 @@ app:
           - "graffiti.aeternity.com"
           - "aepp-grafitti.prd.aepps.com"
         secretName: aepp-grafitti-cert
-  versions:
-    - {version: "latest", gitSha: "84f1281"}
