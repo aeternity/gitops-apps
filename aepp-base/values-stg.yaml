@@ -12,14 +12,8 @@ app:
         paths:
           - path: "/"
             version: "develop"
-      - host: "pr-1539-base.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1539"
   versions:
     - version: "pr-1534"
       gitSha: "8c5e19b"
     - version: "develop"
       gitSha: "f106116"
-    - version: "pr-1539"
-      gitSha: "3882b1b"
