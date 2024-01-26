@@ -1,0 +1,8 @@
+app:
+  ingress:
+    hosts:
+      - host: "explorer-aehc-demo-parent.stg.aepps.com"
+        paths:
+          - path: /
+  env:
+    "NUXT_APP_OTHER_DEPLOYMENTS": "HYPERCHAIN@https://explorer-aehc-demo.stg.aepps.com"
