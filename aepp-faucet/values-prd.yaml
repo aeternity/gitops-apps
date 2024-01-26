@@ -3,6 +3,8 @@ app:
     external:
       remotePrefix: /k8s/prd-0e9c
   ingress:
+    labels:
+      solver: route53
     hosts:
       - host: "faucet.prd.aepps.com"
         paths:
