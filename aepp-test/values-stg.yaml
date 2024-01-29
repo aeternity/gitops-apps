@@ -1,0 +1,18 @@
+app:
+  ingress:
+    hosts:
+      - host: "test.stg.aepps.com"
+        paths:
+          - path: "/"
+      - host: "test.aepps.com"
+        paths:
+          - path: "/"
+      - host: "test.aeternity.io"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "test.aepps.com"
+        - "test.aeternity.io"
+        - "test.stg.aepps.com"
+        secretName: aepp-test-cert
