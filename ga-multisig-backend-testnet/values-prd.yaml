@@ -16,4 +16,4 @@ app:
   versions:
     - {version: "main", gitSha: "53ce506"}
   image:
-    tag: v1.1.0
+    tag: v1.1.2
