@@ -52,10 +52,10 @@ redis:
   master:
     resources:
       requests:
-        cpu: 30m
+        cpu: 50m
         memory: 24Mi
       limits:
-        cpu: 45m
+        cpu: 75m
         memory: 36Mi
     persistence:
       enabled: false
@@ -63,8 +63,8 @@ redis:
     replicaCount: 0
     resources:
       requests:
-        cpu: 30m
+        cpu: 50m
         memory: 24Mi
       limits:
-        cpu: 45m
+        cpu: 75m
         memory: 36Mi
