@@ -1,4 +1,7 @@
 app:
   ingress:
-    hosts: []
+    hosts:
+      - host: "test.dev.aepps.com"
+        paths:
+          - path: "/"
   versions: []
