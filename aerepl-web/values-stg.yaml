@@ -12,15 +12,21 @@ app:
         paths:
           - path: "/"
             version: "pr-64"
+      - host: "pr-67-repl.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-67"
   versions:
     - version: "master"
       gitSha: "fdc9700"
     - version: "pr-64"
       gitSha: "4082d9b"
+    - version: "pr-67"
+      gitSha: "72568a8"
   resources:
     requests:
-      cpu: 100m
-      memory: 384Mi
+      cpu: "100m"
+      memory: "384Mi"
     limits:
-      cpu: 150m
-      memory: 512Mi
+      cpu: "150m"
+      memory: "512Mi"
