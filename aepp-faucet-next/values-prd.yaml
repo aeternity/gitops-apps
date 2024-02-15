@@ -1,0 +1,14 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/prd-0e9c
+  ingress:
+    hosts:
+      - host: "faucet-next.prd.aepps.com"
+        paths:
+          - path: "/"
+  env:
+    EPOCH_URL_DEBUG: "https://next.aeternity.io"
+    EXPLORER_URL: "https://explorer-next.prd.aepps.com"
+    NODE_URL: "https://next.aeternity.io"
+    TOPUP_AMOUNT: 10
