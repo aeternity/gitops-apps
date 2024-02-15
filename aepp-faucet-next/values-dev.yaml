@@ -1,0 +1,14 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/dev-wgt7
+  ingress:
+    hosts:
+      - host: "faucet-next.dev.aepps.com"
+        paths:
+          - path: "/"
+  env:
+    EPOCH_URL_DEBUG: "https://next.aeternity.io"
+    EXPLORER_URL: "https://explorer-next.dev.aepps.com"
+    NODE_URL: "https://next.aeternity.io"
+    TOPUP_AMOUNT: 10
