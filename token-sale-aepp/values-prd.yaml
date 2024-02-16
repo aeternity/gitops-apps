@@ -1,0 +1,8 @@
+app:
+  ingress:
+    hosts:
+      - host: "token-sale.prd.aepps.com"
+        paths:
+          - path: "/"
+  image:
+    tag: v2.2.1
