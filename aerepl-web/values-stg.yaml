@@ -22,7 +22,7 @@ app:
     - version: "pr-64"
       gitSha: "4082d9b"
     - version: "pr-67"
-      gitSha: "72568a8"
+      gitSha: "05df15a"
   resources:
     requests:
       cpu: "100m"
