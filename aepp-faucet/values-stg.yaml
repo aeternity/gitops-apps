@@ -11,12 +11,6 @@ app:
         paths:
           - path: "/"
             version: "master"
-      - host: "pr-24-faucet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-24"
   versions:
     - version: "master"
       gitSha: "22512e8"
-    - version: "pr-24"
-      gitSha: "9c45c66"
