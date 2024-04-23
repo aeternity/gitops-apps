@@ -21,6 +21,10 @@ app:
         paths:
           - path: /
             version: "v7.6.0"
+      - host: "v8.compiler.stg.aepps.com"
+        paths:
+          - path: /
+            version: "v8.0.0"
     tls:
       - hosts:
         - "compiler.stg.aepps.com"
