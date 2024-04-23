@@ -30,6 +30,10 @@ app:
         paths:
           - path: /
             version: "v7.6.0"
+      - host: "v8.compiler.aepps.com"
+        paths:
+          - path: /
+            version: "v8.0.0"
 
       - host: "latest.compiler.aepps.com"
         paths:
@@ -56,6 +60,10 @@ app:
         paths:
           - path: /
             version: "v7.6.0"
+      - host: "v8.compiler.aeternity.io"
+        paths:
+          - path: /
+            version: "v8.0.0"
     tls:
       - hosts:
         - "compiler.aepps.com"
