@@ -1,6 +1,6 @@
 app:
   image:
-    tag: v1.0.0
+    tag: v1.1.0
     repository: aeternity/aepp-faucet-nodejs
   secrets:
     external:
@@ -18,7 +18,7 @@ app:
           - path: "/"
     tls:
       - hosts:
-        - "faucet.aepps.com"
-        - "faucet.aeternity.io"
-        - "faucet.prd.aepps.com"
+          - "faucet.aepps.com"
+          - "faucet.aeternity.io"
+          - "faucet.prd.aepps.com"
         secretName: aepp-faucet-cert
