@@ -16,10 +16,6 @@ app:
         paths:
           - path: "/"
             version: "pr-67"
-      - host: "pr-69-repl.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-69"
   versions:
     - version: "master"
       gitSha: "fdc9700"
@@ -27,8 +23,6 @@ app:
       gitSha: "4082d9b"
     - version: "pr-67"
       gitSha: "05df15a"
-    - version: "pr-69"
-      gitSha: "2af0121"
   resources:
     requests:
       cpu: "100m"
