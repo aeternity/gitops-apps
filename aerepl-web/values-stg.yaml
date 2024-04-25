@@ -8,21 +8,21 @@ app:
         paths:
           - path: "/"
             version: "pr-67"
-      - host: "repl.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "master"
       - host: "pr-69-repl.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-69"
+      - host: "repl.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
   versions:
     - version: "pr-67"
       gitSha: "05df15a"
-    - version: "master"
-      gitSha: "3c52a5d"
     - version: "pr-69"
       gitSha: "3c52a5d"
+    - version: "master"
+      gitSha: "224f48b"
   resources:
     requests:
       cpu: "100m"
