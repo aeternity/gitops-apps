@@ -14,6 +14,6 @@ app:
   env:
     "PG_HOST": "superheroprd.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
   versions:
-    - {version: "main", gitSha: "5adc2ce"}
+    - {version: "main", gitSha: "0669ea3"}
   image:
     tag: v1.1.2
