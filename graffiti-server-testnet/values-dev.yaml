@@ -5,7 +5,7 @@ app:
 
   ingress:
     hosts:
-      - host: "graffiti-server.dev.aepps.com"
+      - host: "graffiti-server-testnet.dev.aepps.com"
         paths:
           - path: "/"
 
