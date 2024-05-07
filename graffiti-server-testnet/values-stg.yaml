@@ -7,10 +7,6 @@ app:
       remotePrefix: "/k8s/stg-m4n4"
   ingress:
     hosts:
-      - host: "pr-220-graffiti-server.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-220"
       - host: "graffiti-server-testnet.stg.aepps.com"
         paths:
           - path: "/"
@@ -28,8 +24,6 @@ app:
     "CONTRACT_ADDRESS": "ct_N4ijuS5Nwg1txyqqkgUBruJgCXrT8G7ZRKWi9N5KjGUhTS3cE"
     "COMPILER_URL": "https://compiler.stg.aepps.com"
   versions:
-    - version: "pr-220"
-      gitSha: "c22e3e1"
     - version: "master"
       gitSha: "ac77a73"
     - version: "pr-229"
