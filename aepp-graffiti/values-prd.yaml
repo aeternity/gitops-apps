@@ -7,8 +7,15 @@ app:
       - host: "graffiti.aeternity.com"
         paths:
           - path: "/"
+      - host: "graffiti.prd.aepps.com"
+        paths:
+          - path: "/"
+            version: "aepp-graffiti-v1.0.0"
     tls:
       - hosts:
           - "graffiti.aeternity.com"
           - "aepp-grafitti.prd.aepps.com"
-        secretName: aepp-grafitti-cert
+        secretName: "aepp-grafitti-cert"
+  versions:
+    - version: "aepp-graffiti-v1.0.0"
+      gitSha: "ac77a73"
