@@ -11,7 +11,7 @@ app:
       cpu: 100m
       memory: 80Mi
     limits:
-      cpu: 1500m
+      cpu: 1000m
       memory: 512Mi
 
   serviceAccount:
