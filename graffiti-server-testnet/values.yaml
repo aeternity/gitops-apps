@@ -22,6 +22,8 @@ app:
 
   serviceAccount:
     create: true
+    annotations:
+      eks.amazonaws.com/role-arn: arn:aws:iam::106102538874:role/graffiti-server
 
   service:
     port: 3000
