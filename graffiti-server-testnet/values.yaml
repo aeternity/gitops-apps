@@ -20,6 +20,9 @@ app:
         S3_KEY: /apps/GRAFFITI_S3_KEY
         S3_SECRET: /apps/GRAFFITI_S3_SECRET
 
+  serviceAccount:
+    create: true
+
   service:
     port: 3000
 
