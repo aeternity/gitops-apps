@@ -9,7 +9,7 @@ app:
   resources:
     requests:
       cpu: 100m
-      memory: 270Mi
+      memory: 120Mi
     limits:
       cpu: 150m
       memory: 180Mi
