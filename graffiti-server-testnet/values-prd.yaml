@@ -7,7 +7,7 @@ app:
       - host: "graffiti-server-testnet.prd.aepps.com"
         paths:
           - path: "/"
-            version: "graffiti-server-v1.0.2"
+            version: "graffiti-server-v1.0.3"
   env:
     "NODE_URL": "https://testnet.aeternity.io"
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
@@ -16,3 +16,5 @@ app:
   versions:
     - version: "graffiti-server-v1.0.2"
       gitSha: "b369a18"
+    - version: "graffiti-server-v1.0.3"
+      gitSha: "0817aa5"
