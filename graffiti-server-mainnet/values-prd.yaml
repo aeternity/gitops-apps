@@ -1,7 +1,10 @@
 app:
   secrets:
     external:
-      remotePrefix: "/k8s/prd-0e9c"
+      remotePrefix: /k8s/prd-0e9c
+  serviceAccount:
+    annotations:
+      eks.amazonaws.com/role-arn: "arn:aws:iam::106102538874:role/graffiti-server-prd"
   ingress:
     hosts:
       - host: "graffiti-server-mainnet.prd.aepps.com"
@@ -11,7 +14,7 @@ app:
   env:
     "NODE_URL": "https://mainnet.aeternity.io"
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
-    "S3_BUCKET": "aeternity-superhero-graffiti-prd"
+    "S3_BUCKET": "aeternity-graffiti-server-prd"
     "SYNC_STORAGE": "true"
   versions:
     - version: "graffiti-server-v1.0.3"

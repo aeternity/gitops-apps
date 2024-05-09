@@ -2,7 +2,7 @@ app:
   strategyType: "Recreate"
 
   image:
-    repository: aeternitybot/graffiti-server
+    repository: aeternity/graffiti-server
     tag: "latest"
     pullPolicy: "Always"
 
@@ -14,11 +14,8 @@ app:
       cpu: 150m
       memory: 280Mi
 
-  secrets:
-    external:
-      values:
-        S3_KEY: /apps/GRAFFITI_S3_KEY
-        S3_SECRET: /apps/GRAFFITI_S3_SECRET
+  serviceAccount:
+    create: true
 
   ingress:
     enabled: true
