@@ -16,10 +16,9 @@ app:
           - path: "/"
             version: "pr-229"
   env:
-    "SYNC_STORAGE": "true"
-    "IPFS_URL": "http://ipfs.stg.aepps.com:5001"
+    "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
     "S3_REGION": "eu-central-1"
-    "S3_BUCKET": "aeternity-superhero-graffiti-stg"
+    "S3_BUCKET": "aeternity-graffiti-server-stg"
     "PATH_IDENTIFIER": "/"
     "NODE_URL": "https://testnet.aeternity.io"
     "CONTRACT_ADDRESS": "ct_N4ijuS5Nwg1txyqqkgUBruJgCXrT8G7ZRKWi9N5KjGUhTS3cE"

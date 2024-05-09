@@ -9,16 +9,15 @@ app:
   resources:
     requests:
       cpu: 100m
-      memory: 80Mi
+      memory: 120Mi
     limits:
       cpu: 150m
-      memory: 120Mi
+      memory: 180Mi
 
-  secrets:
-    external:
-      values:
-        S3_KEY: /apps/GRAFFITI_S3_KEY
-        S3_SECRET: /apps/GRAFFITI_S3_SECRET
+  serviceAccount:
+    create: true
+    annotations:
+      eks.amazonaws.com/role-arn: arn:aws:iam::106102538874:role/graffiti-server
 
   service:
     port: 3000
@@ -52,3 +51,4 @@ app:
   env:
     "PATH_IDENTIFIER": "/"
     "COMPILER_URL": "https://compiler.aeternity.io"
+    "SYNC_STORAGE": "true"
