@@ -7,17 +7,17 @@ app:
       remotePrefix: "/k8s/stg-m4n4"
   serviceAccount:
     annotations:
-      eks.amazonaws.com/role-arn: arn:aws:iam::106102538874:role/graffiti-server-stg
+      eks.amazonaws.com/role-arn: "arn:aws:iam::106102538874:role/graffiti-server-stg"
   ingress:
     hosts:
-      - host: "graffiti-server-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "master"
       - host: "pr-229-graffiti-server-testnet.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-229"
+      - host: "graffiti-server-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
   env:
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
     "S3_REGION": "eu-central-1"
@@ -27,7 +27,7 @@ app:
     "CONTRACT_ADDRESS": "ct_N4ijuS5Nwg1txyqqkgUBruJgCXrT8G7ZRKWi9N5KjGUhTS3cE"
     "COMPILER_URL": "https://compiler.stg.aepps.com"
   versions:
-    - version: "master"
-      gitSha: "ac77a73"
     - version: "pr-229"
       gitSha: "5eced92"
+    - version: "master"
+      gitSha: "4b6cc28"
