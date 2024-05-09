@@ -6,6 +6,10 @@ app:
     external:
       remotePrefix: /k8s/dev-wgt7
 
+  serviceAccount:
+    annotations:
+      eks.amazonaws.com/role-arn: arn:aws:iam::106102538874:role/graffiti-server-dev
+
   ingress:
     hosts:
       - host: "graffiti-server-testnet.dev.aepps.com"
