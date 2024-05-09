@@ -14,6 +14,10 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "pr-236-graffiti-server-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-236"
   env:
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
     "S3_REGION": "eu-central-1"
@@ -25,3 +29,5 @@ app:
   versions:
     - version: "master"
       gitSha: "7b45ef6"
+    - version: "pr-236"
+      gitSha: "3b6a0cb"
