@@ -1,10 +1,10 @@
 app:
   image:
-    repository: aeternitybot/aepp-grafitti
+    repository: aeternitybot/aepp-graffiti
     tag: "master"
   ingress:
     hosts:
-      - host: "aepp-grafitti.prd.aepps.com"
+      - host: "aepp-graffiti.prd.aepps.com"
         paths:
           - path: "/"
       - host: "graffiti.aeternity.com"
@@ -16,5 +16,5 @@ app:
     tls:
       - hosts:
           - "graffiti.aeternity.com"
-          - "aepp-grafitti.prd.aepps.com"
+          - "aepp-graffiti.prd.aepps.com"
         secretName: "aepp-grafitti-cert"
