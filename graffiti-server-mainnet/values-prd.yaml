@@ -1,14 +1,18 @@
 app:
   secrets:
     external:
-      remotePrefix: /k8s/prd-0e9c
+      remotePrefix: "/k8s/prd-0e9c"
   ingress:
     hosts:
       - host: "graffiti-server-mainnet.prd.aepps.com"
         paths:
           - path: "/"
+            version: "graffiti-server-v1.0.3"
   env:
     "NODE_URL": "https://mainnet.aeternity.io"
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-prd"
     "SYNC_STORAGE": "true"
+  versions:
+    - version: "graffiti-server-v1.0.3"
+      gitSha: "0817aa5"
