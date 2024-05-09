@@ -16,4 +16,4 @@ app:
     - version: "pr-231"
       gitSha: "8baa76b"
     - version: "master"
-      gitSha: "801f36e"
+      gitSha: "b369a18"
