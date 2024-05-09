@@ -8,6 +8,12 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "pr-231-graffiti.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-231"
   versions:
     - version: "master"
       gitSha: "6e1fe64"
+    - version: "pr-231"
+      gitSha: "8baa76b"
