@@ -5,6 +5,9 @@ app:
   secrets:
     external:
       remotePrefix: "/k8s/stg-m4n4"
+  serviceAccount:
+    annotations:
+      eks.amazonaws.com/role-arn: arn:aws:iam::106102538874:role/graffiti-server-stg
   ingress:
     hosts:
       - host: "graffiti-server-testnet.stg.aepps.com"
