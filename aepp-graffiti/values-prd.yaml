@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternitybot/aepp-graffiti
+    repository: aeternity/aepp-graffiti
     tag: "master"
   ingress:
     hosts:
