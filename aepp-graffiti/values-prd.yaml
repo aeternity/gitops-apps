@@ -25,3 +25,5 @@ app:
       gitSha: "b369a18"
     - version: "aepp-graffiti-v1.0.3"
       gitSha: "0817aa5"
+  image:
+    tag: aepp-graffiti-v1.0.4
