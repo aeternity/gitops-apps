@@ -17,3 +17,4 @@ app:
     "NODE_URL": "https://testnet.aeternity.io"
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
     "S3_BUCKET": "aeternity-graffiti-server-prd"
+    "CONTRACT_ADDRESS": "ct_N4ijuS5Nwg1txyqqkgUBruJgCXrT8G7ZRKWi9N5KjGUhTS3cE"
