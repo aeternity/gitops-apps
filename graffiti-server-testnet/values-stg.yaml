@@ -42,4 +42,4 @@ app:
     - version: "pr-232"
       gitSha: "5c7895a"
     - version: "master"
-      gitSha: "4423cdc"
+      gitSha: "b369a18"
