@@ -10,7 +10,7 @@ app:
       - host: "graffiti.prd.aepps.com"
         paths:
           - path: "/"
-            version: "aepp-graffiti-v1.0.2"
+            version: "aepp-graffiti-v1.0.3"
     tls:
       - hosts:
           - "graffiti.aeternity.com"
@@ -23,3 +23,5 @@ app:
       gitSha: "b751d49"
     - version: "aepp-graffiti-v1.0.2"
       gitSha: "b369a18"
+    - version: "aepp-graffiti-v1.0.3"
+      gitSha: "0817aa5"
