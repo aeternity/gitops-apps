@@ -16,3 +16,5 @@ app:
   versions:
     - version: "graffiti-server-v1.0.3"
       gitSha: "0817aa5"
+  image:
+    tag: graffiti-server-v1.0.4
