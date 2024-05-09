@@ -13,20 +13,8 @@ app:
       - host: "graffiti.prd.aepps.com"
         paths:
           - path: "/"
-            version: "aepp-graffiti-v1.0.3"
     tls:
       - hosts:
           - "graffiti.aeternity.com"
           - "aepp-grafitti.prd.aepps.com"
         secretName: "aepp-grafitti-cert"
-  versions:
-    - version: "aepp-graffiti-v1.0.0"
-      gitSha: "ac77a73"
-    - version: "aepp-graffiti-v1.0.1"
-      gitSha: "b751d49"
-    - version: "aepp-graffiti-v1.0.2"
-      gitSha: "b369a18"
-    - version: "aepp-graffiti-v1.0.3"
-      gitSha: "0817aa5"
-  image:
-    tag: aepp-graffiti-v1.0.4
