@@ -4,22 +4,10 @@ app:
     tag: ""
   ingress:
     hosts:
-      - host: "pr-231-graffiti.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-231"
-      - host: "pr-235-graffiti.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-235"
       - host: "graffiti.stg.aepps.com"
         paths:
           - path: "/"
             version: "master"
   versions:
-    - version: "pr-231"
-      gitSha: "8baa76b"
-    - version: "pr-235"
-      gitSha: "1bc759a"
     - version: "master"
       gitSha: "0817aa5"

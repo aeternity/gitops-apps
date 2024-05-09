@@ -10,22 +10,6 @@ app:
       eks.amazonaws.com/role-arn: "arn:aws:iam::106102538874:role/graffiti-server-stg"
   ingress:
     hosts:
-      - host: "pr-229-graffiti-server-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-229"
-      - host: "pr-230-graffiti-server-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-230"
-      - host: "pr-232-graffiti-server-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-232"
-      - host: "pr-234-graffiti-server-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-234"
       - host: "graffiti-server-testnet.stg.aepps.com"
         paths:
           - path: "/"
@@ -39,13 +23,5 @@ app:
     "CONTRACT_ADDRESS": "ct_N4ijuS5Nwg1txyqqkgUBruJgCXrT8G7ZRKWi9N5KjGUhTS3cE"
     "COMPILER_URL": "https://compiler.stg.aepps.com"
   versions:
-    - version: "pr-229"
-      gitSha: "5eced92"
-    - version: "pr-230"
-      gitSha: "7199940"
-    - version: "pr-232"
-      gitSha: "5c7895a"
-    - version: "pr-234"
-      gitSha: "8bd84a8"
     - version: "master"
       gitSha: "0817aa5"
