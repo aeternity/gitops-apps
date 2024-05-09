@@ -1,4 +1,7 @@
 app:
+  image:
+    repository: aeternitybot/graffiti-server
+    tag: "master"
   secrets:
     external:
       remotePrefix: /k8s/prd-0e9c

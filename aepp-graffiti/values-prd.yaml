@@ -1,4 +1,7 @@
 app:
+  image:
+    repository: aeternitybot/aepp-grafitti
+    tag: "master"
   ingress:
     hosts:
       - host: "aepp-grafitti.prd.aepps.com"
