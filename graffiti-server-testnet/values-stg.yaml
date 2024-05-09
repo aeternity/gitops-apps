@@ -18,14 +18,14 @@ app:
         paths:
           - path: "/"
             version: "pr-230"
-      - host: "graffiti-server-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "master"
       - host: "pr-232-graffiti-server-testnet.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-232"
+      - host: "graffiti-server-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
   env:
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
     "S3_REGION": "eu-central-1"
@@ -39,7 +39,7 @@ app:
       gitSha: "5eced92"
     - version: "pr-230"
       gitSha: "7199940"
-    - version: "master"
-      gitSha: "801f36e"
     - version: "pr-232"
       gitSha: "5c7895a"
+    - version: "master"
+      gitSha: "4423cdc"
