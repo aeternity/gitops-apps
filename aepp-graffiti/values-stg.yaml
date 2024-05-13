@@ -12,8 +12,14 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "pr-237-graffiti.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-237"
   versions:
     - version: "pr-236"
       gitSha: "3b6a0cb"
     - version: "master"
       gitSha: "3a6b59c"
+    - version: "pr-237"
+      gitSha: "6e94927"
