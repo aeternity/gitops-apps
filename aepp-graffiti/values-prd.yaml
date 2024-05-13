@@ -1,7 +1,7 @@
 app:
   image:
     repository: aeternity/aepp-graffiti
-    tag: "master"
+    tag: "aepp-graffiti-v1.0.5"
   ingress:
     hosts:
       - host: "aepp-graffiti.prd.aepps.com"
