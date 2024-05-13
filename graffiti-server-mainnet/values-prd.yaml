@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternitybot/graffiti-server
+    repository: aeternity/graffiti-server
     tag: "graffiti-server-v1.0.5"
   secrets:
     external:
