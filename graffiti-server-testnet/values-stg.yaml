@@ -24,4 +24,4 @@ app:
     "COMPILER_URL": "https://compiler.stg.aepps.com"
   versions:
     - version: "master"
-      gitSha: "b4b3b63"
+      gitSha: "6ad2c40"
