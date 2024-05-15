@@ -1,10 +1,14 @@
 app:
   ingress:
     hosts:
+      - host: "bridge.prd.aepps.com"
+        paths:
+          - path: "/"
       - host: "bridge.aepps.com"
         paths:
           - path: "/"
     tls:
       - hosts:
           - "bridge.aepps.com"
+          - "bridge.prd.aepps.com"
         secretName: aepp-bridge-cert
