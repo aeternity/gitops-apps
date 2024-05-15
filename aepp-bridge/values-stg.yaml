@@ -4,3 +4,7 @@ app:
       - host: "bridge.stg.aepps.com"
         paths:
           - path: "/"
+            version: "main"
+  versions:
+    - version: "main"
+      gitSha: "ea053bd"
