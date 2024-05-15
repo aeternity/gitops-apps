@@ -7,6 +7,12 @@ app:
       - host: "bridge.aepps.com"
         paths:
           - path: "/"
+      - host: "ae-bridge.com"
+        paths:
+          - path: "/"
+      - host: "www.ae-bridge.com"
+        paths:
+          - path: "/"
     tls:
       - hosts:
           - "bridge.aepps.com"
