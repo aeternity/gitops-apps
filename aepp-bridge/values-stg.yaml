@@ -1,0 +1,6 @@
+app:
+  ingress:
+    hosts:
+      - host: "bridge.stg.aepps.com"
+        paths:
+          - path: "/"
