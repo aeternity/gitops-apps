@@ -10,3 +10,5 @@ app:
       - host: "www.ae-bridge.com"
         paths:
           - path: "/"
+  image:
+    tag: v1.0.1
