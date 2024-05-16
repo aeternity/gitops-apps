@@ -1,4 +1,6 @@
 app:
+  image:
+    tag: ""
   ingress:
     hosts:
       - host: "bridge.stg.aepps.com"
