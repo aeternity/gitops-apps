@@ -6,3 +6,5 @@ app:
           - path: "/"
   image:
     tag: v2.2.1
+  versions:
+    - {version: "main", gitSha: "232b770"}
