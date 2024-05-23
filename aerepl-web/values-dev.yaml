@@ -1,4 +1,7 @@
 app:
+  resources:
+    requests:
+      cpu: 100m
   ingress:
     hosts:
       - host: "repl.dev.aepps.com"
