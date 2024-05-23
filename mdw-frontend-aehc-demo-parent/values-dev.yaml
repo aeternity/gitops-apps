@@ -1,4 +1,7 @@
 app:
+  resources:
+    requests:
+      cpu: 80m
   ingress:
     hosts:
       - host: "explorer-aehc-demo-parent.dev.aepps.com"
