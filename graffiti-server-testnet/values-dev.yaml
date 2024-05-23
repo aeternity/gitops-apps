@@ -2,6 +2,11 @@ app:
   image:
     repository: aeternitybot/graffiti-server
     tag: "master"
+
+  resources:
+    requests:
+      cpu: 50m
+
   secrets:
     external:
       remotePrefix: /k8s/dev-wgt7
