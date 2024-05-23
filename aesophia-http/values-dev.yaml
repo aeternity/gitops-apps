@@ -1,5 +1,8 @@
 app:
   replicaCount: 2
+  resources:
+    requests:
+      cpu: 100m
   ingress:
     hosts:
       - host: "compiler.dev.aepps.com"
