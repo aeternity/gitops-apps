@@ -16,6 +16,10 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "pr-74-repl.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-74"
   versions:
     - version: "pr-67"
       gitSha: "05df15a"
@@ -23,6 +27,8 @@ app:
       gitSha: "3c52a5d"
     - version: "master"
       gitSha: "224f48b"
+    - version: "pr-74"
+      gitSha: "1d030f4"
   resources:
     requests:
       cpu: "100m"
