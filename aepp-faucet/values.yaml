@@ -6,10 +6,10 @@ app:
   resources:
     requests:
       cpu: 70m
-      memory: 64Mi
+      memory: 80Mi
     limits:
       cpu: 100m
-      memory: 96Mi
+      memory: 120Mi
   env:
     "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
     "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
