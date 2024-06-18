@@ -5,11 +5,11 @@ app:
     repository: aeternity/aepp-faucet-nodejs
   resources:
     requests:
-      cpu: 20m
-      memory: 48Mi
+      cpu: 50m
+      memory: 80Mi
     limits:
-      cpu: 25m
-      memory: 72Mi
+      cpu: 75m
+      memory: 120Mi
   env:
     "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
     "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
