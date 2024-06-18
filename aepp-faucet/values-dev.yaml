@@ -1,4 +1,7 @@
 app:
+  image:
+    tag: master
+    repository: "aeternitybot/aepp-faucet-nodejs"
   secrets:
     external:
       remotePrefix: /k8s/dev-wgt7
