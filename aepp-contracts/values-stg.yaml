@@ -8,6 +8,12 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "pr-140-contracts.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-140"
   versions:
     - version: "master"
       gitSha: "a83d186"
+    - version: "pr-140"
+      gitSha: "818d7a2"
