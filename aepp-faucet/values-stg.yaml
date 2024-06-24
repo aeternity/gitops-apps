@@ -11,10 +11,6 @@ app:
         paths:
           - path: "/"
             version: "master"
-      - host: "pr-38-faucet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-38"
       - host: "pr-40-faucet.stg.aepps.com"
         paths:
           - path: "/"
@@ -22,7 +18,5 @@ app:
   versions:
     - version: "master"
       gitSha: "660aaf3"
-    - version: "pr-38"
-      gitSha: "d088f38"
     - version: "pr-40"
       gitSha: "0f4b8d0"
