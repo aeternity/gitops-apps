@@ -4,16 +4,16 @@ app:
     repository: "aeternitybot/aepp-contracts"
   ingress:
     hosts:
-      - host: "contracts.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "master"
       - host: "pr-141-contracts.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-141"
+      - host: "contracts.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
   versions:
-    - version: "master"
-      gitSha: "0e1d525"
     - version: "pr-141"
       gitSha: "e7122e9"
+    - version: "master"
+      gitSha: "cd8618d"
