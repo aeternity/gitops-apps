@@ -12,14 +12,8 @@ app:
         paths:
           - path: "/"
             version: "master"
-      - host: "pr-143-contracts.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-143"
   versions:
     - version: "pr-142"
       gitSha: "1f1595d"
     - version: "master"
       gitSha: "627fd91"
-    - version: "pr-143"
-      gitSha: "1b35057"
