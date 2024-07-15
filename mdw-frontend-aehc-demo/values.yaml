@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternity/mdw-frontend
+    repository: public.ecr.aws/aeternity/mdw-frontend
     pullPolicy: "Always"
     tag: "latest"
   resources:
