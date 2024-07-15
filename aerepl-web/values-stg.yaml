@@ -10,7 +10,7 @@ app:
             version: "master"
   versions:
     - version: "master"
-      gitSha: "df2fa09"
+      gitSha: "de94338"
   resources:
     requests:
       cpu: "100m"
