@@ -12,17 +12,11 @@ app:
         paths:
           - path: "/"
             version: "pr-84"
-      - host: "pr-67-repl.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-67"
   versions:
     - version: "master"
       gitSha: "76ca918"
     - version: "pr-84"
       gitSha: "4afdc6a"
-    - version: "pr-67"
-      gitSha: "2924933"
   resources:
     requests:
       cpu: "100m"
