@@ -10,6 +10,12 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "pr-190-governance.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-190"
   versions:
     - version: "master"
       gitSha: "a458c80"
+    - version: "pr-190"
+      gitSha: "03e3a2e"
