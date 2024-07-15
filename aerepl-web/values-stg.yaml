@@ -4,19 +4,19 @@ app:
     tag: ""
   ingress:
     hosts:
-      - host: "repl.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "master"
       - host: "pr-84-repl.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-84"
+      - host: "repl.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
   versions:
-    - version: "master"
-      gitSha: "76ca918"
     - version: "pr-84"
       gitSha: "adef4a9"
+    - version: "master"
+      gitSha: "df2fa09"
   resources:
     requests:
       cpu: "100m"
