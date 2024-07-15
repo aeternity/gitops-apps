@@ -7,16 +7,10 @@ app:
       - host: "hyperchain-aehc-demo.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-16-hyperchain.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-16"
   env:
     AE_FAUCET_URL: "https://faucet-aehc-demo.stg.aepps.com"
     AE_WALLET_URL: "https://base-aehc-demo.stg.aepps.com"
     AE_NODE_URL: "https://demo.hyperchains.aeternity.io"
     STAKING_CONTRACT: "ct_LRbi65kmLtE7YMkG6mvG5TxAXTsPJDZjAtsPuaXtRyPA7gnfJ"
     HC_ELECTION_CONTRACT: "ct_t7ESuRFvGdYHwM6KJhKbSnFUJQhnB9aCFed1RWR89ShNDgwWA"
-  versions:
-    - version: "pr-16"
-      gitSha: "83b4808"
+  versions: []
