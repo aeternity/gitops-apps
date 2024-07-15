@@ -8,9 +8,15 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "pr-86-repl.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-86"
   versions:
     - version: "master"
       gitSha: "76ca918"
+    - version: "pr-86"
+      gitSha: "bda5a39"
   resources:
     requests:
       cpu: "100m"
