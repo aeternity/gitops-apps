@@ -18,4 +18,4 @@ app:
         secretName: aerepl-http-cert
   versions: []
   image:
-    tag: v4.0.2
+    tag: v5.0.0
