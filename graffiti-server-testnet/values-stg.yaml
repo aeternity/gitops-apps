@@ -1,6 +1,6 @@
 app:
   image:
-    repository: "aeternitybot/graffiti-server"
+    repository: "public.ecr.aws/aeternity/graffiti-server"
     tag: ""
   secrets:
     external:
@@ -10,10 +10,6 @@ app:
       eks.amazonaws.com/role-arn: "arn:aws:iam::106102538874:role/graffiti-server-stg"
   ingress:
     hosts:
-      - host: "pr-240-graffiti-server-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-240"
       - host: "graffiti-server-testnet.stg.aepps.com"
         paths:
           - path: "/"
@@ -27,7 +23,5 @@ app:
     "CONTRACT_ADDRESS": "ct_N4ijuS5Nwg1txyqqkgUBruJgCXrT8G7ZRKWi9N5KjGUhTS3cE"
     "COMPILER_URL": "https://compiler.stg.aepps.com"
   versions:
-    - version: "pr-240"
-      gitSha: "7b72a9a"
     - version: "master"
       gitSha: "b7486eb"

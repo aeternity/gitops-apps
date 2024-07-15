@@ -1,6 +1,6 @@
 app:
   image:
-    repository: "aeternity/aepp-hyperchain"
+    repository: "public.ecr.aws/aeternity/aepp-hyperchain"
     tag: "master"
   ingress:
     hosts:

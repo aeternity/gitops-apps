@@ -1,25 +1,13 @@
 app:
   image:
-    repository: "aeternitybot/aepp-graffiti"
+    repository: "public.ecr.aws/aeternity/aepp-graffiti"
     tag: ""
   ingress:
     hosts:
-      - host: "pr-236-graffiti.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-236"
-      - host: "pr-240-graffiti.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-240"
       - host: "graffiti.stg.aepps.com"
         paths:
           - path: "/"
             version: "master"
   versions:
-    - version: "pr-236"
-      gitSha: "3b6a0cb"
-    - version: "pr-240"
-      gitSha: "7b72a9a"
     - version: "master"
       gitSha: "b7486eb"

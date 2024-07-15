@@ -4,16 +4,10 @@ app:
     repository: "public.ecr.aws/aeternity/aepp-contracts"
   ingress:
     hosts:
-      - host: "pr-142-contracts.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-142"
       - host: "contracts.stg.aepps.com"
         paths:
           - path: "/"
             version: "master"
   versions:
-    - version: "pr-142"
-      gitSha: "1f1595d"
     - version: "master"
       gitSha: "76898f0"

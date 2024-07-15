@@ -1,22 +1,16 @@
 app:
   image:
     tag: ""
-    repository: "aeternitybot/aepp-faucet-nodejs"
+    repository: "public.ecr.aws/aeternity/aepp-faucet-nodejs"
   secrets:
     external:
       remotePrefix: "/k8s/stg-m4n4"
   ingress:
     hosts:
-      - host: "pr-41-faucet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-41"
       - host: "faucet.stg.aepps.com"
         paths:
           - path: "/"
             version: "master"
   versions:
-    - version: "pr-41"
-      gitSha: "6017f5b"
     - version: "master"
       gitSha: "0a0de97"
