@@ -1,10 +1,16 @@
 app:
   secrets:
     external:
-      remotePrefix: /k8s/stg-m4n4
-
+      remotePrefix: "/k8s/stg-m4n4"
   ingress:
     hosts:
       - host: "governance-server-testnet.stg.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-188-governance-server-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-188"
+  versions:
+    - version: "pr-188"
+      gitSha: "bcdd83a"
