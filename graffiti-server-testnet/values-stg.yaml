@@ -10,14 +10,14 @@ app:
       eks.amazonaws.com/role-arn: "arn:aws:iam::106102538874:role/graffiti-server-stg"
   ingress:
     hosts:
-      - host: "graffiti-server-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "master"
       - host: "pr-240-graffiti-server-testnet.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-240"
+      - host: "graffiti-server-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
   env:
     "IPFS_URL": "http://ipfs.prd.aepps.com:5001"
     "S3_REGION": "eu-central-1"
@@ -27,7 +27,7 @@ app:
     "CONTRACT_ADDRESS": "ct_N4ijuS5Nwg1txyqqkgUBruJgCXrT8G7ZRKWi9N5KjGUhTS3cE"
     "COMPILER_URL": "https://compiler.stg.aepps.com"
   versions:
-    - version: "master"
-      gitSha: "055fbd1"
     - version: "pr-240"
       gitSha: "7b72a9a"
+    - version: "master"
+      gitSha: "a86b0b5"
