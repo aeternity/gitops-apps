@@ -1,19 +1,13 @@
 app:
   image:
     tag: ""
-    repository: "aeternitybot/aepp-base"
+    repository: "public.ecr.aws/aeternity/aepp-base"
   ingress:
     hosts:
-      - host: "pr-1534-base.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1534"
       - host: "base.stg.aepps.com"
         paths:
           - path: "/"
             version: "develop"
   versions:
-    - version: "pr-1534"
-      gitSha: "8c5e19b"
     - version: "develop"
       gitSha: "d0d5c16"
