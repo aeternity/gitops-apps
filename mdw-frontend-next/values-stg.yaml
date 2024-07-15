@@ -1,6 +1,0 @@
-app:
-  ingress:
-    hosts:
-      - host: "explorer-next.stg.aepps.com"
-        paths:
-          - path: /
