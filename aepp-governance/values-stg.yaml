@@ -8,6 +8,12 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "pr-189-governance.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-189"
   versions:
     - version: "master"
       gitSha: "778fd93"
+    - version: "pr-189"
+      gitSha: "a068dd5"
