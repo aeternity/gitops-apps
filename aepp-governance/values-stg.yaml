@@ -7,4 +7,10 @@ app:
       - host: "governance.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-188-governance.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-188"
+  versions:
+    - version: "pr-188"
+      gitSha: "bcdd83a"
