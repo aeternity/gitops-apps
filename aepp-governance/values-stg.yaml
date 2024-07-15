@@ -7,4 +7,7 @@ app:
       - host: "governance.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+            version: "master"
+  versions:
+    - version: "master"
+      gitSha: "778fd93"
