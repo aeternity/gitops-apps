@@ -4,17 +4,11 @@ app:
     tag: ""
   ingress:
     hosts:
-      - host: "pr-84-repl.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-84"
       - host: "repl.stg.aepps.com"
         paths:
           - path: "/"
             version: "master"
   versions:
-    - version: "pr-84"
-      gitSha: "adef4a9"
     - version: "master"
       gitSha: "df2fa09"
   resources:
