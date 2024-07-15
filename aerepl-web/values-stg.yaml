@@ -1,28 +1,16 @@
 app:
   image:
-    repository: "aeternitybot/aerepl-web"
+    repository: "public.ecr.aws/aeternity/aerepl-web"
     tag: ""
   ingress:
     hosts:
-      - host: "pr-69-repl.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-69"
       - host: "repl.stg.aepps.com"
         paths:
           - path: "/"
             version: "master"
-      - host: "pr-67-repl.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-67"
   versions:
-    - version: "pr-69"
-      gitSha: "3c52a5d"
     - version: "master"
       gitSha: "76ca918"
-    - version: "pr-67"
-      gitSha: "3d997ac"
   resources:
     requests:
       cpu: "100m"
