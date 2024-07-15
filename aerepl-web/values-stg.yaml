@@ -16,7 +16,7 @@ app:
     - version: "master"
       gitSha: "76ca918"
     - version: "pr-84"
-      gitSha: "4afdc6a"
+      gitSha: "adef4a9"
   resources:
     requests:
       cpu: "100m"
