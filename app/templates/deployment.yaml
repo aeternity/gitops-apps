@@ -49,7 +49,7 @@ spec:
       {{- if $.Values.init.enabled }}
       initContainers:
         - name: {{ include "app.fullname" $ }}-init
-          image: "{{ $.Values.image.repository | default (print "aeternity/" $.Release.Name) }}:{{ $val.version }}"
+          image: "{{ $.Values.image.repository | default (print "public.ecr.aws/aeternity/" $.Release.Name) }}:{{ $val.version }}"
           imagePullPolicy: {{ $.Values.image.pullPolicy }}
           command: {{ $.Values.init.command }}
           {{- with $.Values.init.args }}

@@ -1,8 +1,8 @@
 app:
   image:
-    repository: aeternity/mdw-frontend
-    pullPolicy: "Always"
+    repository: public.ecr.aws/aeternity/mdw-frontend
     tag: "latest"
+    pullPolicy: "Always"
   resources:
     requests:
       cpu: 160m

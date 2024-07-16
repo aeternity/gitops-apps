@@ -1,6 +1,5 @@
 app:
   image:
-    repository: aeternity/aepp-grafitti
     tag: "latest"
     pullPolicy: "Always"
   resources:

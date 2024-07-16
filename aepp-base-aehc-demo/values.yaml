@@ -1,8 +1,8 @@
 app:
   image:
-    pullPolicy: "Always"
-    repository: aeternitybot/aepp-base
+    repository: public.ecr.aws/aeternity/aepp-base
     tag: "develop"
+    pullPolicy: "Always"
   ingress:
     enabled: true
     annotations:

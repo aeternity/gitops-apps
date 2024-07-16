@@ -1,6 +1,6 @@
 app:
   image:
-    repository: aeternitybot/graffiti-server
+    repository: public.ecr.aws//aeternity/graffiti-server
     tag: "master"
 
   resources:

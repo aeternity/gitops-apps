@@ -2,9 +2,6 @@ app:
   secrets:
     external:
       remotePrefix: /k8s/dev-wgt7
-  image:
-    repository: aeternitybot/governance-aepp
-    tag: "dev"
 
   ingress:
     hosts:

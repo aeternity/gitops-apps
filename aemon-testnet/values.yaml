@@ -1,6 +1,5 @@
 app:
   image:
-    repository: "aeternity/aemon"
     pullPolicy: "Always"
   resources:
     requests:
