@@ -1,6 +1,6 @@
 app:
   image:
-    repository: "aeternity/aemon"
+    repository: "public.ecr.aws/aeternity/aemon"
     pullPolicy: "Always"
   resources:
     requests:

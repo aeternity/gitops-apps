@@ -2,7 +2,7 @@ app:
   strategyType: "Recreate"
 
   image:
-    repository: aeternity/graffiti-server
+    repository: public.ecr.aws/aeternity/graffiti-server
     tag: "latest"
     pullPolicy: "Always"
 

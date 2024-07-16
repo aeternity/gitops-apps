@@ -1,6 +1,5 @@
 app:
   image:
-    repository: "aeternity/aepp-hyperchain"
     tag: master
   ingress:
     labels:
