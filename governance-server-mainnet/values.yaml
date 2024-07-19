@@ -51,7 +51,7 @@ redis:
   master:
     resources:
       requests:
-        cpu: 30m
+        cpu: 10m
         memory: 24Mi
       limits:
         memory: 36Mi
@@ -61,7 +61,7 @@ redis:
     replicaCount: 0
     resources:
       requests:
-        cpu: 30m
+        cpu: 10m
         memory: 24Mi
       limits:
         memory: 36Mi
