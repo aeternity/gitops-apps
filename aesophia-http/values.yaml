@@ -10,7 +10,7 @@ app:
     pullPolicy: "Always"
   resources:
     requests:
-      cpu: 20m
+      cpu: 50m
       memory: 120Mi
     limits:
       memory: 180Mi
