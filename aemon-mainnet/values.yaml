@@ -4,10 +4,8 @@ app:
     pullPolicy: "Always"
   resources:
     requests:
-      cpu: 20m
       memory: 175Mi
     limits:
-      cpu: 25m
       memory: 260Mi
   env:
     AEMON_CONFIG: "etc/aemon/mainnet.json"

@@ -5,10 +5,9 @@ app:
     pullPolicy: "Always"
   resources:
     requests:
-      cpu: 160m
+      cpu: 30m
       memory: 120Mi
     limits:
-      cpu: 240m
       memory: 180Mi
   ingress:
     enabled: true

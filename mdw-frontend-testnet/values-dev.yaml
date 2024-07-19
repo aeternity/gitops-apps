@@ -1,7 +1,4 @@
 app:
-  resources:
-    requests:
-      cpu: 80m
   ingress:
     hosts:
       - host: "mdw-explorer-testnet.dev.aepps.com"

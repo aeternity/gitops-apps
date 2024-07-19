@@ -6,10 +6,9 @@ app:
 
   resources:
     requests:
-      cpu: 50m
+      cpu: 30m
       memory: 170Mi
     limits:
-      cpu: 75m
       memory: 250Mi
 
   probes:
@@ -52,10 +51,9 @@ redis:
   master:
     resources:
       requests:
-        cpu: 75m
+        cpu: 10m
         memory: 24Mi
       limits:
-        cpu: 110m
         memory: 36Mi
     persistence:
       enabled: false
@@ -63,8 +61,7 @@ redis:
     replicaCount: 0
     resources:
       requests:
-        cpu: 75m
+        cpu: 10m
         memory: 24Mi
       limits:
-        cpu: 110m
         memory: 36Mi

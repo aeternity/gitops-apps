@@ -4,10 +4,8 @@ app:
     pullPolicy: "Always"
   resources:
     requests:
-      cpu: 20m
       memory: 10Mi
     limits:
-      cpu: 25m
       memory: 14Mi
   service:
     port: 80
