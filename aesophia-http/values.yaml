@@ -10,10 +10,9 @@ app:
     pullPolicy: "Always"
   resources:
     requests:
-      cpu: 200m
+      cpu: 50m
       memory: 120Mi
     limits:
-      cpu: 300m
       memory: 180Mi
   service:
     type: ClusterIP

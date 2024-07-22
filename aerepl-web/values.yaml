@@ -1,15 +1,13 @@
 app:
   image:
-    repository: public.ecr.aws/aeternity/aerepl-web
     tag: "latest"
     pullPolicy: "Always"
   resources:
     requests:
-      cpu: 50m
-      memory: 128Mi
+      cpu: 70m
+      memory: 300Mi
     limits:
-      cpu: 75m
-      memory: 192Mi
+      memory: 450Mi
   service:
     port: 4000
   ingress:

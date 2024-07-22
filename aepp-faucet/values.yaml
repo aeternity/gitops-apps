@@ -1,14 +1,12 @@
 app:
   image:
+    repository: public.ecr.aws/aeternity/aepp-faucet-nodejs
     tag: latest
     pullPolicy: "Always"
-    repository: aeternity/aepp-faucet-nodejs
   resources:
     requests:
-      cpu: 50m
       memory: 80Mi
     limits:
-      cpu: 75m
       memory: 120Mi
   env:
     "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"

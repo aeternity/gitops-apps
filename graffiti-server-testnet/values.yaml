@@ -2,16 +2,15 @@ app:
   strategyType: "Recreate"
   
   image:
-    repository: aeternity/graffiti-server
+    repository: public.ecr.aws/aeternity/graffiti-server
     tag: "latest"
     pullPolicy: "Always"
 
   resources:
     requests:
-      cpu: 100m
+      cpu: 90m
       memory: 160Mi
     limits:
-      cpu: 150m
       memory: 240Mi
 
   serviceAccount:

@@ -1,6 +1,5 @@
 app:
   image:
-    repository: public.ecr.aws/aeternity/aepp-base-backend
     tag: develop
   resources:
     requests:

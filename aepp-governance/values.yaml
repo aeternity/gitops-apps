@@ -1,6 +1,5 @@
 app:
   image:
-    repository: public.ecr.aws/aeternity/aepp-governance
     tag: "latest"
     pullPolicy: "Always"
 
@@ -21,8 +20,6 @@ app:
 
   resources:
     requests:
-      cpu: 20m
       memory: 10Mi
     limits:
-      cpu: 25m
       memory: 14Mi
