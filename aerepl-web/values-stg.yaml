@@ -11,10 +11,3 @@ app:
   versions:
     - version: "master"
       gitSha: "de94338"
-  resources:
-    requests:
-      cpu: "100m"
-      memory: "384Mi"
-    limits:
-      cpu: "150m"
-      memory: "512Mi"
