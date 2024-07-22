@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-ALWAYS_EXCLUDE=('README.md' 'scaffold' 'aepp-test' 'aepp-hyperchain' 'aepp-base-hc' 'aepp-hc-ui' 'ga-multisig-backend-mainnet' 'ga-multisig-backend-testnet' 'ga-multisig-ui' 'dex-ui' 'dex-backend-mainnet' 'dex-backend-testnet' 'graffiti-server-mainnet' 'graffiti-server-testnet' 'graffiti-server')
+ALWAYS_EXCLUDE=('README.md' 'scaffold' 'aepp-test')
 ENV_EXCLUDE=('values-dev.yaml' 'values-stg.yaml' 'values-prd.yaml')
 function usage {
     echo "Usage:"
@@ -67,7 +67,7 @@ function app {
         ignore_path $source $destination $chart/$e
     done
 
-    git checkout $destination $chart/values-$destination.yaml
+    git checkout $destination $chart/values-$destination.yaml > /dev/null 2>&1 || true
 
     echo "---------------------------------------------------------------"
     echo "Review your promote with:"
