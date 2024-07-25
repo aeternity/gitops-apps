@@ -6,14 +6,13 @@ app:
     - version: "v7.6.0"
     - version: "v8.0.0"
   image:
-    repository: aeternity/aesophia_http
+    repository: public.ecr.aws/aeternity/aesophia_http
     pullPolicy: "Always"
   resources:
     requests:
-      cpu: 200m
+      cpu: 50m
       memory: 120Mi
     limits:
-      cpu: 300m
       memory: 180Mi
   service:
     type: ClusterIP

@@ -1,9 +1,0 @@
-app:
-  ingress:
-    hosts:
-      - host: "explorer.next.aepps.com"
-        paths:
-          - path: /
-      - host: "explorer.ceres.aepps.com"
-        paths:
-          - path: /
