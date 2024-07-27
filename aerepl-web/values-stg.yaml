@@ -8,12 +8,6 @@ app:
         paths:
           - path: "/"
             version: "master"
-      - host: "pr-89-repl.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-89"
   versions:
     - version: "master"
       gitSha: "1d9f72c"
-    - version: "pr-89"
-      gitSha: "3e0d5ec"
