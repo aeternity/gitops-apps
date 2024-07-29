@@ -21,7 +21,7 @@ app:
     liveness:
       enabled: true
       config:
-        httpGet: null
+        httpGet: {}
         tcpSocket:
           port: http
         initialDelaySeconds: 1
