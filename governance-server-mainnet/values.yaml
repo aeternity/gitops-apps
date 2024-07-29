@@ -12,13 +12,15 @@ app:
       memory: 250Mi
 
   probes:
+    startup:
+      config:
+        httpGet:
+          path: /version
     liveness:
-      enabled: true
       config:
         httpGet:
           path: /version
     readiness:
-      enabled: true
       config:
         httpGet:
           path: /version

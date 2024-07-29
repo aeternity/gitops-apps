@@ -15,6 +15,10 @@ app:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
   probes:
+    startup:
+      config:
+        httpGet:
+          path: /alive
     liveness:
       config:
         httpGet:

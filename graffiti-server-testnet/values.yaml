@@ -20,24 +20,21 @@ app:
     port: 3000
 
   probes:
+    startup:
+      enabled: false
+      config:
+        httpGet:
+          path: /health/testFiles
     liveness:
       enabled: false
       config:
         httpGet:
           path: /health/testFiles
-        initialDelaySeconds: 120
-        periodSeconds: 120
-        successThreshold: 1
-        timeoutSeconds: 60
     readiness:
       enabled: false
       config:
         httpGet:
           path: /health/testFiles
-        initialDelaySeconds: 120
-        periodSeconds: 120
-        successThreshold: 1
-        timeoutSeconds: 60
 
   ingress:
     enabled: true
