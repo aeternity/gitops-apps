@@ -95,6 +95,14 @@ init:
   enabled: false
 
 probes:
+  startup:
+    enabled: true
+    config:
+      httpGet:
+        path: /
+        port: http
+      periodSeconds: 6
+      failureThreshold: 20
   liveness:
     enabled: true
     config:
@@ -102,12 +110,16 @@ probes:
         path: /
         port: http
       initialDelaySeconds: 60
+      periodSeconds: 30
+      failureThreshold: 6
   readiness:
     enabled: true
     config:
       httpGet:
         path: /
         port: http
+      periodSeconds: 20
+      failureThreshold: 3
 
 encValues: {}
 
