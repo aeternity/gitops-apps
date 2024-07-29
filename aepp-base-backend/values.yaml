@@ -8,11 +8,17 @@ app:
       memory: 48Mi
   probes:
     startup:
-      enabled: false
+      config:
+        httpGet:
+          path: /version
     liveness:
-      enabled: false
+      config:
+        httpGet:
+          path: /version
     readiness:
-      enabled: false
+      config:
+        httpGet:
+          path: /version
   ingress:
     enabled: true
   secrets:
