@@ -21,17 +21,17 @@ app:
 
   probes:
     startup:
-      enabled: false
+      enabled: true
       config:
         httpGet:
           path: /health/testFiles
     liveness:
-      enabled: false
+      enabled: true
       config:
         httpGet:
           path: /health/testFiles
     readiness:
-      enabled: false
+      enabled: true
       config:
         httpGet:
           path: /health/testFiles
