@@ -1,9 +1,4 @@
 app:
-  resources:
-    limits:
-      memory: 384Mi
-    requests:
-      memory: 384Mi
   ingress:
     hosts:
       - host: "mdw-explorer-testnet.prd.aepps.com"
