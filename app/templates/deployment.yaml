@@ -125,6 +125,10 @@ spec:
             - name: http
               containerPort: {{ $.Values.service.port }}
               protocol: TCP
+          {{- if $.Values.probes.startup.enabled }}
+          startupProbe:
+            {{- toYaml $.Values.probes.startup.config | nindent 12 }}
+          {{- end }}
           {{- if $.Values.probes.liveness.enabled }}
           livenessProbe:
             {{- toYaml $.Values.probes.liveness.config | nindent 12 }}

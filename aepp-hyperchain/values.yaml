@@ -1,11 +1,12 @@
 app:
   image:
-    repository: "public.ecr.aws/aeternity/aepp-hyperchain"
     pullPolicy: "Always"
   resources:
     requests:
+      cpu: 30m
       memory: 48Mi
     limits:
+      cpu: 45m
       memory: 72Mi
   env:
     PORT: "80"
@@ -15,10 +16,6 @@ app:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
   probes:
-    startup:
-      config:
-        httpGet:
-          path: /alive
     liveness:
       config:
         httpGet:

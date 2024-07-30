@@ -7,10 +7,18 @@ app:
     limits:
       memory: 48Mi
   probes:
+    startup:
+      config:
+        httpGet:
+          path: /version
     liveness:
-      enabled: false
+      config:
+        httpGet:
+          path: /version
     readiness:
-      enabled: false
+      config:
+        httpGet:
+          path: /version
   ingress:
     enabled: true
   secrets:
