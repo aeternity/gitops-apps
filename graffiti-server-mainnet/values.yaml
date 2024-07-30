@@ -27,10 +27,21 @@ app:
     port: 3000
 
   probes:
+    startup:
+      enabled: true
+      config:
+        httpGet:
+          path: /health/testFiles
     liveness:
-      enabled: false
+      enabled: true
+      config:
+        httpGet:
+          path: /health/testFiles
     readiness:
-      enabled: false
+      enabled: true
+      config:
+        httpGet:
+          path: /health/testFiles
 
   persistence:
     enabled: true
