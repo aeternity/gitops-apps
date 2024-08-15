@@ -9,4 +9,4 @@ app:
             version: "main"
   versions:
     - version: "main"
-      gitSha: "15198fd"
+      gitSha: "9a6287e"
