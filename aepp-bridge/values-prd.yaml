@@ -11,4 +11,4 @@ app:
         paths:
           - path: "/"
   image:
-    tag: v1.11.0
+    tag: v1.12.0
