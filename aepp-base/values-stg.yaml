@@ -4,10 +4,6 @@ app:
     repository: "public.ecr.aws/aeternity/aepp-base"
   ingress:
     hosts:
-      - host: "base.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "develop"
       - host: "pr-1559-base.stg.aepps.com"
         paths:
           - path: "/"
@@ -20,12 +16,16 @@ app:
         paths:
           - path: "/"
             version: "pr-1564"
+      - host: "base.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "develop"
   versions:
-    - version: "develop"
-      gitSha: "d0d5c16"
     - version: "pr-1559"
       gitSha: "cd85000"
     - version: "pr-1561"
       gitSha: "769d74f"
     - version: "pr-1564"
       gitSha: "7c705d8"
+    - version: "develop"
+      gitSha: "b4bcba5"
