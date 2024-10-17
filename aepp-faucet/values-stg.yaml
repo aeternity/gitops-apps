@@ -11,6 +11,12 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "pr-43-faucet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-43"
   versions:
     - version: "master"
       gitSha: "0a0de97"
+    - version: "pr-43"
+      gitSha: "2d4e2e2"
