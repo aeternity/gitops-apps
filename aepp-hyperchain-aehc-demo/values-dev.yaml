@@ -1,6 +1,6 @@
 app:
   image:
-    tag: master
+    tag: v0.2
   ingress:
     hosts:
       - host: "hyperchain-aehc-demo.dev.aepps.com"
