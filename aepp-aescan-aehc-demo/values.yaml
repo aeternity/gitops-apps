@@ -5,9 +5,9 @@ app:
     pullPolicy: "Always"
   resources:
     requests:
-      memory: 80Mi
+      memory: 180Mi
     limits:
-      memory: 120Mi
+      memory: 260Mi
   env:
     NUXT_PUBLIC_NODE_URL: https://demo.hyperchains.aeternity.io
     NUXT_PUBLIC_MIDDLEWARE_URL: https://demo.hyperchains.aeternity.io:8443
