@@ -11,6 +11,7 @@ app:
   env:
     EPOCH_URL_DEBUG: "https://demo.hyperchains.aeternity.io"
     NODE_URL: "https://demo.hyperchains.aeternity.io"
+    EXPLORER_URL: "https://aescan.demo.hyperchains.aepps.com"
     TOPUP_AMOUNT: 100
   secrets:
     external:
