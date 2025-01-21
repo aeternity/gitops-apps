@@ -1,7 +1,4 @@
 app:
-  image:
-    repository: aeternitybot/aepp-base
-    tag: "develop"
   ingress:
     hosts:
       - host: "base-aehc-demo.dev.aepps.com"
