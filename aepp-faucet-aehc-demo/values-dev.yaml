@@ -1,0 +1,13 @@
+app:
+  image:
+    tag: master
+  secrets:
+    external:
+      remotePrefix: /k8s/dev-wgt7
+  ingress:
+    hosts:
+      - host: "faucet-aehc-demo.dev.aepps.com"
+        paths:
+          - path: "/"
+  env:
+    EXPLORER_URL: "https://aescan-aehc-demo.dev.aepps.com"
