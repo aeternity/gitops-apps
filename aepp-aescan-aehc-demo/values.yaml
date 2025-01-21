@@ -15,7 +15,6 @@ app:
     NUXT_PUBLIC_WEBSOCKET_URL: wss://demo.hyperchains.aeternity.io:8443/v3/websocket
     NUXT_PUBLIC_NETWORK_ID: aehc_demo
     NUXT_PUBLIC_NETWORK_NAME: DEMO HYPERCHAIN
-    NUXT_PUBLIC_APP_DOMAIN: http://localhost:28020
     NUXT_PUBLIC_DEBUG_MODE: false
     NUXT_PUBLIC_IS_HYPERCHAIN: true
   ingress:
