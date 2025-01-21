@@ -1,7 +1,7 @@
 app:
   image:
     repository: aeternity/aescan
-    tag: latest
+    tag: 0.19.0
     pullPolicy: "Always"
   resources:
     requests:
