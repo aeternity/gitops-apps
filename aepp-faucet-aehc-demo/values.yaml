@@ -1,0 +1,26 @@
+app:
+  image:
+    repository: public.ecr.aws/aeternity/aepp-faucet-nodejs
+    tag: latest
+    pullPolicy: "Always"
+  resources:
+    requests:
+      memory: 80Mi
+    limits:
+      memory: 120Mi
+  env:
+    EPOCH_URL_DEBUG: "https://demo.hyperchains.aeternity.io"
+    NODE_URL: "https://demo.hyperchains.aeternity.io"
+    EXPLORER_URL: "https://aescan.demo.hyperchains.aepps.com"
+    TOPUP_AMOUNT: 100
+  secrets:
+    external:
+      values:
+        FAUCET_ACCOUNT_PRIV_KEY: /apps/FAUCET_ACCOUNT_PRIV_KEY_AEHC_DEMO
+  service:
+    port: 5000
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
