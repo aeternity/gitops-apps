@@ -9,3 +9,5 @@ app:
       - host: "faucet.dev.aepps.com"
         paths:
           - path: "/"
+  env:
+    EXPLORER_URL: "https://aescan-aehc-demo.dev.aepps.com"
