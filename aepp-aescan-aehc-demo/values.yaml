@@ -1,0 +1,24 @@
+app:
+  image:
+    repository: aeternity/aescan
+    tag: 0.19.0
+    pullPolicy: "Always"
+  resources:
+    requests:
+      memory: 80Mi
+    limits:
+      memory: 120Mi
+  env:
+    NUXT_PUBLIC_NODE_URL: https://demo.hyperchains.aeternity.io
+    NUXT_PUBLIC_MIDDLEWARE_URL: https://demo.hyperchains.aeternity.io:8443
+    NUXT_PUBLIC_WEBSOCKET_URL: wss://demo.hyperchains.aeternity.io:8443/v3/websocket
+    NUXT_PUBLIC_NETWORK_ID: aehc_demo
+    NUXT_PUBLIC_NETWORK_NAME: DEMO HYPERCHAIN
+    NUXT_PUBLIC_APP_DOMAIN: http://localhost:28020
+    NUXT_PUBLIC_DEBUG_MODE: false
+    NUXT_PUBLIC_IS_HYPERCHAIN: true
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
