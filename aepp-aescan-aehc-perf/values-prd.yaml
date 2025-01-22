@@ -1,0 +1,8 @@
+app:
+  ingress:
+    hosts:
+      - host: "aescan.perf.hyperchains.aepps.com"
+        paths:
+          - path: "/"
+  env:
+    NUXT_PUBLIC_APP_DOMAIN: https://aescan.perf.hyperchains.aepps.com
