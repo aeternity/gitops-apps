@@ -1,0 +1,11 @@
+app:
+  secrets:
+    external:
+      remotePrefix: /k8s/prd-0e9c
+  ingress:
+    hosts:
+      - host: "faucet.dincho.hyperchains.aepps.com"
+        paths:
+          - path: "/"
+  env:
+    EXPLORER_URL: "https://aescan.dincho.hyperchains.aepps.com"
