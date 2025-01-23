@@ -6,9 +6,9 @@ app:
   resources:
     requests:
       cpu: 300m
-      memory: 180Mi
-    limits:
       memory: 260Mi
+    limits:
+      memory: 390Mi
   env:
     NUXT_PUBLIC_NODE_URL: https://perf.hyperchains.aeternity.io
     NUXT_PUBLIC_MIDDLEWARE_URL: https://perf.hyperchains.aeternity.io:8443
