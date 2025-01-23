@@ -1,8 +1,14 @@
 app:
   ingress:
+    labels:
+      solver: route53
     hosts:
       - host: "aescan.perf.hyperchains.aepps.com"
         paths:
           - path: "/"
+    tls:
+      - hosts:
+        - "*.perf.hyperchains.aepps.com"
+        secretName: aehc-perf-cert
   env:
     NUXT_PUBLIC_APP_DOMAIN: https://aescan.perf.hyperchains.aepps.com
