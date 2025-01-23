@@ -1,0 +1,12 @@
+app:
+  image:
+    repository: public.ecr.aws/aeternity/aepp-hyperchains-initiator
+    tag: latest
+    pullPolicy: "Always"
+  service:
+    port: 3000
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
