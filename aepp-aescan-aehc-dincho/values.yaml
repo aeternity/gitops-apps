@@ -12,7 +12,7 @@ app:
   env:
     NUXT_PUBLIC_NODE_URL: https://dincho.hyperchains.aeternity.io
     NUXT_PUBLIC_MIDDLEWARE_URL: https://dincho.hyperchains.aeternity.io:8443
-    NUXT_PUBLIC_WEBSOCKET_URL: wss://dincho.hyperchains.aeternity.io:8443/v3/websocket
+    NUXT_PUBLIC_WEBSOCKET_URL: wss://dincho.hyperchains.aeternity.io:8443/v2/websocket
     NUXT_PUBLIC_NETWORK_ID: aehc_dincho
     NUXT_PUBLIC_NETWORK_NAME: "Dincho's HYPERCHAIN"
     NUXT_PUBLIC_DEBUG_MODE: false
