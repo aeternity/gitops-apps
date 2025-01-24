@@ -6,11 +6,11 @@ app:
       - host: "hyperchains-initiator.prd.aepps.com"
         paths:
           - path: "/"
-      # - host: "init.hyperchains.ae"
-      #   paths:
-      #     - path: "/"
+      - host: "init.hyperchains.ae"
+        paths:
+          - path: "/"
     tls:
       - hosts:
-          # - "init.hyperchains.ae"
+          - "init.hyperchains.ae"
           - "hyperchains-initiator.prd.aepps.com"
         secretName: aepp-hc-init-cert
