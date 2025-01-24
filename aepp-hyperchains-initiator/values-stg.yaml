@@ -1,0 +1,6 @@
+app:
+  ingress:
+    hosts:
+      - host: "hyperchains-initiator.stg.aepps.com"
+        paths:
+          - path: "/"

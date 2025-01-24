@@ -1,0 +1,17 @@
+app:
+  image:
+    repository: public.ecr.aws/aeternity/aepp-hyperchains-initiator
+    tag: main
+    pullPolicy: "Always"
+  resources:
+    requests:
+      memory: 100Mi
+    limits:
+      memory: 150Mi
+  service:
+    port: 3000
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
