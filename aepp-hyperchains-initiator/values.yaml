@@ -1,13 +1,13 @@
 app:
   image:
     repository: public.ecr.aws/aeternity/aepp-hyperchains-initiator
-    tag: latest
+    tag: main
     pullPolicy: "Always"
   resources:
     requests:
-      memory: 80Mi
+      memory: 100Mi
     limits:
-      memory: 120Mi
+      memory: 150Mi
   service:
     port: 3000
   ingress:
