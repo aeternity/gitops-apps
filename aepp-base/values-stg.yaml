@@ -8,10 +8,6 @@ app:
         paths:
           - path: "/"
             version: "pr-1559"
-      - host: "pr-1561-base.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1561"
       - host: "pr-1564-base.stg.aepps.com"
         paths:
           - path: "/"
@@ -20,12 +16,16 @@ app:
         paths:
           - path: "/"
             version: "develop"
+      - host: "pr-1561-base.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1561"
   versions:
     - version: "pr-1559"
       gitSha: "cd85000"
-    - version: "pr-1561"
-      gitSha: "769d74f"
     - version: "pr-1564"
       gitSha: "7c705d8"
     - version: "develop"
       gitSha: "b5056de"
+    - version: "pr-1561"
+      gitSha: "29cd8cd"
