@@ -9,9 +9,9 @@ app:
   resources:
     requests:
       cpu: 90m
-      memory: 160Mi
+      memory: 200Mi
     limits:
-      memory: 240Mi
+      memory: 300Mi
 
   serviceAccount:
     create: true
