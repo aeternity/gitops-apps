@@ -22,4 +22,4 @@ app:
     - version: "pr-1564"
       gitSha: "7c705d8"
     - version: "develop"
-      gitSha: "4906ce6"
+      gitSha: "ee59e8d"
