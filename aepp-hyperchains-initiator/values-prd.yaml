@@ -14,3 +14,5 @@ app:
           - "init.hyperchains.ae"
           - "hyperchains-initiator.prd.aepps.com"
         secretName: aepp-hc-init-cert
+  env:
+    NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: "G-Q05KXPRK2Q"
