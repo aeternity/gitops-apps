@@ -15,3 +15,5 @@ app:
     annotations:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
+  env:
+    NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: "G-Q05KXPRK2Q"
