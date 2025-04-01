@@ -2,7 +2,7 @@ apiVersion: v2
 name: aepp-faucet-aehc-demo
 description: A Helm chart for Kubernetes
 
-version: 0.2.2
+version: 0.2.1
 
 dependencies: # A list of the chart requirements (optional)
   - name: app
