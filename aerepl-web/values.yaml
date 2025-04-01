@@ -5,9 +5,9 @@ app:
   resources:
     requests:
       cpu: 70m
-      memory: 300Mi
+      memory: 400Mi
     limits:
-      memory: 450Mi
+      memory: 600Mi
   service:
     port: 4000
   ingress:

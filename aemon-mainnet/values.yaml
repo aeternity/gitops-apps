@@ -4,9 +4,9 @@ app:
     pullPolicy: "Always"
   resources:
     requests:
-      memory: 175Mi
+      memory: 220Mi
     limits:
-      memory: 260Mi
+      memory: 325Mi
   env:
     AEMON_CONFIG: "etc/aemon/mainnet.json"
     AEMON_ENABLE_METRICS: true
