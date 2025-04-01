@@ -9,9 +9,8 @@ app:
     limits:
       memory: 120Mi
   env:
-    "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
-    "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
-    "NODE_URL": "https://testnet.aeternity.io"
+    EPOCH_URL_DEBUG: "https://testnet.aeternity.io"
+    NODE_URL: "https://testnet.aeternity.io"
   secrets:
     external:
       values:
