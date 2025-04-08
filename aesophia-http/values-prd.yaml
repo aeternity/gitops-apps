@@ -4,56 +4,10 @@ app:
     labels:
       solver: route53
     hosts:
-      - host: "compiler.aepps.com"
-        paths:
-          - path: /
-            version: "v6.1.0"
-      - host: "v4.compiler.aepps.com"
-        paths:
-          - path: /
-            version: "v4.3.0"
-      - host: "v5.compiler.aepps.com"
-        paths:
-          - path: /
-            version: "v5.0.0"
-      - host: "v6.compiler.aepps.com"
-        paths:
-          - path: /
-            version: "v6.1.0"
-      - host: "v7.compiler.aepps.com"
-        paths:
-          - path: /
-            version: "v7.6.0"
-      - host: "v8.compiler.aepps.com"
-        paths:
-          - path: /
-            version: "v8.0.0"
-
-      - host: "latest.compiler.aepps.com"
-        paths:
-          - path: /
-            version: "v6.1.0"
-
       - host: "compiler.aeternity.io"
         paths:
           - path: /
-            version: "v6.1.0"
-      - host: "v4.compiler.aeternity.io"
-        paths:
-          - path: /
-            version: "v4.3.0"
-      - host: "v5.compiler.aeternity.io"
-        paths:
-          - path: /
-            version: "v5.0.0"
-      - host: "v6.compiler.aeternity.io"
-        paths:
-          - path: /
-            version: "v6.1.0"
-      - host: "v7.compiler.aeternity.io"
-        paths:
-          - path: /
-            version: "v7.6.0"
+            version: "v8.0.0"
       - host: "v8.compiler.aeternity.io"
         paths:
           - path: /
