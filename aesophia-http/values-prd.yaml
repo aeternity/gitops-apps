@@ -4,6 +4,14 @@ app:
     labels:
       solver: route53
     hosts:
+      - host: "compiler.aepps.com"
+        paths:
+          - path: /
+            version: "v8.0.0"
+      - host: "v8.compiler.aepps.com"
+        paths:
+          - path: /
+            version: "v8.0.0"
       - host: "compiler.aeternity.io"
         paths:
           - path: /
