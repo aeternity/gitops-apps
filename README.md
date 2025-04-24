@@ -74,6 +74,8 @@ There is a little script that can do the scaffolding ($APP replacement) explaine
 
 ## Application Requirements
 
+- Docker image following [Docker best practices](https://docs.docker.com/build/building/best-practices/). Fast boot (No runtime builds). Minimal size (multi stage builds). Non root user.
+- Stricly conforms [Semantic Versioning](https://semver.org)
 - Comply with [12FA](https://12factor.net)
 - Stateless - does not require persistent state on disk
 - Fast startup - does not require more resources during startup than during usual runtime
