@@ -1,0 +1,21 @@
+app:
+  image:
+    tag: "master"
+    pullPolicy: "Always"
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+  resources:
+    requests:
+      memory: 16Mi
+    limits:
+      memory: 24Mi
+  # secrets:
+  #   external:
+  #     values:
+  #       BRIDGE_OWNER_PK: /apps/HC_BRIDGE_OWNER_PK
+  #       BRIDGE_USER_PK: /apps/HC_BRIDGE_USER_PK
+  #       SUPABASE_URL: /apps/HC_SUPABASE_URL
+  #       SUPABASE_ANON_KEY: /apps/HC_SUPABASE_ANON_KEY

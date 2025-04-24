@@ -1,0 +1,11 @@
+app:
+  image:
+    tag: master
+  secrets:
+    external:
+      remotePrefix: /k8s/prd-0e9c
+  ingress:
+    hosts:
+      - host: "hyperchain-bridge.prd.aepps.com"
+        paths:
+          - path: "/"
