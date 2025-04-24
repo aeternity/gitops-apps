@@ -9,6 +9,8 @@ app:
       memory: 180Mi
     limits:
       memory: 260Mi
+  service:
+    port: 8080
   env:
     NUXT_PUBLIC_NODE_URL: https://demo.hyperchains.aeternity.io/v3
     NUXT_PUBLIC_MIDDLEWARE_URL: https://demo.hyperchains.aeternity.io:8443/v3
