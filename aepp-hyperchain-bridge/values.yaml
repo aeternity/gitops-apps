@@ -11,9 +11,9 @@ app:
     port: 3000
   resources:
     requests:
-      memory: 48Mi
+      memory: 86Mi
     limits:
-      memory: 72Mi
+      memory: 128Mi
   secrets:
     external:
       values:
