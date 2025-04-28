@@ -9,3 +9,11 @@ app:
       - host: "hyperchain-bridge.prd.aepps.com"
         paths:
           - path: "/"
+      - host: "bridge.hyperchains.ae"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+          - "bridge.hyperchains.ae"
+          - "hyperchain-bridge.prd.aepps.com"
+        secretName: aepp-hc-bridge-cert
