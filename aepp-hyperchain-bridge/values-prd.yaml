@@ -1,6 +1,6 @@
 app:
   image:
-    tag: v1.1.0
+    tag: v1.2.0
   secrets:
     external:
       remotePrefix: /k8s/prd-0e9c
