@@ -10,6 +10,7 @@ app:
       cert-manager.io/cluster-issuer: letsencrypt
   resources:
     requests:
-      memory: 16Mi
+      memory: 512Mi
     limits:
-      memory: 24Mi
+      memory: 512Mi
+      
