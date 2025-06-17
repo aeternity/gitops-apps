@@ -1,5 +1,6 @@
 app:
   image:
+    repository: aeternity/aepp-bridge-and-swap
     tag: "main"
     pullPolicy: "Always"
   ingress:
