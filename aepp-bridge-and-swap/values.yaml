@@ -1,0 +1,14 @@
+app:
+  image:
+    tag: "main"
+    pullPolicy: "Always"
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+  resources:
+    requests:
+      memory: 16Mi
+    limits:
+      memory: 24Mi

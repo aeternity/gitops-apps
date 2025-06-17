@@ -1,0 +1,8 @@
+app:
+  ingress:
+    hosts:
+      - host: "swap.prd.aepps.com"
+        paths:
+          - path: "/"
+  image:
+    tag: main
