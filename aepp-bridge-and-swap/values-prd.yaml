@@ -4,5 +4,10 @@ app:
       - host: "swap.prd.aepps.com"
         paths:
           - path: "/"
+    tls:
+      - hosts:
+          - "swap.prd.aepps.com"
+          - "swap.superhero.com"
+        secretName: aepp-bridge-swap-cert
   image:
     tag: main
