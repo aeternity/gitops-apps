@@ -13,4 +13,6 @@ app:
       memory: 512Mi
     limits:
       memory: 512Mi
-      
+  service:
+    port: 3000
+
