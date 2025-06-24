@@ -4,6 +4,9 @@ app:
       - host: "swap.prd.aepps.com"
         paths:
           - path: "/"
+      - host: "swap.superhero.com"
+        paths:
+          - path: "/"
     tls:
       - hosts:
           - "swap.prd.aepps.com"
