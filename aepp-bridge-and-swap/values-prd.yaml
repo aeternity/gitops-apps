@@ -13,4 +13,4 @@ app:
           - "swap.superhero.com"
         secretName: aepp-bridge-swap-cert
   image:
-    tag: v1.3.0
+    tag: v1.4.0
