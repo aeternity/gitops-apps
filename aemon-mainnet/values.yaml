@@ -13,7 +13,10 @@ app:
   service:
     port: 3000
   ingress:
-    enabled: false
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
   serviceMonitor:
     enabled: true
     path: /

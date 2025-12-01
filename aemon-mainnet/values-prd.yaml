@@ -1,3 +1,12 @@
 app:
   image:
     tag: v0.1.0
+  ingress:
+    hosts:
+      - host: "aemon-mainnet.prd.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+          - "aemon-mainnet.prd.aepps.com"
+        secretName: aemon-mainnet-cert
