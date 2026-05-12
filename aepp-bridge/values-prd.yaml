@@ -1,14 +1,14 @@
-app:
-  ingress:
-    hosts:
-      - host: "bridge.prd.aepps.com"
-        paths:
-          - path: "/"
-      - host: "ae-bridge.com"
-        paths:
-          - path: "/"
-      - host: "www.ae-bridge.com"
-        paths:
-          - path: "/"
-  image:
-    tag: v1.17.5
+# app:
+#   ingress:
+#     hosts:
+#       - host: "bridge.prd.aepps.com"
+#         paths:
+#           - path: "/"
+#       - host: "ae-bridge.com"
+#         paths:
+#           - path: "/"
+#       - host: "www.ae-bridge.com"
+#         paths:
+#           - path: "/"
+#   image:
+#     tag: v1.17.5
