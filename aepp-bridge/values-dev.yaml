@@ -1,6 +1,6 @@
-app:
-  ingress:
-    hosts:
-      - host: "bridge.dev.aepps.com"
-        paths:
-          - path: "/"
+# app:
+#   ingress:
+#     hosts:
+#       - host: "bridge.dev.aepps.com"
+#         paths:
+#           - path: "/"
