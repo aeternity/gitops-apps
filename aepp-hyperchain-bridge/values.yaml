@@ -29,6 +29,9 @@ app:
 
 postgresql:
   enabled: false
+  image:
+    registry: docker.io
+    repository: bitnamilegacy/postgresql
   auth:
     username: "hyperchain_bridge"
     database: "hyperchain_bridge"
