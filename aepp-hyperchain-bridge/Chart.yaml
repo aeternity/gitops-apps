@@ -8,3 +8,7 @@ dependencies: # A list of the chart requirements (optional)
   - name: app
     version: 0.5.0
     repository: "file://../app"
+  - name: postgresql
+    version: 15.5.38
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: postgresql.enabled
