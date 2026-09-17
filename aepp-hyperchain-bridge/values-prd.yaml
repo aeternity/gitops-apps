@@ -17,3 +17,14 @@ app:
           - "bridge.hyperchains.ae"
           - "hyperchain-bridge.prd.aepps.com"
         secretName: aepp-hc-bridge-cert
+
+postgresql:
+  enabled: true
+  auth:
+    enablePostgresUser: false
+    existingSecret: aepp-hyperchain-bridge-app-external-secrets
+    secretKeys:
+      userPasswordKey: PG_PASSWORD
+  primary:
+    persistence:
+      storageClass: gp3

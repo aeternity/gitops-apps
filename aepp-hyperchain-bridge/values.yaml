@@ -19,5 +19,26 @@ app:
       values:
         BRIDGE_OWNER_PK: /apps/HC_BRIDGE_OWNER_PK
         BRIDGE_USER_PK: /apps/HC_BRIDGE_USER_PK
-        SUPABASE_URL: /apps/HC_SUPABASE_URL
-        SUPABASE_ANON_KEY: /apps/HC_SUPABASE_ANON_KEY
+        PG_PASSWORD: /apps/HC_POSTGRES_PASSWORD
+  env:
+    PG_HOST: "aepp-hyperchain-bridge-postgresql"
+    PG_PORT: "5432"
+    PG_DATABASE: "hyperchain_bridge"
+    PG_USER: "hyperchain_bridge"
+    PG_SSL: "false"
+
+postgresql:
+  enabled: false
+  auth:
+    username: "hyperchain_bridge"
+    database: "hyperchain_bridge"
+  primary:
+    persistence:
+      enabled: true
+      size: 5Gi
+    resources:
+      requests:
+        cpu: 100m
+        memory: 256Mi
+      limits:
+        memory: 512Mi
