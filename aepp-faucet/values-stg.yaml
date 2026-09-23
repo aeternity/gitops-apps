@@ -15,20 +15,20 @@ app:
         paths:
           - path: "/"
             version: "pr-48"
-      - host: "faucet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "master"
       - host: "pr-50-faucet.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-50"
+      - host: "faucet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
   versions:
     - version: "pr-49"
       gitSha: "e2e9c4b"
     - version: "pr-48"
       gitSha: "6d8730e"
-    - version: "master"
-      gitSha: "e621fa8"
     - version: "pr-50"
       gitSha: "0589fe9"
+    - version: "master"
+      gitSha: "9835855"
