@@ -10,18 +10,18 @@ app:
         paths:
           - path: "/"
             version: "pr-194"
-      - host: "governance-server-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "master"
       - host: "pr-193-governance-server-testnet.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-193"
+      - host: "governance-server-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
   versions:
     - version: "pr-194"
       gitSha: "f6dd305"
-    - version: "master"
-      gitSha: "9e35642"
     - version: "pr-193"
       gitSha: "b716fa5"
+    - version: "master"
+      gitSha: "0240d13"
