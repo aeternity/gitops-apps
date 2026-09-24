@@ -24,6 +24,10 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "pr-152-contracts.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-152"
   versions:
     - version: "pr-149"
       gitSha: "7613732"
@@ -35,3 +39,5 @@ app:
       gitSha: "7d133e7"
     - version: "master"
       gitSha: "a64982f"
+    - version: "pr-152"
+      gitSha: "ccde6ff"
