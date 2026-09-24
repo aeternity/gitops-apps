@@ -27,6 +27,10 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "pr-52-faucet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-52"
   versions:
     - version: "pr-49"
       gitSha: "e2e9c4b"
@@ -38,3 +42,5 @@ app:
       gitSha: "0f515b4"
     - version: "master"
       gitSha: "2df5617"
+    - version: "pr-52"
+      gitSha: "6a98e81"
