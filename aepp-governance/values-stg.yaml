@@ -34,6 +34,10 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "pr-199-governance.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-199"
   versions:
     - version: "pr-194"
       gitSha: "f6dd305"
@@ -49,3 +53,5 @@ app:
       gitSha: "04c4055"
     - version: "master"
       gitSha: "379c5a5"
+    - version: "pr-199"
+      gitSha: "67ba117"
