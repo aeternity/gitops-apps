@@ -26,6 +26,10 @@ app:
         paths:
           - path: "/"
             version: "master"
+      - host: "pr-197-governance.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-197"
   versions:
     - version: "pr-194"
       gitSha: "f6dd305"
@@ -37,3 +41,5 @@ app:
       gitSha: "e60eeac"
     - version: "master"
       gitSha: "571f40a"
+    - version: "pr-197"
+      gitSha: "2b0df28"
