@@ -12,4 +12,4 @@ app:
             version: "master"
   versions:
     - version: "master"
-      gitSha: "571f40a"
+      gitSha: "ef33afe"
