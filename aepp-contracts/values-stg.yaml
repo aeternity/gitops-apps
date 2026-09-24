@@ -12,20 +12,20 @@ app:
         paths:
           - path: "/"
             version: "pr-148"
-      - host: "contracts.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "master"
       - host: "pr-150-contracts.stg.aepps.com"
         paths:
           - path: "/"
             version: "pr-150"
+      - host: "contracts.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "master"
   versions:
     - version: "pr-149"
       gitSha: "7613732"
     - version: "pr-148"
       gitSha: "1e6650c"
-    - version: "master"
-      gitSha: "0516861"
     - version: "pr-150"
       gitSha: "78af24b"
+    - version: "master"
+      gitSha: "a37b557"
